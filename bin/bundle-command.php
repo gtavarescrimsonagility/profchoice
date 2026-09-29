@@ -25,9 +25,23 @@ class ProfChoice_Bundle_Command {
 	 * [--dir=<dir>]
 	 * : Bundle worktree path. Defaults to ../profchoice-bundle next to the site.
 	 *
+	 * [--message=<message>]
+	 * : Commit message.
+	 * ---
+	 * default: Update content
+	 * ---
+	 *
+	 * [--[no-]commit]
+	 * : Commit and push the bundle worktree. Default: true; --no-commit only writes the files.
+	 *
+	 * [--[no-]push]
+	 * : Push after committing. Default: true.
+	 *
 	 * ## EXAMPLES
 	 *
 	 *     studio wp bundle export
+	 *     studio wp bundle export --message="Update homepage hero"
+	 *     studio wp bundle export --no-commit
 	 *
 	 * @when after_wp_load
 	 */
@@ -58,10 +72,42 @@ class ProfChoice_Bundle_Command {
 		// Content keeps the URL it was saved with (e.g. localhost:<port>), while
 		// attachment URLs use siteurl, so match any host.
 		$wxr = preg_replace( '#https?://[^/"\'\s<]+/wp-content/uploads/#', self::RAW_URL . '/uploads/', $wxr );
+		// Drop export timestamps so unchanged content produces no diff.
+		$wxr = preg_replace( '#(<!-- generator="[^"]*") created="[^"]*"#', '$1', $wxr );
+		$wxr = preg_replace( '#\n<pubDate>[^<]*</pubDate>(?=[\s\S]*?<item>)#', '', $wxr, 1 );
 		file_put_contents( $dir . '/content.xml', $wxr . "\n" );
 
 		WP_CLI::success( sprintf( 'Exported %d posts and %d media files to %s', count( $post_ids ), count( $media ), $dir ) );
-		WP_CLI::log( "Review and publish: git -C $dir add -A && git -C $dir commit -m '...' && git -C $dir push" );
+
+		if ( WP_CLI\Utils\get_flag_value( $assoc_args, 'commit', true ) ) {
+			$this->publish( $dir, $assoc_args['message'], WP_CLI\Utils\get_flag_value( $assoc_args, 'push', true ) );
+		}
+	}
+
+	private function publish( $dir, $message, $push ) {
+		$git = 'git -C ' . escapeshellarg( $dir ) . ' ';
+
+		$this->git( $git . 'add -A' );
+		if ( '' === trim( $this->git( $git . 'status --porcelain' ) ) ) {
+			WP_CLI::success( 'No content changes to commit.' );
+			return;
+		}
+
+		$this->git( $git . 'commit -q -m ' . escapeshellarg( $message ) );
+		WP_CLI::success( 'Committed: ' . trim( $this->git( $git . 'log -1 --format="%h %s"' ) ) );
+
+		if ( $push ) {
+			$this->git( $git . 'push -q' );
+			WP_CLI::success( 'Pushed ' . trim( $this->git( $git . 'rev-parse --abbrev-ref HEAD' ) ) . '.' );
+		}
+	}
+
+	private function git( $command ) {
+		$result = WP_CLI::launch( $command, false, true );
+		if ( 0 !== $result->return_code ) {
+			WP_CLI::error( trim( $result->stderr ) ?: "Command failed: $command" );
+		}
+		return $result->stdout;
 	}
 
 	/**
