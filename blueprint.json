@@ -1,0 +1,21 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "Professionals Choice",
+    "author": "gtavarescrimsonagility",
+    "description": "Playground environment for the Professionals Choice site."
+  },
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.4", "wp": "latest" },
+  "login": true,
+  "siteOptions": {
+    "blogname": "Professionals Choice",
+    "blogdescription": ""
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": { "permalink_structure": "/%year%/%monthnum%/%day%/%postname%/" }
+    }
+  ]
+}

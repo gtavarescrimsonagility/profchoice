@@ -1,0 +1,5 @@
+# Whitelist: ignore everything, then opt files in explicitly.
+/*
+!/.gitignore
+!/README.md
+!/blueprint.json
