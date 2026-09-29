@@ -24,7 +24,15 @@
     },
     {
       "step": "setSiteOptions",
-      "options": { "permalink_structure": "/%year%/%monthnum%/%day%/%postname%/" }
+      "options": {
+        "permalink_structure": "/%year%/%monthnum%/%day%/%postname%/",
+        "wp_page_for_privacy_policy": 0
+      }
+    },
+    {
+      "step": "runPHP",
+      "progress": { "caption": "Removing default content, plugins and themes" },
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\nrequire_once ABSPATH . 'wp-admin/includes/plugin.php';\nrequire_once ABSPATH . 'wp-admin/includes/theme.php';\nrequire_once ABSPATH . 'wp-admin/includes/file.php';\nWP_Filesystem();\n\nforeach ( get_comments( array( 'fields' => 'ids', 'status' => 'all' ) ) as $id ) {\n\twp_delete_comment( $id, true );\n}\n\n$posts = get_posts( array(\n\t'post_type'   => array( 'post', 'page' ),\n\t'post_status' => array_keys( get_post_stati() ),\n\t'numberposts' => -1,\n\t'fields'      => 'ids',\n) );\nforeach ( $posts as $id ) {\n\twp_delete_post( $id, true );\n}\n\ndelete_plugins( array_keys( get_plugins() ) );\n\nforeach ( array_keys( wp_get_themes() ) as $slug ) {\n\tif ( get_stylesheet() !== $slug ) {\n\t\tdelete_theme( $slug );\n\t}\n}\n"
     }
   ]
 }
