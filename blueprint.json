@@ -48,15 +48,15 @@
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/homepage.xml"
+        "url": "https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/content.xml"
       },
       "progress": {
-        "caption": "Importing the homepage, media and custom CSS"
+        "caption": "Importing content, media and custom CSS"
       }
     },
     {
       "step": "runPHP",
-      "code": "<?php\nrequire '/wordpress/wp-load.php';\nglobal $wpdb;\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\t// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n\t// Update the row directly: wp_update_post() without a logged-in user would\n\t// strip block custom CSS (style.css) through wp_strip_custom_css_from_blocks().\n\t$wpdb->update(\n\t\t$wpdb->posts,\n\t\tarray(\n\t\t\t'post_content' => str_replace(\n\t\t\t\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\t\t\t\twp_get_upload_dir()['baseurl'] . '/',\n\t\t\t\t$homepage->post_content\n\t\t\t),\n\t\t),\n\t\tarray( 'ID' => $homepage->ID )\n\t);\n\tclean_post_cache( $homepage->ID );\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n"
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\nglobal $wpdb;\n\n// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n// Update the rows directly: wp_update_post() without a logged-in user would\n// strip block custom CSS (style.css) through wp_strip_custom_css_from_blocks().\n$wpdb->query( $wpdb->prepare(\n\t\"UPDATE {$wpdb->posts} SET post_content = REPLACE( post_content, %s, %s )\",\n\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\twp_get_upload_dir()['baseurl'] . '/'\n) );\nwp_cache_flush();\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n"
     }
   ]
 }
