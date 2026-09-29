@@ -40,9 +40,23 @@
     {
       "step": "runPHP",
       "progress": {
-        "caption": "Removing plugins and themes, creating the homepage"
+        "caption": "Removing plugins and themes"
       },
-      "code": "<?php\nrequire '/wordpress/wp-load.php';\nrequire_once ABSPATH . 'wp-admin/includes/plugin.php';\nrequire_once ABSPATH . 'wp-admin/includes/theme.php';\nrequire_once ABSPATH . 'wp-admin/includes/file.php';\nWP_Filesystem();\n\ndelete_plugins( array_keys( get_plugins() ) );\n\nforeach ( array_keys( wp_get_themes() ) as $slug ) {\n\tif ( get_stylesheet() !== $slug ) {\n\t\tdelete_theme( $slug );\n\t}\n}\n\n$homepage = wp_insert_post( array(\n\t'post_type'   => 'page',\n\t'post_title'  => 'Homepage',\n\t'post_name'   => 'homepage',\n\t'post_status' => 'publish',\n) );\nupdate_option( 'show_on_front', 'page' );\nupdate_option( 'page_on_front', $homepage );\n"
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\nrequire_once ABSPATH . 'wp-admin/includes/plugin.php';\nrequire_once ABSPATH . 'wp-admin/includes/theme.php';\nrequire_once ABSPATH . 'wp-admin/includes/file.php';\nWP_Filesystem();\n\ndelete_plugins( array_keys( get_plugins() ) );\n\nforeach ( array_keys( wp_get_themes() ) as $slug ) {\n\tif ( get_stylesheet() !== $slug ) {\n\t\tdelete_theme( $slug );\n\t}\n}\n"
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/homepage.xml"
+      },
+      "progress": {
+        "caption": "Importing the homepage, media and custom CSS"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\tadd_filter( 'wp_revisions_to_keep', '__return_zero' );\n\t// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n\twp_update_post( array(\n\t\t'ID'           => $homepage->ID,\n\t\t'post_content' => wp_slash( str_replace(\n\t\t\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\t\t\twp_get_upload_dir()['baseurl'] . '/',\n\t\t\t$homepage->post_content\n\t\t) ),\n\t) );\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n"
     }
   ]
 }
