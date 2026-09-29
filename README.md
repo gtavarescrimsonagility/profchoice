@@ -2,14 +2,23 @@
 
 Monorepo for the Professionals Choice WordPress site.
 
-## Playground
+## Theme
 
-Open the site in WordPress Playground:
+The `commercebuild-velocity` theme is mirrored on the orphan branch
+[`commercebuild-velocity`](../../tree/commercebuild-velocity). Each push there
+publishes a release zip named `commercebuild-velocity.<version>.zip`.
 
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/main/blueprint.json
-
-Or locally:
+`blueprint.json` pins the theme version; download that release zip next to it:
 
 ```bash
-npx @wp-playground/cli server --blueprint=./blueprint.json
+gh release download commercebuild-velocity.0.12.77 -p '*.zip' --clobber
 ```
+
+## Playground
+
+```bash
+npx @wp-playground/cli server --blueprint=. --blueprint-may-read-adjacent-files
+```
+
+The repository is private, so the blueprint runs from a local checkout rather
+than from a `playground.wordpress.net` link.

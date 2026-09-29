@@ -14,6 +14,12 @@
   },
   "steps": [
     {
+      "step": "installTheme",
+      "themeData": { "resource": "bundled", "path": "/commercebuild-velocity.0.12.77.zip" },
+      "options": { "activate": true },
+      "ifAlreadyInstalled": "overwrite"
+    },
+    {
       "step": "setSiteOptions",
       "options": { "permalink_structure": "/%year%/%monthnum%/%day%/%postname%/" }
     }
