@@ -16,9 +16,13 @@ gh release download commercebuild-velocity.0.12.77 -p '*.zip' --clobber
 
 ## Playground
 
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/main/blueprint.json
+
+Or locally:
+
 ```bash
 npx @wp-playground/cli server --blueprint=. --blueprint-may-read-adjacent-files
 ```
 
-The repository is private, so the blueprint runs from a local checkout rather
-than from a `playground.wordpress.net` link.
+The `playground.wordpress.net` link only works while the repository is public
+and the theme zip is reachable from the blueprint; until then, run it locally.
