@@ -15,7 +15,10 @@
   "steps": [
     {
       "step": "installTheme",
-      "themeData": { "resource": "bundled", "path": "/commercebuild-velocity.0.12.77.zip" },
+      "themeData": {
+        "resource": "url",
+        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/commercebuild-velocity.0.12.77/commercebuild-velocity.0.12.77.zip"
+      },
       "options": { "activate": true },
       "ifAlreadyInstalled": "overwrite"
     },
