@@ -56,7 +56,7 @@
     },
     {
       "step": "runPHP",
-      "code": "<?php\nrequire '/wordpress/wp-load.php';\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\tadd_filter( 'wp_revisions_to_keep', '__return_zero' );\n\t// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n\twp_update_post( array(\n\t\t'ID'           => $homepage->ID,\n\t\t'post_content' => wp_slash( str_replace(\n\t\t\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\t\t\twp_get_upload_dir()['baseurl'] . '/',\n\t\t\t$homepage->post_content\n\t\t) ),\n\t) );\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n"
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\nglobal $wpdb;\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\t// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n\t// Update the row directly: wp_update_post() without a logged-in user would\n\t// strip block custom CSS (style.css) through wp_strip_custom_css_from_blocks().\n\t$wpdb->update(\n\t\t$wpdb->posts,\n\t\tarray(\n\t\t\t'post_content' => str_replace(\n\t\t\t\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\t\t\t\twp_get_upload_dir()['baseurl'] . '/',\n\t\t\t\t$homepage->post_content\n\t\t\t),\n\t\t),\n\t\tarray( 'ID' => $homepage->ID )\n\t);\n\tclean_post_cache( $homepage->ID );\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n"
     }
   ]
 }
