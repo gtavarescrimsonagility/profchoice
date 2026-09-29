@@ -301,15 +301,27 @@
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"></div>
-<!-- /wp:group -->]]></content:encoded>
+<!-- wp:group {"align":"full","style":{"color":{"background":"#f4f1ea"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#f4f1ea"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"metadata":{"name":"Since"},"className":"since","style":{"color":{"text":"#c32627"},"elements":{"link":{"color":{"text":"#c32627"}}},"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","fontSize":"0.72rem","letterSpacing":"0.201875rem","textAlign":"center"},"css":"display: flex;\ngap: 0.833333333em;\nalign-items: center;\njustify-content: center;\n\u0026::before{\ncontent: \u0022\u0022;\ndisplay: block;\nbackground-color: currentcolor;\nheight: 1px;\nwidth: 2.25694444em;\nopacity: 0.55;\n}"}} -->
+<p class="has-text-align-center since has-custom-css has-text-color has-link-color" style="color:#c32627;font-size:0.72rem;font-style:normal;font-weight:700;letter-spacing:0.201875rem;text-transform:uppercase">Browse the Catalog</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","textAlign":"center","fontSize":"2.6rem"},"css":"line-height:1.07932692;"}} -->
+<h2 class="wp-block-heading has-text-align-center has-custom-css" style="font-size:2.6rem;text-transform:uppercase">Shop Your Discipline</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>51</wp:post_id>
   <wp:post_date>2026-09-28 14:24:12</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:24:12</wp:post_date_gmt>
-  <wp:post_modified>2026-09-29 17:45:43</wp:post_modified>
-  <wp:post_modified_gmt>2026-09-29 17:45:43</wp:post_modified_gmt>
+  <wp:post_modified>2026-09-29 19:17:11</wp:post_modified>
+  <wp:post_modified_gmt>2026-09-29 19:17:11</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>homepage</wp:post_name>
