@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/account-tabs",
+	"title": "Account Tabs",
+	"category": "commercebuild",
+	"icon": "index-card",
+	"description": "Tabbed account/portal layout. Each tab has its own title, block editor content, and an Active toggle. Preloaded with the cfwPortal shortcode tabs.",
+	"keywords": [ "account", "portal", "tabs", "invoices" ],
+	"textdomain": "commercebuild-velocity",
+	"attributes": {},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"editorScript": "cbv-blocks-editor",
+	"viewScript": "cbv-account-tabs-view",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/header-nav",
+	"title": "Menu",
+	"category": "commercebuild",
+	"icon": "menu",
+	"description": "Renders a WordPress menu by theme location, with dropdowns.",
+	"textdomain": "commercebuild-velocity",
+	"attributes": {
+		"location": { "type": "string", "default": "primary" },
+		"depth": { "type": "number", "default": 2 },
+		"orientation": { "type": "string", "default": "horizontal" }
+	},
+	"supports": { "align": [ "wide", "full" ], "html": false },
+	"editorScript": "cbv-blocks-editor",
+	"render": "file:./render.php"
+}

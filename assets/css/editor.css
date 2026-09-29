@@ -1,0 +1,69 @@
+/*
+ * Editor-only adjustments. The full frontend stylesheet is enqueued in the
+ * block editor by CBV_Assets so ServerSideRender previews match the site.
+ */
+.cbv-grid {
+	pointer-events: none;
+}
+
+/* Account Tabs: show every tab stacked and labelled so each one is editable. */
+.cbv-atabs-editor__label {
+	margin-bottom: 12px;
+	padding: 10px 14px;
+	background: var(--cbv-surface, #f6f7f9);
+	border: 1px dashed var(--cbv-border, #e5e7eb);
+	border-radius: var(--cbv-radius, 10px);
+	font-size: 13px;
+	color: var(--cbv-text-muted, #6b7280);
+}
+
+.cbv-atab-editor {
+	margin: 0 0 16px;
+	border: 1px solid var(--cbv-border, #e5e7eb);
+	border-radius: var(--cbv-radius, 10px);
+	overflow: hidden;
+}
+
+.cbv-atab-editor.is-inactive {
+	opacity: 0.55;
+}
+
+.cbv-atab-editor__bar {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 8px 12px;
+	background: var(--cbv-surface, #f6f7f9);
+	border-bottom: 1px solid var(--cbv-border, #e5e7eb);
+}
+
+.cbv-atab-editor__title {
+	flex: 1;
+	padding: 6px 10px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	background: transparent;
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--cbv-secondary, #0f172a);
+}
+
+.cbv-atab-editor__title:focus {
+	background: #fff;
+	border-color: var(--cbv-primary, #2563eb);
+	outline: none;
+}
+
+.cbv-atab-editor__badge {
+	padding: 2px 10px;
+	border-radius: 999px;
+	background: var(--cbv-danger, #dc2626);
+	color: #fff;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cbv-atab-editor__content {
+	padding: 12px 16px;
+}

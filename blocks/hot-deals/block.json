@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/hot-deals",
+	"title": "Hot Deals",
+	"category": "commercebuild",
+	"icon": "tag",
+	"description": "Deals grid: pick products yourself or let an algorithm choose (on sale, best selling, top rated, newest). Backed by indexed lookup-table queries and caching.",
+	"keywords": [ "deals", "sale", "best sellers", "woocommerce" ],
+	"textdomain": "commercebuild-velocity",
+	"attributes": {
+		"heading": { "type": "string", "default": "Hot Deals" },
+		"source": { "type": "string", "default": "on_sale" },
+		"includeIds": { "type": "string", "default": "" },
+		"limit": { "type": "number", "default": 8 },
+		"columns": { "type": "number", "default": 4 },
+		"showPrice": { "type": "boolean", "default": true },
+		"showSku": { "type": "boolean", "default": false },
+		"showAddToCart": { "type": "boolean", "default": true }
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"editorScript": "cbv-blocks-editor",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,51 @@
+name: Release theme
+
+on:
+  push:
+    branches: [commercebuild-velocity]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SLUG: commercebuild-velocity
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: ${{ env.SLUG }}
+
+      - name: Read version
+        id: meta
+        run: |
+          version=$(sed -n 's/^Version:[[:space:]]*//p' "$SLUG/style.css" | tr -d '\r')
+          test -n "$version"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=$SLUG.$version" >> "$GITHUB_OUTPUT"
+
+      - name: Skip if already released
+        id: check
+        run: |
+          if gh release view "${{ steps.meta.outputs.tag }}" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build zip
+        if: steps.check.outputs.exists != 'true'
+        run: |
+          zip -rq "${{ steps.meta.outputs.tag }}.zip" "$SLUG" \
+            -x "$SLUG/.git*" "$SLUG/.github/*" "$SLUG/tests/*" "$SLUG/docs/*" \
+               "$SLUG/AGENTS.md" "$SLUG/CLAUDE.md" "$SLUG/README.md"
+
+      - name: Create release
+        if: steps.check.outputs.exists != 'true'
+        run: |
+          gh release create "${{ steps.meta.outputs.tag }}" "${{ steps.meta.outputs.tag }}.zip" \
+            -R "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "$SLUG ${{ steps.meta.outputs.version }}" \
+            --notes "Snapshot of $SLUG ${{ steps.meta.outputs.version }}."

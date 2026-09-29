@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/hero-slider",
+	"title": "Hero Slider",
+	"category": "commercebuild",
+	"icon": "images-alt2",
+	"description": "No-frills hero banner and slider: image or video slides with heading, text, and call-to-action.",
+	"keywords": [ "hero", "banner", "slider", "video" ],
+	"textdomain": "commercebuild-velocity",
+	"attributes": {
+		"slides": { "type": "array", "default": [] },
+		"autoplay": { "type": "boolean", "default": true },
+		"interval": { "type": "number", "default": 6 },
+		"showArrows": { "type": "boolean", "default": true },
+		"showDots": { "type": "boolean", "default": true },
+		"minHeight": { "type": "number", "default": 480 }
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"editorScript": "cbv-blocks-editor",
+	"viewScript": "cbv-hero-slider-view",
+	"render": "file:./render.php"
+}

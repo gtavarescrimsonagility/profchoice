@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/account-tab",
+	"title": "Account Tab",
+	"category": "commercebuild",
+	"icon": "welcome-widgets-menus",
+	"description": "A single tab inside Account Tabs: title, Active toggle, and any block content.",
+	"textdomain": "commercebuild-velocity",
+	"parent": [ "commercebuild/account-tabs" ],
+	"attributes": {
+		"title": { "type": "string", "default": "" },
+		"active": { "type": "boolean", "default": true }
+	},
+	"supports": {
+		"html": false,
+		"reusable": false
+	},
+	"editorScript": "cbv-blocks-editor",
+	"render": "file:./render.php"
+}

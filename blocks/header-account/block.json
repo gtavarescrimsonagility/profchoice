@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/header-account",
+	"title": "Account Link",
+	"category": "commercebuild",
+	"icon": "admin-users",
+	"description": "My Account link, optionally greeting the logged-in customer.",
+	"textdomain": "commercebuild-velocity",
+	"attributes": {
+		"label": { "type": "string", "default": "Account" },
+		"icon": { "type": "string", "default": "user" },
+		"showLabel": { "type": "boolean", "default": true },
+		"showGreeting": { "type": "boolean", "default": false }
+	},
+	"supports": { "html": false },
+	"editorScript": "cbv-blocks-editor",
+	"render": "file:./render.php"
+}

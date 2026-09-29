@@ -1,0 +1,16 @@
+/*
+Theme Name: commercebuild Velocity
+Theme URI: https://github.com/commercebuildteam/commercebuild-velocity
+Author: commercebuild
+Author URI: https://commercebuild.com
+Description: Performance-first WooCommerce boilerplate theme with native Gutenberg blocks, a Customizer color palette, and ElasticPress-aware catalog queries. Built for very large catalogs.
+Version: 0.12.77
+Requires at least: 7.1
+Tested up to: 7.1
+Requires PHP: 7.4
+License: Proprietary
+Text Domain: commercebuild-velocity
+Tags: ecommerce, woocommerce, performance, blocks
+*/
+
+/* All styles are enqueued from assets/css/. This file is header-only. */

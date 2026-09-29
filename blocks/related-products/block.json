@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/related-products",
+	"title": "Related Products",
+	"category": "commercebuild",
+	"icon": "products",
+	"description": "Related products for the current product, cached per product.",
+	"keywords": [ "related", "cross-sell", "woocommerce" ],
+	"textdomain": "commercebuild-velocity",
+	"attributes": {
+		"heading": { "type": "string", "default": "Related products" },
+		"limit": { "type": "number", "default": 4 },
+		"columns": { "type": "number", "default": 4 },
+		"showPrice": { "type": "boolean", "default": true },
+		"showAddToCart": { "type": "boolean", "default": true }
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"usesContext": [ "postId", "postType" ],
+	"editorScript": "cbv-blocks-editor",
+	"render": "file:./render.php"
+}

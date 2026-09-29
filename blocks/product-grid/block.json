@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/product-grid",
+	"title": "Product Grid",
+	"category": "commercebuild",
+	"icon": "grid-view",
+	"description": "Cached, ElasticPress-aware grid of products by category, attribute, or curated IDs.",
+	"keywords": [ "products", "woocommerce", "shop" ],
+	"textdomain": "commercebuild-velocity",
+	"attributes": {
+		"heading": { "type": "string", "default": "" },
+		"limit": { "type": "number", "default": 8 },
+		"columns": { "type": "number", "default": 4 },
+		"categoryIds": { "type": "string", "default": "" },
+		"includeIds": { "type": "string", "default": "" },
+		"featured": { "type": "boolean", "default": false },
+		"onSale": { "type": "boolean", "default": false },
+		"orderby": { "type": "string", "default": "date" },
+		"showPrice": { "type": "boolean", "default": true },
+		"showSku": { "type": "boolean", "default": false },
+		"showUom": { "type": "boolean", "default": false },
+		"showAddToCart": { "type": "boolean", "default": true }
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"editorScript": "cbv-blocks-editor",
+	"render": "file:./render.php"
+}

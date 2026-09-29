@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/block.json",
+	"apiVersion": 3,
+	"name": "commercebuild/header-cart",
+	"title": "Cart Link",
+	"category": "commercebuild",
+	"icon": "cart",
+	"description": "Cart link with item count and optional total.",
+	"textdomain": "commercebuild-velocity",
+	"attributes": {
+		"label": { "type": "string", "default": "Cart" },
+		"icon": { "type": "string", "default": "cart" },
+		"showLabel": { "type": "boolean", "default": true },
+		"showCount": { "type": "boolean", "default": true },
+		"showTotal": { "type": "boolean", "default": false }
+	},
+	"supports": { "html": false },
+	"editorScript": "cbv-blocks-editor",
+	"render": "file:./render.php"
+}
