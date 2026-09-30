@@ -1,0 +1,10 @@
+.distignore
+.gitignore
+node_modules
+src
+tests
+jest.config.js
+package.json
+package-lock.json
+tsconfig.json
+vitest.config.mjs

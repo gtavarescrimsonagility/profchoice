@@ -1,0 +1,21 @@
+/**
+ * Newsletter form: structural defaults only (zero specificity), so block
+ * attributes and theme styles always win.
+ */
+:where(.wp-block-profchoice-newsletter-form) {
+	box-sizing: border-box;
+}
+
+// Keep the honeypot out of sight and out of the accessibility tree.
+.wp-block-profchoice-newsletter-form .pc-newsletter__hp {
+	position: absolute !important;
+	left: -9999px !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden !important;
+}
+
+// Buttons and fields set their own display, which would override [hidden].
+.wp-block-profchoice-newsletter-form [hidden] {
+	display: none !important;
+}

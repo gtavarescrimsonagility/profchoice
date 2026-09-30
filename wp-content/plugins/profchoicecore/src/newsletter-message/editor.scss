@@ -1,0 +1,18 @@
+/**
+ * In the editor both messages stay visible, dimmed and labelled.
+ */
+.wp-block-profchoice-newsletter-message {
+	position: relative;
+	opacity: 0.75;
+	outline: 1px dashed currentcolor;
+	outline-offset: 2px;
+
+	&::before {
+		content: attr(data-pc-label);
+		display: block;
+		font-size: 11px;
+		font-weight: 600;
+		text-transform: uppercase;
+		opacity: 0.7;
+	}
+}

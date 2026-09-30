@@ -1,0 +1,64 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/carousel",
+	"version": "0.1.0",
+	"title": "Carousel",
+	"category": "design",
+	"icon": "slides",
+	"description": "Slides with fade or slide transitions, arrows and dots.",
+	"keywords": [ "carousel", "slider", "slides", "gallery" ],
+	"textdomain": "profchoicecore",
+	"allowedBlocks": [ "profchoice/carousel-slide" ],
+	"attributes": {
+		"ariaLabel": {
+			"type": "string",
+			"default": "Carousel"
+		},
+		"transition": {
+			"type": "string",
+			"enum": [ "fade", "slide" ],
+			"default": "fade"
+		},
+		"loop": {
+			"type": "boolean",
+			"default": true
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": false
+		},
+		"autoplayDelay": {
+			"type": "number",
+			"default": 6000
+		},
+		"showArrows": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDots": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": [ "wide", "full" ],
+		"color": {
+			"background": true,
+			"text": true,
+			"gradients": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

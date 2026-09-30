@@ -1,0 +1,112 @@
+name: profchoicecore
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - wp-content/plugins/profchoicecore/**
+      - .github/workflows/profchoicecore.yml
+  pull_request:
+    paths:
+      - wp-content/plugins/profchoicecore/**
+      - .github/workflows/profchoicecore.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  PLUGIN_DIR: wp-content/plugins/profchoicecore
+  SLUG: profchoicecore
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: wp-content/plugins/profchoicecore
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: wp-content/plugins/profchoicecore/package-lock.json
+
+      - run: npm ci
+
+      - name: Check versions match
+        id: version
+        run: |
+          header=$(sed -n 's/^ \* Version:[[:space:]]*//p' "$SLUG.php" | tr -d '\r')
+          constant=$(sed -n "s/.*PROFCHOICECORE_VERSION', '\([^']*\)'.*/\1/p" "$SLUG.php")
+          package=$(node -p "require('./package.json').version")
+          stable=$(sed -n 's/^Stable tag:[[:space:]]*//p' readme.txt | tr -d '\r')
+          echo "header=$header constant=$constant package=$package stable=$stable"
+          test -n "$header" && test "$header" = "$constant" && test "$header" = "$package" && test "$header" = "$stable"
+          echo "version=$header" >> "$GITHUB_OUTPUT"
+
+      - run: npm run check-types
+      - run: npm run lint:js
+      - run: npm run lint:css
+      - run: npm test
+      - run: npm run build
+
+      - name: PHP syntax
+        run: find . -name '*.php' -not -path './node_modules/*' -print0 | xargs -0 -n1 php -l
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: wp-content/plugins/profchoicecore/build
+          if-no-files-found: error
+
+  release:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VERSION: ${{ needs.build.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Skip if already released
+        id: check
+        run: |
+          if gh release view "$SLUG.$VERSION" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/download-artifact@v4
+        if: steps.check.outputs.exists != 'true'
+        with:
+          name: build
+          path: build
+
+      - name: Package
+        if: steps.check.outputs.exists != 'true'
+        run: |
+          mkdir -p /tmp/pkg
+          # git archive skips ignored files, so the built assets are copied in.
+          git archive "HEAD:$PLUGIN_DIR" --prefix="$SLUG/" | tar -x -C /tmp/pkg
+          cp -r build "/tmp/pkg/$SLUG/build"
+          cd "/tmp/pkg/$SLUG"
+          while IFS= read -r entry; do
+            [ -n "$entry" ] && rm -rf -- "$entry"
+          done < .distignore
+          cd /tmp/pkg
+          zip -rq "$SLUG.$VERSION.zip" "$SLUG"
+          unzip -l "$SLUG.$VERSION.zip" | tail -n 3
+
+      - name: Publish release
+        if: steps.check.outputs.exists != 'true'
+        run: |
+          gh release create "$SLUG.$VERSION" "/tmp/pkg/$SLUG.$VERSION.zip" \
+            -R "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "$SLUG $VERSION" \
+            --notes "Built from $GITHUB_SHA."

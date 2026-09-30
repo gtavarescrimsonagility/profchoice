@@ -60,6 +60,20 @@
       "code": "<?php\nrequire '/wordpress/wp-load.php';\nrequire_once ABSPATH . 'wp-admin/includes/plugin.php';\nrequire_once ABSPATH . 'wp-admin/includes/theme.php';\nrequire_once ABSPATH . 'wp-admin/includes/file.php';\nWP_Filesystem();\n\ndelete_plugins( array_keys( get_plugins() ) );\n\nforeach ( array_keys( wp_get_themes() ) as $slug ) {\n\tif ( ! in_array( $slug, array( get_stylesheet(), get_template() ), true ) ) {\n\t\tdelete_theme( $slug );\n\t}\n}\n"
     },
     {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "url",
+        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoicecore.0.1.0/profchoicecore.0.1.0.zip"
+      },
+      "options": {
+        "activate": true
+      },
+      "ifAlreadyInstalled": "overwrite",
+      "progress": {
+        "caption": "Installing profchoicecore"
+      }
+    },
+    {
       "step": "importWxr",
       "file": {
         "resource": "url",
@@ -71,7 +85,7 @@
     },
     {
       "step": "runPHP",
-      "code": "<?php\nrequire '/wordpress/wp-load.php';\nrequire_once ABSPATH . 'wp-admin/includes/plugin.php';\nrequire_once ABSPATH . 'wp-admin/includes/file.php';\nglobal $wpdb;\n\n// importWxr installs wordpress-importer after the plugin cleanup; remove it too.\nWP_Filesystem();\ndelete_plugins( array_keys( get_plugins() ) );\n\n// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n// Update the rows directly: wp_update_post() without a logged-in user would\n// strip block custom CSS (style.css) through wp_strip_custom_css_from_blocks().\n$wpdb->query( $wpdb->prepare(\n\t\"UPDATE {$wpdb->posts} SET post_content = REPLACE( post_content, %s, %s )\",\n\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\twp_get_upload_dir()['baseurl'] . '/'\n) );\nwp_cache_flush();\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n"
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\nrequire_once ABSPATH . 'wp-admin/includes/plugin.php';\nrequire_once ABSPATH . 'wp-admin/includes/file.php';\nglobal $wpdb;\n\n// importWxr installs wordpress-importer after the plugin cleanup; remove only it.\nWP_Filesystem();\ndeactivate_plugins( 'wordpress-importer/wordpress-importer.php' );\ndelete_plugins( array( 'wordpress-importer/wordpress-importer.php' ) );\n\n// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n// Update the rows directly: wp_update_post() without a logged-in user would\n// strip block custom CSS (style.css) through wp_strip_custom_css_from_blocks().\n$wpdb->query( $wpdb->prepare(\n\t\"UPDATE {$wpdb->posts} SET post_content = REPLACE( post_content, %s, %s )\",\n\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\twp_get_upload_dir()['baseurl'] . '/'\n) );\nwp_cache_flush();\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n"
     }
   ]
 }

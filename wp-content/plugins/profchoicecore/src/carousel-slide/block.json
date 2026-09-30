@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/carousel-slide",
+	"version": "0.1.0",
+	"title": "Carousel Slide",
+	"category": "design",
+	"icon": "slides",
+	"description": "One slide of a carousel. Holds any blocks.",
+	"parent": [ "profchoice/carousel" ],
+	"textdomain": "profchoicecore",
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"anchor": true,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"padding": true
+		},
+		"layout": true
+	},
+	"editorScript": "file:./index.js"
+}

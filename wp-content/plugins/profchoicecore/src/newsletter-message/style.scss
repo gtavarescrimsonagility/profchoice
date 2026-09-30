@@ -1,0 +1,11 @@
+/**
+ * Messages take a full row of the form's flex layout when shown.
+ */
+:where(.wp-block-profchoice-newsletter-message) {
+	flex-basis: 100%;
+	box-sizing: border-box;
+}
+
+.wp-block-profchoice-newsletter-message[hidden] {
+	display: none !important;
+}

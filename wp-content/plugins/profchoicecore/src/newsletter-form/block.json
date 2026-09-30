@@ -1,0 +1,53 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/newsletter-form",
+	"version": "0.1.0",
+	"title": "Newsletter Form",
+	"category": "widgets",
+	"icon": "email-alt",
+	"description": "Newsletter signup: an email field, a submit button and success/error messages.",
+	"keywords": [ "newsletter", "signup", "subscribe", "email", "form" ],
+	"textdomain": "profchoicecore",
+	"allowedBlocks": [
+		"profchoice/newsletter-email",
+		"profchoice/newsletter-message",
+		"core/buttons",
+		"core/group",
+		"core/paragraph"
+	],
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": [ "wide", "full" ],
+		"color": {
+			"background": true,
+			"text": true,
+			"gradients": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"layout": {
+			"allowSwitching": false,
+			"allowInheriting": false,
+			"default": {
+				"type": "flex",
+				"flexWrap": "wrap"
+			}
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

@@ -10,3 +10,7 @@
 !/wp-content/themes/
 /wp-content/themes/*
 !/wp-content/themes/profchoice/
+!/wp-content/plugins/
+/wp-content/plugins/*
+!/wp-content/plugins/profchoicecore/
+!/.github/

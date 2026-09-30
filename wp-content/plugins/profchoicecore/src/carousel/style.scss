@@ -1,0 +1,129 @@
+/**
+ * Carousel.
+ *
+ * Structure and custom-property theming adapted from rtCamp/rt-carousel
+ * (GPL-2.0-or-later): styles/_core.scss, controls/style.scss, dots/style.scss.
+ * Base rules use :where() so block attributes and theme CSS always win.
+ */
+:where(.wp-block-profchoice-carousel) {
+	position: relative;
+}
+
+:where(.wp-block-profchoice-carousel) .pc-carousel__viewport {
+	overflow: hidden;
+}
+
+:where(.wp-block-profchoice-carousel) .pc-carousel__container {
+	display: flex;
+	touch-action: pan-y pinch-zoom;
+}
+
+:where(.wp-block-profchoice-carousel) .pc-carousel__container > .wp-block-profchoice-carousel-slide {
+	flex: 0 0 100%;
+	min-width: 0;
+	margin: 0;
+}
+
+// A slide is its own context: themes that pull the page's first full-width
+// block up (e.g. `.cbv-content .alignfull:first-child { margin-top: -32px }`)
+// must not shift slide content.
+.wp-block-profchoice-carousel .pc-carousel__container > .wp-block-profchoice-carousel-slide > :first-child {
+	margin-block-start: 0;
+}
+
+// Arrows: centred vertically on the carousel, one at each edge.
+.pc-carousel__arrows {
+	position: absolute;
+	top: var(--pc-carousel-arrows-top, 50%);
+	right: var(--pc-carousel-arrows-inset, 1rem);
+	left: var(--pc-carousel-arrows-inset, 1rem);
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.pc-carousel__arrow {
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
+	width: var(--pc-carousel-arrow-size, 3rem);
+	height: var(--pc-carousel-arrow-size, 3rem);
+	padding: 0;
+	border: var(--pc-carousel-arrow-border, 2px solid #fff);
+	border-radius: var(--pc-carousel-arrow-radius, 50%);
+	background: var(--pc-carousel-arrow-bg, transparent);
+	color: var(--pc-carousel-arrow-color, #fff);
+	cursor: pointer;
+	pointer-events: auto;
+	transition: opacity 0.2s ease;
+
+	svg {
+		width: var(--pc-carousel-arrow-icon-size, 17px);
+		height: var(--pc-carousel-arrow-icon-size, 17px);
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.35;
+	}
+}
+
+.pc-carousel__arrow--prev svg {
+	transform: scaleX(-1);
+}
+
+.pc-carousel__arrow--next {
+	background: var(--pc-carousel-arrow-next-bg, #fff);
+	color: var(--pc-carousel-arrow-next-color, #14161a);
+}
+
+// Dots: centred at the bottom of the carousel.
+.pc-carousel__dots {
+	position: absolute;
+	bottom: var(--pc-carousel-dots-bottom, 1rem);
+	left: var(--pc-carousel-dots-left, 50%);
+	z-index: 2;
+	display: flex;
+	gap: var(--pc-carousel-dots-gap, 8.8px);
+	align-items: center;
+	transform: var(--pc-carousel-dots-transform, translateX(-50%));
+}
+
+.pc-carousel__dot {
+	box-sizing: border-box;
+	width: var(--pc-carousel-dot-width, 12px);
+	height: var(--pc-carousel-dot-height, 8px);
+	padding: 0;
+	border: var(--pc-carousel-dot-border, 1px solid #fff);
+	border-radius: var(--pc-carousel-dot-radius, 5px);
+	background: var(--pc-carousel-dot-color, rgba(255, 255, 255, 0.55));
+	cursor: pointer;
+	transition: width 0.2s ease, background-color 0.2s ease;
+
+	&.is-active {
+		width: var(--pc-carousel-dot-active-width, 22px);
+		border-color: var(--pc-carousel-dot-active-color, #c32627);
+		border-radius: var(--pc-carousel-dot-active-radius, 4px);
+		background: var(--pc-carousel-dot-active-color, #c32627);
+	}
+}
+
+// Screen-reader-only live region.
+.pc-carousel__status {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.pc-carousel__arrow,
+	.pc-carousel__dot {
+		transition: none;
+	}
+}

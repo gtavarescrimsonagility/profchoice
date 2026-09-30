@@ -1,0 +1,36 @@
+{
+	"name": "profchoicecore",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Professional's Choice blocks: newsletter form and carousel.",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "wp-scripts build --blocks-manifest --experimental-modules",
+		"start": "wp-scripts start --blocks-manifest --experimental-modules",
+		"check-types": "tsc --noEmit",
+		"lint:js": "wp-scripts lint-js src tests",
+		"lint:css": "wp-scripts lint-style \"src/**/*.scss\"",
+		"test": "wp-scripts test-unit-js",
+		"format": "wp-scripts format src tests"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^18.0.0",
+		"@wordpress/blocks": "^16.1.0",
+		"@wordpress/components": "^41.0.0",
+		"@wordpress/data": "^10.56.0",
+		"@wordpress/element": "^8.8.0",
+		"@wordpress/i18n": "^6.29.0",
+		"@wordpress/interactivity": "^6.56.0",
+		"embla-carousel": "8.6.0",
+		"embla-carousel-autoplay": "8.6.0",
+		"embla-carousel-fade": "8.6.0"
+	},
+	"devDependencies": {
+		"@types/wordpress__block-editor": "^15.0.6",
+		"@types/wordpress__blocks": "^15.17.0",
+		"@wordpress/scripts": "^36.0.0",
+		"typescript": "^5.9.3",
+		"vite": "^8.3.1",
+		"vitest": "^5.0.2"
+	}
+}

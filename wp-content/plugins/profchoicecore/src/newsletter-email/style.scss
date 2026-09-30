@@ -1,0 +1,19 @@
+/**
+ * Email field defaults (zero specificity).
+ */
+:where(.wp-block-profchoice-newsletter-email) {
+	box-sizing: border-box;
+	flex: 1 1 12rem;
+	min-width: 0;
+	margin: 0;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	outline-offset: 2px;
+}
+
+.wp-block-profchoice-newsletter-email::placeholder {
+	color: var(--pc-newsletter-placeholder, #757575);
+	opacity: 1;
+}

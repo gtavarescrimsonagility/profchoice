@@ -1,0 +1,62 @@
+import { describe, expect, it, type Mock } from 'vitest';
+import { getContext } from '@wordpress/interactivity';
+import {
+	applyTransitionOverrides,
+	baseOptions,
+} from '../../src/carousel/embla-options';
+import { formatAnnouncement, state } from '../../src/carousel/view';
+
+const mockContext = ( context: Record< string, unknown > ) =>
+	( getContext as Mock ).mockReturnValue( context );
+
+describe( 'embla options', () => {
+	it( 'forces the fade requirements', () => {
+		const options = applyTransitionOverrides(
+			{ align: 'start', containScroll: 'trimSnaps', dragFree: true },
+			'fade'
+		);
+		expect( options ).toMatchObject( {
+			align: 'center',
+			containScroll: false,
+			dragFree: false,
+			slidesToScroll: 1,
+		} );
+	} );
+
+	it( 'leaves slide options alone', () => {
+		const options = { align: 'start' as const };
+		expect( applyTransitionOverrides( options, 'slide' ) ).toBe( options );
+	} );
+
+	it( 'uses the fastest duration for reduced motion', () => {
+		expect( baseOptions( true, true ).duration ).toBe( 20 );
+		expect( baseOptions( false, false ) ).toMatchObject( {
+			loop: false,
+			duration: 30,
+		} );
+	} );
+} );
+
+describe( 'carousel store', () => {
+	it( 'formats the announcement', () => {
+		expect(
+			formatAnnouncement(
+				'Slide {{currentSlide}} of {{totalSlides}}',
+				2,
+				4
+			)
+		).toBe( 'Slide 2 of 4' );
+	} );
+
+	it( 'marks the active slide and dot', () => {
+		mockContext( { selectedIndex: 1, index: 1, snap: 0 } );
+		expect( state.isSlideActive ).toBe( true );
+		expect( state.isDotActive ).toBe( false );
+	} );
+
+	it( 'exposes scroll availability', () => {
+		mockContext( { canScrollPrev: false, canScrollNext: true } );
+		expect( state.canPrev ).toBe( false );
+		expect( state.canNext ).toBe( true );
+	} );
+} );

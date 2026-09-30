@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/newsletter-email",
+	"version": "0.1.0",
+	"title": "Newsletter Email",
+	"category": "widgets",
+	"icon": "email",
+	"description": "The email field of a newsletter form.",
+	"ancestor": [ "profchoice/newsletter-form" ],
+	"textdomain": "profchoicecore",
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Email address"
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "your@email.com"
+		}
+	},
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalLetterSpacing": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}
