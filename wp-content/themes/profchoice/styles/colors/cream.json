@@ -1,0 +1,11 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+	"version": 3,
+	"title": "Cream",
+	"styles": {
+		"color": {
+			"background": "var:preset|color|cbv-surface",
+			"text": "var:preset|color|cbv-text"
+		}
+	}
+}

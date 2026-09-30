@@ -10,3 +10,8 @@ Requires PHP: 7.4
 License: Proprietary
 Text Domain: profchoice
 */
+
+/* Point the parent's body font token at the theme.json font preset. */
+:root {
+	--cbv-font: var(--wp--preset--font-family--montserrat);
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+	"version": 3,
+	"title": "Navy",
+	"styles": {
+		"color": {
+			"background": "var:preset|color|cbv-secondary",
+			"text": "var:preset|color|cbv-primary-contrast"
+		},
+		"elements": {
+			"heading": {
+				"color": {
+					"text": "var:preset|color|cbv-primary-contrast"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var:preset|color|cbv-accent"
+				}
+			}
+		}
+	}
+}
