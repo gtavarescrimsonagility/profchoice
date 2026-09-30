@@ -1,11 +1,6 @@
 /**
  * Editor styles for the state panels (src/shared/StatePanels.tsx).
  */
-.pc-state-panels__size {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 16px;
-}
 
 .pc-state-color__toggle {
 	display: flex;
@@ -20,4 +15,9 @@
 // Core colors the toggle through its color panel wrapper; match it here.
 .pc-state-color__button.components-button {
 	color: var(--wp-components-color-foreground, #1e1e1e);
+}
+
+// Half-width items, as in core's border/dimensions panels.
+.pc-state-panel .single-column {
+	grid-column: span 1;
 }

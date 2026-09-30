@@ -1,7 +1,8 @@
 /**
- * Carousel dots. Styles come from the block's Inactive/Active settings
- * (--pc-carousel-dot-{inactive|active}-* variables, see StatePanels); the gap
- * from the block spacing.
+ * Carousel dots. Styles come from the block's Default/Active settings
+ * (--pc-carousel-dot-{default|active}-* variables, see StatePanels); the
+ * active dot inherits every value it leaves empty. The gap comes from the
+ * block spacing.
  */
 .wp-block-profchoice-carousel-dots {
 	align-items: center;
@@ -17,30 +18,36 @@
 }
 
 .pc-carousel__dot {
+	--pc-dot-width: var(--pc-carousel-dot-default-width, 12px);
+	--pc-dot-height: var(--pc-carousel-dot-default-height, 8px);
+	--pc-dot-border-width: var(--pc-carousel-dot-default-border-width, 1px);
+	--pc-dot-border-style: var(--pc-carousel-dot-default-border-style, solid);
+	--pc-dot-border-color: var(--pc-carousel-dot-default-border-color, #fff);
+	--pc-dot-radius: var(--pc-carousel-dot-default-radius, 5px);
+	--pc-dot-background: var(--pc-carousel-dot-default-background, rgba(255, 255, 255, 0.55));
+
 	display: inline-block;
 	flex: none;
 	box-sizing: border-box;
-	width: var(--pc-carousel-dot-inactive-width, 12px);
-	height: var(--pc-carousel-dot-inactive-height, 8px);
+	width: var(--pc-dot-width);
+	height: var(--pc-dot-height);
 	padding: 0;
-	border-width: var(--pc-carousel-dot-inactive-border-width, 1px);
-	border-style: var(--pc-carousel-dot-inactive-border-style, solid);
-	border-color: var(--pc-carousel-dot-inactive-border-color, #fff);
-	border-radius: var(--pc-carousel-dot-inactive-radius, 5px);
-	background-color: var(--pc-carousel-dot-inactive-background, rgba(255, 255, 255, 0.55));
+	border-width: var(--pc-dot-border-width);
+	border-style: var(--pc-dot-border-style);
+	border-color: var(--pc-dot-border-color);
+	border-radius: var(--pc-dot-radius);
+	background-color: var(--pc-dot-background);
 	cursor: pointer;
-	transition:
-		width 0.2s ease,
-		background-color 0.2s ease;
+	transition: width 0.2s ease, background-color 0.2s ease;
 
 	&.is-active {
-		width: var(--pc-carousel-dot-active-width, 22px);
-		height: var(--pc-carousel-dot-active-height, 8px);
-		border-width: var(--pc-carousel-dot-active-border-width, 1px);
-		border-style: var(--pc-carousel-dot-active-border-style, solid);
-		border-color: var(--pc-carousel-dot-active-border-color, #c32627);
-		border-radius: var(--pc-carousel-dot-active-radius, 4px);
-		background-color: var(--pc-carousel-dot-active-background, #c32627);
+		width: var(--pc-carousel-dot-active-width, var(--pc-dot-width));
+		height: var(--pc-carousel-dot-active-height, var(--pc-dot-height));
+		border-width: var(--pc-carousel-dot-active-border-width, var(--pc-dot-border-width));
+		border-style: var(--pc-carousel-dot-active-border-style, var(--pc-dot-border-style));
+		border-color: var(--pc-carousel-dot-active-border-color, var(--pc-dot-border-color));
+		border-radius: var(--pc-carousel-dot-active-radius, var(--pc-dot-radius));
+		background-color: var(--pc-carousel-dot-active-background, var(--pc-dot-background));
 	}
 }
 

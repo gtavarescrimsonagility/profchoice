@@ -4,8 +4,10 @@
  *
  * The block's Active/Inactive control settings (--pc-carousel-arrow-{state}-*
  * plus a has-{state}-{property} class for each value set) override both
- * buttons while enabled/disabled. The active rules stay at low specificity
- * so the Button's own hover/focus/active states (also !important) still win.
+ * buttons. Active values apply always, so a disabled arrow inherits them;
+ * inactive values override them while disabled. The active rules stay at low
+ * specificity so the Button's own hover/focus/active states (also !important)
+ * still win.
  */
 .wp-block-profchoice-carousel-controls.is-overlay {
 	position: absolute;
@@ -66,7 +68,7 @@ $pc-arrow-properties: (
 
 @each $key, $property in $pc-arrow-properties {
 	:where(.pc-carousel__controls.has-active-#{$key} .pc-carousel__arrow)
-	.wp-block-button__link:not(:disabled) {
+	.wp-block-button__link {
 		#{$property}: var(--pc-carousel-arrow-active-#{$key}) !important;
 	}
 
@@ -83,7 +85,7 @@ $pc-arrow-properties: (
 	.pc-carousel__controls.has-active-height
 )
 .pc-carousel__arrow
-.wp-block-button__link:not(:disabled),
+.wp-block-button__link,
 .pc-carousel__controls:is(.has-inactive-width, .has-inactive-height)
 .pc-carousel__arrow
 .wp-block-button__link:disabled {

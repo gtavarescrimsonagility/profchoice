@@ -2,11 +2,11 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "profchoice/carousel-dots",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"title": "Carousel Dots",
 	"category": "design",
 	"icon": "ellipsis",
-	"description": "One dot per slide, with separate styles for the inactive and the active dot.",
+	"description": "One dot per slide. The Default style applies to every dot; the Active dot only overrides what differs.",
 	"ancestor": [ "profchoice/carousel" ],
 	"textdomain": "profchoicecore",
 	"attributes": {
@@ -14,7 +14,7 @@
 			"type": "boolean",
 			"default": true
 		},
-		"inactive": {
+		"default": {
 			"type": "object",
 			"default": {
 				"background": "rgba(255, 255, 255, 0.55)",
@@ -33,12 +33,9 @@
 			"default": {
 				"background": "#c32627",
 				"border": {
-					"color": "#c32627",
-					"style": "solid",
-					"width": "1px"
+					"color": "#c32627"
 				},
 				"width": "22px",
-				"height": "8px",
 				"radius": "4px"
 			}
 		}

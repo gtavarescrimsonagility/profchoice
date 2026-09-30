@@ -94,6 +94,9 @@ function StateColorItem( {
 } ) {
 	const { states, values, defaults, onChange } = props;
 	const value = ( state: string ) => values[ state ]?.[ property ];
+	// Later states inherit an empty color from the first one.
+	const shown = ( state: string ) =>
+		value( state ) ?? value( states[ 0 ].key );
 	const isSet = () =>
 		states.some(
 			( { key } ) => value( key ) !== defaults[ key ]?.[ property ]
@@ -135,7 +138,7 @@ function StateColorItem( {
 								{ states.map( ( { key } ) => (
 									<ColorIndicator
 										key={ key }
-										colorValue={ value( key ) }
+										colorValue={ shown( key ) }
 									/>
 								) ) }
 							</span>
@@ -181,9 +184,11 @@ function StateColorItem( {
 }
 
 /**
- * Style panels for a block with states (e.g. inactive/active dot): a Color
+ * Style panels for a block with states (e.g. default/active dot): a Color
  * panel with the states grouped per property, then one panel per state with
- * size, border (color, style and width together) and radius.
+ * size, border (color, style and width together), radius and opacity. The
+ * first state is the base: later states inherit whatever they leave empty
+ * (shown as placeholders), so only the differences are stored.
  * @param props
  */
 export default function StatePanels( props: Props ) {
@@ -253,59 +258,55 @@ export default function StatePanels( props: Props ) {
 					</div>
 				</ToolsPanel>
 			) }
-			{ states.map( ( { key, panel } ) => {
+			{ states.map( ( { key, panel }, index ) => {
 				const value = values[ key ] ?? {};
-				const sizeKeys: Array< keyof StateStyle > = [
-					'width',
-					'height',
-				];
+				// Later states inherit what they leave empty from the first one.
+				const base =
+					index > 0 ? ( values[ states[ 0 ].key ] ?? {} ) : {};
+				const unit = (
+					prop: 'width' | 'height' | 'radius',
+					label: string,
+					units?: Array< { value: string; label: string } >
+				) =>
+					has( prop === 'radius' ? 'radius' : 'size' ) && (
+						<ToolsPanelItem
+							key={ prop }
+							className="single-column"
+							label={ label }
+							hasValue={ differs( key, prop ) }
+							onDeselect={ reset( key, [ prop ] ) }
+							isShownByDefault
+						>
+							<UnitControl
+								__next40pxDefaultSize
+								label={ label }
+								units={ units }
+								placeholder={ base[ prop ] }
+								value={ value[ prop ] ?? '' }
+								onChange={ ( next?: string ) =>
+									set( key, { [ prop ]: next || undefined } )
+								}
+							/>
+						</ToolsPanelItem>
+					);
 				return (
 					<ToolsPanel
 						key={ key }
+						className="pc-state-panel"
 						label={ panel }
 						resetAll={ reset( key, [
-							...sizeKeys,
+							'width',
+							'height',
 							'border',
 							'radius',
 							'opacity',
 						] ) }
 					>
-						{ has( 'size' ) && (
-							<ToolsPanelItem
-								label={ __( 'Size', 'profchoicecore' ) }
-								hasValue={ () =>
-									sizeKeys.some( ( k ) =>
-										differs( key, k )()
-									)
-								}
-								onDeselect={ reset( key, sizeKeys ) }
-								isShownByDefault
-								className="pc-state-panels__size"
-							>
-								<UnitControl
-									__next40pxDefaultSize
-									label={ __( 'Width', 'profchoicecore' ) }
-									value={ value.width ?? '' }
-									onChange={ ( width?: string ) =>
-										set( key, {
-											width: width || undefined,
-										} )
-									}
-								/>
-								<UnitControl
-									__next40pxDefaultSize
-									label={ __( 'Height', 'profchoicecore' ) }
-									value={ value.height ?? '' }
-									onChange={ ( height?: string ) =>
-										set( key, {
-											height: height || undefined,
-										} )
-									}
-								/>
-							</ToolsPanelItem>
-						) }
+						{ unit( 'width', __( 'Width', 'profchoicecore' ) ) }
+						{ unit( 'height', __( 'Height', 'profchoicecore' ) ) }
 						{ has( 'border' ) && (
 							<ToolsPanelItem
+								className="single-column"
 								label={ __( 'Border', 'profchoicecore' ) }
 								hasValue={ differs( key, 'border' ) }
 								onDeselect={ reset( key, [ 'border' ] ) }
@@ -317,8 +318,8 @@ export default function StatePanels( props: Props ) {
 									colors={ palette }
 									enableAlpha
 									enableStyle
-									withSlider
 									__experimentalIsRenderedInSidebar
+									placeholder={ base.border?.width }
 									value={ value.border }
 									onChange={ ( border ) =>
 										set( key, {
@@ -328,31 +329,12 @@ export default function StatePanels( props: Props ) {
 								/>
 							</ToolsPanelItem>
 						) }
-						{ has( 'radius' ) && (
-							<ToolsPanelItem
-								label={ __( 'Radius', 'profchoicecore' ) }
-								hasValue={ differs( key, 'radius' ) }
-								onDeselect={ reset( key, [ 'radius' ] ) }
-								isShownByDefault
-							>
-								<UnitControl
-									__next40pxDefaultSize
-									label={ __( 'Radius', 'profchoicecore' ) }
-									units={ [
-										{ value: 'px', label: 'px' },
-										{ value: '%', label: '%' },
-										{ value: 'em', label: 'em' },
-										{ value: 'rem', label: 'rem' },
-									] }
-									value={ value.radius ?? '' }
-									onChange={ ( radius?: string ) =>
-										set( key, {
-											radius: radius || undefined,
-										} )
-									}
-								/>
-							</ToolsPanelItem>
-						) }
+						{ unit( 'radius', __( 'Radius', 'profchoicecore' ), [
+							{ value: 'px', label: 'px' },
+							{ value: '%', label: '%' },
+							{ value: 'em', label: 'em' },
+							{ value: 'rem', label: 'rem' },
+						] ) }
 						{ has( 'opacity' ) && (
 							<ToolsPanelItem
 								label={ __( 'Opacity', 'profchoicecore' ) }

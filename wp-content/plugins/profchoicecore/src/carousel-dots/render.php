@@ -13,12 +13,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// Values left empty fall back to the defaults in style.scss.
+// Empty active values inherit the default ones (see style.scss).
 $pc_states = ProfChoiceCore\StateStyle::props(
 	'carousel-dot',
 	array(
-		'inactive' => $attributes['inactive'] ?? array(),
-		'active'   => $attributes['active'] ?? array(),
+		'default' => $attributes['default'] ?? array(),
+		'active'  => $attributes['active'] ?? array(),
 	)
 );
 

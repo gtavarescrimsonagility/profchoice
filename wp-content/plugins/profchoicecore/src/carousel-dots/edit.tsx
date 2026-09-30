@@ -20,25 +20,25 @@ type EditorSelectors = {
 
 const STATES = [
 	{
-		key: 'inactive',
+		key: 'default',
 		tab: __( 'Default', 'profchoicecore' ),
-		panel: __( 'Inactive dot', 'profchoicecore' ),
+		panel: __( 'Default', 'profchoicecore' ),
 	},
 	{
 		key: 'active',
 		tab: __( 'Active', 'profchoicecore' ),
-		panel: __( 'Active dot', 'profchoicecore' ),
+		panel: __( 'Active', 'profchoicecore' ),
 	},
 ];
 
 const DEFAULTS = {
-	inactive: metadata.attributes.inactive.default as StateStyle,
+	default: metadata.attributes.default.default as StateStyle,
 	active: metadata.attributes.active.default as StateStyle,
 };
 
 /**
  * Preview with one dot per slide (the first one active) and panels to style
- * the inactive and the active dot.
+ * the default and the active dot.
  * @param root0
  * @param root0.attributes
  * @param root0.setAttributes
@@ -49,8 +49,12 @@ export default function Edit( {
 	setAttributes,
 	clientId,
 }: BlockEditProps< CarouselDotsAttributes > ) {
-	const { overlay, inactive, active } = attributes;
-	const stateProps = stateStyleProps( 'carousel-dot', { inactive, active } );
+	const { overlay, active } = attributes;
+	const base = attributes.default;
+	const stateProps = stateStyleProps( 'carousel-dot', {
+		default: base,
+		active,
+	} );
 
 	const count = useSelect(
 		( select ) => {
@@ -114,7 +118,7 @@ export default function Edit( {
 			</InspectorControls>
 			<StatePanels
 				states={ STATES }
-				values={ { inactive, active } }
+				values={ { default: base, active } }
 				defaults={ DEFAULTS }
 				features={ [ 'background', 'border', 'radius', 'size' ] }
 				onChange={ ( state, value ) =>
