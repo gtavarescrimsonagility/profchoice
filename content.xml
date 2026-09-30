@@ -783,7 +783,7 @@
 	}
 	/* The dots block sets its dot sizes inline; mobile inactive dots are narrower. */
 	.certified-carousel .wp-block-profchoice-carousel-dots {
-		--pc-carousel-dot-inactive-width: 10px !important;
+		--pc-carousel-dot-default-width: 10px !important;
 	}
 }
 @media (width <= 30rem) {
