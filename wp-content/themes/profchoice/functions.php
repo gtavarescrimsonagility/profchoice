@@ -56,6 +56,55 @@ add_action(
 	20
 );
 
+/*
+ * Let Global Styles (theme.json + Site Editor edits) win over the parent's
+ * main.css, like in a block theme: print them after cbv-main. Otherwise
+ * main.css redefines body color/background/font with the same specificity
+ * and every Styles panel change is saved but invisible.
+ *
+ * Since WP 6.9 classic themes print global styles in the footer and hoist
+ * them into the <head> at the position of 'wp-global-styles-placeholder',
+ * so that handle (or 'global-styles' when hoisting is off) gets the dependency.
+ */
+add_action(
+	'wp_enqueue_scripts',
+	function () {
+		$styles = wp_styles();
+		foreach ( array( 'wp-global-styles-placeholder', 'global-styles' ) as $handle ) {
+			if ( isset( $styles->registered[ $handle ], $styles->registered['cbv-main'] ) ) {
+				$styles->registered[ $handle ]->deps[] = 'cbv-main';
+			}
+		}
+	},
+	20
+);
+
+/*
+ * The parent paints `.editor-styles-wrapper { background-color; color }` in
+ * every editor canvas so Block Areas match the site chrome. Outside Block
+ * Areas it overrides Global Styles in the editor, so keep it only there.
+ */
+add_filter(
+	'block_editor_settings_all',
+	function ( $settings, $context ) {
+		$post = isset( $context->post ) ? $context->post : null;
+		if ( ( $post instanceof WP_Post && 'cbv_area' === $post->post_type ) || empty( $settings['styles'] ) ) {
+			return $settings;
+		}
+		$settings['styles'] = array_values(
+			array_filter(
+				$settings['styles'],
+				function ( $style ) {
+					return ! isset( $style['css'] ) || 0 !== strpos( $style['css'], '.editor-styles-wrapper{background-color:' );
+				}
+			)
+		);
+		return $settings;
+	},
+	30,
+	2
+);
+
 add_action(
 	'wp_enqueue_scripts',
 	function () {
