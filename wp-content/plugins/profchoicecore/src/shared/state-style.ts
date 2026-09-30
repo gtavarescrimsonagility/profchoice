@@ -77,6 +77,18 @@ const flatten = ( style: StateStyle ): Record< string, string | undefined > => {
 };
 
 /**
+ * Turns a preset reference saved by the editor controls
+ * (`var:preset|dimension|12`) into its CSS custom property.
+ *
+ * @param css CSS value or preset reference.
+ * @return CSS value.
+ */
+export const resolvePreset = ( css: string ): string => {
+	const match = /^var:preset\|([a-z0-9-]+)\|([a-z0-9-]+)$/i.exec( css );
+	return match ? `var(--wp--preset--${ match[ 1 ] }--${ match[ 2 ] })` : css;
+};
+
+/**
  * CSS custom properties and modifier classes for a set of states.
  *
  * Each set value becomes `--pc-{prefix}-{state}-{property}` plus a
@@ -100,7 +112,8 @@ export const stateStyleProps = (
 			flatten( value ?? {} )
 		) ) {
 			if ( css !== undefined && css !== '' ) {
-				style[ `--pc-${ prefix }-${ state }-${ property }` ] = css;
+				style[ `--pc-${ prefix }-${ state }-${ property }` ] =
+					resolvePreset( css );
 				classes.push( `has-${ state }-${ property }` );
 			}
 		}

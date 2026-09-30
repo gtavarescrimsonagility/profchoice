@@ -13,8 +13,6 @@ import {
 	__experimentalToolsPanel as ToolsPanel,
 	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis -- see ToolsPanel.
 	__experimentalToolsPanelItem as ToolsPanelItem,
-	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis -- the unit control used by core's dimension panels; no stable export yet.
-	__experimentalUnitControl as UnitControl,
 	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis -- the padding wrapper used by core's color dropdowns.
 	__experimentalDropdownContentWrapper as DropdownContentWrapper,
 } from '@wordpress/components';
@@ -40,6 +38,21 @@ const BorderRadiusControl = (
 		} >;
 	}
  ).__experimentalBorderRadiusControl;
+
+/*
+ * Core's width/height control (preset slider with a custom value toggle), as
+ * in the Button block's Width. Not typed by @wordpress/block-editor.
+ */
+const DimensionControl = (
+	blockEditor as unknown as {
+		DimensionControl: ComponentType< {
+			label: string;
+			value?: string;
+			placeholder?: string;
+			onChange: ( value?: string ) => void;
+		} >;
+	}
+ ).DimensionControl;
 
 export type StateDefinition = {
 	/** Attribute name, e.g. `active`. */
@@ -252,11 +265,10 @@ export default function StatePanels( props: Props ) {
 					item(
 						prop,
 						label,
-						<UnitControl
-							__next40pxDefaultSize
+						<DimensionControl
 							label={ label }
 							placeholder={ base[ prop ] }
-							value={ value[ prop ] ?? '' }
+							value={ value[ prop ] }
 							onChange={ ( next?: string ) =>
 								set( key, { [ prop ]: next || undefined } )
 							}

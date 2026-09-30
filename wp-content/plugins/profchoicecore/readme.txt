@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.5.0
+Stable tag: 0.6.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,10 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.6.0 =
+* Width and Height use core's DimensionControl, as the Button block's Width: a slider over size presets with a toggle to a custom value.
+* Default size presets for the dots (6-32px) and arrows (32-64px), registered like core's button presets under settings.blocks and overridable in a theme's theme.json.
 
 = 0.5.0 =
 * State panels follow the WordPress 7.1 block panels: boxed color items inside each state panel (no grouped Color panel), stacked Width/Height that can be toggled from the panel menu, the core Border control (slider, unlink sides) and Radius control (slider, presets, unlink corners).

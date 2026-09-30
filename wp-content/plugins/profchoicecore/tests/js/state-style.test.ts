@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { stateStyleProps } from '../../src/shared/state-style';
+import { resolvePreset, stateStyleProps } from '../../src/shared/state-style';
 
 describe( 'stateStyleProps', () => {
 	it( 'maps set values to variables and has-* classes', () => {
@@ -54,5 +54,12 @@ describe( 'stateStyleProps', () => {
 				inactive: undefined,
 			} )
 		).toEqual( { style: {}, className: '' } );
+	} );
+
+	it( 'resolves preset references to CSS variables', () => {
+		expect( resolvePreset( 'var:preset|dimension|22' ) ).toBe(
+			'var(--wp--preset--dimension--22)'
+		);
+		expect( resolvePreset( '12px' ) ).toBe( '12px' );
 	} );
 } );

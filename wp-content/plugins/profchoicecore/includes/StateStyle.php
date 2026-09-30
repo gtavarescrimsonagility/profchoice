@@ -73,7 +73,7 @@ final class StateStyle {
 			}
 
 			foreach ( $flat as $property => $css ) {
-				$css = is_scalar( $css ) ? trim( (string) $css ) : '';
+				$css = self::resolve_preset( is_scalar( $css ) ? trim( (string) $css ) : '' );
 				if ( self::is_safe( $css ) ) {
 					$style    .= sprintf( '--pc-%s-%s-%s:%s;', $prefix, sanitize_key( $state ), $property, $css );
 					$classes[] = sprintf( 'has-%s-%s', sanitize_key( $state ), $property );
@@ -108,6 +108,20 @@ final class StateStyle {
 		$style = (string) $tags->get_attribute( 'style' );
 		$tags->set_attribute( 'style', $css . $style );
 		return $tags->get_updated_html();
+	}
+
+	/**
+	 * Turns a preset reference saved by the editor controls
+	 * (`var:preset|dimension|12`) into its CSS custom property.
+	 *
+	 * @param string $css CSS value or preset reference.
+	 * @return string
+	 */
+	private static function resolve_preset( $css ) {
+		if ( preg_match( '/^var:preset\|([a-z0-9-]+)\|([a-z0-9-]+)$/i', $css, $matches ) ) {
+			return sprintf( 'var(--wp--preset--%s--%s)', _wp_to_kebab_case( $matches[1] ), _wp_to_kebab_case( $matches[2] ) );
+		}
+		return $css;
 	}
 
 	/**
