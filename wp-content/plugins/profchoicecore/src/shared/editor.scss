@@ -19,3 +19,13 @@
 .pc-state-color__button .block-editor-panel-color-gradient-settings__color-name {
 	max-width: none;
 }
+
+// Overlapping state indicators, as core's Elements > Link (Default / Hover).
+.pc-state-color__toggle .block-editor-panel-color-gradient-settings__color-indicators {
+	display: flex;
+	flex-shrink: 0;
+
+	> * + * {
+		margin-inline-start: -8px;
+	}
+}

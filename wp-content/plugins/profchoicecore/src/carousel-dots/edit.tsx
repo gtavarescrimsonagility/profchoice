@@ -106,7 +106,7 @@ export default function Edit( {
 						__nextHasNoMarginBottom
 						label={ __( 'Overlay the slides', 'profchoicecore' ) }
 						help={ __(
-							'Centred at the bottom of the carousel. Adjust with --pc-carousel-dots-bottom.',
+							'Along the bottom of the carousel, placed by the justification and the padding (1rem top and bottom by default).',
 							'profchoicecore'
 						) }
 						checked={ overlay }

@@ -18,13 +18,25 @@ $pc-corners: top-left, top-right, bottom-right, bottom-left;
 	align-items: center;
 }
 
+// Overlay: a full-width strip at the bottom of the carousel. The block's
+// justification places the dots; its padding (1rem block by default) moves
+// them, e.g. a larger padding-bottom lifts them up.
 .wp-block-profchoice-carousel-dots.is-overlay {
 	position: absolute;
-	bottom: var(--pc-carousel-dots-bottom, 1rem);
-	left: var(--pc-carousel-dots-left, 50%);
+	right: 0;
+	bottom: 0;
+	left: 0;
 	z-index: 2;
 	margin: 0;
-	transform: var(--pc-carousel-dots-transform, translateX(-50%));
+	pointer-events: none;
+
+	.pc-carousel__dot {
+		pointer-events: auto;
+	}
+}
+
+:where(.wp-block-profchoice-carousel-dots.is-overlay) {
+	padding-block: 1rem;
 }
 
 .pc-carousel__dot {

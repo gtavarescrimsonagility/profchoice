@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.7.0
+Stable tag: 0.8.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Blocks for Professional's Choice: newsletter form and carousel.
 Blocks (namespace `profchoice/`):
 
 * **Newsletter Form** (`profchoice/newsletter-form`) with **Newsletter Email** and **Newsletter Message** (success/error) children. Submits through the Interactivity API to `POST /wp-json/profchoicecore/v1/subscribe`, and works without JavaScript through `admin-post.php`. Each email becomes a `subscriber` user (existing accounts keep their role) and a private "Subscribers" entry, exportable as CSV from the Subscribers screen. Protected by a honeypot field and a per-IP rate limit; it sends no email.
-* **Carousel** (`profchoice/carousel`) with **Carousel Slide**, **Carousel Arrows** and **Carousel Dots** children. Fade or slide transitions (Embla), keyboard navigation, inactive slides made inert, and reduced-motion support. The arrows are two Button blocks, so they take every button style including the Hover/Focus/Active states; the Active/Inactive control settings style both arrows while enabled and disabled (e.g. at the ends when the carousel does not loop). The dots have Default and Active settings. In both blocks the second state inherits whatever it leaves empty from the first, so only the differences are set. Both can overlay the slides (positioned with `--pc-carousel-arrows-*` / `--pc-carousel-dots-*`) or sit in the flow.
+* **Carousel** (`profchoice/carousel`) with **Carousel Slide**, **Carousel Arrows** and **Carousel Dots** children. Fade or slide transitions (Embla), keyboard navigation, inactive slides made inert, and reduced-motion support. The arrows are two Button blocks, so they take every button style including the Hover/Focus/Active states; the Active/Inactive control settings style both arrows while enabled and disabled (e.g. at the ends when the carousel does not loop). The dots have Default and Active settings. In both blocks the second state inherits whatever it leaves empty from the first, so only the differences are set. Both can overlay the slides (arrows positioned with `--pc-carousel-arrows-*`; overlay dots are a full-width strip at the bottom, placed by the block's justification and padding) or sit in the flow.
 
 Hooks:
 
@@ -34,6 +34,10 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.8.0 =
+* Overlay dots: a full-width strip at the bottom of the carousel (bottom: 0) with 1rem block padding by default. Place them with the block's justification and padding (e.g. a larger bottom padding lifts them); the --pc-carousel-dots-bottom/left/transform variables are gone.
+* State color indicators overlap as in core's Elements > Link.
 
 = 0.7.0 =
 * Colors are grouped again in a Color panel, each color with a tab per state (Background: Default / Active on the dots; Background and Icon: Active / Inactive on the arrows), as core's Elements > Link (Default / Hover).
