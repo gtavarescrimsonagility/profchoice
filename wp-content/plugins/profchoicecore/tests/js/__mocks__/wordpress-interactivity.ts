@@ -9,3 +9,4 @@ import { vi } from 'vitest';
 export const store = vi.fn( ( _namespace: string, config: unknown ) => config );
 export const getContext = vi.fn( () => ( {} ) );
 export const getElement = vi.fn( () => ( { ref: null } ) );
+export const withScope = vi.fn( < T >( callback: T ) => callback );

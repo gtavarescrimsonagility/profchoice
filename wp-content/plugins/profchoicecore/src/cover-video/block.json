@@ -1,0 +1,65 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/cover-video",
+	"version": "0.10.0",
+	"title": "Cover Video",
+	"category": "media",
+	"icon": "format-video",
+	"description": "A cover with a background video that starts on its poster and plays (muted) from a Play button, which fades out while the video plays.",
+	"keywords": [ "cover", "video", "hero", "play" ],
+	"textdomain": "profchoicecore",
+	"attributes": {
+		"videoId": {
+			"type": "number"
+		},
+		"videoUrl": {
+			"type": "string"
+		},
+		"posterId": {
+			"type": "number"
+		},
+		"posterUrl": {
+			"type": "string"
+		},
+		"focalPoint": {
+			"type": "object"
+		},
+		"dimRatio": {
+			"type": "number",
+			"default": 0
+		},
+		"overlayColor": {
+			"type": "string"
+		},
+		"loop": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": [ "wide", "full" ],
+		"color": {
+			"background": false,
+			"text": true
+		},
+		"dimensions": {
+			"minHeight": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

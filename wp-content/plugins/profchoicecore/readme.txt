@@ -3,11 +3,11 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.9.0
+Stable tag: 0.10.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Blocks for Professional's Choice: newsletter form and carousel.
+Blocks for Professional's Choice: newsletter form, carousel and cover video.
 
 == Description ==
 
@@ -15,6 +15,7 @@ Blocks (namespace `profchoice/`):
 
 * **Newsletter Form** (`profchoice/newsletter-form`) with **Newsletter Email** and **Newsletter Message** (success/error) children. Submits through the Interactivity API to `POST /wp-json/profchoicecore/v1/subscribe`, and works without JavaScript through `admin-post.php`. Each email becomes a `subscriber` user (existing accounts keep their role) and a private "Subscribers" entry, exportable as CSV from the Subscribers screen. Protected by a honeypot field and a per-IP rate limit; it sends no email.
 * **Carousel** (`profchoice/carousel`) with **Carousel Slide**, **Carousel Arrows** and **Carousel Dots** children. Fade or slide transitions (Embla), keyboard navigation, inactive slides made inert, and reduced-motion support. The arrows are two Button blocks, so they take every button style including the Hover/Focus/Active states; the Active/Inactive control settings style both arrows while enabled and disabled (e.g. at the ends when the carousel does not loop). The dots have Default and Active settings. In both blocks the second state inherits whatever it leaves empty from the first, so only the differences are set. Both can overlay the slides (arrows positioned with `--pc-carousel-arrows-*`; overlay dots are a full-width strip at the bottom, placed by the block's justification and padding) or sit in the flow.
+* **Cover Video** (`profchoice/cover-video`): a cover whose background video starts on its poster and plays muted (looping) from a Play button. The button is a Button block with every button style; it fades out while the video plays and shows again on keyboard focus.
 
 Hooks:
 
@@ -34,6 +35,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.10.0 =
+* Cover Video block: poster-first background video with a Play/Pause Button block that fades out while playing.
 
 = 0.9.0 =
 * The dot and arrow state settings store nothing by default: the defaults live in the stylesheet (the active dot's red, 22px width and 4px radius; the disabled arrow's 0.35 opacity) and the settings only hold overrides. Reset clears them.
