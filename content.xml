@@ -775,10 +775,10 @@
 	.certified .wp-block-button {
 		width: 100%;
 	}
-	/* The dots block sets its dot sizes inline; mobile inactive dots are narrower. */
+	/* Mobile dots sit at the left and are narrower. */
 	.certified-carousel .wp-block-profchoice-carousel-dots {
 		justify-content: flex-start;
-		--pc-carousel-dot-default-width: 10px !important;
+		--pc-carousel-dot-default-width: 10px;
 	}
 }
 @media (width <= 30rem) {
