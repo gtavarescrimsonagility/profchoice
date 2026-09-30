@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.6.0
+Stable tag: 0.7.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.7.0 =
+* Colors are grouped again in a Color panel, each color with a tab per state (Background: Default / Active on the dots; Background and Icon: Active / Inactive on the arrows), as core's Elements > Link (Default / Hover).
 
 = 0.6.0 =
 * Width and Height use core's DimensionControl, as the Button block's Width: a slider over size presets with a toggle to a custom value.

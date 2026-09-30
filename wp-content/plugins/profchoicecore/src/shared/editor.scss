@@ -19,9 +19,3 @@
 .pc-state-color__button .block-editor-panel-color-gradient-settings__color-name {
 	max-width: none;
 }
-
-// Each color is its own box (core only borders the first of a joined group).
-.pc-state-panel .block-editor-color-gradient-item {
-	border-top: 1px solid #ddd;
-	border-radius: 2px;
-}
