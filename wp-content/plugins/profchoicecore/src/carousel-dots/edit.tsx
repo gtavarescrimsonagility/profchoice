@@ -1,27 +1,40 @@
 import { __ } from '@wordpress/i18n';
 import {
 	InspectorControls,
-	PanelColorSettings,
 	useBlockProps,
 	store as blockEditorStore,
 } from '@wordpress/block-editor';
-import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
+import { PanelBody, ToggleControl } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import type { BlockEditProps } from '@wordpress/blocks';
-import type { CarouselDotsAttributes, DotStyle } from './types';
-import { dotVars } from './vars';
+import metadata from './block.json';
+import StatePanels from '../shared/StatePanels';
+import { stateStyleProps, type StateStyle } from '../shared/state-style';
+import type { CarouselDotsAttributes } from './types';
+import '../shared/editor.scss';
 
 type EditorSelectors = {
 	getBlockParentsByBlockName: ( clientId: string, name: string ) => string[];
 	getBlocks: ( clientId: string ) => Array< { name: string } >;
 };
 
-const SIZES: Array< [ keyof DotStyle, string ] > = [
-	[ 'width', __( 'Width', 'profchoicecore' ) ],
-	[ 'height', __( 'Height', 'profchoicecore' ) ],
-	[ 'radius', __( 'Radius', 'profchoicecore' ) ],
-	[ 'borderWidth', __( 'Border width', 'profchoicecore' ) ],
+const STATES = [
+	{
+		key: 'inactive',
+		tab: __( 'Default', 'profchoicecore' ),
+		panel: __( 'Inactive dot', 'profchoicecore' ),
+	},
+	{
+		key: 'active',
+		tab: __( 'Active', 'profchoicecore' ),
+		panel: __( 'Active dot', 'profchoicecore' ),
+	},
 ];
+
+const DEFAULTS = {
+	inactive: metadata.attributes.inactive.default as StateStyle,
+	active: metadata.attributes.active.default as StateStyle,
+};
 
 /**
  * Preview with one dot per slide (the first one active) and panels to style
@@ -37,6 +50,7 @@ export default function Edit( {
 	clientId,
 }: BlockEditProps< CarouselDotsAttributes > ) {
 	const { overlay, inactive, active } = attributes;
+	const stateProps = stateStyleProps( 'carousel-dot', { inactive, active } );
 
 	const count = useSelect(
 		( select ) => {
@@ -71,7 +85,7 @@ export default function Edit( {
 	const blockProps = useBlockProps( {
 		className: `pc-carousel__dots${ overlay ? ' is-overlay' : '' }`,
 		style: {
-			...dotVars( attributes ),
+			...stateProps.style,
 			display: 'flex',
 			alignItems: 'center',
 			gap: style?.spacing?.blockGap ?? '0.5em',
@@ -79,32 +93,6 @@ export default function Edit( {
 				justify[ layout?.justifyContent ?? 'center' ] ?? 'center',
 		},
 	} );
-
-	const update =
-		( state: 'inactive' | 'active', key: keyof DotStyle ) =>
-		( value?: string ) =>
-			setAttributes( {
-				[ state ]: { ...attributes[ state ], [ key ]: value ?? '' },
-			} as Partial< CarouselDotsAttributes > );
-
-	const sizePanel = ( state: 'inactive' | 'active', title: string ) => (
-		<PanelBody title={ title } initialOpen={ false }>
-			{ SIZES.map( ( [ key, label ] ) => (
-				<TextControl
-					key={ key }
-					__nextHasNoMarginBottom
-					__next40pxDefaultSize
-					label={ label }
-					help={ __(
-						'Any CSS length, e.g. 12px or 0.5rem.',
-						'profchoicecore'
-					) }
-					value={ attributes[ state ][ key ] }
-					onChange={ update( state, key ) }
-				/>
-			) ) }
-		</PanelBody>
-	);
 
 	return (
 		<>
@@ -124,48 +112,22 @@ export default function Edit( {
 					/>
 				</PanelBody>
 			</InspectorControls>
-			<InspectorControls group="styles">
-				<PanelColorSettings
-					title={ __( 'Dot colors', 'profchoicecore' ) }
-					enableAlpha
-					colorSettings={ [
-						{
-							label: __( 'Inactive', 'profchoicecore' ),
-							value: inactive.color,
-							onChange: update( 'inactive', 'color' ),
-						},
-						{
-							label: __( 'Inactive border', 'profchoicecore' ),
-							value: inactive.borderColor,
-							onChange: update( 'inactive', 'borderColor' ),
-						},
-						{
-							label: __( 'Active', 'profchoicecore' ),
-							value: active.color,
-							onChange: update( 'active', 'color' ),
-						},
-						{
-							label: __( 'Active border', 'profchoicecore' ),
-							value: active.borderColor,
-							onChange: update( 'active', 'borderColor' ),
-						},
-					] }
-				/>
-				{ sizePanel(
-					'inactive',
-					__( 'Inactive dot', 'profchoicecore' )
-				) }
-				{ sizePanel( 'active', __( 'Active dot', 'profchoicecore' ) ) }
-			</InspectorControls>
+			<StatePanels
+				states={ STATES }
+				values={ { inactive, active } }
+				defaults={ DEFAULTS }
+				features={ [ 'background', 'border', 'radius', 'size' ] }
+				onChange={ ( state, value ) =>
+					setAttributes( { [ state ]: value } )
+				}
+			/>
 			<div { ...blockProps }>
 				{ Array.from(
 					{ length: Math.max( count, 1 ) },
 					( _, index ) => (
 						<span
 							key={ index }
-							className={ `pc-carousel__dot${
-								index === 0 ? ' is-active' : ''
-							}` }
+							className={ `pc-carousel__dot${ index === 0 ? ' is-active' : '' }` }
 						/>
 					)
 				) }

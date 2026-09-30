@@ -1,15 +1,8 @@
-export type DotStyle = {
-	color: string;
-	borderColor: string;
-	borderWidth: string;
-	width: string;
-	height: string;
-	radius: string;
-};
+import type { StateStyle } from '../shared/state-style';
 
 export type CarouselDotsAttributes = {
 	overlay: boolean;
-	inactive: DotStyle;
-	active: DotStyle;
+	inactive: StateStyle;
+	active: StateStyle;
 	[ key: string ]: unknown;
 };

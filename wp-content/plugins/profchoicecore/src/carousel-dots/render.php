@@ -13,40 +13,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$pc_style = static function ( $state ) use ( $attributes ) {
-	$defaults = WP_Block_Type_Registry::get_instance()->get_registered( 'profchoice/carousel-dots' )->attributes[ $state ]['default'];
-	return wp_parse_args( isset( $attributes[ $state ] ) ? (array) $attributes[ $state ] : array(), $defaults );
-};
-$pc_inactive = $pc_style( 'inactive' );
-$pc_active   = $pc_style( 'active' );
-
-// Keep in sync with vars.ts.
-$pc_vars = array(
-	'--pc-carousel-dot-color'         => $pc_inactive['color'],
-	'--pc-carousel-dot-border'        => $pc_inactive['borderWidth'] . ' solid ' . $pc_inactive['borderColor'],
-	'--pc-carousel-dot-width'         => $pc_inactive['width'],
-	'--pc-carousel-dot-height'        => $pc_inactive['height'],
-	'--pc-carousel-dot-radius'        => $pc_inactive['radius'],
-	'--pc-carousel-dot-active-color'  => $pc_active['color'],
-	'--pc-carousel-dot-active-border' => $pc_active['borderWidth'] . ' solid ' . $pc_active['borderColor'],
-	'--pc-carousel-dot-active-width'  => $pc_active['width'],
-	'--pc-carousel-dot-active-height' => $pc_active['height'],
-	'--pc-carousel-dot-active-radius' => $pc_active['radius'],
+// Values left empty fall back to the defaults in style.scss.
+$pc_states = ProfChoiceCore\StateStyle::props(
+	'carousel-dot',
+	array(
+		'inactive' => $attributes['inactive'] ?? array(),
+		'active'   => $attributes['active'] ?? array(),
+	)
 );
-$pc_css  = '';
-foreach ( $pc_vars as $pc_name => $pc_value ) {
-	// Values end up in a style attribute: reject anything that could break out.
-	if ( '' !== trim( $pc_value ) && ! preg_match( '/[;{}<>"\'\\\\]|url\s*\(|expression/i', $pc_value ) ) {
-		$pc_css .= $pc_name . ':' . $pc_value . ';';
-	}
-}
 
 $pc_wrapper = get_block_wrapper_attributes(
 	array(
 		'class' => 'pc-carousel__dots' . ( ! empty( $attributes['overlay'] ) ? ' is-overlay' : '' ),
-		'style' => $pc_css,
 	)
 );
+ob_start();
 ?>
 <div <?php echo $pc_wrapper; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 	<template data-wp-each--snap="context.snaps">
@@ -60,3 +41,5 @@ $pc_wrapper = get_block_wrapper_attributes(
 		></button>
 	</template>
 </div>
+<?php
+echo ProfChoiceCore\StateStyle::apply( (string) ob_get_clean(), $pc_states['style'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

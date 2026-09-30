@@ -2,17 +2,27 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "profchoice/carousel-controls",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"title": "Carousel Arrows",
 	"category": "design",
 	"icon": "leftright",
-	"description": "Previous and next buttons of a carousel. Each arrow is a Button block, so it has the button's styles and hover/focus/active states.",
+	"description": "Previous and next buttons of a carousel. Each arrow is a Button block (styles and hover/focus/active states); the Active/Inactive control settings style both arrows when enabled and when disabled.",
 	"ancestor": [ "profchoice/carousel" ],
 	"textdomain": "profchoicecore",
 	"attributes": {
 		"overlay": {
 			"type": "boolean",
 			"default": true
+		},
+		"active": {
+			"type": "object",
+			"default": {}
+		},
+		"inactive": {
+			"type": "object",
+			"default": {
+				"opacity": "0.35"
+			}
 		}
 	},
 	"supports": {
@@ -25,6 +35,7 @@
 		"interactivity": true
 	},
 	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
 	"render": "file:./render.php"
 }

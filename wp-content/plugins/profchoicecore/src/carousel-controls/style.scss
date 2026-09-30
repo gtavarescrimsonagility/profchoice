@@ -1,6 +1,11 @@
 /**
  * Carousel arrows. Colors, border, radius and padding come from each Button
  * block; the arrow icon follows the button's text color (currentcolor).
+ *
+ * The block's Active/Inactive control settings (--pc-carousel-arrow-{state}-*
+ * plus a has-{state}-{property} class for each value set) override both
+ * buttons while enabled/disabled. The active rules stay at low specificity
+ * so the Button's own hover/focus/active states (also !important) still win.
  */
 .wp-block-profchoice-carousel-controls.is-overlay {
 	position: absolute;
@@ -36,13 +41,53 @@
 		width: var(--pc-carousel-arrow-icon-size, 17px);
 		height: var(--pc-carousel-arrow-icon-size, 17px);
 		background-color: currentcolor;
-		mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M12.576 4.847a.95.95 0 0 0 0 1.339l4.867 4.867H4.27a.95.95 0 0 0-.949.945.95.95 0 0 0 .949.949h13.173l-4.867 4.867a.95.95 0 0 0 0 1.34.95.95 0 0 0 1.342 0l6.484-6.485a.95.95 0 0 0 0-1.338l-6.484-6.484a.95.95 0 0 0-1.342 0'/%3e%3c/svg%3e") center / contain no-repeat;
+		mask:
+			url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M12.576 4.847a.95.95 0 0 0 0 1.339l4.867 4.867H4.27a.95.95 0 0 0-.949.945.95.95 0 0 0 .949.949h13.173l-4.867 4.867a.95.95 0 0 0 0 1.34.95.95 0 0 0 1.342 0l6.484-6.485a.95.95 0 0 0 0-1.338l-6.484-6.484a.95.95 0 0 0-1.342 0'/%3e%3c/svg%3e")
+			center / contain no-repeat;
 	}
 
 	&:disabled {
 		cursor: not-allowed;
-		opacity: 0.35;
+		opacity: var(--pc-carousel-arrow-inactive-opacity, 0.35);
 	}
+}
+
+$pc-arrow-properties: (
+	background: background-color,
+	color: color,
+	border-color: border-color,
+	border-style: border-style,
+	border-width: border-width,
+	radius: border-radius,
+	width: width,
+	height: height,
+	opacity: opacity,
+);
+
+@each $key, $property in $pc-arrow-properties {
+	:where(.pc-carousel__controls.has-active-#{$key} .pc-carousel__arrow)
+	.wp-block-button__link:not(:disabled) {
+		#{$property}: var(--pc-carousel-arrow-active-#{$key}) !important;
+	}
+
+	.pc-carousel__controls.has-inactive-#{$key}
+	.pc-carousel__arrow
+	.wp-block-button__link:disabled {
+		#{$property}: var(--pc-carousel-arrow-inactive-#{$key}) !important;
+	}
+}
+
+// A set size is the whole button: drop the padding that sizes it otherwise.
+:where(
+	.pc-carousel__controls.has-active-width,
+	.pc-carousel__controls.has-active-height
+)
+.pc-carousel__arrow
+.wp-block-button__link:not(:disabled),
+.pc-carousel__controls:is(.has-inactive-width, .has-inactive-height)
+.pc-carousel__arrow
+.wp-block-button__link:disabled {
+	padding: 0 !important;
 }
 
 .pc-carousel__arrow--prev .wp-block-button__link::after {

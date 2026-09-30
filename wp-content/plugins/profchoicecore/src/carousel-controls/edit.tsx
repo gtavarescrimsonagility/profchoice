@@ -7,7 +7,29 @@ import {
 import { PanelBody, ToggleControl } from '@wordpress/components';
 import type { BlockEditProps } from '@wordpress/blocks';
 import type { TemplateArray } from '../template';
+import metadata from './block.json';
+import StatePanels from '../shared/StatePanels';
+import { stateStyleProps, type StateStyle } from '../shared/state-style';
 import type { CarouselControlsAttributes } from './types';
+import '../shared/editor.scss';
+
+const STATES = [
+	{
+		key: 'active',
+		tab: __( 'Active', 'profchoicecore' ),
+		panel: __( 'Active control', 'profchoicecore' ),
+	},
+	{
+		key: 'inactive',
+		tab: __( 'Inactive', 'profchoicecore' ),
+		panel: __( 'Inactive control', 'profchoicecore' ),
+	},
+];
+
+const DEFAULTS = {
+	active: metadata.attributes.active.default as StateStyle,
+	inactive: metadata.attributes.inactive.default as StateStyle,
+};
 
 const arrow = (
 	direction: 'prev' | 'next',
@@ -68,10 +90,16 @@ export default function Edit( {
 	attributes,
 	setAttributes,
 }: BlockEditProps< CarouselControlsAttributes > ) {
+	const { overlay, active, inactive } = attributes;
+	const stateProps = stateStyleProps( 'carousel-arrow', {
+		active,
+		inactive,
+	} );
 	const blockProps = useBlockProps( {
-		className: `pc-carousel__controls${
-			attributes.overlay ? ' is-overlay' : ''
+		className: `pc-carousel__controls${ overlay ? ' is-overlay' : '' } ${
+			stateProps.className
 		}`,
+		style: stateProps.style,
 	} );
 	const innerBlocksProps = useInnerBlocksProps( blockProps, {
 		template: TEMPLATE,
@@ -89,13 +117,30 @@ export default function Edit( {
 							'Centred vertically at the carousel edges. Adjust with --pc-carousel-arrows-top and --pc-carousel-arrows-inset.',
 							'profchoicecore'
 						) }
-						checked={ attributes.overlay }
-						onChange={ ( overlay: boolean ) =>
-							setAttributes( { overlay } )
+						checked={ overlay }
+						onChange={ ( value: boolean ) =>
+							setAttributes( { overlay: value } )
 						}
 					/>
 				</PanelBody>
 			</InspectorControls>
+			<StatePanels
+				states={ STATES }
+				values={ { active, inactive } }
+				defaults={ DEFAULTS }
+				features={ [
+					'background',
+					'color',
+					'border',
+					'radius',
+					'size',
+					'opacity',
+				] }
+				colorLabel={ __( 'Icon', 'profchoicecore' ) }
+				onChange={ ( state, value ) =>
+					setAttributes( { [ state ]: value } )
+				}
+			/>
 			<div { ...innerBlocksProps } />
 		</>
 	);

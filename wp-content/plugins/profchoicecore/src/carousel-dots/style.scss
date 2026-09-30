@@ -1,6 +1,7 @@
 /**
  * Carousel dots. Styles come from the block's Inactive/Active settings
- * (--pc-carousel-dot-* variables); the gap from the block spacing.
+ * (--pc-carousel-dot-{inactive|active}-* variables, see StatePanels); the gap
+ * from the block spacing.
  */
 .wp-block-profchoice-carousel-dots {
 	align-items: center;
@@ -19,21 +20,27 @@
 	display: inline-block;
 	flex: none;
 	box-sizing: border-box;
-	width: var(--pc-carousel-dot-width, 12px);
-	height: var(--pc-carousel-dot-height, 8px);
+	width: var(--pc-carousel-dot-inactive-width, 12px);
+	height: var(--pc-carousel-dot-inactive-height, 8px);
 	padding: 0;
-	border: var(--pc-carousel-dot-border, 1px solid #fff);
-	border-radius: var(--pc-carousel-dot-radius, 5px);
-	background: var(--pc-carousel-dot-color, rgba(255, 255, 255, 0.55));
+	border-width: var(--pc-carousel-dot-inactive-border-width, 1px);
+	border-style: var(--pc-carousel-dot-inactive-border-style, solid);
+	border-color: var(--pc-carousel-dot-inactive-border-color, #fff);
+	border-radius: var(--pc-carousel-dot-inactive-radius, 5px);
+	background-color: var(--pc-carousel-dot-inactive-background, rgba(255, 255, 255, 0.55));
 	cursor: pointer;
-	transition: width 0.2s ease, background-color 0.2s ease;
+	transition:
+		width 0.2s ease,
+		background-color 0.2s ease;
 
 	&.is-active {
 		width: var(--pc-carousel-dot-active-width, 22px);
 		height: var(--pc-carousel-dot-active-height, 8px);
-		border: var(--pc-carousel-dot-active-border, 1px solid #c32627);
+		border-width: var(--pc-carousel-dot-active-border-width, 1px);
+		border-style: var(--pc-carousel-dot-active-border-style, solid);
+		border-color: var(--pc-carousel-dot-active-border-color, #c32627);
 		border-radius: var(--pc-carousel-dot-active-radius, 4px);
-		background: var(--pc-carousel-dot-active-color, #c32627);
+		background-color: var(--pc-carousel-dot-active-background, #c32627);
 	}
 }
 

@@ -33,10 +33,24 @@ while ( $pc_buttons->next_tag() ) {
 	}
 }
 
-$pc_wrapper = get_block_wrapper_attributes(
-	array( 'class' => 'pc-carousel__controls' . ( ! empty( $attributes['overlay'] ) ? ' is-overlay' : '' ) )
+// Active/Inactive control settings; empty values leave the buttons' own styles.
+$pc_states = ProfChoiceCore\StateStyle::props(
+	'carousel-arrow',
+	array(
+		'active'   => $attributes['active'] ?? array(),
+		'inactive' => $attributes['inactive'] ?? array(),
+	)
 );
+
+$pc_wrapper = get_block_wrapper_attributes(
+	array(
+		'class' => trim( 'pc-carousel__controls' . ( ! empty( $attributes['overlay'] ) ? ' is-overlay ' : ' ' ) . $pc_states['class'] ),
+	)
+);
+ob_start();
 ?>
 <div <?php echo $pc_wrapper; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 	<?php echo $pc_buttons->get_updated_html(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 </div>
+<?php
+echo ProfChoiceCore\StateStyle::apply( (string) ob_get_clean(), $pc_states['style'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
