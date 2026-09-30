@@ -119,6 +119,13 @@
   <wp:term_name><![CDATA[outofstock]]></wp:term_name>
 </wp:term>
 <wp:term>
+  <wp:term_id>22</wp:term_id>
+  <wp:term_taxonomy>wp_theme</wp:term_taxonomy>
+  <wp:term_slug>profchoice</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[profchoice]]></wp:term_name>
+</wp:term>
+<wp:term>
   <wp:term_id>11</wp:term_id>
   <wp:term_taxonomy>product_visibility</wp:term_taxonomy>
   <wp:term_slug>rated-1</wp:term_slug>
@@ -233,8 +240,8 @@
 <div class="wp-block-group play-button has-custom-css has-background" style="background-color:#ffffff1a;font-size:24px"><!-- wp:icon {"icon":"core/capture-video","align":"center","className":"play-icon","style":{"css":"\n  width: 0;\n  height: 0;\n  border-top: 7.5px solid transparent;\n  border-bottom: 7.5px solid transparent;\n  border-left: 14px solid #fff;\n\n  transform: translateX(1px);\n\u0026 svg {\n  display: none;\n}","dimensions":{"width":"24px"},"layout":{"selfStretch":"fit","flexSize":null}}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"2.08rem","style":{"css":"height:1.74545455em!important"}} -->
-<div style="height:2.08rem" aria-hidden="true" class="wp-block-spacer has-custom-css"></div>
+<!-- wp:spacer {"height":"1.74545455em","style":[]} -->
+<div style="height:1.74545455em" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -245,14 +252,14 @@
 <!-- /wp:cover -->
 
 <!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50th-anniversary-mix-blend-bg-1024x678.png","id":201,"dimRatio":0,"isUserOverlayColor":true,"focalPoint":{"x":0.57,"y":0.32},"minHeight":445,"isDark":false,"sizeSlug":"large","align":"full","className":"homepage-anniversary","style":{"elements":{"heading":{"color":{"text":"var:preset|color|cbv-text"}}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light homepage-anniversary" style="min-height:445px"><img class="wp-block-cover__image-background wp-image-201 size-large" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50th-anniversary-mix-blend-bg-1024x678.png" style="object-position:57% 32%" data-object-fit="cover" data-object-position="57% 32%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light homepage-anniversary" style="min-height:445px"><img class="wp-block-cover__image-background wp-image-201 size-large" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50th-anniversary-mix-blend-bg-1024x678.png" style="object-position:57% 32%" data-object-fit="cover" data-object-position="57% 32%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0.5em"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"blockGap":"1.5rem"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"metadata":{"name":"Since"},"className":"since","style":{"color":{"text":"#c32627"},"elements":{"link":{"color":{"text":"#c32627"}}},"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","fontSize":"0.72rem","letterSpacing":"0.201875rem"},"css":"display: flex;\ngap: 0.833333333em;\nalign-items: center;\n\u0026::before{\ncontent: \u0022\u0022;\ndisplay: block;\nbackground-color: currentcolor;\nheight: 1px;\nwidth: 2.25694444em;\nopacity: 0.55;\n}"}} -->
 <p class="since has-custom-css has-text-color has-link-color" style="color:#c32627;font-size:0.72rem;font-style:normal;font-weight:700;letter-spacing:0.201875rem;text-transform:uppercase">Since 1976</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"metadata":{"name":"50 Years"},"style":{"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textTransform":"uppercase","fontSize":"48px","letterSpacing":"0.03rem"},"css":"line-height:1.08;\ndisplay:inline-block;\n\u0026::after {\n\tcontent: \u0022\u0022;\n\tdisplay: block;\n\tbackground-color: #b71c1c;\n\theight: 0.0416666667em;\n\twidth: 90.651%;\n\tmargin-top: 0.4375em;\n}"}} -->
-<h2 class="wp-block-heading has-custom-css has-text-color has-link-color" style="color:#14161a;font-size:48px;letter-spacing:0.03rem;text-transform:uppercase">50 Years <br>of Raising the Standard.</h2>
+<!-- wp:heading {"metadata":{"name":"50 Years"},"style":{"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textTransform":"uppercase","fontSize":"48px","letterSpacing":"0.03rem","lineHeight":"1.08"},"css":"display:inline-block;\n\u0026::after {\n\tcontent: \u0022\u0022;\n\tdisplay: block;\n\tbackground-color: #b71c1c;\n\theight: 0.0416666667em;\n\twidth: 90.651%;\n\tmargin-top: 0.4375em;\n}"}} -->
+<h2 class="wp-block-heading has-custom-css has-text-color has-link-color" style="color:#14161a;font-size:48px;letter-spacing:0.03rem;line-height:1.08;text-transform:uppercase">50 Years <br>of Raising the Standard.</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"metadata":{"name":"Confort, protection, performance"},"style":{"color":{"text":"#3a3d44"},"elements":{"link":{"color":{"text":"#3a3d44"}}},"typography":{"fontSize":"1.02rem"}}} -->
@@ -282,16 +289,16 @@
 <p class="has-text-align-center since has-custom-css has-text-color has-link-color" style="color:#c32627;font-size:0.72rem;font-style:normal;font-weight:700;letter-spacing:0.201875rem;text-transform:uppercase">Browse the Catalog</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","textAlign":"center","fontSize":"2.6rem"},"css":"line-height:1.07932692;","@mobile":{"typography":{"fontSize":"1.75rem","letterSpacing":"0.01875rem"}}}} -->
-<h2 class="wp-block-heading has-text-align-center has-custom-css" style="font-size:2.6rem;text-transform:uppercase">Shop Your Discipline</h2>
+<!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","textAlign":"center","fontSize":"2.6rem","lineHeight":"1.07932692"},"@mobile":{"typography":{"fontSize":"1.75rem","letterSpacing":"0.01875rem"}}}} -->
+<h2 class="wp-block-heading has-text-align-center" style="font-size:2.6rem;line-height:1.07932692;text-transform:uppercase">Shop Your Discipline</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:columns {"metadata":{"name":"Disciplines"},"align":"full","className":"disciplines","style":{"spacing":{"margin":{"top":"3rem"}},"css":"column-gap: 24px;\nrow-gap: 0;","@mobile":{"spacing":{"margin":{"top":"1.75rem"}}}}} -->
-<div class="wp-block-columns alignfull disciplines has-custom-css" style="margin-top:3rem"><!-- wp:column -->
+<!-- wp:columns {"metadata":{"name":"Disciplines"},"align":"full","className":"disciplines","style":{"spacing":{"margin":{"top":"3rem"},"blockGap":{"top":"0","left":"24px"}},"@mobile":{"spacing":{"margin":{"top":"1.75rem"}}}}} -->
+<div class="wp-block-columns alignfull disciplines" style="margin-top:3rem"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-english.jpg","id":354,"isUserOverlayColor":true,"minHeight":531,"minHeightUnit":"px","customGradient":"linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)","contentPosition":"center left","sizeSlug":"full","metadata":{"name":"English"},"style":{"border":{"radius":"3px"},"shadow":"0px 6px 16px 0px rgba(20,22,26,0.1)","spacing":{"padding":{"top":"2.4rem","right":"2.4rem","bottom":"2.4rem","left":"2.4rem"}},"@mobile":{"dimensions":{"minHeight":"240px"},"spacing":{"padding":{"top":"2rem","right":"1.75rem","bottom":"2rem","left":"1.75rem"}},"border":{"radius":"0px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover has-custom-content-position is-position-center-left" style="border-radius:3px;padding-top:2.4rem;padding-right:2.4rem;padding-bottom:2.4rem;padding-left:2.4rem;box-shadow:0px 6px 16px 0px rgba(20,22,26,0.1);min-height:531px"><img class="wp-block-cover__image-background wp-image-354 size-full" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-english.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"css":"gap: 1.149375rem;"},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group has-custom-css"><!-- wp:heading {"level":3,"style":{"color":{"text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontSize":"2.5rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.5","letterSpacing":"0.025rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"2.25rem","lineHeight":"1","letterSpacing":"0.01875rem"}}}} -->
+<div class="wp-block-cover has-custom-content-position is-position-center-left" style="border-radius:3px;padding-top:2.4rem;padding-right:2.4rem;padding-bottom:2.4rem;padding-left:2.4rem;box-shadow:0px 6px 16px 0px rgba(20,22,26,0.1);min-height:531px"><img class="wp-block-cover__image-background wp-image-354 size-full" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-english.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"1.149375rem"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"color":{"text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontSize":"2.5rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.5","letterSpacing":"0.025rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"2.25rem","lineHeight":"1","letterSpacing":"0.01875rem"}}}} -->
 <h3 class="wp-block-heading has-text-color has-link-color" style="color:#ffffff;font-size:2.5rem;font-style:normal;font-weight:700;letter-spacing:0.025rem;line-height:1.5;text-transform:uppercase">English</h3>
 <!-- /wp:heading -->
 
@@ -306,8 +313,8 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-western.jpg","id":355,"isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.18},"minHeight":531,"minHeightUnit":"px","customGradient":"linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)","contentPosition":"center left","sizeSlug":"full","metadata":{"name":"Western"},"style":{"border":{"radius":"3px"},"shadow":"0px 6px 16px 0px rgba(20,22,26,0.1)","spacing":{"padding":{"top":"2.4rem","right":"2.4rem","bottom":"2.4rem","left":"2.4rem"}},"@mobile":{"dimensions":{"minHeight":"240px"},"spacing":{"padding":{"top":"2rem","right":"1.75rem","bottom":"2rem","left":"1.75rem"}},"border":{"radius":"0px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover has-custom-content-position is-position-center-left" style="border-radius:3px;padding-top:2.4rem;padding-right:2.4rem;padding-bottom:2.4rem;padding-left:2.4rem;box-shadow:0px 6px 16px 0px rgba(20,22,26,0.1);min-height:531px"><img class="wp-block-cover__image-background wp-image-355 size-full" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-western.jpg" style="object-position:50% 18%" data-object-fit="cover" data-object-position="50% 18%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"css":"gap: 1.149375rem;"},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group has-custom-css"><!-- wp:heading {"level":3,"style":{"color":{"text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontSize":"2.5rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.5","letterSpacing":"0.025rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"2.25rem","lineHeight":"1","letterSpacing":"0.01875rem"}}}} -->
+<div class="wp-block-cover has-custom-content-position is-position-center-left" style="border-radius:3px;padding-top:2.4rem;padding-right:2.4rem;padding-bottom:2.4rem;padding-left:2.4rem;box-shadow:0px 6px 16px 0px rgba(20,22,26,0.1);min-height:531px"><img class="wp-block-cover__image-background wp-image-355 size-full" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-western.jpg" style="object-position:50% 18%" data-object-fit="cover" data-object-position="50% 18%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"1.149375rem"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"color":{"text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontSize":"2.5rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.5","letterSpacing":"0.025rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"2.25rem","lineHeight":"1","letterSpacing":"0.01875rem"}}}} -->
 <h3 class="wp-block-heading has-text-color has-link-color" style="color:#ffffff;font-size:2.5rem;font-style:normal;font-weight:700;letter-spacing:0.025rem;line-height:1.5;text-transform:uppercase">Western</h3>
 <!-- /wp:heading -->
 
@@ -323,16 +330,16 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Shop What's Trending"},"align":"full","className":"trending","style":{"color":{"background":"#f4f1ea"},"spacing":{"padding":{"top":"5rem","right":"2rem","bottom":"5rem","left":"2rem"}},"@mobile":{"spacing":{"padding":{"top":"3.445rem","right":"1rem","bottom":"3rem","left":"1rem"}}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull trending has-background" style="background-color:#f4f1ea;padding-top:5rem;padding-right:2rem;padding-bottom:5rem;padding-left:2rem"><!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","textAlign":"center","fontSize":"2.6rem","letterSpacing":"0.02625rem"},"css":"line-height:1.07932692;","@mobile":{"typography":{"fontSize":"1.75rem","letterSpacing":"0.01875rem"},"spacing":{"padding":{"left":"3.755rem","right":"3.755rem"}}},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<h2 class="wp-block-heading has-text-align-center has-custom-css" style="margin-top:0;margin-bottom:0;font-size:2.6rem;letter-spacing:0.02625rem;text-transform:uppercase">Shop What's Trending</h2>
+<div class="wp-block-group alignfull trending has-background" style="background-color:#f4f1ea;padding-top:5rem;padding-right:2rem;padding-bottom:5rem;padding-left:2rem"><!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","textAlign":"center","fontSize":"2.6rem","letterSpacing":"0.02625rem","lineHeight":"1.07932692"},"@mobile":{"typography":{"fontSize":"1.75rem","letterSpacing":"0.01875rem"},"spacing":{"padding":{"left":"3.755rem","right":"3.755rem"}}},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<h2 class="wp-block-heading has-text-align-center" style="margin-top:0;margin-bottom:0;font-size:2.6rem;letter-spacing:0.02625rem;line-height:1.07932692;text-transform:uppercase">Shop What's Trending</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"1rem"}},"color":{"text":"#3a3d44"},"elements":{"link":{"color":{"text":"#3a3d44"}}},"typography":{"textAlign":"center","fontSize":"1.02rem","lineHeight":"1.65214724"},"@mobile":{"spacing":{"margin":{"top":"0.61875rem"}},"typography":{"fontSize":"0.8125rem","lineHeight":"1.6"}}}} -->
 <p class="has-text-align-center has-text-color has-link-color" style="color:#3a3d44;margin-top:1rem;font-size:1.02rem;line-height:1.65214724">Best sellers, new releases &amp; rider favorites.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"metadata":{"name":"Products"},"className":"trending-grid","style":{"spacing":{"margin":{"top":"3rem"}},"css":"gap: 1.6rem;","@mobile":{"spacing":{"margin":{"top":"1.75rem"}}}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
-<div class="wp-block-group trending-grid has-custom-css" style="margin-top:3rem"><!-- wp:group {"metadata":{"name":"Ventech Sport Boots"},"className":"trending-card","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"}},"css":"gap: 1.25rem;\noverflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"metadata":{"name":"Products"},"className":"trending-grid","style":{"spacing":{"margin":{"top":"3rem"},"blockGap":"1.6rem"},"@mobile":{"spacing":{"margin":{"top":"1.75rem"},"blockGap":"0.75rem"}}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
+<div class="wp-block-group trending-grid" style="margin-top:3rem"><!-- wp:group {"metadata":{"name":"Ventech Sport Boots"},"className":"trending-card","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"css":"overflow: hidden;","@mobile":{"spacing":{"blockGap":"0.5rem"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":359,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.png" alt="" class="wp-image-359" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
@@ -348,7 +355,7 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Stealth Air Ride Saddle Pad"},"className":"trending-card","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"}},"css":"gap: 1.25rem;\noverflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"metadata":{"name":"Stealth Air Ride Saddle Pad"},"className":"trending-card","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"css":"overflow: hidden;","@mobile":{"spacing":{"blockGap":"0.5rem"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":360,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.png" alt="" class="wp-image-360" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
@@ -364,7 +371,7 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Comfort Fit Fly Mask"},"className":"trending-card","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"}},"css":"gap: 1.25rem;\noverflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"metadata":{"name":"Comfort Fit Fly Mask"},"className":"trending-card","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"css":"overflow: hidden;","@mobile":{"spacing":{"blockGap":"0.5rem"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":361,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/comfort-fit-fly-mask.png" alt="" class="wp-image-361" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
@@ -380,7 +387,7 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Pro Performance Front Splint Boots"},"className":"trending-card","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"}},"css":"gap: 1.25rem;\noverflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"metadata":{"name":"Pro Performance Front Splint Boots"},"className":"trending-card","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"css":"overflow: hidden;","@mobile":{"spacing":{"blockGap":"0.5rem"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":362,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.png" alt="" class="wp-image-362" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
@@ -421,8 +428,8 @@
 <p class="has-text-color has-link-color" style="color:#ffffffc7;margin-top:0.5375rem;margin-bottom:0;font-size:1rem;line-height:1.5">Two decades of hauling to the box taught her that gear either<br> holds up or it doesn't. She's run in Professional's Choice tack since 2006.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"2.099375rem","bottom":"0"}},"css":"gap: 1rem;","@mobile":{"spacing":{"margin":{"top":"1.125rem"}}}}} -->
-<div class="wp-block-buttons has-custom-css" style="margin-top:2.099375rem;margin-bottom:0"><!-- wp:button {"style":{"border":{"width":"1px","color":"#ffffff8c","radius":{"topLeft":"3px","topRight":"3px","bottomLeft":"3px","bottomRight":"3px"}},"color":{"text":"#ffffff","background":"#ffffff00"},"elements":{"link":{"color":{"text":"#ffffff"}}},"spacing":{"padding":{"top":"0.9875rem","right":"2.1rem","bottom":"1.094375rem","left":"2.1rem"}},"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","fontSize":"0.78rem","letterSpacing":"0.116875rem","lineHeight":"1.4976"},"@mobile":{"spacing":{"padding":{"top":"0.9375rem","right":"1.75rem","bottom":"0.9375rem","left":"1.75rem"}},"typography":{"fontSize":"0.625rem","letterSpacing":"0.1125rem","lineHeight":"1.2"}}}} -->
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"2.099375rem","bottom":"0"},"blockGap":"1rem"},"@mobile":{"spacing":{"margin":{"top":"1.125rem"},"blockGap":"0.625rem"}}}} -->
+<div class="wp-block-buttons" style="margin-top:2.099375rem;margin-bottom:0"><!-- wp:button {"style":{"border":{"width":"1px","color":"#ffffff8c","radius":{"topLeft":"3px","topRight":"3px","bottomLeft":"3px","bottomRight":"3px"}},"color":{"text":"#ffffff","background":"#ffffff00"},"elements":{"link":{"color":{"text":"#ffffff"}}},"spacing":{"padding":{"top":"0.9875rem","right":"2.1rem","bottom":"1.094375rem","left":"2.1rem"}},"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","fontSize":"0.78rem","letterSpacing":"0.116875rem","lineHeight":"1.4976"},"@mobile":{"spacing":{"padding":{"top":"0.9375rem","right":"1.75rem","bottom":"0.9375rem","left":"1.75rem"}},"typography":{"fontSize":"0.625rem","letterSpacing":"0.1125rem","lineHeight":"1.2"}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color has-custom-font-size wp-element-button" style="border-color:#ffffff8c;border-width:1px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;color:#ffffff;background-color:#ffffff00;padding-top:0.9875rem;padding-right:2.1rem;padding-bottom:1.094375rem;padding-left:2.1rem;font-size:0.78rem;font-style:normal;font-weight:700;letter-spacing:0.116875rem;line-height:1.4976;text-transform:uppercase">Hear Why</a></div>
 <!-- /wp:button -->
 
@@ -431,7 +438,7 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:group {"metadata":{"name":"Slider dots"},"className":"certified-dots","style":{"css":"position: absolute;\nleft: 50%;\nbottom: 5rem;\ntransform: translateX(-50%);\nmargin: 0;\ngap: 8.8px;"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<!-- wp:group {"metadata":{"name":"Slider dots"},"className":"certified-dots","style":{"css":"position: absolute;\nleft: 50%;\nbottom: 5rem;\ntransform: translateX(-50%);\nmargin: 0;","spacing":{"blockGap":"8.8px"},"@mobile":{"spacing":{"blockGap":"8px"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 <div class="wp-block-group certified-dots has-custom-css"><!-- wp:group {"style":{"css":"width: 22px;\nheight: 8px;\nborder-radius: 4px;\nbackground: #c32627;"}} -->
 <div class="wp-block-group has-custom-css"></div>
 <!-- /wp:group -->
@@ -465,7 +472,7 @@
 <h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#000000;margin-top:0;margin-bottom:0;font-size:2rem;font-style:normal;font-weight:600;letter-spacing:0.12375rem;line-height:1.34375;text-transform:uppercase">Trusted at the Highest Level</h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"metadata":{"name":"Logos"},"className":"sponsors-logos","style":{"spacing":{"margin":{"top":"1.75rem"}},"css":"column-gap: 16px;\nrow-gap: 0;\nmargin-left: -10.28px;\nmargin-right: -10.28px;","@mobile":{"spacing":{"margin":{"top":"1.5rem"}}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
+<!-- wp:group {"metadata":{"name":"Logos"},"className":"sponsors-logos","style":{"spacing":{"margin":{"top":"1.75rem"},"blockGap":{"top":"0","left":"16px"}},"css":"margin-left: -10.28px;\nmargin-right: -10.28px;","@mobile":{"spacing":{"margin":{"top":"1.5rem"},"blockGap":{"top":"16px","left":"16px"}}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
 <div class="wp-block-group sponsors-logos has-custom-css" style="margin-top:1.75rem"><!-- wp:image {"id":377,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"American Cowboys Team Roping Association"},"style":{"css":"box-sizing: border-box;\nwidth: 65.6px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 63.6px;\nheight: 54.9px;\nobject-fit: contain;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-actra.png" alt="American Cowboys Team Roping Association" class="wp-image-377"/></figure>
 <!-- /wp:image -->
@@ -513,8 +520,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Email Signup"},"align":"full","className":"insider","style":{"color":{"background":"#0b2e54"},"spacing":{"padding":{"top":"1.8125rem","right":"4.5rem","bottom":"1.8125rem","left":"4.5rem"}},"@mobile":{"spacing":{"padding":{"top":"2.25rem","right":"1.5rem","bottom":"2.25rem","left":"1.5rem"}}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull insider has-background" style="background-color:#0b2e54;padding-top:1.8125rem;padding-right:4.5rem;padding-bottom:1.8125rem;padding-left:4.5rem"><!-- wp:group {"className":"insider-row","style":{"css":"gap: 20px;"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group insider-row has-custom-css"><!-- wp:group {"metadata":{"name":"Copy"},"className":"insider-copy","style":{"layout":{"selfStretch":"fixed","flexSize":"690px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull insider has-background" style="background-color:#0b2e54;padding-top:1.8125rem;padding-right:4.5rem;padding-bottom:1.8125rem;padding-left:4.5rem"><!-- wp:group {"className":"insider-row","style":{"spacing":{"blockGap":"20px"},"@mobile":{"spacing":{"blockGap":"0.625rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group insider-row"><!-- wp:group {"metadata":{"name":"Copy"},"className":"insider-copy","style":{"layout":{"selfStretch":"fixed","flexSize":"690px"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group insider-copy"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"color":{"text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontSize":"2.375rem","fontStyle":"normal","fontWeight":"400","lineHeight":"1.05","letterSpacing":"-0.0475rem"},"@mobile":{"typography":{"fontSize":"1.625rem","lineHeight":"1.15","letterSpacing":"-0.03125rem"}}}} -->
 <h2 class="wp-block-heading has-text-color has-link-color" style="color:#ffffff;margin-top:0;margin-bottom:0;font-size:2.375rem;font-style:normal;font-weight:400;letter-spacing:-0.0475rem;line-height:1.05">Become a <em>Professional's Choice</em> insider</h2>
 <!-- /wp:heading -->
@@ -524,8 +531,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Signup form (visual)"},"className":"insider-form","style":{"layout":{"selfStretch":"fill","flexSize":null},"color":{"background":"#ffffff"},"border":{"radius":"2px"},"spacing":{"padding":{"top":"6px","right":"6px","bottom":"6px","left":"6px"}},"css":"gap: 8px;"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-<div class="wp-block-group insider-form has-custom-css has-background" style="border-radius:2px;background-color:#ffffff;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px"><!-- wp:paragraph {"metadata":{"name":"Email placeholder"},"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"13px","right":"16px","bottom":"13px","left":"16px"}},"color":{"text":"#757575"},"typography":{"fontSize":"0.875rem","lineHeight":"1.2"},"@mobile":{"spacing":{"padding":{"top":"10px","right":"12px","bottom":"10px","left":"12px"}},"typography":{"fontSize":"0.8125rem"}}}} -->
+<!-- wp:group {"metadata":{"name":"Signup form (visual)"},"className":"insider-form","style":{"layout":{"selfStretch":"fill","flexSize":null},"color":{"background":"#ffffff"},"border":{"radius":"2px"},"spacing":{"padding":{"top":"6px","right":"6px","bottom":"6px","left":"6px"},"blockGap":"8px"},"@mobile":{"spacing":{"blockGap":"6px"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+<div class="wp-block-group insider-form has-background" style="border-radius:2px;background-color:#ffffff;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px"><!-- wp:paragraph {"metadata":{"name":"Email placeholder"},"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"13px","right":"16px","bottom":"13px","left":"16px"}},"color":{"text":"#757575"},"typography":{"fontSize":"0.875rem","lineHeight":"1.2"},"@mobile":{"spacing":{"padding":{"top":"10px","right":"12px","bottom":"10px","left":"12px"}},"typography":{"fontSize":"0.8125rem"}}}} -->
 <p class="has-text-color" style="color:#757575;margin-top:0;margin-bottom:0;padding-top:13px;padding-right:16px;padding-bottom:13px;padding-left:16px;font-size:0.875rem;line-height:1.2">your@email.com</p>
 <!-- /wp:paragraph -->
 
@@ -541,8 +548,8 @@
   <wp:post_id>51</wp:post_id>
   <wp:post_date>2026-09-28 14:24:12</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:24:12</wp:post_date_gmt>
-  <wp:post_modified>2026-09-29 20:34:16</wp:post_modified>
-  <wp:post_modified_gmt>2026-09-29 20:34:16</wp:post_modified_gmt>
+  <wp:post_modified>2026-09-30 01:39:45</wp:post_modified>
+  <wp:post_modified_gmt>2026-09-30 01:39:45</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>homepage</wp:post_name>
@@ -587,7 +594,7 @@
   </wp:postmeta>
 </item>
 <item>
-  <title><![CDATA[commercebuild-velocity]]></title>
+  <title><![CDATA[profchoice]]></title>
   <link>https://professionals-choice.wp.local/2026/09/28/profchoice/</link>
   <pubDate>Mon, 28 Sep 2026 14:47:52 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
@@ -640,22 +647,9 @@
 /* head COMB-598 Homepage */
 :root {
 	--cbv-font: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	--wp--style--global--content-size: 1208px;
-	--wp--style--global--wide-size: 1208px;
 }
 .cbv-content .is-layout-constrained > .alignwide {
     max-width: var(--wp--style--global--wide-size);
-}
-:root :where(.is-layout-constrained) > * {
-	margin-block-start: 1.2rem;
-	margin-block-end: 0;
-}
-:root :where(.is-layout-constrained) > :first-child {
-	margin-block-start: 0;
-}
-.wp-block-heading {
-	font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: 600;
 }
 .homepage-hero {
 	background-image: radial-gradient(
@@ -681,29 +675,7 @@
 	left: -9.02777777777778%;
 	right: auto;
 }
-:root :where(.wp-element-button, .wp-block-button__link) {
-	line-height: 1.495;
-	padding-top: calc(1.2rem + 1px);
-	padding-right: calc(2.7rem + 1px);
-	padding-bottom: calc(1.2rem + 1px);
-	padding-left: calc(2.7rem + 1px);
-}
 @media (width <= 30rem) {
-	:root :where(.wp-element-button, .wp-block-button__link) {
-		line-height: 1.13636364;
-		padding-top: calc(1rem + 1px);
-		padding-right: calc(2.5rem + 1px);
-		padding-bottom: calc(1rem + 1px);
-		padding-left: calc(2.5rem + 1px);
-	}
-}
-.homepage-anniversary .wp-block-group .wp-block-group > * + * {
-    margin-block-start: 1.5rem;
-}
-@media (width <= 30rem) {
-	.disciplines .wp-block-cover .wp-block-group {
-		gap: 0.75rem;
-	}
 	.disciplines .wp-block-buttons .wp-element-button {
 		padding: 0 !important;
 		border-width: 0 !important;
@@ -717,13 +689,11 @@
 @media (width <= 30rem) {
 	.trending .trending-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-		gap: 0.75rem;
 	}
 	.trending .trending-card img {
 		aspect-ratio: 1 !important;
 	}
 	.trending .trending-card {
-		gap: 0.5rem;
 		padding-bottom: 1rem !important;
 	}
 	.trending .trending-card > h3 {
@@ -758,7 +728,6 @@
 	.certified .wp-block-buttons {
 		flex-direction: column;
 		align-items: stretch;
-		gap: 0.625rem;
 	}
 	.certified .wp-block-button {
 		width: 100%;
@@ -767,7 +736,6 @@
 		position: static;
 		transform: none;
 		margin-top: 1rem;
-		gap: 8px;
 	}
 	.certified .certified-dots > :not(:first-child) {
 		width: 10px;
@@ -777,12 +745,10 @@
 	.sponsors .sponsors-logos {
 		margin-left: 0;
 		margin-right: 0;
-		row-gap: 16px;
 	}
 	.insider .insider-row {
 		flex-direction: column;
 		align-items: stretch;
-		gap: 0.625rem;
 	}
 	.insider .insider-copy {
 		flex-basis: auto !important;
@@ -790,17 +756,14 @@
 	.insider .insider-copy p {
 		opacity: 0.82;
 	}
-	.insider .insider-form {
-		gap: 6px;
-	}
 }
 /* tail COMB-598 Homepage */]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>60</wp:post_id>
   <wp:post_date>2026-09-28 14:47:52</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:47:52</wp:post_date_gmt>
-  <wp:post_modified>2026-09-29 20:34:38</wp:post_modified>
-  <wp:post_modified_gmt>2026-09-29 20:34:38</wp:post_modified_gmt>
+  <wp:post_modified>2026-09-30 01:40:03</wp:post_modified>
+  <wp:post_modified_gmt>2026-09-30 01:40:03</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>profchoice</wp:post_name>
@@ -1554,27 +1517,28 @@
 </item>
 <item>
   <title><![CDATA[Custom Styles]]></title>
-  <link>https://professionals-choice.wp.local/2026/09/30/wp-global-styles-profchoice/</link>
-  <pubDate>Wed, 30 Sep 2026 01:21:50 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://professionals-choice.wp.local/2026/09/30/wp-global-styles-profchoice/</guid>
+  <link>https://professionals-choice.wp.local/2026/09/30/wp-global-styles-profchoice-2/</link>
+  <pubDate>Wed, 30 Sep 2026 01:39:33 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
+  <guid isPermaLink="false">http://localhost:8907/2026/09/30/wp-global-styles-profchoice-2/</guid>
   <description/>
   <content:encoded><![CDATA[{"version": 3, "isGlobalStylesUserThemeJSON": true }]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>391</wp:post_id>
-  <wp:post_date>2026-09-30 01:21:50</wp:post_date>
-  <wp:post_date_gmt>2026-09-30 01:21:50</wp:post_date_gmt>
-  <wp:post_modified>2026-09-30 01:21:50</wp:post_modified>
-  <wp:post_modified_gmt>2026-09-30 01:21:50</wp:post_modified_gmt>
+  <wp:post_id>393</wp:post_id>
+  <wp:post_date>2026-09-30 01:39:33</wp:post_date>
+  <wp:post_date_gmt>2026-09-30 01:39:33</wp:post_date_gmt>
+  <wp:post_modified>2026-09-30 01:39:33</wp:post_modified>
+  <wp:post_modified_gmt>2026-09-30 01:39:33</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>wp-global-styles-profchoice</wp:post_name>
+  <wp:post_name>wp-global-styles-profchoice-2</wp:post_name>
   <wp:status>publish</wp:status>
   <wp:post_parent>0</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
   <wp:post_type>wp_global_styles</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
+  <category domain="wp_theme" nicename="profchoice"><![CDATA[profchoice]]></category>
 </item>
   </channel>
 </rss>
