@@ -412,7 +412,7 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:profchoice/carousel {"ariaLabel":"Certified by the Pros","metadata":{"name":"Certified by the Pros"},"align":"full","className":"certified-carousel","style":{"css":"\u002d\u002dpc-carousel-arrows-inset: 51px;\n\u002d\u002dpc-carousel-arrows-top: 51.75%;\n\u002d\u002dpc-carousel-dots-bottom: 5rem;"}} -->
+<!-- wp:profchoice/carousel {"ariaLabel":"Certified by the Pros","metadata":{"name":"Certified by the Pros"},"align":"full","className":"certified-carousel","style":{"css":"\u002d\u002dpc-carousel-arrows-inset: 51px;\n\u002d\u002dpc-carousel-arrows-top: 51.75%;"}} -->
 <!-- wp:profchoice/carousel-slide {"metadata":{"name":"Brittany Pozzi Tonozzi"}} -->
 <div role="group" aria-roledescription="slide" class="wp-block-profchoice-carousel-slide"><!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":372,"mediaType":"image","mediaWidth":46.5,"verticalAlignment":"center","imageFill":true,"focalPoint":{"x":0.5,"y":0.72},"metadata":{"name":"Certified by the Pros"},"className":"certified","style":{"color":{"background":"#0b2e54"},"css":"position: relative;\n\u0026 .wp-block-media-text__content {\npadding: 5rem 1rem 7.0625rem 9.3125rem !important;\n}\n\u0026 .wp-block-media-text__media::after {\ncontent: \u0022\u0022;\nposition: absolute;\ninset: 0;\nz-index: 1;\nbackground: linear-gradient(90deg, #0b2e54 0%, rgba(11, 46, 84, 0) 55%);\n}"}} -->
 <div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center is-image-fill-element certified has-custom-css has-background" style="background-color:#0b2e54;grid-template-columns:auto 46.5%"><div class="wp-block-media-text__content"><!-- wp:paragraph {"metadata":{"name":"Eyebrow"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"color":{"text":"#ffffffd1"},"elements":{"link":{"color":{"text":"#ffffffd1"}}},"typography":{"fontSize":"0.72rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.5","letterSpacing":"0.201875rem","textTransform":"uppercase"},"css":"\u0026::after {\ncontent: \u0022\u0022;\ndisplay: block;\nwidth: 66px;\nheight: 3px;\nmargin-top: 10px;\nbackground-color: #c32627;\n}","@mobile":{"typography":{"fontSize":"0.625rem","letterSpacing":"0.1875rem","lineHeight":"1.2"}}}} -->
@@ -545,7 +545,7 @@
 <!-- /wp:buttons -->
 <!-- /wp:profchoice/carousel-controls -->
 
-<!-- wp:profchoice/carousel-dots {"style":{"spacing":{"blockGap":"8.8px"},"@mobile":{"spacing":{"blockGap":"8px"}}}} /-->
+<!-- wp:profchoice/carousel-dots {"style":{"spacing":{"blockGap":"8.8px","padding":{"bottom":"5rem"}},"@mobile":{"spacing":{"blockGap":"8px","padding":{"bottom":"1.6875rem","left":"1.5rem"}}}}} /-->
 <!-- /wp:profchoice/carousel -->
 
 <!-- wp:group {"metadata":{"name":"Trusted at the Highest Level"},"align":"full","className":"sponsors","style":{"color":{"background":"#ffffff"},"border":{"top":{"color":"#e5e2dc","width":"1px"},"bottom":{"color":"#e5e2dc","width":"1px"}},"spacing":{"padding":{"top":"3rem","right":"4.5rem","bottom":"3rem","left":"4.5rem"}},"@mobile":{"spacing":{"padding":{"top":"2.25rem","right":"1.25rem","bottom":"2.25rem","left":"1.25rem"}}}},"layout":{"type":"default"}} -->
@@ -775,14 +775,9 @@
 	.certified .wp-block-button {
 		width: 100%;
 	}
-	/* Beats the block's own CSS (printed later) for the desktop values. */
-	.certified-carousel.wp-block-profchoice-carousel {
-		--pc-carousel-dots-left: 1.5rem;
-		--pc-carousel-dots-transform: none;
-		--pc-carousel-dots-bottom: 1.6875rem;
-	}
 	/* The dots block sets its dot sizes inline; mobile inactive dots are narrower. */
 	.certified-carousel .wp-block-profchoice-carousel-dots {
+		justify-content: flex-start;
 		--pc-carousel-dot-default-width: 10px !important;
 	}
 }
