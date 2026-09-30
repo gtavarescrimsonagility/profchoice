@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.8.0
+Stable tag: 0.9.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.9.0 =
+* The dot and arrow state settings store nothing by default: the defaults live in the stylesheet (the active dot's red, 22px width and 4px radius; the disabled arrow's 0.35 opacity) and the settings only hold overrides. Reset clears them.
 
 = 0.8.0 =
 * Overlay dots: a full-width strip at the bottom of the carousel (bottom: 0) with 1rem block padding by default. Place them with the block's justification and padding (e.g. a larger bottom padding lifts them); the --pc-carousel-dots-bottom/left/transform variables are gone.

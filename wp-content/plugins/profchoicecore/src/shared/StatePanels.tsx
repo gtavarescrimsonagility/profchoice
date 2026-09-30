@@ -67,8 +67,6 @@ export type StateDefinition = {
 type Props = {
 	states: StateDefinition[];
 	values: Record< string, StateStyle | undefined >;
-	/** Block defaults per state, restored by "Reset all". */
-	defaults: Record< string, StateStyle | undefined >;
 	features: StateFeature[];
 	onChange: ( state: string, value: StateStyle ) => void;
 	/** Label of the `color` feature, e.g. "Icon". */
@@ -256,12 +254,12 @@ function StateColorItem( {
  *
  * The first state is the base: later states inherit whatever they leave
  * empty (shown as placeholders), so only the differences are stored.
- * Resetting an item clears it (it inherits again); "Reset all" restores the
- * block defaults.
+ * Nothing is stored by default: empty values fall back to the block's
+ * stylesheet defaults. Resetting clears values so they inherit again.
  * @param props
  */
 export default function StatePanels( props: Props ) {
-	const { states, values, defaults, features, onChange, colorLabel } = props;
+	const { states, values, features, onChange, colorLabel } = props;
 	const [ themePalette, customPalette, defaultPalette ] = useSettings(
 		'color.palette.theme',
 		'color.palette.custom',
@@ -285,8 +283,8 @@ export default function StatePanels( props: Props ) {
 					resetAll={ () =>
 						states.forEach( ( { key } ) =>
 							set( key, {
-								background: defaults[ key ]?.background,
-								color: defaults[ key ]?.color,
+								background: undefined,
+								color: undefined,
 							} )
 						)
 					}
@@ -365,9 +363,7 @@ export default function StatePanels( props: Props ) {
 						key={ key }
 						className="pc-state-panel"
 						label={ panel }
-						resetAll={ () =>
-							onChange( key, defaults[ key ] ?? {} )
-						}
+						resetAll={ () => onChange( key, {} ) }
 					>
 						{ has( 'size' ) &&
 							unit( 'width', __( 'Width', 'profchoicecore' ) ) }

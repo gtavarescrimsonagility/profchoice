@@ -7,9 +7,8 @@ import {
 import { PanelBody, ToggleControl } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import type { BlockEditProps } from '@wordpress/blocks';
-import metadata from './block.json';
 import StatePanels from '../shared/StatePanels';
-import { stateStyleProps, type StateStyle } from '../shared/state-style';
+import { stateStyleProps } from '../shared/state-style';
 import type { CarouselDotsAttributes } from './types';
 import '../shared/editor.scss';
 
@@ -30,11 +29,6 @@ const STATES = [
 		panel: __( 'Active', 'profchoicecore' ),
 	},
 ];
-
-const DEFAULTS = {
-	default: metadata.attributes.default.default as StateStyle,
-	active: metadata.attributes.active.default as StateStyle,
-};
 
 /**
  * Preview with one dot per slide (the first one active) and panels to style
@@ -119,7 +113,6 @@ export default function Edit( {
 			<StatePanels
 				states={ STATES }
 				values={ { default: base, active } }
-				defaults={ DEFAULTS }
 				features={ [ 'background', 'border', 'radius', 'size' ] }
 				onChange={ ( state, value ) =>
 					setAttributes( { [ state ]: value } )

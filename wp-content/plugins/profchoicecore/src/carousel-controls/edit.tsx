@@ -7,9 +7,8 @@ import {
 import { PanelBody, ToggleControl } from '@wordpress/components';
 import type { BlockEditProps } from '@wordpress/blocks';
 import type { TemplateArray } from '../template';
-import metadata from './block.json';
 import StatePanels from '../shared/StatePanels';
-import { stateStyleProps, type StateStyle } from '../shared/state-style';
+import { stateStyleProps } from '../shared/state-style';
 import type { CarouselControlsAttributes } from './types';
 import '../shared/editor.scss';
 
@@ -25,11 +24,6 @@ const STATES = [
 		panel: __( 'Inactive control', 'profchoicecore' ),
 	},
 ];
-
-const DEFAULTS = {
-	active: metadata.attributes.active.default as StateStyle,
-	inactive: metadata.attributes.inactive.default as StateStyle,
-};
 
 const arrow = (
 	direction: 'prev' | 'next',
@@ -127,7 +121,6 @@ export default function Edit( {
 			<StatePanels
 				states={ STATES }
 				values={ { active, inactive } }
-				defaults={ DEFAULTS }
 				features={ [
 					'background',
 					'color',

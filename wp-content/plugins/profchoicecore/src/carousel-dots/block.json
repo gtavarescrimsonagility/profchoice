@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "profchoice/carousel-dots",
-	"version": "0.8.0",
+	"version": "0.9.0",
 	"title": "Carousel Dots",
 	"category": "design",
 	"icon": "ellipsis",
@@ -15,29 +15,10 @@
 			"default": true
 		},
 		"default": {
-			"type": "object",
-			"default": {
-				"background": "rgba(255, 255, 255, 0.55)",
-				"border": {
-					"color": "#ffffff",
-					"style": "solid",
-					"width": "1px"
-				},
-				"width": "12px",
-				"height": "8px",
-				"radius": "5px"
-			}
+			"type": "object"
 		},
 		"active": {
-			"type": "object",
-			"default": {
-				"background": "#c32627",
-				"border": {
-					"color": "#c32627"
-				},
-				"width": "22px",
-				"radius": "4px"
-			}
+			"type": "object"
 		}
 	},
 	"supports": {
