@@ -18,15 +18,28 @@ import {
 import { createBlock, type BlockEditProps } from '@wordpress/blocks';
 import { useDispatch, useSelect } from '@wordpress/data';
 import { useEffect, useState } from '@wordpress/element';
+import type { TemplateArray } from '../template';
 import type { CarouselAttributes, Transition } from './types';
 
 type EditorSelectors = {
-	getBlockOrder: ( clientId: string ) => string[];
+	getBlocks: (
+		clientId: string
+	) => Array< { clientId: string; name: string } >;
 	getSelectedBlockClientId: () => string | null;
 	getBlockParents: ( clientId: string ) => string[];
 };
 
 const SLIDE = 'profchoice/carousel-slide';
+const ALLOWED = [
+	SLIDE,
+	'profchoice/carousel-controls',
+	'profchoice/carousel-dots',
+];
+const TEMPLATE: TemplateArray = [
+	[ SLIDE ],
+	[ 'profchoice/carousel-controls' ],
+	[ 'profchoice/carousel-dots' ],
+];
 
 /**
  * Editor: one slide at a time, picked from the toolbar, instead of a live
@@ -41,15 +54,7 @@ export default function Edit( {
 	setAttributes,
 	clientId,
 }: BlockEditProps< CarouselAttributes > ) {
-	const {
-		ariaLabel,
-		transition,
-		loop,
-		autoplay,
-		autoplayDelay,
-		showArrows,
-		showDots,
-	} = attributes;
+	const { ariaLabel, transition, loop, autoplay, autoplayDelay } = attributes;
 	const [ active, setActive ] = useState( 0 );
 
 	const { slideIds, selectedSlide } = useSelect(
@@ -57,7 +62,10 @@ export default function Edit( {
 			const editor = select(
 				blockEditorStore
 			) as unknown as EditorSelectors;
-			const ids = editor.getBlockOrder( clientId );
+			const ids = editor
+				.getBlocks( clientId )
+				.filter( ( block ) => block.name === SLIDE )
+				.map( ( block ) => block.clientId );
 			const selected = editor.getSelectedBlockClientId();
 			const chain = selected
 				? [ selected, ...editor.getBlockParents( selected ) ]
@@ -84,8 +92,8 @@ export default function Edit( {
 		'data-pc-active': current + 1,
 	} );
 	const innerBlocksProps = useInnerBlocksProps( blockProps, {
-		allowedBlocks: [ SLIDE ],
-		template: [ [ SLIDE ] ],
+		allowedBlocks: ALLOWED,
+		template: TEMPLATE,
 		orientation: 'horizontal',
 		renderAppender: () => null,
 	} );
@@ -154,22 +162,6 @@ export default function Edit( {
 						checked={ loop }
 						onChange={ ( value: boolean ) =>
 							setAttributes( { loop: value } )
-						}
-					/>
-					<ToggleControl
-						__nextHasNoMarginBottom
-						label={ __( 'Arrows', 'profchoicecore' ) }
-						checked={ showArrows }
-						onChange={ ( value: boolean ) =>
-							setAttributes( { showArrows: value } )
-						}
-					/>
-					<ToggleControl
-						__nextHasNoMarginBottom
-						label={ __( 'Dots', 'profchoicecore' ) }
-						checked={ showDots }
-						onChange={ ( value: boolean ) =>
-							setAttributes( { showDots: value } )
 						}
 					/>
 					<ToggleControl

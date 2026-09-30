@@ -1,0 +1,63 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/carousel-dots",
+	"version": "0.2.0",
+	"title": "Carousel Dots",
+	"category": "design",
+	"icon": "ellipsis",
+	"description": "One dot per slide, with separate styles for the inactive and the active dot.",
+	"ancestor": [ "profchoice/carousel" ],
+	"textdomain": "profchoicecore",
+	"attributes": {
+		"overlay": {
+			"type": "boolean",
+			"default": true
+		},
+		"inactive": {
+			"type": "object",
+			"default": {
+				"color": "rgba(255, 255, 255, 0.55)",
+				"borderColor": "#ffffff",
+				"borderWidth": "1px",
+				"width": "12px",
+				"height": "8px",
+				"radius": "5px"
+			}
+		},
+		"active": {
+			"type": "object",
+			"default": {
+				"color": "#c32627",
+				"borderColor": "#c32627",
+				"borderWidth": "1px",
+				"width": "22px",
+				"height": "8px",
+				"radius": "4px"
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": true
+		},
+		"layout": {
+			"allowSwitching": false,
+			"allowInheriting": false,
+			"allowOrientation": false,
+			"default": {
+				"type": "flex",
+				"flexWrap": "nowrap",
+				"justifyContent": "center"
+			}
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

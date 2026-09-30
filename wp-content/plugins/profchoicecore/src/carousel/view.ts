@@ -91,7 +91,14 @@ const { state } = store( 'profchoice/carousel', {
 		},
 		get isDotActive(): boolean {
 			const context = getContext< CarouselContext >();
-			return context.snap === context.selectedIndex;
+			return context.snap?.index === context.selectedIndex;
+		},
+		get dotLabel(): string {
+			const { dotLabelPattern, snap } = getContext< CarouselContext >();
+			return dotLabelPattern.replace(
+				'%d',
+				String( ( snap?.index ?? 0 ) + 1 )
+			);
 		},
 	},
 	actions: {
@@ -102,9 +109,9 @@ const { state } = store( 'profchoice/carousel', {
 			navigate( ( embla ) => embla.scrollNext() );
 		},
 		goTo(): void {
-			const { snap } = getContext< CarouselContext >();
-			if ( typeof snap === 'number' ) {
-				navigate( ( embla ) => embla.scrollTo( snap ) );
+			const index = getContext< CarouselContext >().snap?.index;
+			if ( typeof index === 'number' ) {
+				navigate( ( embla ) => embla.scrollTo( index ) );
 			}
 		},
 		onKeydown( event: KeyboardEvent ): void {

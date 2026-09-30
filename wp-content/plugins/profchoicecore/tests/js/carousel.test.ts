@@ -48,9 +48,22 @@ describe( 'carousel store', () => {
 		).toBe( 'Slide 2 of 4' );
 	} );
 
-	it( 'marks the active slide and dot', () => {
-		mockContext( { selectedIndex: 1, index: 1, snap: 0 } );
+	it( 'marks the active slide', () => {
+		mockContext( { selectedIndex: 1, index: 1 } );
 		expect( state.isSlideActive ).toBe( true );
+		mockContext( { selectedIndex: 1, index: 0 } );
+		expect( state.isSlideActive ).toBe( false );
+	} );
+
+	it( 'marks the active dot and labels it', () => {
+		mockContext( {
+			selectedIndex: 2,
+			snap: { index: 2 },
+			dotLabelPattern: 'Go to slide %d',
+		} );
+		expect( state.isDotActive ).toBe( true );
+		expect( state.dotLabel ).toBe( 'Go to slide 3' );
+		mockContext( { selectedIndex: 0, snap: { index: 2 } } );
 		expect( state.isDotActive ).toBe( false );
 	} );
 

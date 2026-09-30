@@ -6,8 +6,6 @@ export type CarouselAttributes = {
 	loop: boolean;
 	autoplay: boolean;
 	autoplayDelay: number;
-	showArrows: boolean;
-	showDots: boolean;
 	[ key: string ]: unknown;
 };
 
@@ -32,8 +30,11 @@ export type CarouselContext = {
 	announcement: string;
 	shouldAnnounce: boolean;
 	announcementPattern: string;
-	/** Set on each dot by render.php. */
-	snap?: number;
+	dotLabelPattern: string;
+	/** One entry per slide, iterated by the dots block. */
+	snaps: Array< { index: number } >;
+	/** The dot's item inside data-wp-each. */
+	snap?: { index: number };
 	/** Set on each slide by render.php. */
 	index?: number;
 };

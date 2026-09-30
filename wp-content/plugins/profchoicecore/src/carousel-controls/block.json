@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/carousel-controls",
+	"version": "0.2.0",
+	"title": "Carousel Arrows",
+	"category": "design",
+	"icon": "leftright",
+	"description": "Previous and next buttons of a carousel. Each arrow is a Button block, so it has the button's styles and hover/focus/active states.",
+	"ancestor": [ "profchoice/carousel" ],
+	"textdomain": "profchoicecore",
+	"attributes": {
+		"overlay": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

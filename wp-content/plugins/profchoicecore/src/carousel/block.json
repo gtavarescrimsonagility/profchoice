@@ -2,14 +2,18 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "profchoice/carousel",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"title": "Carousel",
 	"category": "design",
 	"icon": "slides",
-	"description": "Slides with fade or slide transitions, arrows and dots.",
+	"description": "Slides with fade or slide transitions, plus Carousel Arrows and Carousel Dots blocks.",
 	"keywords": [ "carousel", "slider", "slides", "gallery" ],
 	"textdomain": "profchoicecore",
-	"allowedBlocks": [ "profchoice/carousel-slide" ],
+	"allowedBlocks": [
+		"profchoice/carousel-slide",
+		"profchoice/carousel-controls",
+		"profchoice/carousel-dots"
+	],
 	"attributes": {
 		"ariaLabel": {
 			"type": "string",
@@ -31,14 +35,6 @@
 		"autoplayDelay": {
 			"type": "number",
 			"default": 6000
-		},
-		"showArrows": {
-			"type": "boolean",
-			"default": true
-		},
-		"showDots": {
-			"type": "boolean",
-			"default": true
 		}
 	},
 	"supports": {
