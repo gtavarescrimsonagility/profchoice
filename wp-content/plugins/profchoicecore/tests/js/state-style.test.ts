@@ -8,24 +8,43 @@ describe( 'stateStyleProps', () => {
 				background: '#c32627',
 				border: { color: '#fff', width: '1px' },
 				width: '22px',
+				radius: '4px',
 			},
-			inactive: { opacity: '0.35' },
+			default: { opacity: '0.35' },
 		} );
 
 		expect( style ).toEqual( {
 			'--pc-carousel-dot-active-background': '#c32627',
+			'--pc-carousel-dot-active-width': '22px',
 			'--pc-carousel-dot-active-border-color': '#fff',
 			'--pc-carousel-dot-active-border-width': '1px',
-			'--pc-carousel-dot-active-width': '22px',
-			'--pc-carousel-dot-inactive-opacity': '0.35',
+			'--pc-carousel-dot-active-radius': '4px',
+			'--pc-carousel-dot-default-opacity': '0.35',
 		} );
 		expect( className.split( ' ' ) ).toEqual( [
 			'has-active-background',
+			'has-active-width',
 			'has-active-border-color',
 			'has-active-border-width',
-			'has-active-width',
-			'has-inactive-opacity',
+			'has-active-radius',
+			'has-default-opacity',
 		] );
+	} );
+
+	it( 'uses per-side and per-corner properties when unlinked', () => {
+		const { style } = stateStyleProps( 'carousel-arrow', {
+			active: {
+				border: { top: { width: '2px' }, left: { color: '#000' } },
+				radius: { topLeft: '50%', bottomRight: '0' },
+			},
+		} );
+
+		expect( style ).toEqual( {
+			'--pc-carousel-arrow-active-border-top-width': '2px',
+			'--pc-carousel-arrow-active-border-left-color': '#000',
+			'--pc-carousel-arrow-active-radius-top-left': '50%',
+			'--pc-carousel-arrow-active-radius-bottom-right': '0',
+		} );
 	} );
 
 	it( 'skips empty and missing states', () => {

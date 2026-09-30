@@ -1,3 +1,5 @@
+@use "sass:map";
+
 /**
  * Carousel arrows. Colors, border, radius and padding come from each Button
  * block; the arrow icon follows the button's text color (currentcolor).
@@ -65,6 +67,18 @@ $pc-arrow-properties: (
 	height: height,
 	opacity: opacity,
 );
+
+// Unlinked borders and radii: after the linked ones, so they win.
+@each $side in top, right, bottom, left {
+
+	@each $part in color, style, width {
+		$pc-arrow-properties: map.merge($pc-arrow-properties, (border-#{$side}-#{$part}: border-#{$side}-#{$part}));
+	}
+}
+
+@each $corner in top-left, top-right, bottom-right, bottom-left {
+	$pc-arrow-properties: map.merge($pc-arrow-properties, (radius-#{$corner}: border-#{$corner}-radius));
+}
 
 @each $key, $property in $pc-arrow-properties {
 	:where(.pc-carousel__controls.has-active-#{$key} .pc-carousel__arrow)

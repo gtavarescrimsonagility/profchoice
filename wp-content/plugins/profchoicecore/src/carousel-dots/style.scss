@@ -1,9 +1,19 @@
 /**
  * Carousel dots. Styles come from the block's Default/Active settings
  * (--pc-carousel-dot-{default|active}-* variables, see StatePanels); the
- * active dot inherits every value it leaves empty. The gap comes from the
- * block spacing.
+ * active dot inherits every value it leaves empty. Borders and radii may be
+ * linked (border-width, radius) or per side/corner (border-top-width,
+ * radius-top-left); a per-side value wins over the linked one. The gap comes
+ * from the block spacing.
  */
+$pc-sides: top, right, bottom, left;
+$pc-border-parts: (
+	color: #fff,
+	style: solid,
+	width: 1px,
+);
+$pc-corners: top-left, top-right, bottom-right, bottom-left;
+
 .wp-block-profchoice-carousel-dots {
 	align-items: center;
 }
@@ -20,10 +30,6 @@
 .pc-carousel__dot {
 	--pc-dot-width: var(--pc-carousel-dot-default-width, 12px);
 	--pc-dot-height: var(--pc-carousel-dot-default-height, 8px);
-	--pc-dot-border-width: var(--pc-carousel-dot-default-border-width, 1px);
-	--pc-dot-border-style: var(--pc-carousel-dot-default-border-style, solid);
-	--pc-dot-border-color: var(--pc-carousel-dot-default-border-color, #fff);
-	--pc-dot-radius: var(--pc-carousel-dot-default-radius, 5px);
 	--pc-dot-background: var(--pc-carousel-dot-default-background, rgba(255, 255, 255, 0.55));
 
 	display: inline-block;
@@ -32,22 +38,40 @@
 	width: var(--pc-dot-width);
 	height: var(--pc-dot-height);
 	padding: 0;
-	border-width: var(--pc-dot-border-width);
-	border-style: var(--pc-dot-border-style);
-	border-color: var(--pc-dot-border-color);
-	border-radius: var(--pc-dot-radius);
 	background-color: var(--pc-dot-background);
 	cursor: pointer;
 	transition: width 0.2s ease, background-color 0.2s ease;
 
+	@each $side in $pc-sides {
+
+		@each $part, $fallback in $pc-border-parts {
+			--pc-dot-border-#{$side}-#{$part}: var(--pc-carousel-dot-default-border-#{$side}-#{$part}, var(--pc-carousel-dot-default-border-#{$part}, #{$fallback}));
+
+			border-#{$side}-#{$part}: var(--pc-dot-border-#{$side}-#{$part});
+		}
+	}
+
+	@each $corner in $pc-corners {
+		--pc-dot-radius-#{$corner}: var(--pc-carousel-dot-default-radius-#{$corner}, var(--pc-carousel-dot-default-radius, 5px));
+
+		border-#{$corner}-radius: var(--pc-dot-radius-#{$corner});
+	}
+
 	&.is-active {
 		width: var(--pc-carousel-dot-active-width, var(--pc-dot-width));
 		height: var(--pc-carousel-dot-active-height, var(--pc-dot-height));
-		border-width: var(--pc-carousel-dot-active-border-width, var(--pc-dot-border-width));
-		border-style: var(--pc-carousel-dot-active-border-style, var(--pc-dot-border-style));
-		border-color: var(--pc-carousel-dot-active-border-color, var(--pc-dot-border-color));
-		border-radius: var(--pc-carousel-dot-active-radius, var(--pc-dot-radius));
 		background-color: var(--pc-carousel-dot-active-background, var(--pc-dot-background));
+
+		@each $side in $pc-sides {
+
+			@each $part, $fallback in $pc-border-parts {
+				border-#{$side}-#{$part}: var(--pc-carousel-dot-active-border-#{$side}-#{$part}, var(--pc-carousel-dot-active-border-#{$part}, var(--pc-dot-border-#{$side}-#{$part})));
+			}
+		}
+
+		@each $corner in $pc-corners {
+			border-#{$corner}-radius: var(--pc-carousel-dot-active-radius-#{$corner}, var(--pc-carousel-dot-active-radius, var(--pc-dot-radius-#{$corner})));
+		}
 	}
 }
 

@@ -1,7 +1,6 @@
 /**
  * Editor styles for the state panels (src/shared/StatePanels.tsx).
  */
-
 .pc-state-color__toggle {
 	display: flex;
 	gap: 8px;
@@ -17,7 +16,12 @@
 	color: var(--wp-components-color-foreground, #1e1e1e);
 }
 
-// Half-width items, as in core's border/dimensions panels.
-.pc-state-panel .single-column {
-	grid-column: span 1;
+.pc-state-color__button .block-editor-panel-color-gradient-settings__color-name {
+	max-width: none;
+}
+
+// Each color is its own box (core only borders the first of a joined group).
+.pc-state-panel .block-editor-color-gradient-item {
+	border-top: 1px solid #ddd;
+	border-radius: 2px;
 }

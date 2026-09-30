@@ -1,5 +1,5 @@
 /**
- * Per-state styles (e.g. the active and inactive dot) stored as block
+ * Per-state styles (e.g. the default and active dot) stored as block
  * attributes and applied through CSS custom properties. Mirrored in
  * includes/StateStyle.php.
  */
@@ -9,11 +9,28 @@ export type StateBorder = {
 	width?: string;
 };
 
+export const SIDES = [ 'top', 'right', 'bottom', 'left' ] as const;
+export type Side = ( typeof SIDES )[ number ];
+
+/** One border for every side, or one per side (unlinked). */
+export type StateBorders = StateBorder | Partial< Record< Side, StateBorder > >;
+
+export const CORNERS = {
+	topLeft: 'top-left',
+	topRight: 'top-right',
+	bottomRight: 'bottom-right',
+	bottomLeft: 'bottom-left',
+} as const;
+export type Corner = keyof typeof CORNERS;
+
+/** One radius for every corner, or one per corner (unlinked). */
+export type StateRadius = string | Partial< Record< Corner, string > >;
+
 export type StateStyle = {
 	background?: string;
 	color?: string;
-	border?: StateBorder;
-	radius?: string;
+	border?: StateBorders;
+	radius?: StateRadius;
 	width?: string;
 	height?: string;
 	opacity?: string;
@@ -22,19 +39,42 @@ export type StateStyle = {
 export type StateFeature =
 	'background' | 'color' | 'border' | 'radius' | 'size' | 'opacity';
 
-const flatten = (
-	style: StateStyle
-): Record< string, string | undefined > => ( {
-	background: style.background,
-	color: style.color,
-	'border-color': style.border?.color,
-	'border-style': style.border?.style,
-	'border-width': style.border?.width,
-	radius: style.radius,
-	width: style.width,
-	height: style.height,
-	opacity: style.opacity,
-} );
+export const isSplitBorder = (
+	border?: StateBorders
+): border is Partial< Record< Side, StateBorder > > =>
+	!! border && SIDES.some( ( side ) => side in border );
+
+const flatten = ( style: StateStyle ): Record< string, string | undefined > => {
+	const flat: Record< string, string | undefined > = {
+		background: style.background,
+		color: style.color,
+		width: style.width,
+		height: style.height,
+		opacity: style.opacity,
+	};
+
+	const { border, radius } = style;
+	if ( isSplitBorder( border ) ) {
+		for ( const side of SIDES ) {
+			flat[ `border-${ side }-color` ] = border[ side ]?.color;
+			flat[ `border-${ side }-style` ] = border[ side ]?.style;
+			flat[ `border-${ side }-width` ] = border[ side ]?.width;
+		}
+	} else {
+		flat[ 'border-color' ] = border?.color;
+		flat[ 'border-style' ] = border?.style;
+		flat[ 'border-width' ] = border?.width;
+	}
+
+	if ( radius && typeof radius === 'object' ) {
+		for ( const [ corner, css ] of Object.entries( CORNERS ) ) {
+			flat[ `radius-${ css }` ] = radius[ corner as Corner ];
+		}
+	} else {
+		flat.radius = radius;
+	}
+	return flat;
+};
 
 /**
  * CSS custom properties and modifier classes for a set of states.
@@ -42,6 +82,8 @@ const flatten = (
  * Each set value becomes `--pc-{prefix}-{state}-{property}` plus a
  * `has-{state}-{property}` class, so stylesheets can apply a property only
  * when it is set (and otherwise leave the inner block's own style alone).
+ * Unlinked borders and radii use per-side/per-corner properties, e.g.
+ * `border-top-width` and `radius-top-left`.
  *
  * @param prefix Variable prefix, e.g. `carousel-dot`.
  * @param states Styles keyed by state name.

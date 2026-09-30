@@ -16,12 +16,10 @@ import '../shared/editor.scss';
 const STATES = [
 	{
 		key: 'active',
-		tab: __( 'Active', 'profchoicecore' ),
 		panel: __( 'Active control', 'profchoicecore' ),
 	},
 	{
 		key: 'inactive',
-		tab: __( 'Inactive', 'profchoicecore' ),
 		panel: __( 'Inactive control', 'profchoicecore' ),
 	},
 ];

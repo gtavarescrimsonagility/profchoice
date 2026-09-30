@@ -1,13 +1,14 @@
 import { __ } from '@wordpress/i18n';
+import * as blockEditor from '@wordpress/block-editor';
 import { InspectorControls, useSettings } from '@wordpress/block-editor';
+import type { ComponentType } from '@wordpress/element';
 import {
-	BorderControl,
+	BorderBoxControl,
 	Button,
 	ColorIndicator,
 	ColorPalette,
 	Dropdown,
 	RangeControl,
-	TabPanel,
 	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis -- the panel core's block supports use; no stable export yet.
 	__experimentalToolsPanel as ToolsPanel,
 	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis -- see ToolsPanel.
@@ -17,20 +18,40 @@ import {
 	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis -- the padding wrapper used by core's color dropdowns.
 	__experimentalDropdownContentWrapper as DropdownContentWrapper,
 } from '@wordpress/components';
-import type { StateBorder, StateFeature, StateStyle } from './state-style';
+import {
+	SIDES,
+	type Side,
+	type StateBorder,
+	type StateBorders,
+	type StateFeature,
+	type StateRadius,
+	type StateStyle,
+} from './state-style';
+
+/*
+ * Core's radius control (linked/unlinked corners, presets and slider), as in
+ * the block Border panel. Not typed by @wordpress/block-editor.
+ */
+const BorderRadiusControl = (
+	blockEditor as unknown as {
+		__experimentalBorderRadiusControl: ComponentType< {
+			values?: StateRadius;
+			onChange: ( value?: StateRadius ) => void;
+		} >;
+	}
+ ).__experimentalBorderRadiusControl;
 
 export type StateDefinition = {
 	/** Attribute name, e.g. `active`. */
 	key: string;
-	/** Tab label in the color dropdowns, e.g. "Default". */
-	tab: string;
-	/** Title of the state's panel, e.g. "Inactive dot". */
+	/** Panel title, e.g. "Default". */
 	panel: string;
 };
 
 type Props = {
 	states: StateDefinition[];
 	values: Record< string, StateStyle | undefined >;
+	/** Block defaults per state, restored by "Reset all". */
 	defaults: Record< string, StateStyle | undefined >;
 	features: StateFeature[];
 	onChange: ( state: string, value: StateStyle ) => void;
@@ -49,72 +70,87 @@ const hasValue = ( value: unknown ) =>
 		Object.keys( value ).length === 0
 	);
 
-/**
- * BorderControl value (width may be a number) to the stored border.
- * @param border
- * @param border.color
- * @param border.style
- * @param border.width
- */
-const toStateBorder = ( border?: {
+type AnyBorder = {
 	color?: string;
 	style?: string;
 	width?: string | number;
-} ): StateBorder | undefined =>
-	border && hasValue( border )
-		? {
-				color: border.color,
-				style: border.style,
-				width:
-					border.width !== undefined
-						? String( border.width )
-						: undefined,
-			}
-		: undefined;
+};
 
 /**
- * Color item in the style of core's color panel: one dropdown with a tab per
- * state (e.g. Default / Active), each with the theme palette.
+ * One BorderControl value (width may be a number) to the stored border.
+ * @param border
+ */
+const toStateBorder = ( border?: AnyBorder ): StateBorder | undefined => {
+	if ( ! border ) {
+		return undefined;
+	}
+	const out: StateBorder = {};
+	if ( border.color ) {
+		out.color = border.color;
+	}
+	if ( border.style ) {
+		out.style = border.style;
+	}
+	if ( border.width !== undefined && border.width !== '' ) {
+		out.width = String( border.width );
+	}
+	return hasValue( out ) ? out : undefined;
+};
+
+/**
+ * BorderBoxControl value (linked, or one border per side) to the stored one.
+ * @param border
+ */
+const toStateBorders = (
+	border?: AnyBorder | Partial< Record< Side, AnyBorder > >
+): StateBorders | undefined => {
+	if ( ! border ) {
+		return undefined;
+	}
+	if ( ! SIDES.some( ( side ) => side in border ) ) {
+		return toStateBorder( border as AnyBorder );
+	}
+	const sides: Partial< Record< Side, StateBorder > > = {};
+	for ( const side of SIDES ) {
+		const value = toStateBorder(
+			( border as Partial< Record< Side, AnyBorder > > )[ side ]
+		);
+		if ( value ) {
+			sides[ side ] = value;
+		}
+	}
+	return hasValue( sides ) ? sides : undefined;
+};
+
+/**
+ * A boxed color item as in core's Typography/Background panels: a dropdown
+ * with the theme palette. An empty value shows the inherited color.
  * @param root0
  * @param root0.label
- * @param root0.property
- * @param root0.props
+ * @param root0.value
+ * @param root0.inherited
  * @param root0.palette
+ * @param root0.onChange
  */
-function StateColorItem( {
+function ColorItem( {
 	label,
-	property,
-	props,
+	value,
+	inherited,
 	palette,
+	onChange,
 }: {
 	label: string;
-	property: 'background' | 'color';
-	props: Props;
+	value?: string;
+	inherited?: string;
 	palette: Palette;
+	onChange: ( color?: string ) => void;
 } ) {
-	const { states, values, defaults, onChange } = props;
-	const value = ( state: string ) => values[ state ]?.[ property ];
-	// Later states inherit an empty color from the first one.
-	const shown = ( state: string ) =>
-		value( state ) ?? value( states[ 0 ].key );
-	const isSet = () =>
-		states.some(
-			( { key } ) => value( key ) !== defaults[ key ]?.[ property ]
-		);
-
 	return (
 		<ToolsPanelItem
-			className="block-editor-tools-panel-color-gradient-settings__item"
+			className="block-editor-color-gradient-item block-editor-tools-panel-color-gradient-settings__item"
 			label={ label }
-			hasValue={ isSet }
-			onDeselect={ () =>
-				states.forEach( ( { key } ) =>
-					onChange( key, {
-						...values[ key ],
-						[ property ]: defaults[ key ]?.[ property ],
-					} )
-				)
-			}
+			hasValue={ () => hasValue( value ) }
+			onDeselect={ () => onChange( undefined ) }
 			isShownByDefault
 		>
 			<Dropdown
@@ -134,14 +170,7 @@ function StateColorItem( {
 						}` }
 					>
 						<span className="block-editor-panel-color-gradient-settings__labeled-indicators pc-state-color__toggle">
-							<span className="block-editor-panel-color-gradient-settings__color-indicators">
-								{ states.map( ( { key } ) => (
-									<ColorIndicator
-										key={ key }
-										colorValue={ shown( key ) }
-									/>
-								) ) }
-							</span>
+							<ColorIndicator colorValue={ value ?? inherited } />
 							<span className="block-editor-panel-color-gradient-settings__color-name">
 								{ label }
 							</span>
@@ -150,31 +179,16 @@ function StateColorItem( {
 				) }
 				renderContent={ () => (
 					<DropdownContentWrapper paddingSize="none">
-						<div className="block-editor-panel-color-gradient-settings__dropdown-content">
-							<TabPanel
-								className="pc-state-color__tabs"
-								tabs={ states.map( ( { key, tab } ) => ( {
-									name: key,
-									title: tab,
-								} ) ) }
-							>
-								{ ( tab ) => (
-									<div className="pc-state-color__palette">
-										<ColorPalette
-											__experimentalIsRenderedInSidebar
-											enableAlpha
-											colors={ palette }
-											value={ value( tab.name ) }
-											onChange={ ( color?: string ) =>
-												onChange( tab.name, {
-													...values[ tab.name ],
-													[ property ]: color,
-												} )
-											}
-										/>
-									</div>
-								) }
-							</TabPanel>
+						<div className="block-editor-panel-color-gradient-settings__dropdown-content pc-state-color__palette">
+							<ColorPalette
+								__experimentalIsRenderedInSidebar
+								enableAlpha
+								colors={ palette }
+								value={ value ?? inherited }
+								onChange={ ( color?: string ) =>
+									onChange( color || undefined )
+								}
+							/>
 						</div>
 					</DropdownContentWrapper>
 				) }
@@ -184,11 +198,14 @@ function StateColorItem( {
 }
 
 /**
- * Style panels for a block with states (e.g. default/active dot): a Color
- * panel with the states grouped per property, then one panel per state with
- * size, border (color, style and width together), radius and opacity. The
- * first state is the base: later states inherit whatever they leave empty
- * (shown as placeholders), so only the differences are stored.
+ * Style panels for a block with states (e.g. default/active dot): one panel
+ * per state with boxed color items, then width, height, border (linked or
+ * per side), radius (linked or per corner) and opacity, as in core's panels.
+ *
+ * The first state is the base: later states inherit whatever they leave
+ * empty (shown as placeholders), so only the differences are stored.
+ * Resetting an item clears it (it inherits again); "Reset all" restores the
+ * block defaults.
  * @param props
  */
 export default function StatePanels( props: Props ) {
@@ -207,141 +224,121 @@ export default function StatePanels( props: Props ) {
 	const has = ( feature: StateFeature ) => features.includes( feature );
 	const set = ( state: string, patch: StateStyle ) =>
 		onChange( state, { ...values[ state ], ...patch } );
-	const differs = ( state: string, key: keyof StateStyle ) => () =>
-		JSON.stringify( values[ state ]?.[ key ] ?? null ) !==
-		JSON.stringify( defaults[ state ]?.[ key ] ?? null );
-	const reset = ( state: string, keys: Array< keyof StateStyle > ) => () =>
-		set(
-			state,
-			Object.fromEntries(
-				keys.map( ( key ) => [ key, defaults[ state ]?.[ key ] ] )
-			)
-		);
 
 	return (
 		<InspectorControls group="styles">
-			{ ( has( 'background' ) || has( 'color' ) ) && (
-				<ToolsPanel
-					label={ __( 'Color', 'profchoicecore' ) }
-					resetAll={ () =>
-						states.forEach( ( { key } ) =>
-							set( key, {
-								background: defaults[ key ]?.background,
-								color: defaults[ key ]?.color,
-							} )
-						)
-					}
-					hasInnerWrapper
-					className="color-block-support-panel"
-					__experimentalFirstVisibleItemClass="first"
-					__experimentalLastVisibleItemClass="last"
-				>
-					<div className="color-block-support-panel__inner-wrapper">
-						{ has( 'background' ) && (
-							<StateColorItem
-								label={ __( 'Background', 'profchoicecore' ) }
-								property="background"
-								props={ props }
-								palette={ palette }
-							/>
-						) }
-						{ has( 'color' ) && (
-							<StateColorItem
-								label={
-									colorLabel ?? __( 'Text', 'profchoicecore' )
-								}
-								property="color"
-								props={ props }
-								palette={ palette }
-							/>
-						) }
-					</div>
-				</ToolsPanel>
-			) }
 			{ states.map( ( { key, panel }, index ) => {
 				const value = values[ key ] ?? {};
 				// Later states inherit what they leave empty from the first one.
 				const base =
 					index > 0 ? ( values[ states[ 0 ].key ] ?? {} ) : {};
-				const unit = (
-					prop: 'width' | 'height' | 'radius',
+				const item = (
+					prop: keyof StateStyle,
 					label: string,
-					units?: Array< { value: string; label: string } >
-				) =>
-					has( prop === 'radius' ? 'radius' : 'size' ) && (
-						<ToolsPanelItem
-							key={ prop }
-							className="single-column"
+					control: JSX.Element,
+					isShownByDefault = true
+				) => (
+					<ToolsPanelItem
+						key={ prop }
+						label={ label }
+						hasValue={ () => hasValue( value[ prop ] ) }
+						onDeselect={ () => set( key, { [ prop ]: undefined } ) }
+						isShownByDefault={ isShownByDefault }
+					>
+						{ control }
+					</ToolsPanelItem>
+				);
+				const unit = ( prop: 'width' | 'height', label: string ) =>
+					item(
+						prop,
+						label,
+						<UnitControl
+							__next40pxDefaultSize
 							label={ label }
-							hasValue={ differs( key, prop ) }
-							onDeselect={ reset( key, [ prop ] ) }
-							isShownByDefault
-						>
-							<UnitControl
-								__next40pxDefaultSize
-								label={ label }
-								units={ units }
-								placeholder={ base[ prop ] }
-								value={ value[ prop ] ?? '' }
-								onChange={ ( next?: string ) =>
-									set( key, { [ prop ]: next || undefined } )
-								}
-							/>
-						</ToolsPanelItem>
+							placeholder={ base[ prop ] }
+							value={ value[ prop ] ?? '' }
+							onChange={ ( next?: string ) =>
+								set( key, { [ prop ]: next || undefined } )
+							}
+						/>,
+						false
 					);
+				const color = (
+					prop: 'background' | 'color',
+					label: string
+				) => (
+					<ColorItem
+						key={ prop }
+						label={ label }
+						value={ value[ prop ] }
+						inherited={ base[ prop ] }
+						palette={ palette }
+						onChange={ ( next ) => set( key, { [ prop ]: next } ) }
+					/>
+				);
+
 				return (
 					<ToolsPanel
 						key={ key }
 						className="pc-state-panel"
 						label={ panel }
-						resetAll={ reset( key, [
-							'width',
-							'height',
-							'border',
-							'radius',
-							'opacity',
-						] ) }
+						resetAll={ () =>
+							onChange( key, defaults[ key ] ?? {} )
+						}
 					>
-						{ unit( 'width', __( 'Width', 'profchoicecore' ) ) }
-						{ unit( 'height', __( 'Height', 'profchoicecore' ) ) }
-						{ has( 'border' ) && (
-							<ToolsPanelItem
-								className="single-column"
-								label={ __( 'Border', 'profchoicecore' ) }
-								hasValue={ differs( key, 'border' ) }
-								onDeselect={ reset( key, [ 'border' ] ) }
-								isShownByDefault
-							>
-								<BorderControl
-									__next40pxDefaultSize
+						{ has( 'background' ) &&
+							color(
+								'background',
+								__( 'Background', 'profchoicecore' )
+							) }
+						{ has( 'color' ) &&
+							color(
+								'color',
+								colorLabel ?? __( 'Text', 'profchoicecore' )
+							) }
+						{ has( 'size' ) &&
+							unit( 'width', __( 'Width', 'profchoicecore' ) ) }
+						{ has( 'size' ) &&
+							unit( 'height', __( 'Height', 'profchoicecore' ) ) }
+						{ has( 'border' ) &&
+							item(
+								'border',
+								__( 'Border', 'profchoicecore' ),
+								<BorderBoxControl
 									label={ __( 'Border', 'profchoicecore' ) }
 									colors={ palette }
 									enableAlpha
 									enableStyle
+									popoverOffset={ 40 }
+									popoverPlacement="left-start"
 									__experimentalIsRenderedInSidebar
-									placeholder={ base.border?.width }
 									value={ value.border }
 									onChange={ ( border ) =>
 										set( key, {
-											border: toStateBorder( border ),
+											border: toStateBorders( border ),
 										} )
 									}
 								/>
-							</ToolsPanelItem>
-						) }
-						{ unit( 'radius', __( 'Radius', 'profchoicecore' ), [
-							{ value: 'px', label: 'px' },
-							{ value: '%', label: '%' },
-							{ value: 'em', label: 'em' },
-							{ value: 'rem', label: 'rem' },
-						] ) }
-						{ has( 'opacity' ) && (
-							<ToolsPanelItem
-								label={ __( 'Opacity', 'profchoicecore' ) }
-								hasValue={ differs( key, 'opacity' ) }
-								onDeselect={ reset( key, [ 'opacity' ] ) }
-								isShownByDefault
-							>
+							) }
+						{ has( 'radius' ) &&
+							item(
+								'radius',
+								__( 'Radius', 'profchoicecore' ),
+								<BorderRadiusControl
+									values={ value.radius }
+									onChange={ ( radius?: StateRadius ) =>
+										set( key, {
+											radius: hasValue( radius )
+												? radius
+												: undefined,
+										} )
+									}
+								/>
+							) }
+						{ has( 'opacity' ) &&
+							item(
+								'opacity',
+								__( 'Opacity', 'profchoicecore' ),
 								<RangeControl
 									__next40pxDefaultSize
 									__nextHasNoMarginBottom
@@ -349,7 +346,6 @@ export default function StatePanels( props: Props ) {
 									min={ 0 }
 									max={ 1 }
 									step={ 0.05 }
-									allowReset
 									value={
 										value.opacity !== undefined
 											? Number( value.opacity )
@@ -363,9 +359,9 @@ export default function StatePanels( props: Props ) {
 													: undefined,
 										} )
 									}
-								/>
-							</ToolsPanelItem>
-						) }
+								/>,
+								false
+							) }
 					</ToolsPanel>
 				);
 			} ) }

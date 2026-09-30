@@ -21,12 +21,10 @@ type EditorSelectors = {
 const STATES = [
 	{
 		key: 'default',
-		tab: __( 'Default', 'profchoicecore' ),
 		panel: __( 'Default', 'profchoicecore' ),
 	},
 	{
 		key: 'active',
-		tab: __( 'Active', 'profchoicecore' ),
 		panel: __( 'Active', 'profchoicecore' ),
 	},
 ];
