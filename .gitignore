@@ -5,3 +5,8 @@
 !/blueprint.json
 !/bin/
 !/wp-cli.yml
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/profchoice/
