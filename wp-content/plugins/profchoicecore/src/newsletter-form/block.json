@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "profchoice/newsletter-form",
 	"version": "0.1.0",
-	"title": "Newsletter Form",
+	"title": "Newsletter",
 	"category": "profchoice",
 	"icon": "email-alt",
 	"description": "Newsletter signup: an email field, a submit button and success/error messages.",

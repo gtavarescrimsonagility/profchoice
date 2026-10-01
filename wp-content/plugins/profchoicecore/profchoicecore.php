@@ -3,7 +3,7 @@
  * Plugin Name:       Professional's Choice Core
  * Plugin URI:        https://github.com/gtavarescrimsonagility/profchoice
  * Description:       Blocks and editor tools for Professional's Choice: newsletter form, carousel, video covers, icons and inline text formats.
- * Version:           0.12.0
+ * Version:           0.12.1
  * Requires at least: 7.1
  * Requires PHP:      7.4
  * Author:            Crimson Agility
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PROFCHOICECORE_VERSION', '0.12.0' );
+define( 'PROFCHOICECORE_VERSION', '0.12.1' );
 define( 'PROFCHOICECORE_FILE', __FILE__ );
 define( 'PROFCHOICECORE_DIR', plugin_dir_path( __FILE__ ) );
 
