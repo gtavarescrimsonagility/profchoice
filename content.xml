@@ -200,8 +200,8 @@
   <guid isPermaLink="false">http://localhost:8907/?page_id=9</guid>
   <description/>
   <content:encoded><![CDATA[<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.mp4","id":456,"dimRatio":0,"isUserOverlayColor":true,"backgroundType":"video","focalPoint":{"x":0.5,"y":0.84},"minHeight":550,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","metadata":{"name":"Hero"},"autoplay":false,"loop":false,"align":"full","className":"homepage-hero","style":{"typography":{"fontSize":"22px"},"@mobile":{"dimensions":{"minHeight":"320px"},"typography":{"fontSize":"16px"}},"spacing":{"blockGap":"var:preset|spacing|60"},"css":"background-image: radial-gradient(closest-side, rgba(16, 97, 174, 0.35) 0%, rgba(16, 97, 174, 0) 60%), linear-gradient(124.51deg, rgba(139, 90, 43, 1) 0%, rgba(74, 42, 20, 1) 60%, rgba(26, 15, 8, 1) 100%), linear-gradient(131.34deg, rgba(11, 46, 84, 1) 0%, rgba(18, 35, 58, 1) 45%, rgba(26, 21, 18, 1) 100%);"}} -->
-<div class="wp-block-cover alignfull is-light homepage-hero has-custom-css" style="font-size:22px;min-height:550px"><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.mp4" poster="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.webp" style="object-position:50% 84%" data-object-fit="cover" data-object-position="50% 84%"></video><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:buttons {"style":{"typography":{"lineHeight":"1.5","fontSize":"1rem"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/video-from-7Ii7txNZOlk.mp4","id":456,"dimRatio":0,"isUserOverlayColor":true,"backgroundType":"video","focalPoint":{"x":0.5,"y":0.84},"minHeight":550,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","metadata":{"name":"Hero"},"autoplay":false,"loop":false,"align":"full","className":"homepage-hero","style":{"typography":{"fontSize":"22px"},"@mobile":{"dimensions":{"minHeight":"320px"},"typography":{"fontSize":"16px"}},"spacing":{"blockGap":"var:preset|spacing|60"},"css":"background-image: radial-gradient(closest-side, rgba(16, 97, 174, 0.35) 0%, rgba(16, 97, 174, 0) 60%), linear-gradient(124.51deg, rgba(139, 90, 43, 1) 0%, rgba(74, 42, 20, 1) 60%, rgba(26, 15, 8, 1) 100%), linear-gradient(131.34deg, rgba(11, 46, 84, 1) 0%, rgba(18, 35, 58, 1) 45%, rgba(26, 21, 18, 1) 100%);"}} -->
+<div class="wp-block-cover alignfull is-light homepage-hero has-custom-css" style="font-size:22px;min-height:550px"><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/video-from-7Ii7txNZOlk.mp4" poster="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/video-from-7Ii7txNZOlk.webp" style="object-position:50% 84%" data-object-fit="cover" data-object-position="50% 84%"></video><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:buttons {"style":{"typography":{"lineHeight":"1.5","fontSize":"1rem"}},"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons has-custom-font-size" style="font-size:1rem;line-height:1.5"><!-- wp:button {"tagName":"button","className":"is-style-play","style":{"spacing":{"padding":{"left":"1.21em","right":"1.21em","top":"1.21em","bottom":"1.21em"}},"typography":{"fontSize":"1.5rem","lineHeight":"1"},"border":{"color":"#ffffff8c","width":"1px"},"color":{"background":"#ffffff1a"},":hover":{"color":{"background":"#ffffff33"},"border":{"color":"#ffffffd9"}},":active":{"color":{"background":"#ffffff1a","text":"var:preset|color|cbv-primary-contrast"},"elements":{"link":{"color":{"text":"var:preset|color|cbv-primary-contrast"}}}},"css":"transition: background-color .2s ease, border-color .2s ease;"}} -->
 <div class="wp-block-button is-style-play has-custom-css"><button type="button" class="wp-block-button__link has-background has-border-color has-custom-font-size wp-element-button" style="border-color:#ffffff8c;border-width:1px;background-color:#ffffff1a;padding-top:1.21em;padding-right:1.21em;padding-bottom:1.21em;padding-left:1.21em;font-size:1.5rem;line-height:1"><span class="pc-visually-hidden">Play video</span><img data-icon="profchoice/play" alt="" class="pc-inline-icon"></button></div>
 <!-- /wp:button --></div>
@@ -214,8 +214,8 @@
 <!-- /wp:buttons --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50th-anniversary-mix-blend-bg.webp","id":201,"dimRatio":0,"isUserOverlayColor":true,"focalPoint":{"x":0.57,"y":0.32},"minHeight":445,"isDark":false,"sizeSlug":"large","metadata":{"name":"Anniversary"},"align":"full","className":"homepage-anniversary","style":{"elements":{"heading":{"color":{"text":"var:preset|color|cbv-text"}}},"@mobile":{"spacing":{"padding":{"top":"3rem","right":"1.5rem","bottom":"2.5rem","left":"1.5rem"}}},"spacing":{"padding":{"top":"5px","bottom":"9px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light homepage-anniversary" style="padding-top:5px;padding-bottom:9px;min-height:445px"><img class="wp-block-cover__image-background wp-image-201 size-large" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50th-anniversary-mix-blend-bg.webp" style="object-position:57% 32%" data-object-fit="cover" data-object-position="57% 32%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0.5em"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+<!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/50th-anniversary-mix-blend-bg.webp","id":201,"dimRatio":0,"isUserOverlayColor":true,"focalPoint":{"x":0.57,"y":0.32},"minHeight":445,"isDark":false,"sizeSlug":"large","metadata":{"name":"Anniversary"},"align":"full","className":"homepage-anniversary","style":{"elements":{"heading":{"color":{"text":"var:preset|color|cbv-text"}}},"@mobile":{"spacing":{"padding":{"top":"3rem","right":"1.5rem","bottom":"2.5rem","left":"1.5rem"}}},"spacing":{"padding":{"top":"5px","bottom":"9px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light homepage-anniversary" style="padding-top:5px;padding-bottom:9px;min-height:445px"><img class="wp-block-cover__image-background wp-image-201 size-large" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/50th-anniversary-mix-blend-bg.webp" style="object-position:57% 32%" data-object-fit="cover" data-object-position="57% 32%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0.5em"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"blockGap":"1.1rem"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"metadata":{"name":"Since"},"style":{"color":{"text":"#c32627"},"elements":{"link":{"color":{"text":"#c32627"}}},"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","fontSize":"0.72rem","letterSpacing":"0.201875rem"},"css":"vertical-align: middle;\n\u0026::before{\nvertical-align: middle;\ncontent: \u0022\u0022;\ndisplay: inline-block;\nbackground-color: currentcolor;\nheight: 1px;\nwidth: 2.25694444em;\nopacity: 0.55;\nmargin-inline-end: 0.833333333em;\n}","@mobile":{"typography":{"fontSize":"0.625rem","letterSpacing":"0.1875rem"}}}} -->
 <p class="has-custom-css has-text-color has-link-color" style="color:#c32627;font-size:0.72rem;font-style:normal;font-weight:700;letter-spacing:0.201875rem;text-transform:uppercase">Since 1976</p>
@@ -240,7 +240,7 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":197,"sizeSlug":"full","isDecorative":true,"align":"center"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50-years.webp" alt="" class="wp-image-197" role="none"/></figure>
+<figure class="wp-block-image aligncenter size-full"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/50-years.webp" alt="" class="wp-image-197" role="none"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div></div>
@@ -259,8 +259,8 @@
 
 <!-- wp:columns {"metadata":{"name":"Disciplines"},"align":"full","className":"disciplines","style":{"spacing":{"margin":{"top":"3rem"},"blockGap":{"top":"0","left":"24px"}},"@mobile":{"spacing":{"margin":{"top":"1.75rem"}}}}} -->
 <div class="wp-block-columns alignfull disciplines" style="margin-top:3rem"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-english.webp","id":354,"isUserOverlayColor":true,"minHeight":531,"minHeightUnit":"px","customGradient":"linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)","contentPosition":"center left","sizeSlug":"full","metadata":{"name":"English"},"className":"pc-hover-zoom","style":{"border":{"radius":"3px"},"shadow":"0px 6px 16px 0px rgba(20,22,26,0.1)","spacing":{"padding":{"top":"2.4rem","right":"2.4rem","bottom":"2.4rem","left":"2.4rem"}},"@mobile":{"dimensions":{"minHeight":"240px"},"spacing":{"padding":{"top":"2rem","right":"1.75rem","bottom":"2rem","left":"1.75rem"}},"border":{"radius":"0px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover has-custom-content-position is-position-center-left pc-hover-zoom" style="border-radius:3px;padding-top:2.4rem;padding-right:2.4rem;padding-bottom:2.4rem;padding-left:2.4rem;box-shadow:0px 6px 16px 0px rgba(20,22,26,0.1);min-height:531px"><img class="wp-block-cover__image-background wp-image-354 size-full" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-english.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"1.149375rem"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/shop-english.webp","id":354,"isUserOverlayColor":true,"minHeight":531,"minHeightUnit":"px","customGradient":"linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)","contentPosition":"center left","sizeSlug":"full","metadata":{"name":"English"},"className":"pc-hover-zoom","style":{"border":{"radius":"3px"},"shadow":"0px 6px 16px 0px rgba(20,22,26,0.1)","spacing":{"padding":{"top":"2.4rem","right":"2.4rem","bottom":"2.4rem","left":"2.4rem"}},"@mobile":{"dimensions":{"minHeight":"240px"},"spacing":{"padding":{"top":"2rem","right":"1.75rem","bottom":"2rem","left":"1.75rem"}},"border":{"radius":"0px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-center-left pc-hover-zoom" style="border-radius:3px;padding-top:2.4rem;padding-right:2.4rem;padding-bottom:2.4rem;padding-left:2.4rem;box-shadow:0px 6px 16px 0px rgba(20,22,26,0.1);min-height:531px"><img class="wp-block-cover__image-background wp-image-354 size-full" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/shop-english.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"1.149375rem"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product-category","args":{"slug":"english","key":"name"}}}},"style":{"color":{"text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontSize":"2.5rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.5","letterSpacing":"0.025rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"2.25rem","lineHeight":"1","letterSpacing":"0.01875rem"}}}} -->
 <h3 class="wp-block-heading has-text-color has-link-color" style="color:#ffffff;font-size:2.5rem;font-style:normal;font-weight:700;letter-spacing:0.025rem;line-height:1.5;text-transform:uppercase">English</h3>
 <!-- /wp:heading -->
@@ -275,8 +275,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-western.webp","id":355,"isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.18},"minHeight":531,"minHeightUnit":"px","customGradient":"linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)","contentPosition":"center left","sizeSlug":"full","metadata":{"name":"Western"},"className":"pc-hover-zoom","style":{"border":{"radius":"3px"},"shadow":"0px 6px 16px 0px rgba(20,22,26,0.1)","spacing":{"padding":{"top":"2.4rem","right":"2.4rem","bottom":"2.4rem","left":"2.4rem"}},"@mobile":{"dimensions":{"minHeight":"240px"},"spacing":{"padding":{"top":"2rem","right":"1.75rem","bottom":"2rem","left":"1.75rem"}},"border":{"radius":"0px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover has-custom-content-position is-position-center-left pc-hover-zoom" style="border-radius:3px;padding-top:2.4rem;padding-right:2.4rem;padding-bottom:2.4rem;padding-left:2.4rem;box-shadow:0px 6px 16px 0px rgba(20,22,26,0.1);min-height:531px"><img class="wp-block-cover__image-background wp-image-355 size-full" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-western.webp" style="object-position:50% 18%" data-object-fit="cover" data-object-position="50% 18%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"1.149375rem"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/shop-western.webp","id":355,"isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.18},"minHeight":531,"minHeightUnit":"px","customGradient":"linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)","contentPosition":"center left","sizeSlug":"full","metadata":{"name":"Western"},"className":"pc-hover-zoom","style":{"border":{"radius":"3px"},"shadow":"0px 6px 16px 0px rgba(20,22,26,0.1)","spacing":{"padding":{"top":"2.4rem","right":"2.4rem","bottom":"2.4rem","left":"2.4rem"}},"@mobile":{"dimensions":{"minHeight":"240px"},"spacing":{"padding":{"top":"2rem","right":"1.75rem","bottom":"2rem","left":"1.75rem"}},"border":{"radius":"0px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-center-left pc-hover-zoom" style="border-radius:3px;padding-top:2.4rem;padding-right:2.4rem;padding-bottom:2.4rem;padding-left:2.4rem;box-shadow:0px 6px 16px 0px rgba(20,22,26,0.1);min-height:531px"><img class="wp-block-cover__image-background wp-image-355 size-full" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/shop-western.webp" style="object-position:50% 18%" data-object-fit="cover" data-object-position="50% 18%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(90deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0) 60%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"1.149375rem"},"@mobile":{"spacing":{"blockGap":"0.75rem"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product-category","args":{"slug":"western","key":"name"}}}},"style":{"color":{"text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontSize":"2.5rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.5","letterSpacing":"0.025rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"2.25rem","lineHeight":"1","letterSpacing":"0.01875rem"}}}} -->
 <h3 class="wp-block-heading has-text-color has-link-color" style="color:#ffffff;font-size:2.5rem;font-style:normal;font-weight:700;letter-spacing:0.025rem;line-height:1.5;text-transform:uppercase">Western</h3>
 <!-- /wp:heading -->
@@ -304,7 +304,7 @@
 <!-- wp:group {"metadata":{"name":"Products"},"className":"trending-grid","style":{"spacing":{"margin":{"top":"3rem"},"blockGap":"1.6rem"},"@mobile":{"spacing":{"margin":{"top":"1.75rem"},"blockGap":"0.75rem"}}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
 <div class="wp-block-group trending-grid" style="margin-top:3rem"><!-- wp:group {"metadata":{"name":"Ventech Sport Boots"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":359,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":1,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":1,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.jpg" alt="" class="wp-image-359" style="aspect-ratio:29/30;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/ventech-sport-boots.jpg" alt="" class="wp-image-359" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product","args":{"featured":1,"key":"name"}}}},"style":{"spacing":{"padding":{"top":"0.349375rem"}},"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textAlign":"center","fontSize":"0.92rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.40204082","letterSpacing":"0.036875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","lineHeight":"1.4","letterSpacing":"0.03125rem"},"spacing":{"padding":{"top":"0.199375rem","right":"0.75rem","bottom":"0","left":"0.75rem"}}}},"fontFamily":"montserrat"} -->
@@ -320,7 +320,7 @@
 
 <!-- wp:group {"metadata":{"name":"Stealth Air Ride Saddle Pad"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":360,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":2,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":2,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.jpg" alt="" class="wp-image-360" style="aspect-ratio:29/30;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/stealth-air-ride-saddle-pad.jpg" alt="" class="wp-image-360" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product","args":{"featured":2,"key":"name"}}}},"style":{"spacing":{"padding":{"top":"0.349375rem"}},"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textAlign":"center","fontSize":"0.92rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.40204082","letterSpacing":"0.036875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","lineHeight":"1.4","letterSpacing":"0.03125rem"},"spacing":{"padding":{"top":"0.199375rem","right":"0.75rem","bottom":"0","left":"0.75rem"}}}},"fontFamily":"montserrat"} -->
@@ -336,7 +336,7 @@
 
 <!-- wp:group {"metadata":{"name":"Comfort Fit Fly Mask"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":361,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":3,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":3,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/comfort-fit-fly-mask.webp" alt="" class="wp-image-361" style="aspect-ratio:29/30;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/comfort-fit-fly-mask.webp" alt="" class="wp-image-361" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product","args":{"featured":3,"key":"name"}}}},"style":{"spacing":{"padding":{"top":"0.349375rem"}},"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textAlign":"center","fontSize":"0.92rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.40204082","letterSpacing":"0.036875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","lineHeight":"1.4","letterSpacing":"0.03125rem"},"spacing":{"padding":{"top":"0.199375rem","right":"0.75rem","bottom":"0","left":"0.75rem"}}}},"fontFamily":"montserrat"} -->
@@ -352,7 +352,7 @@
 
 <!-- wp:group {"metadata":{"name":"Pro Performance Front Splint Boots"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":362,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":4,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":4,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.jpg" alt="" class="wp-image-362" style="aspect-ratio:29/30;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/pro-performance-front-splint-boots.jpg" alt="" class="wp-image-362" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product","args":{"featured":4,"key":"name"}}}},"style":{"spacing":{"padding":{"top":"0.349375rem"}},"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textAlign":"center","fontSize":"0.92rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.40204082","letterSpacing":"0.036875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","lineHeight":"1.4","letterSpacing":"0.03125rem"},"spacing":{"padding":{"top":"0.199375rem","right":"0.75rem","bottom":"0","left":"0.75rem"}}}},"fontFamily":"montserrat"} -->
@@ -401,7 +401,7 @@
 <!-- wp:button {"metadata":{"bindings":{"url":{"source":"profchoice/shop","args":{"key":"url"}}}},"style":{"border":{"width":"1px","color":"#c32627","radius":{"topLeft":"3px","topRight":"3px","bottomLeft":"3px","bottomRight":"3px"}},"color":{"text":"#ffffff","background":"#c32627"},"elements":{"link":{"color":{"text":"#ffffff"}}},"spacing":{"padding":{"top":"0.9875rem","right":"2.1rem","bottom":"1.094375rem","left":"2.1rem"}},"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","fontSize":"0.78rem","letterSpacing":"0.116875rem","lineHeight":"1.4976"},"@mobile":{"spacing":{"padding":{"top":"0.9375rem","right":"1.75rem","bottom":"0.9375rem","left":"1.75rem"}},"typography":{"fontSize":"0.625rem","letterSpacing":"0.1125rem","lineHeight":"1.2"}},":hover":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":focus-visible":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":active":{"color":{"background":"#8e1b1a","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color has-custom-font-size wp-element-button" style="border-color:#c32627;border-width:1px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;color:#ffffff;background-color:#c32627;padding-top:0.9875rem;padding-right:2.1rem;padding-bottom:1.094375rem;padding-left:2.1rem;font-size:0.78rem;font-style:normal;font-weight:700;letter-spacing:0.116875rem;line-height:1.4976;text-transform:uppercase">Shop Her Setup</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/brittany-pozzi-tonozzi.webp" alt="" class="wp-image-372 size-full" style="object-position:50% 72%"/></figure></div>
+<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/brittany-pozzi-tonozzi.webp" alt="" class="wp-image-372 size-full" style="object-position:50% 72%"/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:profchoice/carousel-slide -->
 
@@ -431,7 +431,7 @@
 <!-- wp:button {"metadata":{"bindings":{"url":{"source":"profchoice/shop","args":{"key":"url"}}}},"style":{"border":{"width":"1px","color":"#c32627","radius":{"topLeft":"3px","topRight":"3px","bottomLeft":"3px","bottomRight":"3px"}},"color":{"text":"#ffffff","background":"#c32627"},"elements":{"link":{"color":{"text":"#ffffff"}}},"spacing":{"padding":{"top":"0.9875rem","right":"2.1rem","bottom":"1.094375rem","left":"2.1rem"}},"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","fontSize":"0.78rem","letterSpacing":"0.116875rem","lineHeight":"1.4976"},"@mobile":{"spacing":{"padding":{"top":"0.9375rem","right":"1.75rem","bottom":"0.9375rem","left":"1.75rem"}},"typography":{"fontSize":"0.625rem","letterSpacing":"0.1125rem","lineHeight":"1.2"}},":hover":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":focus-visible":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":active":{"color":{"background":"#8e1b1a","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color has-custom-font-size wp-element-button" style="border-color:#c32627;border-width:1px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;color:#ffffff;background-color:#c32627;padding-top:0.9875rem;padding-right:2.1rem;padding-bottom:1.094375rem;padding-left:2.1rem;font-size:0.78rem;font-style:normal;font-weight:700;letter-spacing:0.116875rem;line-height:1.4976;text-transform:uppercase">Shop Her Setup</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/brittany-pozzi-tonozzi.webp" alt="" class="wp-image-372 size-full" style="object-position:50% 72%"/></figure></div>
+<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/brittany-pozzi-tonozzi.webp" alt="" class="wp-image-372 size-full" style="object-position:50% 72%"/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:profchoice/carousel-slide -->
 
@@ -461,7 +461,7 @@
 <!-- wp:button {"metadata":{"bindings":{"url":{"source":"profchoice/shop","args":{"key":"url"}}}},"style":{"border":{"width":"1px","color":"#c32627","radius":{"topLeft":"3px","topRight":"3px","bottomLeft":"3px","bottomRight":"3px"}},"color":{"text":"#ffffff","background":"#c32627"},"elements":{"link":{"color":{"text":"#ffffff"}}},"spacing":{"padding":{"top":"0.9875rem","right":"2.1rem","bottom":"1.094375rem","left":"2.1rem"}},"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","fontSize":"0.78rem","letterSpacing":"0.116875rem","lineHeight":"1.4976"},"@mobile":{"spacing":{"padding":{"top":"0.9375rem","right":"1.75rem","bottom":"0.9375rem","left":"1.75rem"}},"typography":{"fontSize":"0.625rem","letterSpacing":"0.1125rem","lineHeight":"1.2"}},":hover":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":focus-visible":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":active":{"color":{"background":"#8e1b1a","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color has-custom-font-size wp-element-button" style="border-color:#c32627;border-width:1px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;color:#ffffff;background-color:#c32627;padding-top:0.9875rem;padding-right:2.1rem;padding-bottom:1.094375rem;padding-left:2.1rem;font-size:0.78rem;font-style:normal;font-weight:700;letter-spacing:0.116875rem;line-height:1.4976;text-transform:uppercase">Shop Her Setup</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/brittany-pozzi-tonozzi.webp" alt="" class="wp-image-372 size-full" style="object-position:50% 72%"/></figure></div>
+<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/brittany-pozzi-tonozzi.webp" alt="" class="wp-image-372 size-full" style="object-position:50% 72%"/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:profchoice/carousel-slide -->
 
@@ -491,7 +491,7 @@
 <!-- wp:button {"metadata":{"bindings":{"url":{"source":"profchoice/shop","args":{"key":"url"}}}},"style":{"border":{"width":"1px","color":"#c32627","radius":{"topLeft":"3px","topRight":"3px","bottomLeft":"3px","bottomRight":"3px"}},"color":{"text":"#ffffff","background":"#c32627"},"elements":{"link":{"color":{"text":"#ffffff"}}},"spacing":{"padding":{"top":"0.9875rem","right":"2.1rem","bottom":"1.094375rem","left":"2.1rem"}},"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","fontSize":"0.78rem","letterSpacing":"0.116875rem","lineHeight":"1.4976"},"@mobile":{"spacing":{"padding":{"top":"0.9375rem","right":"1.75rem","bottom":"0.9375rem","left":"1.75rem"}},"typography":{"fontSize":"0.625rem","letterSpacing":"0.1125rem","lineHeight":"1.2"}},":hover":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":focus-visible":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":active":{"color":{"background":"#8e1b1a","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color has-custom-font-size wp-element-button" style="border-color:#c32627;border-width:1px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;color:#ffffff;background-color:#c32627;padding-top:0.9875rem;padding-right:2.1rem;padding-bottom:1.094375rem;padding-left:2.1rem;font-size:0.78rem;font-style:normal;font-weight:700;letter-spacing:0.116875rem;line-height:1.4976;text-transform:uppercase">Shop Her Setup</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/brittany-pozzi-tonozzi.webp" alt="" class="wp-image-372 size-full" style="object-position:50% 72%"/></figure></div>
+<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/brittany-pozzi-tonozzi.webp" alt="" class="wp-image-372 size-full" style="object-position:50% 72%"/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:profchoice/carousel-slide -->
 
@@ -521,47 +521,47 @@
 
 <!-- wp:group {"metadata":{"name":"Logos"},"className":"sponsors-logos","style":{"spacing":{"margin":{"top":"1.75rem","right":"-10.28px","left":"-10.28px"},"blockGap":"var:preset|spacing|40"},"@mobile":{"spacing":{"margin":{"top":"1.5rem","right":"0","left":"0"},"blockGap":{"top":"16px","left":"16px"}}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
 <div class="wp-block-group sponsors-logos" style="margin-top:1.75rem;margin-right:-10.28px;margin-left:-10.28px"><!-- wp:image {"id":377,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"American Cowboys Team Roping Association"},"style":{"css":"box-sizing: border-box;\nwidth: 65.6px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 63.6px;\nheight: 54.9px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-actra.jpg" alt="American Cowboys Team Roping Association" class="wp-image-377"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-actra.jpg" alt="American Cowboys Team Roping Association" class="wp-image-377"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":378,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"National High School Finals Rodeo"},"style":{"css":"box-sizing: border-box;\nwidth: 104.67px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 82.67px;\nheight: 49.76px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nhsfr.jpg" alt="National High School Finals Rodeo" class="wp-image-378"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-nhsfr.jpg" alt="National High School Finals Rodeo" class="wp-image-378"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":379,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"National Barrel Horse Association"},"style":{"css":"box-sizing: border-box;\nwidth: 108.21px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 86.21px;\nheight: 62px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nbha.jpg" alt="National Barrel Horse Association" class="wp-image-379"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-nbha.jpg" alt="National Barrel Horse Association" class="wp-image-379"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":380,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"South Point"},"style":{"css":"box-sizing: border-box;\nwidth: 92px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 74px;\nheight: 56.95px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-south-point.webp" alt="South Point" class="wp-image-380"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-south-point.webp" alt="South Point" class="wp-image-380"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":381,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Heart of Oklahoma Youth Rodeo Association"},"style":{"css":"box-sizing: border-box;\nwidth: 150px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 105.72px;\nheight: 54.39px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-hoyra.jpg" alt="Heart of Oklahoma Youth Rodeo Association" class="wp-image-381"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-hoyra.jpg" alt="Heart of Oklahoma Youth Rodeo Association" class="wp-image-381"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":382,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Ranch Sorting National Championships"},"style":{"css":"box-sizing: border-box;\nwidth: 150px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 107.99px;\nheight: 51.23px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-rsnc.webp" alt="Ranch Sorting National Championships" class="wp-image-382"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-rsnc.webp" alt="Ranch Sorting National Championships" class="wp-image-382"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":383,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Rancho Rio"},"style":{"css":"box-sizing: border-box;\nwidth: 76.18px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 52.18px;\nheight: 52.18px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-rancho-rio.webp" alt="Rancho Rio" class="wp-image-383"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-rancho-rio.webp" alt="Rancho Rio" class="wp-image-383"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":384,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Lazy E Arena"},"style":{"css":"box-sizing: border-box;\nwidth: 150px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 125.52px;\nheight: 38.49px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-lazy-e-arena.webp" alt="Lazy E Arena" class="wp-image-384"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-lazy-e-arena.webp" alt="Lazy E Arena" class="wp-image-384"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":385,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Women\u0026#8217;s Professional Rodeo Association"},"style":{"css":"box-sizing: border-box;\nwidth: 65.71px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 53px;\nheight: 54px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-wpra.webp" alt="Women's Professional Rodeo Association" class="wp-image-385"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-wpra.webp" alt="Women's Professional Rodeo Association" class="wp-image-385"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":386,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"FEI"},"style":{"css":"box-sizing: border-box;\nwidth: 97.1px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 77.1px;\nheight: 51.97px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-fei.webp" alt="FEI" class="wp-image-386"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-fei.webp" alt="FEI" class="wp-image-386"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":387,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Kentucky Three-Day Event"},"style":{"css":"box-sizing: border-box;\nwidth: 97.09px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 77.09px;\nheight: 26.78px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-kentucky-three-day-event.webp" alt="Kentucky Three-Day Event" class="wp-image-387"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-kentucky-three-day-event.webp" alt="Kentucky Three-Day Event" class="wp-image-387"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -790,7 +790,7 @@
   <link>https://professionals-choice.wp.local/home/50-years/</link>
   <pubDate>Mon, 28 Sep 2026 21:14:20 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50-years.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/50-years.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -808,7 +808,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50-years.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/50-years.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/50-years.webp]]></wp:meta_value>
@@ -827,7 +827,7 @@
   <link>https://professionals-choice.wp.local/home/50th-anniversary-mix-blend-bg/</link>
   <pubDate>Tue, 29 Sep 2026 12:59:22 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50th-anniversary-mix-blend-bg.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/50th-anniversary-mix-blend-bg.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -845,7 +845,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50th-anniversary-mix-blend-bg.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/50th-anniversary-mix-blend-bg.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/50th-anniversary-mix-blend-bg.webp]]></wp:meta_value>
@@ -860,7 +860,7 @@
   <link>https://professionals-choice.wp.local/shop-english/</link>
   <pubDate>Tue, 29 Sep 2026 19:28:07 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-english.jpg</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/shop-english.jpg</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -878,7 +878,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-english.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/shop-english.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/shop-english.webp]]></wp:meta_value>
@@ -893,7 +893,7 @@
   <link>https://professionals-choice.wp.local/shop-western/</link>
   <pubDate>Tue, 29 Sep 2026 19:28:10 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-western.jpg</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/shop-western.jpg</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -911,7 +911,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/shop-western.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/shop-western.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/shop-western.webp]]></wp:meta_value>
@@ -926,7 +926,7 @@
   <link>https://professionals-choice.wp.local/ventech-sport-boots-2/</link>
   <pubDate>Tue, 29 Sep 2026 19:44:06 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/ventech-sport-boots.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -944,7 +944,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.jpg</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/ventech-sport-boots.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/ventech-sport-boots.jpg]]></wp:meta_value>
@@ -963,7 +963,7 @@
   <link>https://professionals-choice.wp.local/stealth-air-ride-saddle-pad-2/</link>
   <pubDate>Tue, 29 Sep 2026 19:44:14 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/stealth-air-ride-saddle-pad.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -981,7 +981,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.jpg</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/stealth-air-ride-saddle-pad.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/stealth-air-ride-saddle-pad.jpg]]></wp:meta_value>
@@ -1000,7 +1000,7 @@
   <link>https://professionals-choice.wp.local/comfort-fit-fly-mask/</link>
   <pubDate>Tue, 29 Sep 2026 19:44:17 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/comfort-fit-fly-mask.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/comfort-fit-fly-mask.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1018,7 +1018,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/comfort-fit-fly-mask.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/comfort-fit-fly-mask.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/comfort-fit-fly-mask.webp]]></wp:meta_value>
@@ -1033,7 +1033,7 @@
   <link>https://professionals-choice.wp.local/pro-performance-front-splint-boots-2/</link>
   <pubDate>Tue, 29 Sep 2026 19:44:20 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/pro-performance-front-splint-boots.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1051,7 +1051,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.jpg</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/pro-performance-front-splint-boots.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/pro-performance-front-splint-boots.jpg]]></wp:meta_value>
@@ -1070,7 +1070,7 @@
   <link>https://professionals-choice.wp.local/brittany-pozzi-tonozzi/</link>
   <pubDate>Tue, 29 Sep 2026 19:51:11 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/brittany-pozzi-tonozzi.jpg</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/brittany-pozzi-tonozzi.jpg</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1088,7 +1088,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/brittany-pozzi-tonozzi.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/brittany-pozzi-tonozzi.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/brittany-pozzi-tonozzi.webp]]></wp:meta_value>
@@ -1103,7 +1103,7 @@
   <link>https://professionals-choice.wp.local/american-cowboys-team-roping-association/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:11 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-actra.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-actra.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1121,7 +1121,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-actra.jpg</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-actra.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-actra.jpg]]></wp:meta_value>
@@ -1140,7 +1140,7 @@
   <link>https://professionals-choice.wp.local/national-high-school-finals-rodeo/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:20 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nhsfr.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-nhsfr.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1158,7 +1158,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nhsfr.jpg</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-nhsfr.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-nhsfr.jpg]]></wp:meta_value>
@@ -1177,7 +1177,7 @@
   <link>https://professionals-choice.wp.local/national-barrel-horse-association/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:23 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nbha.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-nbha.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1195,7 +1195,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nbha.jpg</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-nbha.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-nbha.jpg]]></wp:meta_value>
@@ -1214,7 +1214,7 @@
   <link>https://professionals-choice.wp.local/south-point/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:25 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-south-point.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-south-point.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1232,7 +1232,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-south-point.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-south-point.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-south-point.webp]]></wp:meta_value>
@@ -1251,7 +1251,7 @@
   <link>https://professionals-choice.wp.local/heart-of-oklahoma-youth-rodeo-association/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:28 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-hoyra.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-hoyra.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1269,7 +1269,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-hoyra.jpg</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-hoyra.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-hoyra.jpg]]></wp:meta_value>
@@ -1288,7 +1288,7 @@
   <link>https://professionals-choice.wp.local/ranch-sorting-national-championships/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:31 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-rsnc.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-rsnc.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1306,7 +1306,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-rsnc.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-rsnc.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-rsnc.webp]]></wp:meta_value>
@@ -1325,7 +1325,7 @@
   <link>https://professionals-choice.wp.local/rancho-rio/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:34 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-rancho-rio.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-rancho-rio.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1343,7 +1343,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-rancho-rio.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-rancho-rio.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-rancho-rio.webp]]></wp:meta_value>
@@ -1362,7 +1362,7 @@
   <link>https://professionals-choice.wp.local/lazy-e-arena/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:37 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-lazy-e-arena.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-lazy-e-arena.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1380,7 +1380,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-lazy-e-arena.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-lazy-e-arena.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-lazy-e-arena.webp]]></wp:meta_value>
@@ -1399,7 +1399,7 @@
   <link>https://professionals-choice.wp.local/womens-professional-rodeo-association/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:40 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-wpra.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-wpra.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1417,7 +1417,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-wpra.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-wpra.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-wpra.webp]]></wp:meta_value>
@@ -1436,7 +1436,7 @@
   <link>https://professionals-choice.wp.local/fei/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:43 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-fei.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-fei.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1454,7 +1454,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-fei.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-fei.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-fei.webp]]></wp:meta_value>
@@ -1473,7 +1473,7 @@
   <link>https://professionals-choice.wp.local/kentucky-three-day-event/</link>
   <pubDate>Tue, 29 Sep 2026 20:32:45 +0000</pubDate>
   <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-kentucky-three-day-event.png</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-kentucky-three-day-event.png</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1491,7 +1491,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-kentucky-three-day-event.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/logo-kentucky-three-day-event.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/logo-kentucky-three-day-event.webp]]></wp:meta_value>
@@ -1535,7 +1535,7 @@
   <link>https://professionals-choice.wp.local/home/video-from-7ii7txnzolk/</link>
   <pubDate>Wed, 30 Sep 2026 20:55:15 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.mp4</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/video-from-7Ii7txNZOlk.mp4</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1553,7 +1553,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.mp4</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/video-from-7Ii7txNZOlk.mp4</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/video-from-7Ii7txNZOlk.mp4]]></wp:meta_value>
@@ -1568,7 +1568,7 @@
   <link>https://professionals-choice.wp.local/home/video-from-7ii7txnzolk-3/</link>
   <pubDate>Wed, 30 Sep 2026 21:05:58 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.jpg</guid>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/video-from-7Ii7txNZOlk.jpg</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1586,7 +1586,7 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/video-from-7Ii7txNZOlk.webp</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
     <wp:meta_value><![CDATA[2026/09/video-from-7Ii7txNZOlk.webp]]></wp:meta_value>
