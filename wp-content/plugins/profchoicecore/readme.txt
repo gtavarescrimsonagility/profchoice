@@ -46,7 +46,7 @@ The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt
 == Changelog ==
 
 = 0.1.0 =
-First release, for the Professional's Choice Homepage (COMB-598).
+First release, for the Professional's Choice Homepage.
 
 * Newsletter block with Email and Message (success, pending, error) children: Interactivity API submit with a no-JavaScript fallback, subscribers stored as `subscriber` users who cannot log in, Users > Subscribers list with CSV export, optional email confirmation (Settings > Subscribers), honeypot and rate limit.
 * Carousel block with Slide, Previous, Next and Indicators children: slide or fade transitions (Embla), loop and autoplay settings, keyboard navigation (also after clicking a slide), inert inactive slides, reduced-motion support, and server-rendered state. The toolbar picks the slide shown in the editor and adds slides and indicators; new slides start with a numbered gray Cover.

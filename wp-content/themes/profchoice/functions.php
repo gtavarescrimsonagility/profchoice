@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /*
- * Brand palette (Figma COMB-527) as the parent's palette defaults. The parent
+ * Brand palette (from the Figma design) as the parent's palette defaults. The parent
  * turns each entry into a Customizer control, a --cbv-{slug} variable and an
  * editor palette color (settings.color.palette), so defaults live in code and
  * reach every environment; the Customizer can still override them.
