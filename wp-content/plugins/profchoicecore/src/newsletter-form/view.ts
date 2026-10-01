@@ -5,7 +5,7 @@
 import { store, getContext } from '@wordpress/interactivity';
 import type { NewsletterContext } from './types';
 
-type SubscribeResponse = { ok?: boolean; message?: string };
+type SubscribeResponse = { ok?: boolean; pending?: boolean; message?: string };
 
 /**
  * restUrl is provided by render.php (wp_interactivity_state). It is not
@@ -20,7 +20,20 @@ const { state } = store( 'profchoice/newsletter', {
 			return getContext< NewsletterContext >().status === 'submitting';
 		},
 		get isSuccess(): boolean {
-			return getContext< NewsletterContext >().status === 'success';
+			const { status, hasPending } = getContext< NewsletterContext >();
+			return (
+				status === 'success' || ( status === 'pending' && ! hasPending )
+			);
+		},
+		// Subscribed, waiting for the email confirmation.
+		get isPending(): boolean {
+			const { status, hasPending } = getContext< NewsletterContext >();
+			return status === 'pending' && hasPending;
+		},
+		// Success or pending: the field and button are no longer needed.
+		get isDone(): boolean {
+			const { status } = getContext< NewsletterContext >();
+			return status === 'success' || status === 'pending';
 		},
 		get isError(): boolean {
 			return getContext< NewsletterContext >().status === 'error';
@@ -43,7 +56,6 @@ const { state } = store( 'profchoice/newsletter', {
 			const body = {
 				email: String( data.get( 'email' ) ?? '' ),
 				website: String( data.get( 'website' ) ?? '' ),
-				source: Number( data.get( 'source' ) ?? 0 ),
 			};
 
 			try {
@@ -60,7 +72,7 @@ const { state } = store( 'profchoice/newsletter', {
 					throw new Error( json.message ?? response.statusText );
 				}
 
-				context.status = 'success';
+				context.status = json.pending ? 'pending' : 'success';
 				form.reset();
 			} catch {
 				context.status = 'error';

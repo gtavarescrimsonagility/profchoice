@@ -16,10 +16,12 @@ export default function Edit( {
 	setAttributes,
 }: BlockEditProps< NewsletterMessageAttributes > ) {
 	const { type } = attributes;
-	const label =
-		type === 'error'
-			? __( 'Shown on error', 'profchoicecore' )
-			: __( 'Shown on success', 'profchoicecore' );
+	const labels = {
+		success: __( 'Shown on success', 'profchoicecore' ),
+		pending: __( 'Shown when pending confirmation', 'profchoicecore' ),
+		error: __( 'Shown on error', 'profchoicecore' ),
+	};
+	const label = labels[ type ] ?? labels.success;
 	const blockProps = useBlockProps( {
 		className: `pc-newsletter-message is-${ type }`,
 		'data-pc-label': label,
@@ -43,6 +45,13 @@ export default function Edit( {
 							{
 								label: __( 'Success', 'profchoicecore' ),
 								value: 'success',
+							},
+							{
+								label: __(
+									'Pending confirmation',
+									'profchoicecore'
+								),
+								value: 'pending',
 							},
 							{
 								label: __( 'Error', 'profchoicecore' ),

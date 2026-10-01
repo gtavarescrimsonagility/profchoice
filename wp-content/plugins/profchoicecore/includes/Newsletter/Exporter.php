@@ -1,6 +1,6 @@
 <?php
 /**
- * Newsletter subscribers CSV export.
+ * Newsletter subscribers CSV export: the subscribers' emails.
  *
  * Download headers and cell escaping adapted from the axellcore plugin's
  * import/export tool; the file is streamed directly instead of batched.
@@ -11,14 +11,15 @@
 namespace ProfChoiceCore\Newsletter;
 
 use ProfChoiceCore\Csv;
+use WP_User_Query;
 
 /**
- * "Export CSV" button on the Subscribers screen and its download handler.
+ * Export handler for the Subscribers screen's Export button.
  */
 final class Exporter {
 
 	const ACTION     = 'profchoicecore_export_subscribers';
-	const CAPABILITY = 'manage_options';
+	const CAPABILITY = 'list_users';
 
 	/**
 	 * Register hooks.
@@ -26,32 +27,21 @@ final class Exporter {
 	 * @return void
 	 */
 	public static function register_hooks() {
-		add_action( 'manage_posts_extra_tablenav', array( __CLASS__, 'button' ) );
 		add_action( 'admin_post_' . self::ACTION, array( __CLASS__, 'download' ) );
 	}
 
 	/**
-	 * Print the export button above the subscribers list.
+	 * The export URL (nonced).
 	 *
-	 * @param string $which Tablenav position.
-	 * @return void
+	 * @return string
 	 */
-	public static function button( $which ) {
-		$screen = get_current_screen();
-		if ( 'top' !== $which || ! $screen || Subscribers::POST_TYPE !== $screen->post_type || ! current_user_can( self::CAPABILITY ) ) {
-			return;
-		}
-
-		$url = wp_nonce_url( admin_url( 'admin-post.php?action=' . self::ACTION ), self::ACTION );
-		printf(
-			'<div class="alignleft actions"><a class="button" href="%s">%s</a></div>',
-			esc_url( $url ),
-			esc_html__( 'Export CSV', 'profchoicecore' )
-		);
+	public static function url() {
+		return wp_nonce_url( admin_url( 'admin-post.php?action=' . self::ACTION ), self::ACTION );
 	}
 
 	/**
-	 * Stream every subscriber as CSV.
+	 * Stream the subscribers' emails as CSV, one per line under an "Email"
+	 * header, oldest first.
 	 *
 	 * @return void
 	 */
@@ -69,36 +59,28 @@ final class Exporter {
 
 		$out = fopen( 'php://output', 'w' ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fopen
 		fwrite( $out, Csv::BOM ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fwrite
-		fwrite( $out, Csv::line( array( __( 'Email', 'profchoicecore' ), __( 'User', 'profchoicecore' ), __( 'Source', 'profchoicecore' ), __( 'Date', 'profchoicecore' ) ) ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fwrite
+		fwrite( $out, Csv::line( array( __( 'Email', 'profchoicecore' ) ) ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fwrite
 
 		$page = 1;
 		do {
-			$ids = get_posts(
+			$emails = ( new WP_User_Query(
 				array(
-					'post_type'      => Subscribers::POST_TYPE,
-					'post_status'    => 'any',
-					'posts_per_page' => 500,
-					'paged'          => $page,
-					'orderby'        => 'date',
-					'order'          => 'ASC',
-					'fields'         => 'ids',
+					'role'        => Subscribers::ROLE,
+					'number'      => 500,
+					'paged'       => $page,
+					'orderby'     => 'registered',
+					'order'       => 'ASC',
+					'fields'      => 'user_email',
+					'count_total' => false,
 				)
-			);
+			) )->get_results();
 
-			foreach ( $ids as $id ) {
-				$user   = get_userdata( (int) get_post_meta( $id, '_pc_user_id', true ) );
-				$source = (int) get_post_meta( $id, '_pc_source', true );
-				$row    = array(
-					(string) get_post_meta( $id, '_pc_email', true ),
-					$user ? $user->user_login : '',
-					$source ? (string) get_permalink( $source ) : '',
-					(string) get_post_field( 'post_date', $id ),
-				);
-				fwrite( $out, Csv::line( $row ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fwrite
+			foreach ( $emails as $email ) {
+				fwrite( $out, Csv::line( array( (string) $email ) ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fwrite
 			}
 
 			++$page;
-		} while ( count( $ids ) === 500 );
+		} while ( count( $emails ) === 500 );
 
 		fclose( $out ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fclose
 		exit;

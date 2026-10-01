@@ -35,6 +35,21 @@ const TEMPLATE: TemplateArray = [
 	],
 	[
 		'profchoice/newsletter-message',
+		{ type: 'pending' },
+		[
+			[
+				'core/paragraph',
+				{
+					content: __(
+						'Almost there! Check your email to confirm your subscription.',
+						'profchoicecore'
+					),
+				},
+			],
+		],
+	],
+	[
+		'profchoice/newsletter-message',
 		{ type: 'error' },
 		[
 			[

@@ -7,6 +7,7 @@
 
 namespace ProfChoiceCore;
 
+use ProfChoiceCore\Newsletter\Confirmation;
 use ProfChoiceCore\Newsletter\Exporter;
 use ProfChoiceCore\Newsletter\Subscribe;
 use ProfChoiceCore\Newsletter\Subscribers;
@@ -28,6 +29,7 @@ final class Plugin {
 		InlineIcon::register_hooks();
 		VisuallyHidden::register_hooks();
 		Subscribers::register_hooks();
+		Confirmation::register_hooks();
 		Subscribe::register_hooks();
 		Exporter::register_hooks();
 	}

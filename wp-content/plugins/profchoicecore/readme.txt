@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.11.1
+Stable tag: 0.12.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Blocks and editor tools for Professional's Choice: newsletter form, carousel, vi
 
 Blocks (namespace `profchoice/`):
 
-* **Newsletter Form** (`profchoice/newsletter-form`) with **Newsletter Email** and **Newsletter Message** (success/error) children. Submits through the Interactivity API to `POST /wp-json/profchoicecore/v1/subscribe`, and works without JavaScript through `admin-post.php`. Each email becomes a `subscriber` user (existing accounts keep their role) and a private "Subscribers" entry, exportable as CSV from the Subscribers screen. Protected by a honeypot field and a per-IP rate limit; it sends no email.
+* **Newsletter Form** (`profchoice/newsletter-form`) with **Newsletter Email** and **Newsletter Message** (success, pending confirmation, error) children. Submits through the Interactivity API to `POST /wp-json/profchoicecore/v1/subscribe`, and works without JavaScript through `admin-post.php`. Each email becomes a `subscriber` user (existing accounts keep their role); no email is sent. Optionally (Settings > Subscribers) new subscribers must confirm by email first: they get an Unconfirmed role and a confirmation link, and become Subscribers once they follow it. Subscribers, confirmed or not, cannot log in or reset a password. The Users > Subscribers screen lists their emails like a core list (search, sorting, pagination) and exports them as CSV. Protected by a honeypot field and a per-IP rate limit.
 * **Carousel** (`profchoice/carousel`) with **Carousel Slide**, **Carousel Arrows** and **Carousel Dots** children. Fade or slide transitions (Embla), keyboard navigation, inactive slides made inert, and reduced-motion support. The arrows are two Button blocks, so they take every button style including the Hover/Focus/Active states; the Active/Inactive control settings style both arrows while enabled and disabled (e.g. at the ends when the carousel does not loop). The dots have Default and Active settings. In both blocks the second state inherits whatever it leaves empty from the first, so only the differences are set. Both can overlay the slides (arrows positioned with `--pc-carousel-arrows-*`; overlay dots are a full-width strip at the bottom, placed by the block's justification and padding) or sit in the flow.
 
 Editor features:
@@ -25,7 +25,9 @@ Editor features:
 
 Hooks:
 
-* `profchoicecore_newsletter_subscribed( $email, $user_id, $post_id, $source )` after a subscription.
+* `profchoicecore_newsletter_subscribed( $email, $user_id )` after a subscription (after confirming, when email confirmation is on).
+* `profchoicecore_newsletter_pending( $email, $user_id )` after a subscription that waits for confirmation.
+* `profchoicecore_newsletter_confirmation_email` filters the confirmation email (to, subject, message, headers).
 
 == Development ==
 
@@ -41,6 +43,13 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.12.0 =
+* Newsletter: subscriptions only create a `subscriber` user (no more "Subscribers" posts or source tracking). Subscribers cannot log in or reset a password.
+* Users > Subscribers: a read-only list of the subscribers' emails (search, sorting, pagination), with Export as the header action. The CSV only has the emails.
+* Optional email confirmation (Settings > Subscribers): new subscribers get the Unconfirmed role and a confirmation link; they become Subscribers once they confirm.
+* Newsletter Message: a "Pending confirmation" type, shown after subscribing while confirmation is required (forms without it show the success message).
+* The `profchoicecore_newsletter_subscribed` action now passes `( $email, $user_id )`; new `profchoicecore_newsletter_pending` action and `profchoicecore_newsletter_confirmation_email` filter.
 
 = 0.11.1 =
 * "Professional's Choice" block category, first in the inserter, holding the plugin's blocks.

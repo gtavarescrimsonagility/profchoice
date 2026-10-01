@@ -6,13 +6,13 @@
 	"title": "Newsletter Message",
 	"category": "profchoice",
 	"icon": "feedback",
-	"description": "A success or error message shown after the newsletter form is submitted.",
+	"description": "A message shown after the newsletter form is submitted: on success, while waiting for the email confirmation (pending), or on error.",
 	"ancestor": [ "profchoice/newsletter-form" ],
 	"textdomain": "profchoicecore",
 	"attributes": {
 		"type": {
 			"type": "string",
-			"enum": [ "success", "error" ],
+			"enum": [ "success", "pending", "error" ],
 			"default": "success"
 		}
 	},

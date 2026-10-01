@@ -1,4 +1,4 @@
 export type NewsletterMessageAttributes = {
-	type: 'success' | 'error';
+	type: 'success' | 'pending' | 'error';
 	[ key: string ]: unknown;
 };
