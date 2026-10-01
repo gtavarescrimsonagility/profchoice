@@ -409,7 +409,7 @@
 <!-- /wp:buttons -->
 <!-- /wp:profchoice/carousel-control-next -->
 
-<!-- wp:profchoice/carousel-indicators {"default":{"width":"10px","height":"6px","background":"#ffffff8c","border":{"color":"#ffffff","style":"solid","width":"1px"},"radius":"5px"},"active":{"width":"20px","background":"#c32627","border":{"color":"#c32627"},"radius":"4px"},"style":{"spacing":{"blockGap":"8.8px","padding":{"bottom":"5rem"},"margin":{"right":"0","bottom":"0","left":"0"}},"@mobile":{"spacing":{"blockGap":"8px","padding":{"bottom":"1.6875rem","left":"1.5rem"}}}}} /-->
+<!-- wp:profchoice/carousel-indicators {"default":{"width":"10px","height":"6px","background":"#ffffff8c","border":{"color":"#ffffff","style":"solid","width":"1px"},"radius":"5px"},"active":{"width":"20px","background":"#c32627","border":{"color":"#c32627"},"radius":"4px"},"style":{"spacing":{"blockGap":"2.8px","padding":{"bottom":"5rem"},"margin":{"right":"0","bottom":"0","left":"0"}},"@mobile":{"spacing":{"blockGap":"2px","padding":{"bottom":"1.6875rem","left":"1.3125rem"}}}}} /-->
 <!-- /wp:profchoice/carousel -->
 
 <!-- wp:profchoice/carousel {"align":"full"} -->
