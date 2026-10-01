@@ -97,7 +97,7 @@ export const resolvePreset = ( css: string ): string => {
  * Unlinked borders and radii use per-side/per-corner properties, e.g.
  * `border-top-width` and `radius-top-left`.
  *
- * @param prefix Variable prefix, e.g. `carousel-dot`.
+ * @param prefix Variable prefix, e.g. `carousel-indicator`.
  * @param states Styles keyed by state name.
  * @return Inline style variables and class names.
  */

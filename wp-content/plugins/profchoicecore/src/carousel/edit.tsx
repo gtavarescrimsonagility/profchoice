@@ -40,7 +40,7 @@ type EditorSelectors = {
 };
 
 const SLIDE = 'profchoice/carousel-slide';
-const DOTS = 'profchoice/carousel-dots';
+const DOTS = 'profchoice/carousel-indicators';
 const ALLOWED = [
 	SLIDE,
 	'profchoice/carousel-control-prev',
@@ -189,7 +189,7 @@ export default function Edit( {
 								)
 							}
 						>
-							{ __( 'Add dots', 'profchoicecore' ) }
+							{ __( 'Add indicators', 'profchoicecore' ) }
 						</ToolbarButton>
 					) }
 				</ToolbarGroup>

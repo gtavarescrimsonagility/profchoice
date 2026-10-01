@@ -1,10 +1,10 @@
 import { registerBlockType, type BlockConfiguration } from '@wordpress/blocks';
 import metadata from './block.json';
 import Edit from './edit';
-import type { CarouselDotsAttributes } from './types';
+import type { CarouselIndicatorsAttributes } from './types';
 import './style.scss';
 
-registerBlockType< CarouselDotsAttributes >(
-	metadata as unknown as BlockConfiguration< CarouselDotsAttributes >,
+registerBlockType< CarouselIndicatorsAttributes >(
+	metadata as unknown as BlockConfiguration< CarouselIndicatorsAttributes >,
 	{ edit: Edit, save: () => null }
 );

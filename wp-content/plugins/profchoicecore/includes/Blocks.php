@@ -83,7 +83,7 @@ final class Blocks {
 				'version'  => 3,
 				'settings' => array(
 					'blocks' => array(
-						'profchoice/carousel-dots'     => array(
+						'profchoice/carousel-indicators'     => array(
 							'dimensions' => array(
 								'dimensionSizes' => $sizes( array( '6px', '8px', '10px', '12px', '16px', '22px', '32px' ) ),
 							),

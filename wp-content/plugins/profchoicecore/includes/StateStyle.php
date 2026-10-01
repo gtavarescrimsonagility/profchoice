@@ -23,7 +23,7 @@ final class StateStyle {
 	 * `has-{state}-{property}` class. Unlinked borders and radii use
 	 * per-side/per-corner properties, e.g. `border-top-width`, `radius-top-left`.
 	 *
-	 * @param string $prefix Variable prefix, e.g. `carousel-dot`.
+	 * @param string $prefix Variable prefix, e.g. `carousel-indicator`.
 	 * @param array  $states Styles keyed by state name.
 	 * @return array{style: string, class: string}
 	 */

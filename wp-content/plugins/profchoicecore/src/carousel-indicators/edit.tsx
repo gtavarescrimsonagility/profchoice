@@ -11,7 +11,7 @@ import { useState } from '@wordpress/element';
 import type { BlockEditProps } from '@wordpress/blocks';
 import StatePanels from '../shared/StatePanels';
 import { stateStyleProps } from '../shared/state-style';
-import type { CarouselDotsAttributes } from './types';
+import type { CarouselIndicatorsAttributes } from './types';
 import '../shared/editor.scss';
 
 type EditorSelectors = {
@@ -33,8 +33,8 @@ const STATES = [
 ];
 
 /**
- * Preview with one dot per slide, the one of the slide shown in the editor
- * active, and panels to style the default and the active dot.
+ * Preview with one indicator per slide, the one of the slide shown in the
+ * editor active, and panels to style the default and the active indicator.
  * @param root0
  * @param root0.attributes
  * @param root0.setAttributes
@@ -44,10 +44,10 @@ export default function Edit( {
 	attributes,
 	setAttributes,
 	clientId,
-}: BlockEditProps< CarouselDotsAttributes > ) {
+}: BlockEditProps< CarouselIndicatorsAttributes > ) {
 	const { overlay, active } = attributes;
 	const base = attributes.default;
-	const stateProps = stateStyleProps( 'carousel-dot', {
+	const stateProps = stateStyleProps( 'carousel-indicator', {
 		default: base,
 		active,
 	} );
@@ -108,7 +108,7 @@ export default function Edit( {
 	}, [] );
 	const blockProps = useBlockProps( {
 		ref,
-		className: `pc-carousel__dots${ overlay ? ' is-overlay' : '' }`,
+		className: `pc-carousel-indicators${ overlay ? ' is-overlay' : '' }`,
 		style: {
 			...stateProps.style,
 			display: 'flex',
@@ -151,7 +151,7 @@ export default function Edit( {
 					( _, index ) => (
 						<span
 							key={ index }
-							className={ `pc-carousel__dot${ index === current ? ' is-active' : '' }` }
+							className={ `pc-carousel-indicator${ index === current ? ' is-active' : '' }` }
 						/>
 					)
 				) }

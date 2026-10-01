@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "profchoice/carousel-dots",
+	"name": "profchoice/carousel-indicators",
 	"version": "0.11.0",
-	"title": "Carousel Dots",
+	"title": "Carousel Indicators",
 	"category": "profchoice",
 	"icon": "ellipsis",
-	"description": "One dot per slide. The Default style applies to every dot; the Active dot only overrides what differs.",
+	"description": "One indicator per slide. The Default style applies to every indicator; the Active one only overrides what differs.",
 	"ancestor": [ "profchoice/carousel" ],
 	"textdomain": "profchoicecore",
 	"attributes": {

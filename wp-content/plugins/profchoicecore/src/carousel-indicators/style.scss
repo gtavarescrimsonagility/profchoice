@@ -1,0 +1,100 @@
+/**
+ * Carousel indicators. The defaults (plain round dots, white at half
+ * opacity, the active one opaque) live here; the block's Default/Active
+ * settings only store overrides (--pc-carousel-indicator-{default|active}-*
+ * variables, see StatePanels). Borders and radii may be
+ * linked (border-width, radius) or per side/corner (border-top-width,
+ * radius-top-left); a per-side value wins over the linked one. The gap comes
+ * from the block spacing.
+ */
+$pc-sides: top, right, bottom, left;
+$pc-border-parts: (
+	color: currentcolor,
+	style: solid,
+	width: 0,
+);
+$pc-corners: top-left, top-right, bottom-right, bottom-left;
+
+.wp-block-profchoice-carousel-indicators {
+	align-items: center;
+}
+
+// Overlay: a strip at the bottom of the carousel, 15% in from each side and
+// 1rem up by default. The block's justification places the indicators; its
+// margin overrides those defaults (e.g. a larger bottom margin lifts them).
+.pc-carousel-indicators.is-overlay {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+
+	.pc-carousel-indicator {
+		pointer-events: auto;
+	}
+}
+
+:where(.pc-carousel-indicators.is-overlay) {
+	margin: 0 15% 1rem;
+}
+
+.pc-carousel-indicator {
+	--pc-indicator-width: var(--pc-carousel-indicator-default-width, 10px);
+	--pc-indicator-height: var(--pc-carousel-indicator-default-height, 10px);
+	--pc-indicator-background: var(--pc-carousel-indicator-default-background, rgba(255, 255, 255, 0.5));
+
+	display: inline-block;
+	flex: none;
+	box-sizing: border-box;
+	width: var(--pc-indicator-width);
+	height: var(--pc-indicator-height);
+	padding: 0;
+	background-color: var(--pc-indicator-background);
+	cursor: pointer;
+	transition: width 0.2s ease, background-color 0.2s ease;
+
+	@each $side in $pc-sides {
+
+		@each $part, $fallback in $pc-border-parts {
+			--pc-indicator-border-#{$side}-#{$part}: var(--pc-carousel-indicator-default-border-#{$side}-#{$part}, var(--pc-carousel-indicator-default-border-#{$part}, #{$fallback}));
+
+			border-#{$side}-#{$part}: var(--pc-indicator-border-#{$side}-#{$part});
+		}
+	}
+
+	@each $corner in $pc-corners {
+		--pc-indicator-radius-#{$corner}: var(--pc-carousel-indicator-default-radius-#{$corner}, var(--pc-carousel-indicator-default-radius, 50%));
+
+		border-#{$corner}-radius: var(--pc-indicator-radius-#{$corner});
+	}
+
+	// The active dot's own default is only what differs from a dot (opaque);
+	// everything else inherits the dot's values.
+	&.is-active {
+		width: var(--pc-carousel-indicator-active-width, var(--pc-indicator-width));
+		height: var(--pc-carousel-indicator-active-height, var(--pc-indicator-height));
+		background-color: var(--pc-carousel-indicator-active-background, #fff);
+
+		@each $side in $pc-sides {
+
+			@each $part, $fallback in $pc-border-parts {
+				$inherited: var(--pc-indicator-border-#{$side}-#{$part});
+
+				border-#{$side}-#{$part}: var(--pc-carousel-indicator-active-border-#{$side}-#{$part}, var(--pc-carousel-indicator-active-border-#{$part}, #{$inherited}));
+			}
+		}
+
+		@each $corner in $pc-corners {
+			border-#{$corner}-radius: var(--pc-carousel-indicator-active-radius-#{$corner}, var(--pc-carousel-indicator-active-radius, var(--pc-indicator-radius-#{$corner})));
+		}
+	}
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.pc-carousel-indicator {
+		transition: none;
+	}
+}

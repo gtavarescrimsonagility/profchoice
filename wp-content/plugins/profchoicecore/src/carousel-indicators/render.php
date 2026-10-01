@@ -1,6 +1,6 @@
 <?php
 /**
- * Carousel dots: one button per slide, rendered from the carousel context.
+ * Carousel indicators: one button per slide, rendered from the carousel context.
  *
  * @package ProfChoiceCore
  *
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Empty active values inherit the default ones (see style.scss).
 $pc_states = ProfChoiceCore\StateStyle::props(
-	'carousel-dot',
+	'carousel-indicator',
 	array(
 		'default' => $attributes['default'] ?? array(),
 		'active'  => $attributes['active'] ?? array(),
@@ -24,7 +24,7 @@ $pc_states = ProfChoiceCore\StateStyle::props(
 
 $pc_wrapper = get_block_wrapper_attributes(
 	array(
-		'class' => 'pc-carousel__dots' . ( ! empty( $attributes['overlay'] ) ? ' is-overlay' : '' ),
+		'class' => 'pc-carousel-indicators' . ( ! empty( $attributes['overlay'] ) ? ' is-overlay' : '' ),
 	)
 );
 ob_start();
@@ -33,7 +33,7 @@ ob_start();
 	<template data-wp-each--snap="context.snaps">
 		<button
 			type="button"
-			class="pc-carousel__dot"
+			class="pc-carousel-indicator"
 			data-wp-on--click="actions.goTo"
 			data-wp-class--is-active="state.isDotActive"
 			data-wp-bind--aria-current="state.isDotActive"
