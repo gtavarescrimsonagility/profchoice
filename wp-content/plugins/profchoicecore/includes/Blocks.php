@@ -93,11 +93,12 @@ final class Blocks {
 						'profchoice/carousel-control-next' => $arrow_sizes,
 					),
 				),
-				// 3px each side of an indicator, as Bootstrap's.
+				// No gap: the indicators' own 3px inline margins space them, as
+				// Bootstrap's; a Block spacing adds to that.
 				'styles'   => array(
 					'blocks' => array(
 						'profchoice/carousel-indicators' => array(
-							'spacing' => array( 'blockGap' => '6px' ),
+							'spacing' => array( 'blockGap' => '0' ),
 						),
 					),
 				),

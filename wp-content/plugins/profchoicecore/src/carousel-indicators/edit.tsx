@@ -113,7 +113,7 @@ export default function Edit( {
 			...stateProps.style,
 			display: 'flex',
 			alignItems: 'center',
-			gap: style?.spacing?.blockGap ?? '6px',
+			gap: style?.spacing?.blockGap ?? '0',
 			justifyContent:
 				justify[ layout?.justifyContent ?? 'center' ] ?? 'center',
 		},

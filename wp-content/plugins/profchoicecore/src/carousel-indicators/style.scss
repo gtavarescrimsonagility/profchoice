@@ -1,13 +1,13 @@
 @use "sass:map";
 
 /**
- * Carousel indicators. The defaults (Bootstrap's: 30x3 bars 6px apart, white
- * at half opacity, the active one opaque) live here; the block's Default/Active
- * settings only store overrides (--pc-carousel-indicator-{default|active}-*
- * variables, see StatePanels). Borders and radii may be
- * linked (border-width, radius) or per side/corner (border-top-width,
- * radius-top-left); a per-side value wins over the linked one. The gap comes
- * from the block spacing.
+ * Carousel indicators. The defaults (Bootstrap's: 30x3 bars with 3px inline
+ * margins, white at half opacity, the active one opaque) live here; the
+ * block's Default/Active settings only store overrides
+ * (--pc-carousel-indicator-{default|active}-* variables, see StatePanels).
+ * Borders and radii may be linked (border-width, radius) or per side/corner
+ * (border-top-width, radius-top-left); a per-side value wins over the linked
+ * one. A Block spacing adds a gap on top of the margins.
  */
 $pc-sides: top, right, bottom, left;
 // Default border per side: Bootstrap's transparent 10px top and bottom,
@@ -100,6 +100,12 @@ $pc-corners: top-left, top-right, bottom-right, bottom-left;
 		}
 	}
 
+}
+
+// Bootstrap's spacing. Scoped to the container to win over the flex
+// layout's `.is-layout-flex > *` margin reset.
+.pc-carousel-indicators > .pc-carousel-indicator {
+	margin-inline: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
