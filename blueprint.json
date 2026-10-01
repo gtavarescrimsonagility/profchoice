@@ -63,7 +63,7 @@
       "step": "installPlugin",
       "pluginData": {
         "resource": "url",
-        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoicecore.0.16.2/profchoicecore.0.16.2.zip"
+        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoicecore.0.16.3/profchoicecore.0.16.3.zip"
       },
       "options": {
         "activate": true
