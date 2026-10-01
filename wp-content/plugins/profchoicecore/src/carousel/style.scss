@@ -41,3 +41,10 @@
 	white-space: nowrap;
 }
 
+
+// Only focused by a click on a slide (tabindex -1, see
+// actions.focusOnPointer), so no ring around the whole carousel; its
+// buttons keep their own focus styles.
+.wp-block-profchoice-carousel:focus {
+	outline: none;
+}

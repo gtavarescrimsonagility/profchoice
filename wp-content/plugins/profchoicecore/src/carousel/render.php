@@ -121,6 +121,8 @@ $pc_wrapper = get_block_wrapper_attributes(
 		'aria-roledescription' => __( 'carousel', 'profchoicecore' ),
 		'aria-label'           => $pc_label,
 		'data-transition'      => $pc_transition,
+		// Focusable from script (a click on a slide), for keyboard navigation.
+		'tabindex'             => '-1',
 	)
 );
 ?>
@@ -130,6 +132,7 @@ $pc_wrapper = get_block_wrapper_attributes(
 	<?php echo wp_interactivity_data_wp_context( $pc_context ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	data-wp-init="callbacks.init"
 	data-wp-on--keydown="actions.onKeydown"
+	data-wp-on--pointerdown="actions.focusOnPointer"
 >
 	<div class="pc-carousel__viewport">
 		<div class="pc-carousel__container">

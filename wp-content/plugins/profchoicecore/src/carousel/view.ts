@@ -19,6 +19,9 @@ const VIEWPORT_SELECTOR = '.pc-carousel__viewport';
 
 export const emblaInstances = new WeakMap< HTMLElement, EmblaCarouselType >();
 
+const INTERACTIVE_SELECTOR =
+	'a[href], button, input, textarea, select, [contenteditable], [tabindex]:not([tabindex="-1"])';
+
 const getRef = (): HTMLElement | null => {
 	const { ref } = getElement();
 	return ref instanceof HTMLElement ? ref : null;
@@ -113,6 +116,20 @@ const { state } = store( 'profchoice/carousel', {
 			if ( typeof index === 'number' ) {
 				navigate( ( embla ) => embla.scrollTo( index ) );
 			}
+		},
+		// Clicking a slide (not a link, button or field in it) focuses the
+		// carousel, so the arrow keys move it right away.
+		focusOnPointer( event: PointerEvent ): void {
+			const target = event.target as Element | null;
+			const root = getRef();
+			if (
+				! root ||
+				typeof target?.closest !== 'function' ||
+				target.closest( INTERACTIVE_SELECTOR )
+			) {
+				return;
+			}
+			root.focus( { preventScroll: true } );
 		},
 		onKeydown( event: KeyboardEvent ): void {
 			const target = event.target as HTMLElement | null;
