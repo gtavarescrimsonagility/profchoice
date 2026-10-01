@@ -108,7 +108,7 @@ foreach ( $pc_slides as $pc_index => $pc_slide ) {
 // Arrows and dots only make sense with two or more slides.
 $pc_extras_html = '';
 foreach ( $pc_extras as $pc_extra ) {
-	if ( $pc_count < 2 && in_array( $pc_extra->name, array( 'profchoice/carousel-controls', 'profchoice/carousel-dots' ), true ) ) {
+	if ( $pc_count < 2 && in_array( $pc_extra->name, array( 'profchoice/carousel-control-prev', 'profchoice/carousel-control-next', 'profchoice/carousel-dots' ), true ) ) {
 		continue;
 	}
 	$pc_extras_html .= $pc_extra->render();

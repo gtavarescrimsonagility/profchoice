@@ -42,12 +42,14 @@ type EditorSelectors = {
 const SLIDE = 'profchoice/carousel-slide';
 const ALLOWED = [
 	SLIDE,
-	'profchoice/carousel-controls',
+	'profchoice/carousel-control-prev',
+	'profchoice/carousel-control-next',
 	'profchoice/carousel-dots',
 ];
 const TEMPLATE: TemplateArray = [
 	[ SLIDE, {}, slidePlaceholder( 1 ) ],
-	[ 'profchoice/carousel-controls' ],
+	[ 'profchoice/carousel-control-prev' ],
+	[ 'profchoice/carousel-control-next' ],
 	[ 'profchoice/carousel-dots' ],
 ];
 

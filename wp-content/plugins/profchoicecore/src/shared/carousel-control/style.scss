@@ -1,32 +1,33 @@
 @use "sass:map";
 
 /**
- * Carousel arrows. Colors, border, radius and padding come from each Button
- * block; the arrow icon follows the button's text color (currentcolor).
+ * Carousel Previous/Next. Colors, border, radius and padding come from the
+ * Button block; the arrow icon follows the button's text color (currentcolor).
  *
  * The block's Active/Inactive control settings (--pc-carousel-arrow-{state}-*
- * plus a has-{state}-{property} class for each value set) override both
- * buttons. Active values apply always, so a disabled arrow inherits them;
+ * plus a has-{state}-{property} class for each value set) override the
+ * button. Active values apply always, so a disabled arrow inherits them;
  * inactive values override them while disabled. The active rules stay at low
  * specificity so the Button's own hover/focus/active states (also !important)
  * still win.
  */
-.wp-block-profchoice-carousel-controls.is-overlay {
+.pc-carousel__control.is-overlay {
 	position: absolute;
 	top: var(--pc-carousel-arrows-top, 50%);
-	right: var(--pc-carousel-arrows-inset, 1rem);
-	left: var(--pc-carousel-arrows-inset, 1rem);
 	z-index: 2;
 	margin: 0;
 	transform: translateY(-50%);
-	pointer-events: none;
-
-	.wp-block-button {
-		pointer-events: auto;
-	}
 }
 
-.wp-block-profchoice-carousel-controls .wp-block-buttons {
+.wp-block-profchoice-carousel-control-prev.is-overlay {
+	left: var(--pc-carousel-arrows-inset, 1rem);
+}
+
+.wp-block-profchoice-carousel-control-next.is-overlay {
+	right: var(--pc-carousel-arrows-inset, 1rem);
+}
+
+.pc-carousel__control .wp-block-buttons {
 	margin: 0;
 }
 
@@ -81,12 +82,12 @@ $pc-arrow-properties: (
 }
 
 @each $key, $property in $pc-arrow-properties {
-	:where(.pc-carousel__controls.has-active-#{$key} .pc-carousel__arrow)
+	:where(.pc-carousel__control.has-active-#{$key} .pc-carousel__arrow)
 	.wp-block-button__link {
 		#{$property}: var(--pc-carousel-arrow-active-#{$key}) !important;
 	}
 
-	.pc-carousel__controls.has-inactive-#{$key}
+	.pc-carousel__control.has-inactive-#{$key}
 	.pc-carousel__arrow
 	.wp-block-button__link:disabled {
 		#{$property}: var(--pc-carousel-arrow-inactive-#{$key}) !important;
@@ -95,12 +96,12 @@ $pc-arrow-properties: (
 
 // A set size is the whole button: drop the padding that sizes it otherwise.
 :where(
-	.pc-carousel__controls.has-active-width,
-	.pc-carousel__controls.has-active-height
+	.pc-carousel__control.has-active-width,
+	.pc-carousel__control.has-active-height
 )
 .pc-carousel__arrow
 .wp-block-button__link,
-.pc-carousel__controls:is(.has-inactive-width, .has-inactive-height)
+.pc-carousel__control:is(.has-inactive-width, .has-inactive-height)
 .pc-carousel__arrow
 .wp-block-button__link:disabled {
 	padding: 0 !important;

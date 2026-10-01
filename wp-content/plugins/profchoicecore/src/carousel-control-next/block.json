@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "profchoice/carousel-controls",
-	"version": "0.11.0",
-	"title": "Carousel Arrows",
+	"name": "profchoice/carousel-control-next",
+	"version": "0.14.0",
+	"title": "Carousel Next",
 	"category": "profchoice",
-	"icon": "leftright",
-	"description": "Previous and next buttons of a carousel. Each arrow is a Button block (styles and hover/focus/active states); the Active/Inactive control settings style both arrows when enabled and when disabled.",
+	"icon": "arrow-right-alt2",
+	"description": "The next-slide button of a carousel. A Button block (styles and hover/focus/active states); the Active/Inactive control settings style it when enabled and when disabled.",
 	"ancestor": [ "profchoice/carousel" ],
 	"textdomain": "profchoicecore",
 	"attributes": {

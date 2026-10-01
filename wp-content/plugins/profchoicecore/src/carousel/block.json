@@ -6,12 +6,13 @@
 	"title": "Carousel",
 	"category": "profchoice",
 	"icon": "slides",
-	"description": "Slides with fade or slide transitions, plus Carousel Arrows and Carousel Dots blocks.",
+	"description": "Slides with fade or slide transitions, plus Carousel Previous, Carousel Next and Carousel Dots blocks.",
 	"keywords": [ "carousel", "slider", "slides", "gallery" ],
 	"textdomain": "profchoicecore",
 	"allowedBlocks": [
 		"profchoice/carousel-slide",
-		"profchoice/carousel-controls",
+		"profchoice/carousel-control-prev",
+		"profchoice/carousel-control-next",
 		"profchoice/carousel-dots"
 	],
 	"attributes": {

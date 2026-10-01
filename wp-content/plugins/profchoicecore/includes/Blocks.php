@@ -72,6 +72,12 @@ final class Blocks {
 			);
 		};
 
+		$arrow_sizes = array(
+			'dimensions' => array(
+				'dimensionSizes' => $sizes( array( '32px', '40px', '48px', '56px', '64px' ) ),
+			),
+		);
+
 		return $theme_json->update_with(
 			array(
 				'version'  => 3,
@@ -82,11 +88,8 @@ final class Blocks {
 								'dimensionSizes' => $sizes( array( '6px', '8px', '10px', '12px', '16px', '22px', '32px' ) ),
 							),
 						),
-						'profchoice/carousel-controls' => array(
-							'dimensions' => array(
-								'dimensionSizes' => $sizes( array( '32px', '40px', '48px', '56px', '64px' ) ),
-							),
-						),
+						'profchoice/carousel-control-prev' => $arrow_sizes,
+						'profchoice/carousel-control-next' => $arrow_sizes,
 					),
 				),
 			)
