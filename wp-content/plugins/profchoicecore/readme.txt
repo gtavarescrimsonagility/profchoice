@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.18.6
+Stable tag: 0.18.7
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.18.7 =
+* Carousel Previous/Next: the Active control settings now win over the Button's own colors (e.g. a text color preset), while the Button's Hover/Focus/Active states still win over them.
 
 = 0.18.6 =
 * Carousel Previous/Next: a disabled arrow defaults to 0.65 opacity (was 0.35); the Inactive control Opacity slider starts there.
