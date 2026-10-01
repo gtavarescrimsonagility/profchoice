@@ -22,7 +22,7 @@
   <channel>
 <title>Professionals Choice</title>
 <link>https://professionals-choice.wp.local</link>
-<description/>
+<description>Equine sports medicine and tack trusted at the highest level since 1976. For comfort. For protection. For performance.</description>
 <language>en-US</language>
 <wp:wxr_version>1.2</wp:wxr_version>
 <wp:base_site_url>https://professionals-choice.wp.local</wp:base_site_url>
@@ -547,7 +547,7 @@
 <!-- /wp:buttons -->
 <!-- /wp:profchoice/carousel-control-next -->
 
-<!-- wp:profchoice/carousel-indicators {"default":{"width":"10px","height":"6px","border":{"color":"var(\u002d\u002dcbv-primary-contrast)","width":"1px"},"radius":{"topLeft":"5px","topRight":"5px","bottomLeft":"5px","bottomRight":"5px"},"background":"var(\u002d\u002dcbv-primary-contrast)"},"active":{"background":"#c32627","width":"20px","border":{"color":"#c32627"},"radius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"}},"style":{"spacing":{"margin":{"bottom":"5rem"}}}} /-->
+<!-- wp:profchoice/carousel-indicators {"default":{"width":"10px","height":"6px","border":{"color":"var(\u002d\u002dcbv-primary-contrast)","width":"1px"},"radius":{"topLeft":"5px","topRight":"5px","bottomLeft":"5px","bottomRight":"5px"},"background":"var(\u002d\u002dcbv-primary-contrast)"},"active":{"background":"#c32627","width":"20px","border":{"color":"#c32627"},"radius":{"topLeft":"4px","topRight":"4px","bottomLeft":"4px","bottomRight":"4px"}},"style":{"spacing":{"margin":{"bottom":"5rem"},"blockGap":"6px"}}} /-->
 <!-- /wp:profchoice/carousel -->
 
 <!-- wp:group {"metadata":{"name":"Trusted at the Highest Level"},"align":"full","className":"sponsors","style":{"color":{"background":"#ffffff"},"border":{"top":{"color":"#e5e2dc","width":"1px"},"bottom":{"color":"#e5e2dc","width":"1px"}},"spacing":{"padding":{"top":"3rem","right":"4.5rem","bottom":"3rem","left":"4.5rem"}},"@mobile":{"spacing":{"padding":{"top":"2.25rem","right":"1.25rem","bottom":"2.25rem","left":"1.25rem"}}}},"layout":{"type":"default"}} -->
