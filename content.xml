@@ -236,8 +236,8 @@
   <guid isPermaLink="false">http://localhost:8907/?page_id=51</guid>
   <description/>
   <content:encoded><![CDATA[<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.jpg","id":456,"dimRatio":0,"isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.82},"minHeight":550,"minHeightUnit":"px","isDark":false,"metadata":{"name":"Hero"},"align":"full","className":"homepage-hero","style":{"typography":{"fontSize":"22px"},"@mobile":{"dimensions":{"minHeight":"320px"},"typography":{"fontSize":"16px"}},"spacing":{"blockGap":"var:preset|spacing|60"}}} -->
-<div class="wp-block-cover alignfull is-light homepage-hero" style="font-size:22px;min-height:550px"><img class="wp-block-cover__image-background wp-image-456" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.jpg" style="object-position:50% 82%" data-object-fit="cover" data-object-position="50% 82%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:buttons {"style":{"typography":{"lineHeight":"1.5","fontSize":"1rem"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull"><!-- wp:cover {"url":"https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.jpg","id":459,"dimRatio":0,"isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.82},"minHeight":550,"minHeightUnit":"px","isDark":false,"metadata":{"name":"Hero"},"align":"full","className":"homepage-hero","style":{"typography":{"fontSize":"22px"},"@mobile":{"dimensions":{"minHeight":"320px"},"typography":{"fontSize":"16px"}},"spacing":{"blockGap":"var:preset|spacing|60"}}} -->
+<div class="wp-block-cover alignfull is-light homepage-hero" style="font-size:22px;min-height:550px"><img class="wp-block-cover__image-background wp-image-459" alt="" src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.jpg" style="object-position:50% 82%" data-object-fit="cover" data-object-position="50% 82%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:buttons {"style":{"typography":{"lineHeight":"1.5","fontSize":"1rem"}},"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons has-custom-font-size" style="font-size:1rem;line-height:1.5"><!-- wp:button {"tagName":"button","className":"is-style-play","style":{"spacing":{"padding":{"left":"1.21em","right":"1.21em","top":"1.21em","bottom":"1.21em"}},"typography":{"fontSize":"1.5rem","lineHeight":"1"},"border":{"color":"#ffffff8c","width":"1px"},"color":{"background":"#ffffff1a"},":hover":{"color":{"background":"#ffffff33"},"border":{"color":"#ffffffd9"}},":active":{"color":{"background":"#ffffff1a","text":"var:preset|color|cbv-primary-contrast"},"elements":{"link":{"color":{"text":"var:preset|color|cbv-primary-contrast"}}}}}} -->
 <div class="wp-block-button is-style-play has-custom-css"><button type="button" class="wp-block-button__link has-background has-border-color has-custom-font-size wp-element-button" style="border-color:#ffffff8c;border-width:1px;background-color:#ffffff1a;padding-top:1.21em;padding-right:1.21em;padding-bottom:1.21em;padding-left:1.21em;font-size:1.5rem;line-height:1"><span class="pc-visually-hidden">Play video</span><img data-icon="profchoice/play" alt="" class="pc-inline-icon"></button></div>
 <!-- /wp:button --></div>
@@ -1604,39 +1604,6 @@
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
   <category domain="wp_theme" nicename="profchoice"><![CDATA[profchoice]]></category>
-</item>
-<item>
-  <title><![CDATA[video-from-7Ii7txNZOlk]]></title>
-  <link>https://professionals-choice.wp.local/homepage/video-from-7ii7txnzolk/</link>
-  <pubDate>Wed, 30 Sep 2026 20:55:15 +0000</pubDate>
-  <dc:creator>gtavares</dc:creator>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.mp4</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>456</wp:post_id>
-  <wp:post_date>2026-09-30 20:55:15</wp:post_date>
-  <wp:post_date_gmt>2026-09-30 20:55:15</wp:post_date_gmt>
-  <wp:post_modified>2026-09-30 20:55:15</wp:post_modified>
-  <wp:post_modified_gmt>2026-09-30 20:55:15</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>video-from-7ii7txnzolk</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>51</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.mp4</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/09/video-from-7Ii7txNZOlk.mp4]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:11:{s:7:"bitrate";i:1682902;s:8:"filesize";i:2184745;s:9:"mime_type";s:15:"video/quicktime";s:6:"length";i:10;s:16:"length_formatted";s:4:"0:10";s:5:"width";i:1570;s:6:"height";i:1152;s:10:"fileformat";s:3:"mp4";s:10:"dataformat";s:9:"quicktime";s:5:"codec";s:16:"H.264/MPEG-4 AVC";s:17:"created_timestamp";i:-2082844800;}]]></wp:meta_value>
-  </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[video-from-7Ii7txNZOlk]]></title>
