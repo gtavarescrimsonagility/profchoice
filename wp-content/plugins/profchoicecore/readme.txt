@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.18.1
+Stable tag: 0.18.2
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,8 +44,11 @@ The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt
 
 == Changelog ==
 
+= 0.18.2 =
+* Carousel Indicators: the hit area is Bootstrap's 10px transparent top and bottom border (the default border, so the Border setting replaces it) with `background-clip: padding-box`; indicators are `content-box` sized, so Width and Height are the bar and a border adds to them.
+
 = 0.18.1 =
-* Carousel Indicators default look, as Bootstrap's: 30x3px square bars 6px apart (a default Block spacing, set in the default theme.json data so themes and the block can override it), white at half opacity and the active one opaque, with a hit area 10px taller above and below the bar. 3px and 30px join the size presets.
+* Carousel Indicators default look, as Bootstrap's: 30x3px square bars 6px apart (a default Block spacing, set in the default theme.json data so themes and the block can override it), white at half opacity and the active one opaque.  3px and 30px join the size presets.
 
 = 0.18.0 =
 * Carousel Dots is renamed **Carousel Indicators** (`profchoice/carousel-indicators`; classes `pc-carousel-indicators` and `pc-carousel-indicator`, variables `--pc-carousel-indicator-{default|active}-*`). `profchoice/carousel-dots` is removed: rename it in saved content.

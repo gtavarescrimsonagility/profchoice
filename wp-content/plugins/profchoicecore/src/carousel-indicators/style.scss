@@ -1,3 +1,5 @@
+@use "sass:map";
+
 /**
  * Carousel indicators. The defaults (Bootstrap's: 30x3 bars 6px apart, white
  * at half opacity, the active one opaque) live here; the block's Default/Active
@@ -8,11 +10,16 @@
  * from the block spacing.
  */
 $pc-sides: top, right, bottom, left;
-$pc-border-parts: (
-	color: currentcolor,
-	style: solid,
-	width: 0,
+// Default border per side: Bootstrap's transparent 10px top and bottom,
+// which make the hit area taller than the bar (background-clip keeps the
+// bar to the padding box).
+$pc-border-defaults: (
+	top: (color: transparent, style: solid, width: 10px),
+	right: (color: transparent, style: solid, width: 0),
+	bottom: (color: transparent, style: solid, width: 10px),
+	left: (color: transparent, style: solid, width: 0),
 );
+$pc-border-parts: color, style, width;
 $pc-corners: top-left, top-right, bottom-right, bottom-left;
 
 .wp-block-profchoice-carousel-indicators {
@@ -44,20 +51,22 @@ $pc-corners: top-left, top-right, bottom-right, bottom-left;
 	--pc-indicator-height: var(--pc-carousel-indicator-default-height, 3px);
 	--pc-indicator-background: var(--pc-carousel-indicator-default-background, rgba(255, 255, 255, 0.5));
 
-	position: relative;
 	display: inline-block;
 	flex: none;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	width: var(--pc-indicator-width);
 	height: var(--pc-indicator-height);
 	padding: 0;
 	background-color: var(--pc-indicator-background);
+	background-clip: padding-box;
 	cursor: pointer;
 	transition: width 0.2s ease, background-color 0.2s ease;
 
 	@each $side in $pc-sides {
 
-		@each $part, $fallback in $pc-border-parts {
+		@each $part in $pc-border-parts {
+			$fallback: map.get($pc-border-defaults, $side, $part);
+
 			--pc-indicator-border-#{$side}-#{$part}: var(--pc-carousel-indicator-default-border-#{$side}-#{$part}, var(--pc-carousel-indicator-default-border-#{$part}, #{$fallback}));
 
 			border-#{$side}-#{$part}: var(--pc-indicator-border-#{$side}-#{$part});
@@ -70,14 +79,6 @@ $pc-corners: top-left, top-right, bottom-right, bottom-left;
 		border-#{$corner}-radius: var(--pc-indicator-radius-#{$corner});
 	}
 
-	// A taller hit area than the bar (Bootstrap's transparent borders),
-	// without changing its size.
-	&::before {
-		content: "";
-		position: absolute;
-		inset: -10px -3px;
-	}
-
 	// The active dot's own default is only what differs from a dot (opaque);
 	// everything else inherits the dot's values.
 	&.is-active {
@@ -87,7 +88,7 @@ $pc-corners: top-left, top-right, bottom-right, bottom-left;
 
 		@each $side in $pc-sides {
 
-			@each $part, $fallback in $pc-border-parts {
+			@each $part in $pc-border-parts {
 				$inherited: var(--pc-indicator-border-#{$side}-#{$part});
 
 				border-#{$side}-#{$part}: var(--pc-carousel-indicator-active-border-#{$side}-#{$part}, var(--pc-carousel-indicator-active-border-#{$part}, #{$inherited}));
