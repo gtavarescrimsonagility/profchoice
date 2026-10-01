@@ -46,6 +46,8 @@ final class VisuallyHidden {
 		wp_register_script( self::HANDLE, $url . 'index.js', $asset['dependencies'], $asset['version'], true );
 		wp_set_script_translations( self::HANDLE, 'profchoicecore' );
 		wp_register_style( self::HANDLE, $url . 'style-index.css', array(), $asset['version'] );
+		// Small enough for core to print inline instead of a render-blocking link.
+		wp_style_add_data( self::HANDLE, 'path', $build . 'style-index.css' );
 	}
 
 	/**
