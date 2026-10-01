@@ -51,9 +51,10 @@ final class Blocks {
 	}
 
 	/**
-	 * Default per-block settings, like core's theme.json does for core/button:
-	 * the width/height presets of the dot and arrow state panels. Themes can
-	 * override them under settings.blocks in their theme.json.
+	 * Default per-block settings and styles, like core's theme.json does for
+	 * core/button: the width/height presets of the indicator and arrow state
+	 * panels, and the indicators' gap. Themes can override them under
+	 * settings.blocks and styles.blocks in their theme.json.
 	 *
 	 * @param \WP_Theme_JSON_Data $theme_json Core default theme.json data.
 	 * @return \WP_Theme_JSON_Data
@@ -83,13 +84,21 @@ final class Blocks {
 				'version'  => 3,
 				'settings' => array(
 					'blocks' => array(
-						'profchoice/carousel-indicators'     => array(
+						'profchoice/carousel-indicators'   => array(
 							'dimensions' => array(
-								'dimensionSizes' => $sizes( array( '6px', '8px', '10px', '12px', '16px', '22px', '32px' ) ),
+								'dimensionSizes' => $sizes( array( '3px', '6px', '8px', '10px', '12px', '16px', '22px', '30px', '32px' ) ),
 							),
 						),
 						'profchoice/carousel-control-prev' => $arrow_sizes,
 						'profchoice/carousel-control-next' => $arrow_sizes,
+					),
+				),
+				// 3px each side of an indicator, as Bootstrap's.
+				'styles'   => array(
+					'blocks' => array(
+						'profchoice/carousel-indicators' => array(
+							'spacing' => array( 'blockGap' => '6px' ),
+						),
 					),
 				),
 			)

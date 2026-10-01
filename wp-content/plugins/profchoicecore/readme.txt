@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.18.0
+Stable tag: 0.18.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.18.1 =
+* Carousel Indicators default look, as Bootstrap's: 30x3px square bars 6px apart (a default Block spacing, set in the default theme.json data so themes and the block can override it), white at half opacity and the active one opaque, with a hit area 10px taller above and below the bar. 3px and 30px join the size presets.
 
 = 0.18.0 =
 * Carousel Dots is renamed **Carousel Indicators** (`profchoice/carousel-indicators`; classes `pc-carousel-indicators` and `pc-carousel-indicator`, variables `--pc-carousel-indicator-{default|active}-*`). `profchoice/carousel-dots` is removed: rename it in saved content.
