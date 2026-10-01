@@ -4,7 +4,7 @@
 	"name": "profchoice/newsletter-email",
 	"version": "0.1.0",
 	"title": "Newsletter Email",
-	"category": "widgets",
+	"category": "profchoice",
 	"icon": "email",
 	"description": "The email field of a newsletter form.",
 	"ancestor": [ "profchoice/newsletter-form" ],

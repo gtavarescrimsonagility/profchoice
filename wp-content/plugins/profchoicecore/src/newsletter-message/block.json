@@ -4,7 +4,7 @@
 	"name": "profchoice/newsletter-message",
 	"version": "0.1.0",
 	"title": "Newsletter Message",
-	"category": "widgets",
+	"category": "profchoice",
 	"icon": "feedback",
 	"description": "A success or error message shown after the newsletter form is submitted.",
 	"ancestor": [ "profchoice/newsletter-form" ],

@@ -4,7 +4,7 @@
 	"name": "profchoice/carousel",
 	"version": "0.11.0",
 	"title": "Carousel",
-	"category": "design",
+	"category": "profchoice",
 	"icon": "slides",
 	"description": "Slides with fade or slide transitions, plus Carousel Arrows and Carousel Dots blocks.",
 	"keywords": [ "carousel", "slider", "slides", "gallery" ],

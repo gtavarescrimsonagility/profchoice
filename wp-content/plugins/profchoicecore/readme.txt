@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.11.0
+Stable tag: 0.11.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.11.1 =
+* "Professional's Choice" block category, first in the inserter, holding the plugin's blocks.
 
 = 0.11.0 =
 * Video playback moves into core/cover: Autoplay, Loop and Muted settings for video covers, and a "Play" Button style that plays/pauses the video (keyboard: focus moves to the cover, Space toggles). The Cover Video block is removed.

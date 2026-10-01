@@ -21,6 +21,33 @@ final class Blocks {
 	public static function register_hooks() {
 		add_action( 'init', array( __CLASS__, 'register' ) );
 		add_filter( 'wp_theme_json_data_default', array( __CLASS__, 'default_settings' ) );
+		// After the theme's category (commercebuild, priority 10), so ours is first.
+		add_filter( 'block_categories_all', array( __CLASS__, 'add_category' ), 20 );
+	}
+
+	/**
+	 * Adds the "Professional's Choice" block category, first in the inserter.
+	 *
+	 * @param array $categories Block categories.
+	 * @return array
+	 */
+	public static function add_category( $categories ) {
+		$categories = array_filter(
+			(array) $categories,
+			static function ( $category ) {
+				return 'profchoice' !== $category['slug'];
+			}
+		);
+		return array_merge(
+			array(
+				array(
+					'slug'  => 'profchoice',
+					'title' => __( "Professional's Choice", 'profchoicecore' ),
+					'icon'  => null,
+				),
+			),
+			array_values( $categories )
+		);
 	}
 
 	/**

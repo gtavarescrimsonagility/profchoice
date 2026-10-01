@@ -4,7 +4,7 @@
 	"name": "profchoice/carousel-slide",
 	"version": "0.1.0",
 	"title": "Carousel Slide",
-	"category": "design",
+	"category": "profchoice",
 	"icon": "slides",
 	"description": "One slide of a carousel. Holds any blocks.",
 	"parent": [ "profchoice/carousel" ],

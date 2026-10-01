@@ -4,7 +4,7 @@
 	"name": "profchoice/carousel-controls",
 	"version": "0.11.0",
 	"title": "Carousel Arrows",
-	"category": "design",
+	"category": "profchoice",
 	"icon": "leftright",
 	"description": "Previous and next buttons of a carousel. Each arrow is a Button block (styles and hover/focus/active states); the Active/Inactive control settings style both arrows when enabled and when disabled.",
 	"ancestor": [ "profchoice/carousel" ],

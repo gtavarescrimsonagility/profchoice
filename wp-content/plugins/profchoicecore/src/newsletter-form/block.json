@@ -4,7 +4,7 @@
 	"name": "profchoice/newsletter-form",
 	"version": "0.1.0",
 	"title": "Newsletter Form",
-	"category": "widgets",
+	"category": "profchoice",
 	"icon": "email-alt",
 	"description": "Newsletter signup: an email field, a submit button and success/error messages.",
 	"keywords": [ "newsletter", "signup", "subscribe", "email", "form" ],
