@@ -1,0 +1,51 @@
+/**
+ * "Play" button style (core/button) for covers with a video background. The
+ * style only sets the shape: a circle (equal padding and 50% radius from its
+ * style_data, see includes/CoverVideo.php, plus a 1:1 aspect ratio here). Put
+ * the icon in the button text with an Inline icon, and mark the label
+ * Visually hidden (it stays the accessible name). Colors, border
+ * and shadow, per state (Hover/Focus/Active), come from the Button's own
+ * settings. While the video plays the button fades out; keyboard focus shows
+ * it again.
+ */
+
+// The cover takes focus from the Play button while the video plays (see
+// view.ts); the video itself shows that state, so no outline.
+.wp-block-cover[data-wp-interactive="profchoice/cover-video"]:focus {
+	outline: none;
+}
+
+.wp-block-button.is-style-play {
+	transition: opacity 0.3s ease;
+}
+
+.wp-block-button.is-style-play .wp-block-button__link {
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
+	aspect-ratio: 1;
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+	cursor: pointer;
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.wp-block-cover.is-playing .wp-block-button.is-style-play {
+	opacity: 0;
+
+	&:has(:focus-visible) {
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.wp-block-button.is-style-play,
+	.wp-block-button.is-style-play .wp-block-button__link {
+		transition: none;
+	}
+}

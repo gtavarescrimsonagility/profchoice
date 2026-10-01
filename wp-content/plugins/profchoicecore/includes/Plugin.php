@@ -23,6 +23,10 @@ final class Plugin {
 	 */
 	public static function boot() {
 		Blocks::register_hooks();
+		CoverVideo::register_hooks();
+		Icons::register_hooks();
+		InlineIcon::register_hooks();
+		VisuallyHidden::register_hooks();
 		Subscribers::register_hooks();
 		Subscribe::register_hooks();
 		Exporter::register_hooks();

@@ -8,3 +8,4 @@ package.json
 package-lock.json
 tsconfig.json
 vitest.config.mjs
+webpack.config.js

@@ -5,8 +5,8 @@ import {
 	callbacks,
 	findVideo,
 	state,
-} from '../../src/cover-video/view';
-import type { CoverVideoContext } from '../../src/cover-video/types';
+} from '../../src/cover-extension/view';
+import type { CoverVideoContext } from '../../src/cover-extension/view';
 
 const fakeVideo = ( paused: boolean ) => {
 	const listeners: Record< string, () => void > = {};
@@ -22,11 +22,25 @@ const fakeVideo = ( paused: boolean ) => {
 	};
 };
 
+const documentListeners: Record< string, ( event: unknown ) => void > = {};
+vi.stubGlobal( 'document', {
+	addEventListener: vi.fn(
+		( type: string, fn: ( event: unknown ) => void ) => {
+			documentListeners[ type ] = fn;
+		}
+	),
+	removeEventListener: vi.fn(),
+} );
+vi.stubGlobal( 'window', { matchMedia: () => ( { matches: false } ) } );
+
 const withVideo = ( video: ReturnType< typeof fakeVideo > | null ) => {
+	const cover = { querySelector: () => video, focus: vi.fn() };
 	const ref = {
-		closest: () => ( { querySelector: () => video } ),
+		closest: () => cover,
+		contains: ( node: unknown ) => node === 'inside',
 	};
 	( getElement as Mock ).mockReturnValue( { ref } );
+	return { ref, cover };
 };
 
 describe( 'cover video store', () => {
@@ -49,10 +63,11 @@ describe( 'cover video store', () => {
 
 	it( 'plays a paused video and pauses a playing one', () => {
 		const video = fakeVideo( true );
-		withVideo( video );
+		const { cover } = withVideo( video );
 		actions.toggle();
 		expect( video.play ).toHaveBeenCalled();
 		expect( context.isPlaying ).toBe( true );
+		expect( cover.focus ).toHaveBeenCalledWith( { preventScroll: true } );
 
 		video.paused = false;
 		actions.toggle();
@@ -60,18 +75,43 @@ describe( 'cover video store', () => {
 		expect( context.isPlaying ).toBe( false );
 	} );
 
-	it( 'clears isPlaying when the video pauses or ends by itself', () => {
+	it( 'follows the video when it plays, pauses or ends by itself', () => {
 		const video = fakeVideo( false );
 		withVideo( video );
 		const cleanup = callbacks.init();
-		context.isPlaying = true;
+		video.listeners.play();
+		expect( context.isPlaying ).toBe( true );
 		video.listeners.ended();
 		expect( context.isPlaying ).toBe( false );
 		cleanup();
-		expect( video.removeEventListener ).toHaveBeenCalledTimes( 2 );
+		expect( video.removeEventListener ).toHaveBeenCalledTimes( 3 );
 	} );
 
-	it( 'finds no video outside a cover video', () => {
+	it( 'finds no video outside a video cover', () => {
 		expect( findVideo( null ) ).toBeNull();
+	} );
+
+	it( 'toggles with Space after the cover is clicked', () => {
+		const video = fakeVideo( false );
+		withVideo( video );
+		callbacks.init();
+		const space = {
+			key: ' ',
+			target: null,
+			preventDefault: vi.fn(),
+		};
+
+		documentListeners.keydown( space );
+		expect( video.pause ).not.toHaveBeenCalled();
+
+		documentListeners.pointerdown( { target: 'inside' } );
+		documentListeners.keydown( space );
+		expect( space.preventDefault ).toHaveBeenCalled();
+		expect( video.pause ).toHaveBeenCalled();
+
+		documentListeners.pointerdown( { target: 'outside' } );
+		video.paused = true;
+		documentListeners.keydown( space );
+		expect( video.play ).not.toHaveBeenCalled();
 	} );
 } );

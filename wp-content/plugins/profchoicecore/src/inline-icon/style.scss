@@ -1,0 +1,25 @@
+/**
+ * Inline icon: 1em, in the text color, on the text baseline. On the front end
+ * it is the icon's <svg class="pc-inline-icon"> (fill: currentColor); in the
+ * editor it is the saved <img> placeholder (no src), painted in the text color
+ * through the generated mask (--pc-inline-icon, see includes/InlineIcon.php).
+ */
+.pc-inline-icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.125em;
+}
+
+svg.pc-inline-icon {
+	fill: currentcolor;
+}
+
+img.pc-inline-icon {
+	background-color: currentcolor;
+	mask: var(--pc-inline-icon) center / contain no-repeat;
+	// Hide any saved image (older icons kept the SVG as src) so only the
+	// text-colored mask shows.
+	object-position: -100em 0;
+}
+
