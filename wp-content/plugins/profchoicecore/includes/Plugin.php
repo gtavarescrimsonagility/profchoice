@@ -24,6 +24,7 @@ final class Plugin {
 	 */
 	public static function boot() {
 		Blocks::register_hooks();
+		Bindings::register_hooks();
 		CoverVideo::register_hooks();
 		Icons::register_hooks();
 		InlineIcon::register_hooks();

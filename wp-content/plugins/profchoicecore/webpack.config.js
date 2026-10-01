@@ -1,6 +1,6 @@
 /**
  * Default @wordpress/scripts config plus entries that are not blocks: the
- * core/cover extension (editor script and view script module) and the inline
+ * WooCommerce block bindings, the core/cover extension (editor script and view script module) and the inline
  * icon and visually hidden formats.
  */
 const [
@@ -15,6 +15,7 @@ const withEntries = ( config, extra ) => ( {
 
 module.exports = [
 	withEntries( scriptConfig, {
+		'bindings/index': './src/bindings/index.ts',
 		'cover-extension/index': './src/cover-extension/index.tsx',
 		'inline-icon/index': './src/inline-icon/index.tsx',
 		'visually-hidden/index': './src/visually-hidden/index.tsx',

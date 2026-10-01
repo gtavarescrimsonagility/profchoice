@@ -3,11 +3,11 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.18.7
+Stable tag: 0.19.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Blocks and editor tools for Professional's Choice: newsletter form, carousel, video covers, icons and inline text formats.
+Blocks and editor tools for Professional's Choice: newsletter form, carousel, video covers, icons, inline text formats and WooCommerce block bindings.
 
 == Description ==
 
@@ -18,6 +18,7 @@ Blocks (namespace `profchoice/`):
 
 Editor features:
 
+* **WooCommerce bindings**: designed blocks (headings, buttons, images) can take a product category's or product's name, link and image, or the shop link, through the block bindings `profchoice/product-category`, `profchoice/product` (by ID or featured position) and `profchoice/shop`. Without WooCommerce or matching data, blocks keep their saved values.
 * **Video covers**: a Cover with a video background gets a Video panel (Autoplay, Loop, Muted; Muted is locked on while Autoplay is on). A Button with the **Play** style inside it plays and pauses the video and fades out while it plays; focus then moves to the cover, so Space pauses it. The Play style only sets the shape (a circle); colors and the Hover/Focus/Active states come from the Button's own settings.
 * **Icons**: a "Professional's Choice" icon collection (Play, Pause, Arrow Right) registered with the Icons API, so it shows in the Icon block and the inline icon picker. Add an icon with an SVG in `icons/` and a line in `icons/manifest.php`.
 * **Inline icon** (rich text format): inserts any registered icon into text, with the same Icon library picker as the Icon block. It renders as an `<svg>` in the text color.
@@ -43,6 +44,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.19.0 =
+* WooCommerce block bindings: `profchoice/product-category` (a category by slug: name, url), `profchoice/product` (a product by ID or by position among the featured products: name, url, image_id, image_url, image_alt) and `profchoice/shop` (the shop page url). Designed blocks keep their markup and styles while the data comes from the store; a binding with no data keeps the block's saved value, and a name equal to the saved text keeps its designed line breaks. The editor shows the store values (GET /profchoicecore/v1/bindings).
 
 = 0.18.7 =
 * Carousel Previous/Next: the Active control settings now win over the Button's own colors (e.g. a text color preset), while the Button's Hover/Focus/Active states still win over them.
