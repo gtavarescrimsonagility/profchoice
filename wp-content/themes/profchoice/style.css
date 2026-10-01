@@ -15,3 +15,12 @@ Text Domain: profchoice
 :root {
 	--cbv-font: var(--wp--preset--font-family--montserrat);
 }
+
+/*
+ * The parent underlines a:hover (0,1,1), which beats the :where()-wrapped
+ * button hover from theme.json; keep buttons undecorated.
+ */
+.wp-element-button:hover,
+.wp-block-button__link:hover {
+	text-decoration: none;
+}
