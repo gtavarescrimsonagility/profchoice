@@ -1,0 +1,80 @@
+name: profchoice theme
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - wp-content/themes/profchoice/**
+      - .github/workflows/profchoice-theme.yml
+  pull_request:
+    paths:
+      - wp-content/themes/profchoice/**
+      - .github/workflows/profchoice-theme.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  THEME_DIR: wp-content/themes/profchoice
+  SLUG: profchoice
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: wp-content/themes/profchoice
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version
+        id: version
+        run: |
+          version=$(sed -n 's/^Version:[[:space:]]*//p' style.css | tr -d '\r')
+          echo "version=$version"
+          test -n "$version"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: theme.json and style variations are valid JSON
+        run: find . -name '*.json' -print0 | xargs -0 -n1 python3 -m json.tool > /dev/null
+
+      - name: PHP syntax
+        run: find . -name '*.php' -print0 | xargs -0 -n1 php -l
+
+  release:
+    needs: check
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VERSION: ${{ needs.check.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Skip if already released
+        id: check
+        run: |
+          if gh release view "$SLUG.$VERSION" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Package
+        if: steps.check.outputs.exists != 'true'
+        run: |
+          mkdir -p /tmp/pkg
+          git archive "HEAD:$THEME_DIR" --prefix="$SLUG/" | tar -x -C /tmp/pkg
+          cd /tmp/pkg
+          zip -rq "$SLUG.$VERSION.zip" "$SLUG"
+          unzip -l "$SLUG.$VERSION.zip" | tail -n 3
+
+      - name: Publish release
+        if: steps.check.outputs.exists != 'true'
+        run: |
+          gh release create "$SLUG.$VERSION" "/tmp/pkg/$SLUG.$VERSION.zip" \
+            -R "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "$SLUG $VERSION" \
+            --notes "Built from $GITHUB_SHA."

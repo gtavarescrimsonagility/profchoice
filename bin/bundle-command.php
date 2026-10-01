@@ -72,6 +72,7 @@ class ProfChoice_Bundle_Command {
 		// Content keeps the URL it was saved with (e.g. localhost:<port>), while
 		// attachment URLs use siteurl, so match any host.
 		$wxr = preg_replace( '#https?://[^/"\'\s<]+/wp-content/uploads/#', self::RAW_URL . '/uploads/', $wxr );
+		$wxr = $this->add_term_meta( $wxr );
 		// Drop export timestamps so unchanged content produces no diff.
 		$wxr = preg_replace( '#(<!-- generator="[^"]*") created="[^"]*"#', '$1', $wxr );
 		$wxr = preg_replace( '#\n<pubDate>[^<]*</pubDate>(?=[\s\S]*?<item>)#', '', $wxr, 1 );
@@ -111,11 +112,16 @@ class ProfChoice_Bundle_Command {
 	}
 
 	/**
-	 * Published content plus the active theme's custom CSS and global styles.
+	 * Published content (with WooCommerce products when it is active) plus the
+	 * active theme's custom CSS and global styles.
 	 */
 	private function content_ids() {
+		$types = array( 'page', 'post', 'wp_block', 'wp_navigation', 'wp_template', 'wp_template_part' );
+		if ( post_type_exists( 'product' ) ) {
+			$types[] = 'product';
+		}
 		$ids = get_posts( array(
-			'post_type'   => array( 'page', 'post', 'wp_block', 'wp_navigation', 'wp_template', 'wp_template_part' ),
+			'post_type'   => $types,
 			'post_status' => array( 'publish', 'private', 'draft' ),
 			'numberposts' => -1,
 			'fields'      => 'ids',
@@ -135,7 +141,8 @@ class ProfChoice_Bundle_Command {
 	}
 
 	/**
-	 * Attachments referenced by the content (featured images, block IDs, URLs).
+	 * Attachments referenced by the content (featured images, block IDs, URLs)
+	 * and by product categories.
 	 *
 	 * @return array<int, string> Attachment ID => file path relative to uploads.
 	 */
@@ -165,8 +172,15 @@ class ProfChoice_Bundle_Command {
 			}
 		}
 
+		// Product category images (term meta), which the content may not use.
+		if ( taxonomy_exists( 'product_cat' ) ) {
+			foreach ( get_terms( array( 'taxonomy' => 'product_cat', 'hide_empty' => false, 'fields' => 'ids' ) ) as $term_id ) {
+				$found[] = (int) get_term_meta( $term_id, 'thumbnail_id', true );
+			}
+		}
+
 		$media = array();
-		foreach ( array_unique( $found ) as $id ) {
+		foreach ( array_unique( array_filter( $found ) ) as $id ) {
 			$file = get_post_meta( $id, '_wp_attached_file', true );
 			if ( 'attachment' === get_post_type( $id ) && $file && is_file( "$uploads/$file" ) ) {
 				$media[ $id ] = $file;
@@ -174,6 +188,40 @@ class ProfChoice_Bundle_Command {
 		}
 
 		return $media;
+	}
+
+	/**
+	 * `wp export` leaves out term meta; add the product categories' (image,
+	 * order, display type) as <wp:termmeta>, which the WordPress Importer
+	 * reads. Attachment IDs stay valid when the import keeps the original IDs
+	 * (the blueprint resets the tables first).
+	 */
+	private function add_term_meta( $wxr ) {
+		if ( ! taxonomy_exists( 'product_cat' ) ) {
+			return $wxr;
+		}
+		foreach ( get_terms( array( 'taxonomy' => 'product_cat', 'hide_empty' => false ) ) as $term ) {
+			$meta = '';
+			foreach ( get_term_meta( $term->term_id ) as $key => $values ) {
+				// Counts are a WooCommerce cache it rebuilds.
+				if ( 0 === strpos( $key, 'product_count_' ) ) {
+					continue;
+				}
+				foreach ( $values as $value ) {
+					$meta .= "\t<wp:termmeta>\n\t\t<wp:meta_key><![CDATA[{$key}]]></wp:meta_key>\n\t\t<wp:meta_value><![CDATA[{$value}]]></wp:meta_value>\n\t</wp:termmeta>\n";
+				}
+			}
+			if ( '' === $meta ) {
+				continue;
+			}
+			$wxr = preg_replace(
+				'#(<wp:term>(?:(?!</wp:term>).)*?<wp:term_taxonomy>(?:<!\[CDATA\[)?product_cat(?:\]\]>)?</wp:term_taxonomy>(?:(?!</wp:term>).)*?<wp:term_slug>(?:<!\[CDATA\[)?' . preg_quote( $term->slug, '#' ) . '(?:\]\]>)?</wp:term_slug>(?:(?!</wp:term>).)*?)(</wp:term>)#s',
+				'$1' . $meta . '$2',
+				$wxr,
+				1
+			);
+		}
+		return $wxr;
 	}
 
 	private function reset_dir( $dir ) {
