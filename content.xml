@@ -631,6 +631,12 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:profchoice/newsletter-message -->
 
+<!-- wp:profchoice/newsletter-message {"type":"pending","style":{"color":{"text":"#14161a"},"spacing":{"padding":{"top":"13px","right":"16px","bottom":"13px","left":"16px"}},"typography":{"fontSize":"0.875rem","lineHeight":"1.2"}}} -->
+<div class="wp-block-profchoice-newsletter-message pc-newsletter-message is-pending has-text-color" role="status" aria-live="polite" data-pc-message="pending" style="color:#14161a;padding-top:13px;padding-right:16px;padding-bottom:13px;padding-left:16px;font-size:0.875rem;line-height:1.2"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<p style="margin-top:0;margin-bottom:0">Almost there! Check your email to confirm your subscription.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:profchoice/newsletter-message -->
+
 <!-- wp:profchoice/newsletter-message {"type":"error","style":{"color":{"text":"#14161a"},"spacing":{"padding":{"top":"13px","right":"16px","bottom":"13px","left":"16px"}},"typography":{"fontSize":"0.875rem","lineHeight":"1.2"}}} -->
 <div class="wp-block-profchoice-newsletter-message pc-newsletter-message is-error has-text-color" role="status" aria-live="polite" data-pc-message="error" style="color:#14161a;padding-top:13px;padding-right:16px;padding-bottom:13px;padding-left:16px;font-size:0.875rem;line-height:1.2"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
 <p style="margin-top:0;margin-bottom:0">Something went wrong. Please try again.</p>
@@ -644,8 +650,8 @@
   <wp:post_id>51</wp:post_id>
   <wp:post_date>2026-09-28 14:24:12</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:24:12</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 03:21:50</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 03:21:50</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 04:14:51</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 04:14:51</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>homepage</wp:post_name>
