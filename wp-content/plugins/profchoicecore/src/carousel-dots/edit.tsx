@@ -6,6 +6,8 @@ import {
 } from '@wordpress/block-editor';
 import { PanelBody, ToggleControl } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
+import { useRefEffect } from '@wordpress/compose';
+import { useState } from '@wordpress/element';
 import type { BlockEditProps } from '@wordpress/blocks';
 import StatePanels from '../shared/StatePanels';
 import { stateStyleProps } from '../shared/state-style';
@@ -31,8 +33,8 @@ const STATES = [
 ];
 
 /**
- * Preview with one dot per slide (the first one active) and panels to style
- * the default and the active dot.
+ * Preview with one dot per slide, the one of the slide shown in the editor
+ * active, and panels to style the default and the active dot.
  * @param root0
  * @param root0.attributes
  * @param root0.setAttributes
@@ -80,7 +82,32 @@ export default function Edit( {
 	const layout = attributes.layout as { justifyContent?: string } | undefined;
 	const style = attributes.style as
 		{ spacing?: { blockGap?: string } } | undefined;
+	// The carousel's edit keeps the shown slide in its data-pc-active
+	// (1-based); follow it from the DOM, as the blocks live in separate
+	// bundles.
+	const [ current, setCurrent ] = useState( 0 );
+	const ref = useRefEffect( ( element: HTMLElement ) => {
+		const carousel = element.closest( '.wp-block-profchoice-carousel' );
+		if ( ! carousel ) {
+			return;
+		}
+		const sync = () =>
+			setCurrent(
+				Math.max(
+					Number( carousel.getAttribute( 'data-pc-active' ) ) - 1,
+					0
+				)
+			);
+		sync();
+		const observer = new window.MutationObserver( sync );
+		observer.observe( carousel, {
+			attributes: true,
+			attributeFilter: [ 'data-pc-active' ],
+		} );
+		return () => observer.disconnect();
+	}, [] );
 	const blockProps = useBlockProps( {
+		ref,
 		className: `pc-carousel__dots${ overlay ? ' is-overlay' : '' }`,
 		style: {
 			...stateProps.style,
@@ -124,7 +151,7 @@ export default function Edit( {
 					( _, index ) => (
 						<span
 							key={ index }
-							className={ `pc-carousel__dot${ index === 0 ? ' is-active' : '' }` }
+							className={ `pc-carousel__dot${ index === current ? ' is-active' : '' }` }
 						/>
 					)
 				) }
