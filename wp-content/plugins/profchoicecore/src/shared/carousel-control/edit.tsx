@@ -134,6 +134,8 @@ export const createEdit = ( direction: Direction ) =>
 						'opacity',
 					] }
 					colorLabel={ __( 'Icon', 'profchoicecore' ) }
+					// See the :disabled rule in style.scss.
+					opacityDefaults={ { active: 1, inactive: 0.35 } }
 					onChange={ ( state, value ) =>
 						setAttributes( { [ state ]: value } )
 					}

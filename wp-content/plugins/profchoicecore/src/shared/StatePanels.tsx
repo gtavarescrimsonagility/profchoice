@@ -71,6 +71,8 @@ type Props = {
 	onChange: ( state: string, value: StateStyle ) => void;
 	/** Label of the `color` feature, e.g. "Icon". */
 	colorLabel?: string;
+	/** The stylesheet's opacity per state, where the slider starts. */
+	opacityDefaults?: Record< string, number >;
 };
 
 type Palette = Array< { name: string; slug: string; color: string } >;
@@ -259,7 +261,8 @@ function StateColorItem( {
  * @param props
  */
 export default function StatePanels( props: Props ) {
-	const { states, values, features, onChange, colorLabel } = props;
+	const { states, values, features, onChange, colorLabel, opacityDefaults } =
+		props;
 	const [ themePalette, customPalette, defaultPalette ] = useSettings(
 		'color.palette.theme',
 		'color.palette.custom',
@@ -415,6 +418,12 @@ export default function StatePanels( props: Props ) {
 									min={ 0 }
 									max={ 1 }
 									step={ 0.05 }
+									allowReset
+									initialPosition={
+										base.opacity !== undefined
+											? Number( base.opacity )
+											: ( opacityDefaults?.[ key ] ?? 1 )
+									}
 									value={
 										value.opacity !== undefined
 											? Number( value.opacity )
@@ -428,8 +437,7 @@ export default function StatePanels( props: Props ) {
 													: undefined,
 										} )
 									}
-								/>,
-								false
+								/>
 							) }
 					</ToolsPanel>
 				);
