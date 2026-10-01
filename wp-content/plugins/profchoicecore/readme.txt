@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.16.2
+Stable tag: 0.16.3
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,8 +44,11 @@ The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt
 
 == Changelog ==
 
+= 0.16.3 =
+* Carousel Previous/Next and Carousel Dots: Border, Radius and Opacity in the state panels are added from the panel menu (like Width and Height), and show up on their own once set.
+
 = 0.16.2 =
-* Carousel Previous/Next: Opacity is shown by default in the Active control and Inactive control panels, as a slider with a number field and Reset, starting at the stylesheet value (1 active, 0.35 inactive, or the Active value it inherits).
+* Carousel Previous/Next: Opacity in the Active control and Inactive control panels is a slider with a number field and Reset, starting at the stylesheet value (1 active, 0.35 inactive, or the Active value it inherits).
 
 = 0.16.1 =
 * Carousel Previous/Next: the default button look (round, 2rem icon, 0.5rem padding, lighter text on hover, icon centred) comes from the stylesheet instead of being saved in each Button block, which now only holds customizations.

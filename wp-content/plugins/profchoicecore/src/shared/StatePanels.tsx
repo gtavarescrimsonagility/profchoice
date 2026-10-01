@@ -334,15 +334,15 @@ export default function StatePanels( props: Props ) {
 				const item = (
 					prop: keyof StateStyle,
 					label: string,
-					control: JSX.Element,
-					isShownByDefault = true
+					control: JSX.Element
 				) => (
 					<ToolsPanelItem
 						key={ prop }
 						label={ label }
 						hasValue={ () => hasValue( value[ prop ] ) }
 						onDeselect={ () => set( key, { [ prop ]: undefined } ) }
-						isShownByDefault={ isShownByDefault }
+						// Added from the panel's menu, like core's optional controls.
+						isShownByDefault={ false }
 					>
 						{ control }
 					</ToolsPanelItem>
@@ -358,8 +358,7 @@ export default function StatePanels( props: Props ) {
 							onChange={ ( next?: string ) =>
 								set( key, { [ prop ]: next || undefined } )
 							}
-						/>,
-						false
+						/>
 					);
 				return (
 					<ToolsPanel
