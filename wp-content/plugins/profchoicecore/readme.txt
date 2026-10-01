@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.15.0
+Stable tag: 0.16.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.16.0 =
+* Carousel: a new carousel starts with a slide plus Previous and Next, no dots; "Add dots" in the carousel toolbar inserts them.
+* Carousel Dots default look: plain 10px round dots, white at half opacity, the active one opaque. The previous look (wider red active dot, outlined dots) is now set with the Default/Active settings.
 
 = 0.15.0 =
 * Carousel Previous/Next default look: a round button (2rem chevron Inline icon, Visually hidden "Previous"/"Next" label, 1rem padding, lighter text on hover). Overlaid, each control is a full-height strip at its edge, 15% wide by default (new Min. width setting), with the button centred; `--pc-carousel-arrows-inset` now defaults to 0.

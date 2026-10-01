@@ -40,17 +40,17 @@ type EditorSelectors = {
 };
 
 const SLIDE = 'profchoice/carousel-slide';
+const DOTS = 'profchoice/carousel-dots';
 const ALLOWED = [
 	SLIDE,
 	'profchoice/carousel-control-prev',
 	'profchoice/carousel-control-next',
-	'profchoice/carousel-dots',
+	DOTS,
 ];
 const TEMPLATE: TemplateArray = [
 	[ SLIDE, {}, slidePlaceholder( 1 ) ],
 	[ 'profchoice/carousel-control-prev' ],
 	[ 'profchoice/carousel-control-next' ],
-	[ 'profchoice/carousel-dots' ],
 ];
 
 /**
@@ -69,14 +69,13 @@ export default function Edit( {
 	const { ariaLabel, transition, loop, autoplay, autoplayDelay } = attributes;
 	const [ active, setActive ] = useState( 0 );
 
-	const { slideIds, slideContent, selectedSlide } = useSelect(
+	const { slideIds, slideContent, selectedSlide, hasDots } = useSelect(
 		( select ) => {
 			const editor = select(
 				blockEditorStore
 			) as unknown as EditorSelectors;
-			const slides = editor
-				.getBlocks( clientId )
-				.filter( ( block ) => block.name === SLIDE );
+			const children = editor.getBlocks( clientId );
+			const slides = children.filter( ( block ) => block.name === SLIDE );
 			const ids = slides.map( ( block ) => block.clientId );
 			const selected = editor.getSelectedBlockClientId();
 			const chain = selected
@@ -84,6 +83,7 @@ export default function Edit( {
 				: [];
 			return {
 				slideIds: ids,
+				hasDots: children.some( ( block ) => block.name === DOTS ),
 				// The first block of each slide, so a new slide matches them.
 				slideContent: slides.map(
 					( block ) => block.innerBlocks[ 0 ]?.name
@@ -177,6 +177,20 @@ export default function Edit( {
 					<ToolbarButton icon="plus" onClick={ addSlide }>
 						{ __( 'Add slide', 'profchoicecore' ) }
 					</ToolbarButton>
+					{ ! hasDots && (
+						<ToolbarButton
+							icon="ellipsis"
+							onClick={ () =>
+								insertBlock(
+									createBlock( DOTS ),
+									undefined,
+									clientId
+								)
+							}
+						>
+							{ __( 'Add dots', 'profchoicecore' ) }
+						</ToolbarButton>
+					) }
 				</ToolbarGroup>
 			</BlockControls>
 			<InspectorControls>
