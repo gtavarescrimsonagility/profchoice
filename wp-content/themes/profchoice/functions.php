@@ -114,8 +114,33 @@ add_action(
 			array( 'cbv-main' ),
 			wp_get_theme()->get( 'Version' )
 		);
+		// Small enough for core to print inline instead of a render-blocking link.
+		wp_style_add_data( 'profchoice', 'path', get_stylesheet_directory() . '/style.css' );
 	},
 	100
+);
+
+/*
+ * Meta description: the page's excerpt, or the site tagline (Settings >
+ * General) on the front page and pages without one. Nothing when both are
+ * empty, or when an SEO plugin prints its own.
+ */
+add_action(
+	'wp_head',
+	function () {
+		if ( defined( 'WPSEO_VERSION' ) || defined( 'RANK_MATH_VERSION' ) || defined( 'AIOSEO_VERSION' ) ) {
+			return;
+		}
+		$description = is_singular() && has_excerpt() ? get_the_excerpt() : '';
+		if ( '' === $description ) {
+			$description = get_bloginfo( 'description' );
+		}
+		$description = trim( wp_strip_all_tags( $description ) );
+		if ( '' !== $description ) {
+			printf( '<meta name="description" content="%s" />' . "\n", esc_attr( $description ) );
+		}
+	},
+	1
 );
 
 /*
