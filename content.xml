@@ -53,6 +53,10 @@
   <wp:term_slug>english</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[English]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[354]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>8</wp:term_id>
@@ -158,6 +162,10 @@
   <wp:term_slug>western</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Western]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[355]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <generator>https://wordpress.org/?v=7.1.2</generator>
 <item>
@@ -185,7 +193,7 @@
   <wp:is_sticky>0</wp:is_sticky>
 </item>
 <item>
-  <title><![CDATA[Homepage]]></title>
+  <title><![CDATA[Home]]></title>
   <link>https://professionals-choice.wp.local/</link>
   <pubDate>Mon, 28 Sep 2026 14:24:12 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
@@ -603,14 +611,14 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>51</wp:post_id>
+  <wp:post_id>9</wp:post_id>
   <wp:post_date>2026-09-28 14:24:12</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:24:12</wp:post_date_gmt>
   <wp:post_modified>2026-10-01 18:38:52</wp:post_modified>
   <wp:post_modified_gmt>2026-10-01 18:38:52</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>homepage</wp:post_name>
+  <wp:post_name>home</wp:post_name>
   <wp:status>publish</wp:status>
   <wp:post_parent>0</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
@@ -779,7 +787,7 @@
 </item>
 <item>
   <title><![CDATA[50-years]]></title>
-  <link>https://professionals-choice.wp.local/homepage/50-years/</link>
+  <link>https://professionals-choice.wp.local/home/50-years/</link>
   <pubDate>Mon, 28 Sep 2026 21:14:20 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50-years.png</guid>
@@ -795,7 +803,7 @@
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>50-years</wp:post_name>
   <wp:status>inherit</wp:status>
-  <wp:post_parent>51</wp:post_parent>
+  <wp:post_parent>9</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
@@ -816,7 +824,7 @@
 </item>
 <item>
   <title><![CDATA[50th-anniversary-mix-blend-bg]]></title>
-  <link>https://professionals-choice.wp.local/homepage/50th-anniversary-mix-blend-bg/</link>
+  <link>https://professionals-choice.wp.local/home/50th-anniversary-mix-blend-bg/</link>
   <pubDate>Tue, 29 Sep 2026 12:59:22 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/50th-anniversary-mix-blend-bg.png</guid>
@@ -832,7 +840,7 @@
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>50th-anniversary-mix-blend-bg</wp:post_name>
   <wp:status>inherit</wp:status>
-  <wp:post_parent>51</wp:post_parent>
+  <wp:post_parent>9</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
@@ -1524,7 +1532,7 @@
 </item>
 <item>
   <title><![CDATA[video-from-7Ii7txNZOlk]]></title>
-  <link>https://professionals-choice.wp.local/homepage/video-from-7ii7txnzolk/</link>
+  <link>https://professionals-choice.wp.local/home/video-from-7ii7txnzolk/</link>
   <pubDate>Wed, 30 Sep 2026 20:55:15 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.mp4</guid>
@@ -1540,7 +1548,7 @@
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>video-from-7ii7txnzolk</wp:post_name>
   <wp:status>inherit</wp:status>
-  <wp:post_parent>51</wp:post_parent>
+  <wp:post_parent>9</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
@@ -1557,7 +1565,7 @@
 </item>
 <item>
   <title><![CDATA[video-from-7Ii7txNZOlk]]></title>
-  <link>https://professionals-choice.wp.local/homepage/video-from-7ii7txnzolk-3/</link>
+  <link>https://professionals-choice.wp.local/home/video-from-7ii7txnzolk-3/</link>
   <pubDate>Wed, 30 Sep 2026 21:05:58 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/video-from-7Ii7txNZOlk.jpg</guid>
@@ -1573,7 +1581,7 @@
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>video-from-7ii7txnzolk-3</wp:post_name>
   <wp:status>inherit</wp:status>
-  <wp:post_parent>51</wp:post_parent>
+  <wp:post_parent>9</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
@@ -2020,6 +2028,394 @@
   <wp:post_type>page</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
+</item>
+<item>
+  <title><![CDATA[Ventech Sport Boots]]></title>
+  <link>https://professionals-choice.wp.local/product/ventech-sport-boots/</link>
+  <pubDate>Thu, 01 Oct 2026 10:02:49 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/ventech-sport-boots/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>650</wp:post_id>
+  <wp:post_date>2026-10-01 10:02:49</wp:post_date>
+  <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
+  <wp:post_modified>2026-10-01 10:41:37</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 10:41:37</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>ventech-sport-boots</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>1</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="product_cat" nicename="english"><![CDATA[English]]></category>
+  <category domain="product_visibility" nicename="featured"><![CDATA[featured]]></category>
+  <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+  <category domain="product_cat" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+  <category domain="product_cat" nicename="western"><![CDATA[Western]]></category>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[359]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_edit_last</wp:meta_key>
+    <wp:meta_value><![CDATA[1]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Stealth Air Ride Saddle Pad]]></title>
+  <link>https://professionals-choice.wp.local/product/stealth-air-ride-saddle-pad/</link>
+  <pubDate>Thu, 01 Oct 2026 10:02:49 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/stealth-air-ride-saddle-pad/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>651</wp:post_id>
+  <wp:post_date>2026-10-01 10:02:49</wp:post_date>
+  <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
+  <wp:post_modified>2026-10-01 10:09:19</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 10:09:19</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>stealth-air-ride-saddle-pad</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>2</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="product_cat" nicename="english"><![CDATA[English]]></category>
+  <category domain="product_visibility" nicename="featured"><![CDATA[featured]]></category>
+  <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+  <category domain="product_cat" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+  <category domain="product_cat" nicename="western"><![CDATA[Western]]></category>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[360]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_edit_last</wp:meta_key>
+    <wp:meta_value><![CDATA[1]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Comfort Fit Fly Mask]]></title>
+  <link>https://professionals-choice.wp.local/product/comfort-fit-fly-mask/</link>
+  <pubDate>Thu, 01 Oct 2026 10:02:49 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/comfort-fit-fly-mask/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>652</wp:post_id>
+  <wp:post_date>2026-10-01 10:02:49</wp:post_date>
+  <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
+  <wp:post_modified>2026-10-01 10:09:19</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 10:09:19</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>comfort-fit-fly-mask</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>3</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="product_cat" nicename="english"><![CDATA[English]]></category>
+  <category domain="product_visibility" nicename="featured"><![CDATA[featured]]></category>
+  <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+  <category domain="product_cat" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+  <category domain="product_cat" nicename="western"><![CDATA[Western]]></category>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[361]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_edit_last</wp:meta_key>
+    <wp:meta_value><![CDATA[1]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Pro Performance Front Splint Boots]]></title>
+  <link>https://professionals-choice.wp.local/product/pro-performance-front-splint-boots/</link>
+  <pubDate>Thu, 01 Oct 2026 10:02:49 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/pro-performance-front-splint-boots/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>653</wp:post_id>
+  <wp:post_date>2026-10-01 10:02:49</wp:post_date>
+  <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
+  <wp:post_modified>2026-10-01 10:09:18</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 10:09:18</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pro-performance-front-splint-boots</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>4</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="product_cat" nicename="english"><![CDATA[English]]></category>
+  <category domain="product_visibility" nicename="featured"><![CDATA[featured]]></category>
+  <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+  <category domain="product_cat" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+  <category domain="product_cat" nicename="western"><![CDATA[Western]]></category>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[362]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_edit_last</wp:meta_key>
+    <wp:meta_value><![CDATA[1]]></wp:meta_value>
+  </wp:postmeta>
 </item>
   </channel>
 </rss>
