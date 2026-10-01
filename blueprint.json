@@ -62,8 +62,29 @@
     {
       "step": "installPlugin",
       "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "woocommerce"
+      },
+      "options": {
+        "activate": true
+      },
+      "ifAlreadyInstalled": "overwrite",
+      "progress": {
+        "caption": "Installing WooCommerce"
+      }
+    },
+    {
+      "step": "runPHP",
+      "progress": {
+        "caption": "Setting up WooCommerce"
+      },
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\n\n// US store, no setup wizard or coming-soon mode.\nupdate_option( 'woocommerce_default_country', 'US:KY' );\nupdate_option( 'woocommerce_currency', 'USD' );\nupdate_option( 'woocommerce_coming_soon', 'no' );\nupdate_option( 'woocommerce_onboarding_profile', array( 'skipped' => true ) );\n\n// The bundle brings Shop, Cart, Checkout and My account: drop the ones\n// WooCommerce just created so the imported ones keep their slugs.\nforeach ( array( 'shop', 'cart', 'checkout', 'myaccount' ) as $page ) {\n\t$id = (int) get_option( \"woocommerce_{$page}_page_id\" );\n\tif ( $id ) {\n\t\twp_delete_post( $id, true );\n\t}\n\tdelete_option( \"woocommerce_{$page}_page_id\" );\n}\n\n// Sample categories WooCommerce adds on install.\nforeach ( array( 'accessories', 'hoodies', 'tshirts' ) as $slug ) {\n\t$term = get_term_by( 'slug', $slug, 'product_cat' );\n\tif ( $term ) {\n\t\twp_delete_term( $term->term_id, 'product_cat' );\n\t}\n}\n"
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
         "resource": "url",
-        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoicecore.0.18.7/profchoicecore.0.18.7.zip"
+        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoicecore.0.19.0/profchoicecore.0.19.0.zip"
       },
       "options": {
         "activate": true
@@ -85,7 +106,7 @@
     },
     {
       "step": "runPHP",
-      "code": "<?php\nrequire '/wordpress/wp-load.php';\nrequire_once ABSPATH . 'wp-admin/includes/plugin.php';\nrequire_once ABSPATH . 'wp-admin/includes/file.php';\nglobal $wpdb;\n\n// importWxr installs wordpress-importer after the plugin cleanup; remove only it.\nWP_Filesystem();\ndeactivate_plugins( 'wordpress-importer/wordpress-importer.php' );\ndelete_plugins( array( 'wordpress-importer/wordpress-importer.php' ) );\n\n// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n// Update the rows directly: wp_update_post() without a logged-in user would\n// strip block custom CSS (style.css) through wp_strip_custom_css_from_blocks().\n$wpdb->query( $wpdb->prepare(\n\t\"UPDATE {$wpdb->posts} SET post_content = REPLACE( post_content, %s, %s )\",\n\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\twp_get_upload_dir()['baseurl'] . '/'\n) );\nwp_cache_flush();\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n"
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\nrequire_once ABSPATH . 'wp-admin/includes/plugin.php';\nrequire_once ABSPATH . 'wp-admin/includes/file.php';\nglobal $wpdb;\n\n// importWxr installs wordpress-importer after the plugin cleanup; remove only it.\nWP_Filesystem();\ndeactivate_plugins( 'wordpress-importer/wordpress-importer.php' );\ndelete_plugins( array( 'wordpress-importer/wordpress-importer.php' ) );\n\n// The importer does not remap non-image attachment URLs (e.g. video.mp4).\n// Update the rows directly: wp_update_post() without a logged-in user would\n// strip block custom CSS (style.css) through wp_strip_custom_css_from_blocks().\n$wpdb->query( $wpdb->prepare(\n\t\"UPDATE {$wpdb->posts} SET post_content = REPLACE( post_content, %s, %s )\",\n\t'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/',\n\twp_get_upload_dir()['baseurl'] . '/'\n) );\nwp_cache_flush();\n\n$homepage = get_page_by_path( 'homepage' );\nif ( $homepage ) {\n\tupdate_option( 'show_on_front', 'page' );\n\tupdate_option( 'page_on_front', $homepage->ID );\n}\n\n// WooCommerce pages from the bundle.\nforeach ( array( 'shop' => 'shop', 'cart' => 'cart', 'checkout' => 'checkout', 'myaccount' => 'my-account' ) as $page => $path ) {\n\t$post = get_page_by_path( $path );\n\tif ( $post ) {\n\t\tupdate_option( \"woocommerce_{$page}_page_id\", $post->ID );\n\t}\n}\n\n// Store data the Homepage binds to (products are not in the bundle):\n// category images and the four featured products, images found by file name.\n$attachment = static function ( $file ) use ( $wpdb ) {\n\treturn (int) $wpdb->get_var( $wpdb->prepare(\n\t\t\"SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = '_wp_attached_file' AND meta_value LIKE %s LIMIT 1\",\n\t\t'%/' . $wpdb->esc_like( $file )\n\t) );\n};\nforeach ( array( 'english' => 'shop-english.webp', 'western' => 'shop-western.webp' ) as $slug => $file ) {\n\t$term = get_term_by( 'slug', $slug, 'product_cat' );\n\tif ( $term ) {\n\t\tupdate_term_meta( $term->term_id, 'thumbnail_id', $attachment( $file ) );\n\t}\n}\n$products = array(\n\t'Ventech Sport Boots'                => 'ventech-sport-boots.webp',\n\t'Stealth Air Ride Saddle Pad'        => 'stealth-air-ride-saddle-pad.webp',\n\t'Comfort Fit Fly Mask'               => 'comfort-fit-fly-mask.webp',\n\t'Pro Performance Front Splint Boots' => 'pro-performance-front-splint-boots.webp',\n);\n$order = 0;\nforeach ( $products as $name => $file ) {\n\t$product = new WC_Product_Simple();\n\t$product->set_name( $name );\n\t$product->set_status( 'publish' );\n\t$product->set_featured( true );\n\t$product->set_menu_order( ++$order );\n\t$product->set_image_id( $attachment( $file ) );\n\t$product->save();\n}\n"
     }
   ]
 }
