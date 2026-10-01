@@ -24,3 +24,89 @@ Text Domain: profchoice
 .wp-block-button__link:hover {
 	text-decoration: none;
 }
+
+/* The parent caps every constrained child at the content size; wide blocks keep the wide size. */
+.cbv-content .is-layout-constrained > .alignwide {
+	max-width: var(--wp--style--global--wide-size);
+}
+
+/* Front page: full-width sections run edge to edge, right under the header. */
+.home .cbv-content {
+	padding-block: 0;
+}
+
+.home .cbv-content .alignfull:first-child {
+	margin-block-start: 0;
+}
+
+/*
+ * Hover and focus motion. Colors come from each Button's Hover/Focus/Active
+ * states; these add the transitions and the effects set by class on blocks
+ * (Advanced > Additional CSS class).
+ */
+.wp-block-button__link {
+	transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Links with an arrow (.pc-link-arrow on the Button): the gap before the
+ * arrow grows, and the underline with it. A block link, so the wrapper's
+ * line box (inherited body line-height) adds no height. */
+.pc-link-arrow .wp-block-button__link {
+	display: block;
+}
+
+.pc-link-arrow .pc-inline-icon {
+	transition: margin-inline-start 0.25s ease;
+}
+
+.pc-link-arrow .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon {
+	margin-inline-start: 1.25em;
+}
+
+/* Cards and covers (.pc-hover-zoom): the image zooms in slightly. */
+.pc-hover-zoom {
+	overflow: hidden;
+}
+
+.pc-hover-zoom :is(.wp-block-image img, .wp-block-cover__image-background) {
+	transition: transform 0.6s ease;
+}
+
+.pc-hover-zoom:hover :is(.wp-block-image img, .wp-block-cover__image-background) {
+	transform: scale(1.04);
+}
+
+/* Newsletter (.insider-form): focus shown as a soft ring around the whole
+ * form box instead of the browser outline inside it. */
+.insider-form {
+	transition: box-shadow 0.2s ease;
+}
+
+.insider-form input[type="email"]:focus {
+	outline: none;
+}
+
+.insider-form:focus-within {
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+}
+
+/* Keyboard focus on the button: a white line 3px inside the edge, so it
+ * reads against the red (its Focus-visible state also darkens it). */
+.insider-form :is(button, .wp-block-button__link):focus-visible {
+	outline: none;
+	box-shadow: inset 0 0 0 3px #a8201f, inset 0 0 0 4.5px rgba(255, 255, 255, 0.9);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.wp-block-button__link,
+	.pc-link-arrow .pc-inline-icon,
+	.pc-hover-zoom :is(.wp-block-image img, .wp-block-cover__image-background),
+	.insider-form {
+		transition: none;
+	}
+
+	.pc-hover-zoom:hover :is(.wp-block-image img, .wp-block-cover__image-background) {
+		transform: none;
+	}
+}
