@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "profchoice/carousel-control-next",
-	"version": "0.14.0",
+	"version": "0.1.0",
 	"title": "Carousel Next",
 	"category": "profchoice",
 	"icon": "arrow-right-alt2",

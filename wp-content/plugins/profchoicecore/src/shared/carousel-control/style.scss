@@ -40,19 +40,12 @@
 	min-width: 15%;
 }
 
-// Buttons from 0.13 and before (pc-carousel__arrow) keep their geometry: the
-// strip is just the button, 1rem in from the edge.
-:where(.pc-carousel__control.is-overlay:has(.pc-carousel__arrow)) {
-	min-width: 0;
-	--pc-carousel-arrows-inset-default: 1rem;
-}
-
 .wp-block-profchoice-carousel-control-prev.is-overlay {
-	left: var(--pc-carousel-arrows-inset, var(--pc-carousel-arrows-inset-default, 0));
+	left: var(--pc-carousel-arrows-inset, 0);
 }
 
 .wp-block-profchoice-carousel-control-next.is-overlay {
-	right: var(--pc-carousel-arrows-inset, var(--pc-carousel-arrows-inset-default, 0));
+	right: var(--pc-carousel-arrows-inset, 0);
 }
 
 .pc-carousel__control .wp-block-buttons {
@@ -79,27 +72,6 @@
 	&:disabled {
 		cursor: not-allowed;
 		opacity: var(--pc-carousel-arrow-inactive-opacity, 0.65);
-	}
-}
-
-// Buttons from 0.13 and before (pc-carousel__arrow): the text is only the
-// accessible name and the arrow is drawn here.
-.pc-carousel__arrow .wp-block-button__link {
-	display: grid;
-	place-items: center;
-	box-sizing: border-box;
-	font-size: 0 !important;
-	line-height: 0;
-
-	&::after {
-		content: "";
-		display: block;
-		width: var(--pc-carousel-arrow-icon-size, 17px);
-		height: var(--pc-carousel-arrow-icon-size, 17px);
-		background-color: currentcolor;
-		mask:
-			url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M12.576 4.847a.95.95 0 0 0 0 1.339l4.867 4.867H4.27a.95.95 0 0 0-.949.945.95.95 0 0 0 .949.949h13.173l-4.867 4.867a.95.95 0 0 0 0 1.34.95.95 0 0 0 1.342 0l6.484-6.485a.95.95 0 0 0 0-1.338l-6.484-6.484a.95.95 0 0 0-1.342 0'/%3e%3c/svg%3e")
-			center / contain no-repeat;
 	}
 }
 
@@ -148,8 +120,4 @@ $pc-arrow-properties: (
 .pc-carousel__control:is(.has-inactive-width, .has-inactive-height)
 .wp-block-button__link:disabled {
 	padding: 0 !important;
-}
-
-.pc-carousel__arrow--prev .wp-block-button__link::after {
-	transform: scaleX(-1);
 }

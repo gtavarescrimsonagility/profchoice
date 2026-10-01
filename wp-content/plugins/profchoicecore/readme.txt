@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.19.0
+Stable tag: 0.1.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,129 +45,15 @@ The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt
 
 == Changelog ==
 
-= 0.19.0 =
-* WooCommerce block bindings: `profchoice/product-category` (a category by slug: name, url), `profchoice/product` (a product by ID or by position among the featured products: name, url, image_id, image_url, image_alt) and `profchoice/shop` (the shop page url). Designed blocks keep their markup and styles while the data comes from the store; a binding with no data keeps the block's saved value, and a name equal to the saved text keeps its designed line breaks. The editor shows the store values (GET /profchoicecore/v1/bindings).
-
-= 0.18.7 =
-* Carousel Previous/Next: the Active control settings now win over the Button's own colors (e.g. a text color preset), while the Button's Hover/Focus/Active states still win over them.
-
-= 0.18.6 =
-* Carousel Previous/Next: a disabled arrow defaults to 0.65 opacity (was 0.35); the Inactive control Opacity slider starts there.
-* Carousel Previous now ships its own stylesheet (it shared Carousel Next's, so it was unstyled without a Next block).
-
-= 0.18.5 =
-* Inline icon and Visually hidden styles are printed inline (they declare their file path, so core inlines them like small block styles) instead of as render-blocking links.
-
-= 0.18.4 =
-* Carousel Previous/Next: Minimum width is shown by default in the Dimensions panel, to override the overlaid strip's 15% default.
-
-= 0.18.3 =
-* Carousel Indicators: spaced like Bootstrap's, with a 3px inline margin on each indicator and no gap by default; a Block spacing adds a gap on top.
-
-= 0.18.2 =
-* Carousel Indicators: the hit area is Bootstrap's 10px transparent top and bottom border (the default border, so the Border setting replaces it) with `background-clip: padding-box`; indicators are `content-box` sized, so Width and Height are the bar and a border adds to them.
-
-= 0.18.1 =
-* Carousel Indicators default look, as Bootstrap's: 30x3px square bars 6px apart (a default Block spacing, set in the default theme.json data so themes and the block can override it), white at half opacity and the active one opaque.  3px and 30px join the size presets.
-
-= 0.18.0 =
-* Carousel Dots is renamed **Carousel Indicators** (`profchoice/carousel-indicators`; classes `pc-carousel-indicators` and `pc-carousel-indicator`, variables `--pc-carousel-indicator-{default|active}-*`). `profchoice/carousel-dots` is removed: rename it in saved content.
-* Overlaid indicators default to a 15% side margin and a 1rem bottom margin (instead of 1rem block padding); the block's margin setting overrides them.
-* Carousel toolbar: "Add dots" is now "Add indicators".
-
-= 0.17.2 =
-* Carousel: clicking a slide (outside its links, buttons and fields) focuses the carousel, so the arrow keys, Home and End navigate it right away. The carousel itself shows no focus ring.
-
-= 0.17.1 =
-* Carousel: a new carousel comes with Carousel Dots again (slide, Previous, Next and Dots). "Add dots" stays in the toolbar for a carousel without them.
-
-= 0.17.0 =
-* Carousel: Slide is the default transition (listed first). Carousels saved without a transition now slide; set Transition to Fade to keep a fade.
-
-= 0.16.3 =
-* Carousel Previous/Next and Carousel Dots: Border, Radius and Opacity in the state panels are added from the panel menu (like Width and Height), and show up on their own once set.
-
-= 0.16.2 =
-* Carousel Previous/Next: Opacity in the Active control and Inactive control panels is a slider with a number field and Reset, starting at the stylesheet value (1 active, 0.35 inactive, or the Active value it inherits).
-
-= 0.16.1 =
-* Carousel Previous/Next: the default button look (round, 2rem icon, 0.5rem padding, lighter text on hover, icon centred) comes from the stylesheet instead of being saved in each Button block, which now only holds customizations.
-
-= 0.16.0 =
-* Carousel: a new carousel starts with a slide plus Previous and Next, no dots; "Add dots" in the carousel toolbar inserts them.
-* Carousel Dots default look: plain 10px round dots, white at half opacity, the active one opaque. The previous look (wider red active dot, outlined dots) is now set with the Default/Active settings.
-
-= 0.15.0 =
-* Carousel Previous/Next default look: a round button (2rem chevron Inline icon, Visually hidden "Previous"/"Next" label, 1rem padding, lighter text on hover). Overlaid, each control is a full-height strip at its edge, 15% wide by default (new Min. width setting), with the button centred; `--pc-carousel-arrows-inset` now defaults to 0.
-* Buttons from earlier versions (`pc-carousel__arrow` class) keep their CSS arrow and position (1rem in from the edge, or `--pc-carousel-arrows-inset`).
-* The Active/Inactive control settings apply to any button in the control, not only `pc-carousel__arrow` ones.
-
-= 0.14.1 =
-* Carousel Dots: in the editor, the active dot follows the slide shown (picked in the carousel toolbar) instead of always being the first.
-
-= 0.14.0 =
-* Carousel Arrows is split into two blocks, **Carousel Previous** (`profchoice/carousel-control-prev`) and **Carousel Next** (`profchoice/carousel-control-next`), each with its own Overlay and Active/Inactive settings. Overlaid, Previous sits at the left edge and Next at the right (same `--pc-carousel-arrows-top`/`-inset` variables). `profchoice/carousel-controls` is removed: replace each one with the two new blocks.
-* Carousel Slide placeholders cycle through four grays (#777/#555, #666/#444, #555/#333, #444/#222).
-
-= 0.13.1 =
-* Carousel: a new carousel, and each slide added to it, starts with a gray Cover labelled "Slide N".
-
-= 0.13.0 =
-* Carousel: the toolbar shows the current slide ("Slide 1") with a dropdown to switch slides, instead of one button per slide.
-* Carousel Slide: new slides start with a Cover. In a carousel whose slides start with another block (e.g. Media & Text), "Add slide" adds an empty one of those instead, so it keeps its structure.
-
-= 0.12.1 =
-* The Newsletter Form block is now titled "Newsletter" (same `profchoice/newsletter-form` name, so existing content is unchanged).
-
-= 0.12.0 =
-* Newsletter: subscriptions only create a `subscriber` user (no more "Subscribers" posts or source tracking). Subscribers cannot log in or reset a password.
-* Users > Subscribers: a read-only list of the subscribers' emails (search, sorting, pagination), with Export as the header action. The CSV only has the emails.
-* Optional email confirmation (Settings > Subscribers): new subscribers get the Unconfirmed role and a confirmation link; they become Subscribers once they confirm.
-* Newsletter Message: a "Pending confirmation" type, shown after subscribing while confirmation is required (forms without it show the success message).
-* The `profchoicecore_newsletter_subscribed` action now passes `( $email, $user_id )`; new `profchoicecore_newsletter_pending` action and `profchoicecore_newsletter_confirmation_email` filter.
-
-= 0.11.1 =
-* "Professional's Choice" block category, first in the inserter, holding the plugin's blocks.
-
-= 0.11.0 =
-* Video playback moves into core/cover: Autoplay, Loop and Muted settings for video covers, and a "Play" Button style that plays/pauses the video (keyboard: focus moves to the cover, Space toggles). The Cover Video block is removed.
-* Icon collection "Professional's Choice" (Play, Pause, Arrow Right) through the Icons API.
-* Inline icon and Visually hidden rich text formats.
-
-= 0.10.0 =
-* Cover Video block: poster-first background video with a Play/Pause Button block that fades out while playing.
-
-= 0.9.0 =
-* The dot and arrow state settings store nothing by default: the defaults live in the stylesheet (the active dot's red, 22px width and 4px radius; the disabled arrow's 0.35 opacity) and the settings only hold overrides. Reset clears them.
-
-= 0.8.0 =
-* Overlay dots: a full-width strip at the bottom of the carousel (bottom: 0) with 1rem block padding by default. Place them with the block's justification and padding (e.g. a larger bottom padding lifts them); the --pc-carousel-dots-bottom/left/transform variables are gone.
-* State color indicators overlap as in core's Elements > Link.
-
-= 0.7.0 =
-* Colors are grouped again in a Color panel, each color with a tab per state (Background: Default / Active on the dots; Background and Icon: Active / Inactive on the arrows), as core's Elements > Link (Default / Hover).
-
-= 0.6.0 =
-* Width and Height use core's DimensionControl, as the Button block's Width: a slider over size presets with a toggle to a custom value.
-* Default size presets for the dots (6-32px) and arrows (32-64px), registered like core's button presets under settings.blocks and overridable in a theme's theme.json.
-
-= 0.5.0 =
-* State panels follow the WordPress 7.1 block panels: boxed color items inside each state panel (no grouped Color panel), stacked Width/Height that can be toggled from the panel menu, the core Border control (slider, unlink sides) and Radius control (slider, presets, unlink corners).
-* Resetting an item clears it so it inherits again; Reset all restores the block defaults.
-
-= 0.4.0 =
-* Carousel Dots: the Inactive dot / Active dot panels are now Default / Active, and the active dot inherits every value it leaves empty (shown as placeholders). Variables renamed to --pc-carousel-dot-{default|active}-*.
-* Carousel Arrows: a disabled arrow inherits the Active control values it does not override.
-* Width, height, border and radius share rows at half width; the border control has no slider.
-
-= 0.3.0 =
-* Native style controls for the dots and arrows: a Color panel with the states grouped in tabs (Default/Active background, arrow icon), and per-state panels with size, border (color, style and width together), radius and opacity.
-* Carousel Arrows: Active control and Inactive control settings for the enabled and disabled arrows.
-* Dot variables renamed to --pc-carousel-dot-{inactive|active}-*.
-
-= 0.2.0 =
-* Carousel Arrows and Carousel Dots blocks: arrows styled as Button blocks (with hover/focus/active states), dots with Inactive/Active style settings.
-* Server-side rendering of the carousel and newsletter state (correct inert, is-active and hidden attributes before JavaScript loads).
-
 = 0.1.0 =
-* Newsletter form and carousel blocks.
+First release, for the Professional's Choice Homepage (COMB-598).
+
+* Newsletter block with Email and Message (success, pending, error) children: Interactivity API submit with a no-JavaScript fallback, subscribers stored as `subscriber` users who cannot log in, Users > Subscribers list with CSV export, optional email confirmation (Settings > Subscribers), honeypot and rate limit.
+* Carousel block with Slide, Previous, Next and Indicators children: slide or fade transitions (Embla), loop and autoplay settings, keyboard navigation (also after clicking a slide), inert inactive slides, reduced-motion support, and server-rendered state. The toolbar picks the slide shown in the editor and adds slides and indicators; new slides start with a numbered gray Cover.
+* Previous/Next hold a Button block (every button style and Hover/Focus/Active state) with an Inline icon and a Visually hidden label; Active/Inactive control settings (colors, size, border, radius, opacity) for the enabled and disabled states, an Overlay mode with a 15% default strip and Minimum width, and `--pc-carousel-arrows-top`/`-inset` variables.
+* Indicators with Default/Active settings, Bootstrap-like defaults (30x3px bars, 3px margins, transparent 10px hit area) and an Overlay mode with default margins.
+* Size presets for the indicator and arrow settings, overridable in a theme's theme.json.
+* Video covers: Autoplay, Loop and Muted settings for core/cover videos, and a "Play" Button style that plays/pauses the video (focus moves to the cover; Space toggles).
+* "Professional's Choice" icon collection (Play, Pause, Arrow Right) through the Icons API, and the Inline icon and Visually hidden rich text formats.
+* WooCommerce block bindings: `profchoice/product-category`, `profchoice/product` (by ID or featured position) and `profchoice/shop`, shown in the editor too.
+* "Professional's Choice" block category, first in the inserter.
