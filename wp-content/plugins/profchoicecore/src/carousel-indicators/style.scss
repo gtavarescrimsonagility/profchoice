@@ -1,23 +1,22 @@
 @use "sass:map";
 
 /**
- * Carousel indicators. The defaults (Bootstrap's: 30x3 bars with 3px inline
- * margins, white at half opacity, the active one opaque) live here; the
- * block's Default/Active settings only store overrides
- * (--pc-carousel-indicator-{default|active}-* variables, see StatePanels).
- * Borders and radii may be linked (border-width, radius) or per side/corner
- * (border-top-width, radius-top-left); a per-side value wins over the linked
- * one. A Block spacing adds a gap on top of the margins.
+ * Carousel indicators. Each indicator is a touch target of at least 24x24px
+ * (WCAG 2.2 target size), whatever it looks like: the button is the
+ * invisible target and the visible bar/dot is its ::before. The defaults
+ * (Bootstrap's: 30x3 bars with 3px inline margins, white at half opacity,
+ * the active one opaque) live here; the block's Default/Active settings only
+ * store overrides (--pc-carousel-indicator-{default|active}-* variables, see
+ * StatePanels), which style the ::before. Borders and radii may be linked
+ * (border-width, radius) or per side/corner (border-top-width,
+ * radius-top-left); a per-side value wins over the linked one. A Block
+ * spacing adds a gap on top of the margins.
  */
 $pc-sides: top, right, bottom, left;
-// Default border per side: Bootstrap's transparent 10px top and bottom,
-// which make the hit area taller than the bar (background-clip keeps the
-// bar to the padding box).
 $pc-border-defaults: (
-	top: (color: transparent, style: solid, width: 10px),
-	right: (color: transparent, style: solid, width: 0),
-	bottom: (color: transparent, style: solid, width: 10px),
-	left: (color: transparent, style: solid, width: 0),
+	color: currentcolor,
+	style: solid,
+	width: 0,
 );
 $pc-border-parts: color, style, width;
 $pc-corners: top-left, top-right, bottom-right, bottom-left;
@@ -51,37 +50,57 @@ $pc-corners: top-left, top-right, bottom-right, bottom-left;
 	--pc-indicator-height: var(--pc-carousel-indicator-default-height, 3px);
 	--pc-indicator-background: var(--pc-carousel-indicator-default-background, rgba(255, 255, 255, 0.5));
 
-	display: inline-block;
+	// The touch target: at least 24x24px, the visible indicator centred in it.
+	display: inline-flex;
 	flex: none;
-	box-sizing: content-box;
-	width: var(--pc-indicator-width);
-	height: var(--pc-indicator-height);
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	min-width: var(--pc-carousel-indicator-target-size, 24px);
+	min-height: var(--pc-carousel-indicator-target-size, 24px);
 	padding: 0;
-	background-color: var(--pc-indicator-background);
-	background-clip: padding-box;
+	border: 0;
+	background: none;
 	cursor: pointer;
-	transition: width 0.2s ease, background-color 0.2s ease;
 
 	@each $side in $pc-sides {
 
 		@each $part in $pc-border-parts {
-			$fallback: map.get($pc-border-defaults, $side, $part);
-
-			--pc-indicator-border-#{$side}-#{$part}: var(--pc-carousel-indicator-default-border-#{$side}-#{$part}, var(--pc-carousel-indicator-default-border-#{$part}, #{$fallback}));
-
-			border-#{$side}-#{$part}: var(--pc-indicator-border-#{$side}-#{$part});
+			--pc-indicator-border-#{$side}-#{$part}: var(--pc-carousel-indicator-default-border-#{$side}-#{$part}, var(--pc-carousel-indicator-default-border-#{$part}, #{map.get($pc-border-defaults, $part)}));
 		}
 	}
 
 	@each $corner in $pc-corners {
 		--pc-indicator-radius-#{$corner}: var(--pc-carousel-indicator-default-radius-#{$corner}, var(--pc-carousel-indicator-default-radius, 0));
-
-		border-#{$corner}-radius: var(--pc-indicator-radius-#{$corner});
 	}
 
-	// The active dot's own default is only what differs from a dot (opaque);
-	// everything else inherits the dot's values.
-	&.is-active {
+	// The visible bar/dot. Width and Height are its content box; a border
+	// adds to them.
+	&::before {
+		content: "";
+		display: block;
+		flex: none;
+		box-sizing: content-box;
+		width: var(--pc-indicator-width);
+		height: var(--pc-indicator-height);
+		background-color: var(--pc-indicator-background);
+		transition: width 0.2s ease, background-color 0.2s ease;
+
+		@each $side in $pc-sides {
+
+			@each $part in $pc-border-parts {
+				border-#{$side}-#{$part}: var(--pc-indicator-border-#{$side}-#{$part});
+			}
+		}
+
+		@each $corner in $pc-corners {
+			border-#{$corner}-radius: var(--pc-indicator-radius-#{$corner});
+		}
+	}
+
+	// The active indicator's own default is only what differs (opaque);
+	// everything else inherits the default values.
+	&.is-active::before {
 		width: var(--pc-carousel-indicator-active-width, var(--pc-indicator-width));
 		height: var(--pc-carousel-indicator-active-height, var(--pc-indicator-height));
 		background-color: var(--pc-carousel-indicator-active-background, #fff);
@@ -100,6 +119,10 @@ $pc-corners: top-left, top-right, bottom-right, bottom-left;
 		}
 	}
 
+	&:focus-visible {
+		outline: 2px solid currentcolor;
+		outline-offset: 2px;
+	}
 }
 
 // Bootstrap's spacing. Scoped to the container to win over the flex
@@ -110,7 +133,7 @@ $pc-corners: top-left, top-right, bottom-right, bottom-left;
 
 @media (prefers-reduced-motion: reduce) {
 
-	.pc-carousel-indicator {
+	.pc-carousel-indicator::before {
 		transition: none;
 	}
 }
