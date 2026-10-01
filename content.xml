@@ -185,31 +185,6 @@
   <wp:is_sticky>0</wp:is_sticky>
 </item>
 <item>
-  <title><![CDATA[Custom Styles]]></title>
-  <link>https://professionals-choice.wp.local/2026/09/25/wp-global-styles-commercebuild-velocity/</link>
-  <pubDate>Fri, 25 Sep 2026 18:40:14 +0000</pubDate>
-  <dc:creator>gtavares</dc:creator>
-  <guid isPermaLink="false">http://localhost:8907/2026/09/25/wp-global-styles-commercebuild-velocity/</guid>
-  <description/>
-  <content:encoded><![CDATA[{"version": 3, "isGlobalStylesUserThemeJSON": true }]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>50</wp:post_id>
-  <wp:post_date>2026-09-25 18:40:14</wp:post_date>
-  <wp:post_date_gmt>2026-09-25 18:40:14</wp:post_date_gmt>
-  <wp:post_modified>2026-09-25 18:40:14</wp:post_modified>
-  <wp:post_modified_gmt>2026-09-25 18:40:14</wp:post_modified_gmt>
-  <wp:comment_status>closed</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>wp-global-styles-commercebuild-velocity</wp:post_name>
-  <wp:status>publish</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>wp_global_styles</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <category domain="wp_theme" nicename="commercebuild-velocity"><![CDATA[commercebuild-velocity]]></category>
-</item>
-<item>
   <title><![CDATA[Homepage]]></title>
   <link>https://professionals-choice.wp.local/</link>
   <pubDate>Mon, 28 Sep 2026 14:24:12 +0000</pubDate>
@@ -321,7 +296,7 @@
 <!-- wp:group {"metadata":{"name":"Products"},"className":"trending-grid","style":{"spacing":{"margin":{"top":"3rem"},"blockGap":"1.6rem"},"@mobile":{"spacing":{"margin":{"top":"1.75rem"},"blockGap":"0.75rem"}}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
 <div class="wp-block-group trending-grid" style="margin-top:3rem"><!-- wp:group {"metadata":{"name":"Ventech Sport Boots"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem"}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":359,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":1,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":1,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.webp" alt="" class="wp-image-359" style="aspect-ratio:29/30;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.jpg" alt="" class="wp-image-359" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product","args":{"featured":1,"key":"name"}}}},"style":{"spacing":{"padding":{"top":"0.349375rem"}},"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textAlign":"center","fontSize":"0.92rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.40204082","letterSpacing":"0.036875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","lineHeight":"1.4","letterSpacing":"0.03125rem"}}},"fontFamily":"montserrat"} -->
@@ -337,7 +312,7 @@
 
 <!-- wp:group {"metadata":{"name":"Stealth Air Ride Saddle Pad"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem"}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":360,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":2,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":2,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.webp" alt="" class="wp-image-360" style="aspect-ratio:29/30;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.jpg" alt="" class="wp-image-360" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product","args":{"featured":2,"key":"name"}}}},"style":{"spacing":{"padding":{"top":"0.349375rem"}},"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textAlign":"center","fontSize":"0.92rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.40204082","letterSpacing":"0.036875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","lineHeight":"1.4","letterSpacing":"0.03125rem"}}},"fontFamily":"montserrat"} -->
@@ -369,7 +344,7 @@
 
 <!-- wp:group {"metadata":{"name":"Pro Performance Front Splint Boots"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem"}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":362,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":4,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":4,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.webp" alt="" class="wp-image-362" style="aspect-ratio:29/30;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.jpg" alt="" class="wp-image-362" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"metadata":{"bindings":{"content":{"source":"profchoice/product","args":{"featured":4,"key":"name"}}}},"style":{"spacing":{"padding":{"top":"0.349375rem"}},"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"textAlign":"center","fontSize":"0.92rem","fontStyle":"normal","fontWeight":"700","lineHeight":"1.40204082","letterSpacing":"0.036875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","lineHeight":"1.4","letterSpacing":"0.03125rem"}}},"fontFamily":"montserrat"} -->
@@ -538,15 +513,15 @@
 
 <!-- wp:group {"metadata":{"name":"Logos"},"className":"sponsors-logos","style":{"spacing":{"margin":{"top":"1.75rem"},"blockGap":"var:preset|spacing|40"},"@mobile":{"spacing":{"margin":{"top":"1.5rem"},"blockGap":{"top":"16px","left":"16px"}}},"css":"margin-left: -10.28px;\nmargin-right: -10.28px;"},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
 <div class="wp-block-group sponsors-logos has-custom-css" style="margin-top:1.75rem"><!-- wp:image {"id":377,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"American Cowboys Team Roping Association"},"style":{"css":"box-sizing: border-box;\nwidth: 65.6px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 63.6px;\nheight: 54.9px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-actra.webp" alt="American Cowboys Team Roping Association" class="wp-image-377"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-actra.jpg" alt="American Cowboys Team Roping Association" class="wp-image-377"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":378,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"National High School Finals Rodeo"},"style":{"css":"box-sizing: border-box;\nwidth: 104.67px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 82.67px;\nheight: 49.76px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nhsfr.webp" alt="National High School Finals Rodeo" class="wp-image-378"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nhsfr.jpg" alt="National High School Finals Rodeo" class="wp-image-378"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":379,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"National Barrel Horse Association"},"style":{"css":"box-sizing: border-box;\nwidth: 108.21px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 86.21px;\nheight: 62px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nbha.webp" alt="National Barrel Horse Association" class="wp-image-379"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nbha.jpg" alt="National Barrel Horse Association" class="wp-image-379"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":380,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"South Point"},"style":{"css":"box-sizing: border-box;\nwidth: 92px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 74px;\nheight: 56.95px;\nobject-fit: contain;\n}"}} -->
@@ -554,7 +529,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"id":381,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Heart of Oklahoma Youth Rodeo Association"},"style":{"css":"box-sizing: border-box;\nwidth: 150px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 105.72px;\nheight: 54.39px;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-hoyra.webp" alt="Heart of Oklahoma Youth Rodeo Association" class="wp-image-381"/></figure>
+<figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-hoyra.jpg" alt="Heart of Oklahoma Youth Rodeo Association" class="wp-image-381"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":382,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Ranch Sorting National Championships"},"style":{"css":"box-sizing: border-box;\nwidth: 150px;\nheight: 64px;\nmargin: 0;\nborder: 1px solid #e5e2dc;\nborder-radius: 2px;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\noverflow: hidden;\n\u0026 img {\nwidth: 107.99px;\nheight: 51.23px;\nobject-fit: contain;\n}"}} -->
@@ -889,8 +864,8 @@
   <wp:post_id>60</wp:post_id>
   <wp:post_date>2026-09-28 14:47:52</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:47:52</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 10:30:30</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 10:30:30</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 18:06:18</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 18:06:18</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>profchoice</wp:post_name>
@@ -900,6 +875,10 @@
   <wp:post_type>custom_css</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_wp_old_slug</wp:meta_key>
+    <wp:meta_value><![CDATA[commercebuild-velocity]]></wp:meta_value>
+  </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[50-years]]></title>
@@ -1039,7 +1018,7 @@
 </item>
 <item>
   <title><![CDATA[ventech-sport-boots]]></title>
-  <link>https://professionals-choice.wp.local/ventech-sport-boots/</link>
+  <link>https://professionals-choice.wp.local/ventech-sport-boots-2/</link>
   <pubDate>Tue, 29 Sep 2026 19:44:06 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.png</guid>
@@ -1049,30 +1028,34 @@
   <wp:post_id>359</wp:post_id>
   <wp:post_date>2026-09-29 19:44:06</wp:post_date>
   <wp:post_date_gmt>2026-09-29 19:44:06</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 09:17:49</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 09:17:49</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 18:15:20</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 18:15:20</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>ventech-sport-boots</wp:post_name>
+  <wp:post_name>ventech-sport-boots-2</wp:post_name>
   <wp:status>inherit</wp:status>
   <wp:post_parent>0</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/ventech-sport-boots.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/09/ventech-sport-boots.webp]]></wp:meta_value>
+    <wp:meta_value><![CDATA[2026/09/ventech-sport-boots.jpg]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:337;s:6:"height";i:336;s:4:"file";s:32:"2026/09/ventech-sport-boots.webp";s:8:"filesize";i:26196;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:32:"ventech-sport-boots-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:17268;}s:9:"thumbnail";a:5:{s:4:"file";s:32:"ventech-sport-boots-150x150.webp";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:5744;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:337;s:6:"height";i:336;s:4:"file";s:31:"2026/09/ventech-sport-boots.jpg";s:8:"filesize";i:20864;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:31:"ventech-sport-boots-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:18486;}s:9:"thumbnail";a:5:{s:4:"file";s:31:"ventech-sport-boots-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:6198;}s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:31:"ventech-sport-boots-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:18513;s:9:"uncropped";b:0;}s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:31:"ventech-sport-boots-100x100.jpg";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:3564;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_old_slug</wp:meta_key>
+    <wp:meta_value><![CDATA[ventech-sport-boots]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[stealth-air-ride-saddle-pad]]></title>
-  <link>https://professionals-choice.wp.local/stealth-air-ride-saddle-pad/</link>
+  <link>https://professionals-choice.wp.local/stealth-air-ride-saddle-pad-2/</link>
   <pubDate>Tue, 29 Sep 2026 19:44:14 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.png</guid>
@@ -1082,25 +1065,29 @@
   <wp:post_id>360</wp:post_id>
   <wp:post_date>2026-09-29 19:44:14</wp:post_date>
   <wp:post_date_gmt>2026-09-29 19:44:14</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 09:17:49</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 09:17:49</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 18:15:19</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 18:15:19</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>stealth-air-ride-saddle-pad</wp:post_name>
+  <wp:post_name>stealth-air-ride-saddle-pad-2</wp:post_name>
   <wp:status>inherit</wp:status>
   <wp:post_parent>0</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/stealth-air-ride-saddle-pad.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/09/stealth-air-ride-saddle-pad.webp]]></wp:meta_value>
+    <wp:meta_value><![CDATA[2026/09/stealth-air-ride-saddle-pad.jpg]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:334;s:6:"height";i:333;s:4:"file";s:40:"2026/09/stealth-air-ride-saddle-pad.webp";s:8:"filesize";i:7232;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:40:"stealth-air-ride-saddle-pad-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:4098;}s:9:"thumbnail";a:5:{s:4:"file";s:40:"stealth-air-ride-saddle-pad-150x150.webp";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:1350;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:334;s:6:"height";i:333;s:4:"file";s:39:"2026/09/stealth-air-ride-saddle-pad.jpg";s:8:"filesize";i:6525;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:39:"stealth-air-ride-saddle-pad-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:6973;}s:9:"thumbnail";a:5:{s:4:"file";s:39:"stealth-air-ride-saddle-pad-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:2669;}s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:39:"stealth-air-ride-saddle-pad-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:6961;s:9:"uncropped";b:0;}s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:39:"stealth-air-ride-saddle-pad-100x100.jpg";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:1770;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_old_slug</wp:meta_key>
+    <wp:meta_value><![CDATA[stealth-air-ride-saddle-pad]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -1138,7 +1125,7 @@
 </item>
 <item>
   <title><![CDATA[pro-performance-front-splint-boots]]></title>
-  <link>https://professionals-choice.wp.local/pro-performance-front-splint-boots/</link>
+  <link>https://professionals-choice.wp.local/pro-performance-front-splint-boots-2/</link>
   <pubDate>Tue, 29 Sep 2026 19:44:20 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.png</guid>
@@ -1148,25 +1135,29 @@
   <wp:post_id>362</wp:post_id>
   <wp:post_date>2026-09-29 19:44:20</wp:post_date>
   <wp:post_date_gmt>2026-09-29 19:44:20</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 09:17:49</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 09:17:49</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 18:15:19</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 18:15:19</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pro-performance-front-splint-boots</wp:post_name>
+  <wp:post_name>pro-performance-front-splint-boots-2</wp:post_name>
   <wp:status>inherit</wp:status>
   <wp:post_parent>0</wp:post_parent>
   <wp:menu_order>0</wp:menu_order>
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/pro-performance-front-splint-boots.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/09/pro-performance-front-splint-boots.webp]]></wp:meta_value>
+    <wp:meta_value><![CDATA[2026/09/pro-performance-front-splint-boots.jpg]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:334;s:6:"height";i:333;s:4:"file";s:47:"2026/09/pro-performance-front-splint-boots.webp";s:8:"filesize";i:24648;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:47:"pro-performance-front-splint-boots-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:18104;}s:9:"thumbnail";a:5:{s:4:"file";s:47:"pro-performance-front-splint-boots-150x150.webp";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:6570;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:334;s:6:"height";i:333;s:4:"file";s:46:"2026/09/pro-performance-front-splint-boots.jpg";s:8:"filesize";i:21292;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:46:"pro-performance-front-splint-boots-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:19910;}s:9:"thumbnail";a:5:{s:4:"file";s:46:"pro-performance-front-splint-boots-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:7069;}s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:46:"pro-performance-front-splint-boots-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:19931;s:9:"uncropped";b:0;}s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:46:"pro-performance-front-splint-boots-100x100.jpg";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:3906;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_old_slug</wp:meta_key>
+    <wp:meta_value><![CDATA[pro-performance-front-splint-boots]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -1214,8 +1205,8 @@
   <wp:post_id>377</wp:post_id>
   <wp:post_date>2026-09-29 20:32:11</wp:post_date>
   <wp:post_date_gmt>2026-09-29 20:32:11</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 09:17:49</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 09:17:49</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 18:15:19</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 18:15:19</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>american-cowboys-team-roping-association</wp:post_name>
@@ -1225,14 +1216,14 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-actra.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-actra.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/09/logo-actra.webp]]></wp:meta_value>
+    <wp:meta_value><![CDATA[2026/09/logo-actra.jpg]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:65;s:6:"height";i:56;s:4:"file";s:23:"2026/09/logo-actra.webp";s:8:"filesize";i:4522;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:65;s:6:"height";i:56;s:4:"file";s:22:"2026/09/logo-actra.jpg";s:8:"filesize";i:2067;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
@@ -1251,8 +1242,8 @@
   <wp:post_id>378</wp:post_id>
   <wp:post_date>2026-09-29 20:32:20</wp:post_date>
   <wp:post_date_gmt>2026-09-29 20:32:20</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 09:17:49</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 09:17:49</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 18:15:19</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 18:15:19</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>national-high-school-finals-rodeo</wp:post_name>
@@ -1262,14 +1253,14 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nhsfr.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nhsfr.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/09/logo-nhsfr.webp]]></wp:meta_value>
+    <wp:meta_value><![CDATA[2026/09/logo-nhsfr.jpg]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:83;s:6:"height";i:51;s:4:"file";s:23:"2026/09/logo-nhsfr.webp";s:8:"filesize";i:6654;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:83;s:6:"height";i:51;s:4:"file";s:22:"2026/09/logo-nhsfr.jpg";s:8:"filesize";i:2634;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
@@ -1288,8 +1279,8 @@
   <wp:post_id>379</wp:post_id>
   <wp:post_date>2026-09-29 20:32:23</wp:post_date>
   <wp:post_date_gmt>2026-09-29 20:32:23</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 09:17:49</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 09:17:49</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 18:15:19</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 18:15:19</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>national-barrel-horse-association</wp:post_name>
@@ -1299,14 +1290,14 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nbha.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-nbha.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/09/logo-nbha.webp]]></wp:meta_value>
+    <wp:meta_value><![CDATA[2026/09/logo-nbha.jpg]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:88;s:6:"height";i:63;s:4:"file";s:22:"2026/09/logo-nbha.webp";s:8:"filesize";i:3822;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:88;s:6:"height";i:63;s:4:"file";s:21:"2026/09/logo-nbha.jpg";s:8:"filesize";i:2372;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
@@ -1362,8 +1353,8 @@
   <wp:post_id>381</wp:post_id>
   <wp:post_date>2026-09-29 20:32:28</wp:post_date>
   <wp:post_date_gmt>2026-09-29 20:32:28</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 09:17:49</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 09:17:49</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 18:15:19</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 18:15:19</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>heart-of-oklahoma-youth-rodeo-association</wp:post_name>
@@ -1373,14 +1364,14 @@
   <wp:post_type>attachment</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-hoyra.webp</wp:attachment_url>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/uploads/2026/09/logo-hoyra.jpg</wp:attachment_url>
   <wp:postmeta>
     <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/09/logo-hoyra.webp]]></wp:meta_value>
+    <wp:meta_value><![CDATA[2026/09/logo-hoyra.jpg]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:107;s:6:"height";i:55;s:4:"file";s:23:"2026/09/logo-hoyra.webp";s:8:"filesize";i:4680;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:107;s:6:"height";i:55;s:4:"file";s:22:"2026/09/logo-hoyra.jpg";s:8:"filesize";i:2109;s:5:"sizes";a:1:{s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:21:"logo-hoyra-100x55.jpg";s:5:"width";i:100;s:6:"height";i:55;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:2703;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
@@ -1608,6 +1599,31 @@
     <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
     <wp:meta_value><![CDATA[Kentucky Three-Day Event]]></wp:meta_value>
   </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Custom Styles]]></title>
+  <link>https://professionals-choice.wp.local/2026/09/30/wp-global-styles-profchoice-2/</link>
+  <pubDate>Wed, 30 Sep 2026 01:39:33 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
+  <guid isPermaLink="false">http://localhost:8907/2026/09/30/wp-global-styles-profchoice-2/</guid>
+  <description/>
+  <content:encoded><![CDATA[{"styles":[],"isGlobalStylesUserThemeJSON":true,"version":3}]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>393</wp:post_id>
+  <wp:post_date>2026-09-30 01:39:33</wp:post_date>
+  <wp:post_date_gmt>2026-09-30 01:39:33</wp:post_date_gmt>
+  <wp:post_modified>2026-09-30 02:23:15</wp:post_modified>
+  <wp:post_modified_gmt>2026-09-30 02:23:15</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>wp-global-styles-profchoice-2</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>wp_global_styles</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="wp_theme" nicename="profchoice"><![CDATA[profchoice]]></category>
 </item>
 <item>
   <title><![CDATA[video-from-7Ii7txNZOlk]]></title>
