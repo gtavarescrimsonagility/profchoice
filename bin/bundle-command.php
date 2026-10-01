@@ -1,7 +1,8 @@
 <?php
 /**
  * WP-CLI command that saves the Studio site content into the `bundle` branch
- * worktree, which the Playground blueprint imports.
+ * worktree (content.xml) and its media into the profchoice-uploads
+ * repository, which the Playground blueprint imports.
  *
  * Loaded through wp-cli.yml: `studio wp bundle export`.
  */
@@ -12,18 +13,22 @@ if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
 
 class ProfChoice_Bundle_Command {
 
-	const RAW_URL = 'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle';
+	const UPLOADS_URL = 'https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main';
 
 	/**
 	 * Exports pages, block content, custom CSS and the media they use.
 	 *
-	 * Writes `content.xml` (WXR) and `uploads/` into the bundle worktree, with
-	 * upload URLs rewritten to the bundle branch on raw.githubusercontent.com.
+	 * Writes `content.xml` (WXR) into the bundle worktree and the media, laid
+	 * out as in wp-content/uploads (YYYY/MM/...), into the uploads repository,
+	 * with upload URLs rewritten to that repository on raw.githubusercontent.com.
 	 *
 	 * ## OPTIONS
 	 *
 	 * [--dir=<dir>]
 	 * : Bundle worktree path. Defaults to ../profchoice-bundle next to the site.
+	 *
+	 * [--uploads-dir=<dir>]
+	 * : Uploads repository clone. Defaults to ../profchoice-uploads next to the site.
 	 *
 	 * [--message=<message>]
 	 * : Commit message.
@@ -32,7 +37,7 @@ class ProfChoice_Bundle_Command {
 	 * ---
 	 *
 	 * [--[no-]commit]
-	 * : Commit and push the bundle worktree. Default: true; --no-commit only writes the files.
+	 * : Commit and push both repositories. Default: true; --no-commit only writes the files.
 	 *
 	 * [--[no-]push]
 	 * : Push after committing. Default: true.
@@ -46,9 +51,12 @@ class ProfChoice_Bundle_Command {
 	 * @when after_wp_load
 	 */
 	public function export( $args, $assoc_args ) {
-		$dir = rtrim( $assoc_args['dir'] ?? dirname( ABSPATH ) . '/profchoice-bundle', '/' );
-		if ( ! is_dir( $dir . '/.git' ) && ! is_file( $dir . '/.git' ) ) {
-			WP_CLI::error( "Not a git worktree: $dir" );
+		$dir         = rtrim( $assoc_args['dir'] ?? dirname( ABSPATH ) . '/profchoice-bundle', '/' );
+		$uploads_dir = rtrim( $assoc_args['uploads-dir'] ?? dirname( ABSPATH ) . '/profchoice-uploads', '/' );
+		foreach ( array( $dir, $uploads_dir ) as $repo ) {
+			if ( ! is_dir( $repo . '/.git' ) && ! is_file( $repo . '/.git' ) ) {
+				WP_CLI::error( "Not a git worktree: $repo" );
+			}
 		}
 
 		$post_ids = $this->content_ids();
@@ -58,9 +66,11 @@ class ProfChoice_Bundle_Command {
 			WP_CLI::error( 'Nothing to export.' );
 		}
 
-		$this->reset_dir( $dir . '/uploads' );
+		// Media used to live in the bundle branch; it now has its own repository.
+		$this->remove_dir( $dir . '/uploads' );
+		$this->clear_media( $uploads_dir );
 		foreach ( $media as $file ) {
-			$target = $dir . '/uploads/' . $file;
+			$target = $uploads_dir . '/' . $file;
 			wp_mkdir_p( dirname( $target ) );
 			copy( wp_get_upload_dir()['basedir'] . '/' . $file, $target );
 		}
@@ -71,17 +81,20 @@ class ProfChoice_Bundle_Command {
 		);
 		// Content keeps the URL it was saved with (e.g. localhost:<port>), while
 		// attachment URLs use siteurl, so match any host.
-		$wxr = preg_replace( '#https?://[^/"\'\s<]+/wp-content/uploads/#', self::RAW_URL . '/uploads/', $wxr );
+		$wxr = preg_replace( '#https?://[^/"\'\s<]+/wp-content/uploads/#', self::UPLOADS_URL . '/', $wxr );
 		$wxr = $this->add_term_meta( $wxr );
 		// Drop export timestamps so unchanged content produces no diff.
 		$wxr = preg_replace( '#(<!-- generator="[^"]*") created="[^"]*"#', '$1', $wxr );
 		$wxr = preg_replace( '#\n<pubDate>[^<]*</pubDate>(?=[\s\S]*?<item>)#', '', $wxr, 1 );
 		file_put_contents( $dir . '/content.xml', $wxr . "\n" );
 
-		WP_CLI::success( sprintf( 'Exported %d posts and %d media files to %s', count( $post_ids ), count( $media ), $dir ) );
+		WP_CLI::success( sprintf( 'Exported %d posts to %s and %d media files to %s', count( $post_ids ), $dir, count( $media ), $uploads_dir ) );
 
 		if ( WP_CLI\Utils\get_flag_value( $assoc_args, 'commit', true ) ) {
-			$this->publish( $dir, $assoc_args['message'], WP_CLI\Utils\get_flag_value( $assoc_args, 'push', true ) );
+			$push = WP_CLI\Utils\get_flag_value( $assoc_args, 'push', true );
+			// Media first, so content.xml never points at files not pushed yet.
+			$this->publish( $uploads_dir, $assoc_args['message'], $push );
+			$this->publish( $dir, $assoc_args['message'], $push );
 		}
 	}
 
@@ -224,17 +237,28 @@ class ProfChoice_Bundle_Command {
 		return $wxr;
 	}
 
-	private function reset_dir( $dir ) {
-		if ( is_dir( $dir ) ) {
-			$files = new RecursiveIteratorIterator(
-				new RecursiveDirectoryIterator( $dir, FilesystemIterator::SKIP_DOTS ),
-				RecursiveIteratorIterator::CHILD_FIRST
-			);
-			foreach ( $files as $file ) {
-				$file->isDir() ? rmdir( $file ) : unlink( $file );
-			}
+	/**
+	 * Removes the media folders (YYYY) of the uploads repository, keeping
+	 * .git and anything else at its root.
+	 */
+	private function clear_media( $dir ) {
+		foreach ( glob( $dir . '/[0-9][0-9][0-9][0-9]', GLOB_ONLYDIR ) as $year ) {
+			$this->remove_dir( $year );
 		}
-		wp_mkdir_p( $dir );
+	}
+
+	private function remove_dir( $dir ) {
+		if ( ! is_dir( $dir ) ) {
+			return;
+		}
+		$files = new RecursiveIteratorIterator(
+			new RecursiveDirectoryIterator( $dir, FilesystemIterator::SKIP_DOTS ),
+			RecursiveIteratorIterator::CHILD_FIRST
+		);
+		foreach ( $files as $file ) {
+			$file->isDir() ? rmdir( $file ) : unlink( $file );
+		}
+		rmdir( $dir );
 	}
 }
 
