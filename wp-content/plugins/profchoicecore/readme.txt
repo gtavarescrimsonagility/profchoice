@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.12.1
+Stable tag: 0.13.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.13.0 =
+* Carousel: the toolbar shows the current slide ("Slide 1") with a dropdown to switch slides, instead of one button per slide.
+* Carousel Slide: new slides start with a Cover. "Add slide" follows the current slide's first block (e.g. Media & Text), so existing carousels keep their structure.
 
 = 0.12.1 =
 * The Newsletter Form block is now titled "Newsletter" (same `profchoice/newsletter-form` name, so existing content is unchanged).

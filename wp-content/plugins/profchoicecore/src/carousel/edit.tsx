@@ -7,12 +7,15 @@ import {
 	store as blockEditorStore,
 } from '@wordpress/block-editor';
 import {
+	MenuGroup,
+	MenuItemsChoice,
 	PanelBody,
 	RangeControl,
 	SelectControl,
 	TextControl,
 	ToggleControl,
 	ToolbarButton,
+	ToolbarDropdownMenu,
 	ToolbarGroup,
 } from '@wordpress/components';
 import { createBlock, type BlockEditProps } from '@wordpress/blocks';
@@ -22,9 +25,11 @@ import type { TemplateArray } from '../template';
 import type { CarouselAttributes, Transition } from './types';
 
 type EditorSelectors = {
-	getBlocks: (
-		clientId: string
-	) => Array< { clientId: string; name: string } >;
+	getBlocks: ( clientId: string ) => Array< {
+		clientId: string;
+		name: string;
+		innerBlocks: Array< { name: string } >;
+	} >;
 	getSelectedBlockClientId: () => string | null;
 	getBlockParents: ( clientId: string ) => string[];
 };
@@ -35,6 +40,8 @@ const ALLOWED = [
 	'profchoice/carousel-controls',
 	'profchoice/carousel-dots',
 ];
+/** Content of a new slide when there is no other slide to follow. */
+const SLIDE_CONTENT = 'core/cover';
 const TEMPLATE: TemplateArray = [
 	[ SLIDE ],
 	[ 'profchoice/carousel-controls' ],
@@ -57,21 +64,25 @@ export default function Edit( {
 	const { ariaLabel, transition, loop, autoplay, autoplayDelay } = attributes;
 	const [ active, setActive ] = useState( 0 );
 
-	const { slideIds, selectedSlide } = useSelect(
+	const { slideIds, slideContent, selectedSlide } = useSelect(
 		( select ) => {
 			const editor = select(
 				blockEditorStore
 			) as unknown as EditorSelectors;
-			const ids = editor
+			const slides = editor
 				.getBlocks( clientId )
-				.filter( ( block ) => block.name === SLIDE )
-				.map( ( block ) => block.clientId );
+				.filter( ( block ) => block.name === SLIDE );
+			const ids = slides.map( ( block ) => block.clientId );
 			const selected = editor.getSelectedBlockClientId();
 			const chain = selected
 				? [ selected, ...editor.getBlockParents( selected ) ]
 				: [];
 			return {
 				slideIds: ids,
+				// The first block of each slide, so a new slide matches them.
+				slideContent: slides.map(
+					( block ) => block.innerBlocks[ 0 ]?.name
+				),
 				selectedSlide: ids.findIndex( ( id ) => chain.includes( id ) ),
 			};
 		},
@@ -98,8 +109,18 @@ export default function Edit( {
 		renderAppender: () => null,
 	} );
 
+	// A new slide starts with the same kind of block as the current one
+	// (e.g. Media & Text in a carousel built from those), or a Cover.
 	const addSlide = () => {
-		insertBlock( createBlock( SLIDE ), slideIds.length, clientId );
+		const content =
+			slideContent[ current ] ??
+			slideContent[ slideContent.length - 1 ] ??
+			SLIDE_CONTENT;
+		insertBlock(
+			createBlock( SLIDE, {}, [ createBlock( content ) ] ),
+			slideIds.length,
+			clientId
+		);
 		setActive( slideIds.length );
 	};
 
@@ -107,20 +128,41 @@ export default function Edit( {
 		<>
 			<BlockControls group="block">
 				<ToolbarGroup>
-					{ slideIds.map( ( id, index ) => (
-						<ToolbarButton
-							key={ id }
-							isPressed={ index === current }
-							onClick={ () => setActive( index ) }
-							label={ sprintf(
-								/* translators: %d: slide number. */
-								__( 'Show slide %d', 'profchoicecore' ),
-								index + 1
-							) }
-						>
-							{ String( index + 1 ) }
-						</ToolbarButton>
-					) ) }
+					<ToolbarDropdownMenu
+						icon={ null }
+						text={ sprintf(
+							/* translators: %d: slide number. */
+							__( 'Slide %d', 'profchoicecore' ),
+							current + 1
+						) }
+						label={ __( 'Show slide', 'profchoicecore' ) }
+					>
+						{ ( { onClose } ) => (
+							<MenuGroup>
+								<MenuItemsChoice
+									value={ String( current ) }
+									choices={ slideIds.map(
+										( _id, index ) => ( {
+											value: String( index ),
+											label: sprintf(
+												/* translators: %d: slide number. */
+												__(
+													'Slide %d',
+													'profchoicecore'
+												),
+												index + 1
+											),
+										} )
+									) }
+									onHover={ () => {} }
+									onSelect={ ( value: string ) => {
+										setActive( Number( value ) );
+										onClose();
+									} }
+								/>
+							</MenuGroup>
+						) }
+					</ToolbarDropdownMenu>
 					<ToolbarButton icon="plus" onClick={ addSlide }>
 						{ __( 'Add slide', 'profchoicecore' ) }
 					</ToolbarButton>
