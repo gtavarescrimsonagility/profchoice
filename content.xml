@@ -48,14 +48,6 @@
   <wp:term_name><![CDATA[Main Menu]]></wp:term_name>
 </wp:term>
 <wp:term>
-  <wp:term_id>17</wp:term_id>
-  <wp:term_taxonomy>product_cat</wp:term_taxonomy>
-  <wp:term_slug>accessories</wp:term_slug>
-  <wp:term_parent/>
-  <wp:term_name><![CDATA[Accessories]]></wp:term_name>
-  <wp:term_description><![CDATA[A short category description]]></wp:term_description>
-</wp:term>
-<wp:term>
   <wp:term_id>23</wp:term_id>
   <wp:term_taxonomy>product_cat</wp:term_taxonomy>
   <wp:term_slug>english</wp:term_slug>
@@ -96,14 +88,6 @@
   <wp:term_slug>grouped</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[grouped]]></wp:term_name>
-</wp:term>
-<wp:term>
-  <wp:term_id>18</wp:term_id>
-  <wp:term_taxonomy>product_cat</wp:term_taxonomy>
-  <wp:term_slug>hoodies</wp:term_slug>
-  <wp:term_parent/>
-  <wp:term_name><![CDATA[Hoodies]]></wp:term_name>
-  <wp:term_description><![CDATA[A short category description]]></wp:term_description>
 </wp:term>
 <wp:term>
   <wp:term_id>10</wp:term_id>
@@ -153,14 +137,6 @@
   <wp:term_slug>simple</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[simple]]></wp:term_name>
-</wp:term>
-<wp:term>
-  <wp:term_id>19</wp:term_id>
-  <wp:term_taxonomy>product_cat</wp:term_taxonomy>
-  <wp:term_slug>tshirts</wp:term_slug>
-  <wp:term_parent/>
-  <wp:term_name><![CDATA[Tshirts]]></wp:term_name>
-  <wp:term_description><![CDATA[A short category description]]></wp:term_description>
 </wp:term>
 <wp:term>
   <wp:term_id>16</wp:term_id>
