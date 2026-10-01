@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.18.3
+Stable tag: 0.18.4
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.18.4 =
+* Carousel Previous/Next: Minimum width is shown by default in the Dimensions panel, to override the overlaid strip's 15% default.
 
 = 0.18.3 =
 * Carousel Indicators: spaced like Bootstrap's, with a 3px inline margin on each indicator and no gap by default; a Block spacing adds a gap on top.
