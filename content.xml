@@ -853,13 +853,19 @@
 .insider-form:focus-within {
 	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
 }
+/* Keyboard focus on the button: an inner white ring (its Focus-visible state also darkens it). */
+.insider-form :is(button, .wp-block-button__link):focus-visible {
+	outline: none;
+	/* A white line 3px inside the edge, so it reads against the red. */
+	box-shadow: inset 0 0 0 3px #a8201f, inset 0 0 0 4.5px rgba(255, 255, 255, 0.9);
+}
 /* tail COMB-598 Homepage */]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>60</wp:post_id>
   <wp:post_date>2026-09-28 14:47:52</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:47:52</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 10:26:40</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 10:26:40</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 10:30:30</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 10:30:30</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>profchoice</wp:post_name>
