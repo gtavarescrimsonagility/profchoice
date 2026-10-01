@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.17.0
+Stable tag: 0.17.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.17.1 =
+* Carousel: a new carousel comes with Carousel Dots again (slide, Previous, Next and Dots). "Add dots" stays in the toolbar for a carousel without them.
 
 = 0.17.0 =
 * Carousel: Slide is the default transition (listed first). Carousels saved without a transition now slide; set Transition to Fade to keep a fade.

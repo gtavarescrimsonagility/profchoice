@@ -51,6 +51,7 @@ const TEMPLATE: TemplateArray = [
 	[ SLIDE, {}, slidePlaceholder( 1 ) ],
 	[ 'profchoice/carousel-control-prev' ],
 	[ 'profchoice/carousel-control-next' ],
+	[ DOTS ],
 ];
 
 /**
