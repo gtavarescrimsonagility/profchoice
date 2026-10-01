@@ -18,10 +18,15 @@ import {
 	ToolbarDropdownMenu,
 	ToolbarGroup,
 } from '@wordpress/components';
-import { createBlock, type BlockEditProps } from '@wordpress/blocks';
+import {
+	createBlock,
+	createBlocksFromInnerBlocksTemplate,
+	type BlockEditProps,
+} from '@wordpress/blocks';
 import { useDispatch, useSelect } from '@wordpress/data';
 import { useEffect, useState } from '@wordpress/element';
 import type { TemplateArray } from '../template';
+import { slidePlaceholder } from '../carousel-slide/placeholder';
 import type { CarouselAttributes, Transition } from './types';
 
 type EditorSelectors = {
@@ -40,10 +45,8 @@ const ALLOWED = [
 	'profchoice/carousel-controls',
 	'profchoice/carousel-dots',
 ];
-/** Content of a new slide when there is no other slide to follow. */
-const SLIDE_CONTENT = 'core/cover';
 const TEMPLATE: TemplateArray = [
-	[ SLIDE ],
+	[ SLIDE, {}, slidePlaceholder( 1 ) ],
 	[ 'profchoice/carousel-controls' ],
 	[ 'profchoice/carousel-dots' ],
 ];
@@ -109,15 +112,21 @@ export default function Edit( {
 		renderAppender: () => null,
 	} );
 
-	// A new slide starts with the same kind of block as the current one
-	// (e.g. Media & Text in a carousel built from those), or a Cover.
+	// A new slide gets the same placeholder as the first one ("Slide N"
+	// Cover), unless the current slide starts with another kind of block
+	// (e.g. Media & Text): then an empty one of those, so the carousel keeps
+	// its structure.
 	const addSlide = () => {
 		const content =
-			slideContent[ current ] ??
-			slideContent[ slideContent.length - 1 ] ??
-			SLIDE_CONTENT;
+			slideContent[ current ] ?? slideContent[ slideContent.length - 1 ];
+		const inner =
+			content && content !== 'core/cover'
+				? [ createBlock( content ) ]
+				: createBlocksFromInnerBlocksTemplate(
+						slidePlaceholder( slideIds.length + 1 )
+					);
 		insertBlock(
-			createBlock( SLIDE, {}, [ createBlock( content ) ] ),
+			createBlock( SLIDE, {}, inner ),
 			slideIds.length,
 			clientId
 		);

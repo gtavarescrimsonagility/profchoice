@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.13.0
+Stable tag: 0.13.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,9 +44,12 @@ The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt
 
 == Changelog ==
 
+= 0.13.1 =
+* Carousel: a new carousel, and each slide added to it, starts with a gray Cover labelled "Slide N".
+
 = 0.13.0 =
 * Carousel: the toolbar shows the current slide ("Slide 1") with a dropdown to switch slides, instead of one button per slide.
-* Carousel Slide: new slides start with a Cover. "Add slide" follows the current slide's first block (e.g. Media & Text), so existing carousels keep their structure.
+* Carousel Slide: new slides start with a Cover. In a carousel whose slides start with another block (e.g. Media & Text), "Add slide" adds an empty one of those instead, so it keeps its structure.
 
 = 0.12.1 =
 * The Newsletter Form block is now titled "Newsletter" (same `profchoice/newsletter-form` name, so existing content is unchanged).
