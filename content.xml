@@ -811,13 +811,45 @@
 	.insider .insider-copy {
 		flex-basis: auto !important;
 	}
-}/* tail COMB-598 Homepage */]]></content:encoded>
+}
+/* Hover and focus motion (classes set on the blocks; colors come from each Button's Hover/Focus/Active states). */
+.wp-block-button__link {
+	transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+/* Links with an arrow: the gap before the arrow grows, and the underline with it. */
+.pc-link-arrow .pc-inline-icon {
+	transition: margin-inline-start 0.25s ease;
+}
+.pc-link-arrow .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon {
+	margin-inline-start: 1.25em;
+}
+/* Cards and covers: the image zooms in slightly. */
+.pc-hover-zoom {
+	overflow: hidden;
+}
+.pc-hover-zoom :is(.wp-block-image img, .wp-block-cover__image-background) {
+	transition: transform 0.6s ease;
+}
+.pc-hover-zoom:hover :is(.wp-block-image img, .wp-block-cover__image-background) {
+	transform: scale(1.04);
+}
+@media (prefers-reduced-motion: reduce) {
+	.wp-block-button__link,
+	.pc-link-arrow .pc-inline-icon,
+	.pc-hover-zoom :is(.wp-block-image img, .wp-block-cover__image-background) {
+		transition: none;
+	}
+	.pc-hover-zoom:hover :is(.wp-block-image img, .wp-block-cover__image-background) {
+		transform: none;
+	}
+}
+/* tail COMB-598 Homepage */]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>60</wp:post_id>
   <wp:post_date>2026-09-28 14:47:52</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:47:52</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 08:07:10</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 08:07:10</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 10:16:47</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 10:16:47</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>profchoice</wp:post_name>
