@@ -635,7 +635,7 @@
 .cbv-content .alignfull:first-child {
 	margin-block-start: 0;
 }
-/* head COMB-598 Homepage */
+/* head Homepage */
 .cbv-content .is-layout-constrained > .alignwide {
     max-width: var(--wp--style--global--wide-size);
 }
@@ -863,13 +863,13 @@
 	/* A white line 3px inside the edge, so it reads against the red. */
 	box-shadow: inset 0 0 0 3px #a8201f, inset 0 0 0 4.5px rgba(255, 255, 255, 0.9);
 }
-/* tail COMB-598 Homepage */]]></content:encoded>
+/* tail Homepage */]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>60</wp:post_id>
   <wp:post_date>2026-09-28 14:47:52</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:47:52</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 18:46:04</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 18:46:04</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 19:15:55</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 19:15:55</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>profchoice</wp:post_name>
