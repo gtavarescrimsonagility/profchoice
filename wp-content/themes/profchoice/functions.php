@@ -114,5 +114,32 @@ add_action(
 			array( 'cbv-main' ),
 			wp_get_theme()->get( 'Version' )
 		);
+	},
+	100
+);
+
+/*
+ * Preload the theme's web fonts so the swap-driven reflow (FOUT) in Playfair
+ * Display and Montserrat headings happens before first paint instead of
+ * after, which removes the font-swap contribution to Cumulative Layout Shift.
+ */
+add_filter(
+	'wp_preload_resources',
+	function ( $resources ) {
+		$font_path = get_stylesheet_directory_uri() . '/assets/fonts/';
+		$fonts     = array(
+			'montserrat.woff2',
+			'playfair-display.woff2',
+			'playfair-display-italic.woff2',
+		);
+		foreach ( $fonts as $font ) {
+			$resources[] = array(
+				'href'        => $font_path . $font,
+				'as'          => 'font',
+				'type'        => 'font/woff2',
+				'crossorigin' => 'anonymous',
+			);
+		}
+		return $resources;
 	}
 );
