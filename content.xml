@@ -319,7 +319,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","style":{"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"0px","bottomRight":"0px"},"bottom":{"width":"1px"},"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}},"color":{"text":"#ffffff","background":"#ffffff00"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","fontSize":"0.78rem","letterSpacing":"0.125rem"},"@mobile":{"typography":{"fontSize":"0.625rem"},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"bottom":{"width":"0px"}}},"spacing":{"padding":{"top":"0.57rem","right":"0","bottom":"0.57rem","left":"0"}},"css":"\u0026 .pc-inline-icon{\nmargin-inline-start: 0.72em;\n}"}} -->
-<div class="wp-block-button is-style-outline has-custom-css"><a class="wp-block-button__link has-text-color has-background has-link-color has-custom-font-size wp-element-button" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-width:1px;border-left-style:none;border-left-width:0px;color:#ffffff;background-color:#ffffff00;padding-top:0.57rem;padding-right:0;padding-bottom:0.57rem;padding-left:0;font-size:0.78rem;font-style:normal;font-weight:700;letter-spacing:0.125rem;text-transform:uppercase">Enter the Arena</a></div>
+<div class="wp-block-button is-style-outline has-custom-css"><a class="wp-block-button__link has-text-color has-background has-link-color has-custom-font-size wp-element-button" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-width:1px;border-left-style:none;border-left-width:0px;color:#ffffff;background-color:#ffffff00;padding-top:0.57rem;padding-right:0;padding-bottom:0.57rem;padding-left:0;font-size:0.78rem;font-style:normal;font-weight:700;letter-spacing:0.125rem;text-transform:uppercase">Enter the Arena<img data-icon="profchoice/arrow-right" alt="" class="pc-inline-icon"></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div></div>
@@ -531,7 +531,7 @@
 <!-- /wp:media-text --></div>
 <!-- /wp:profchoice/carousel-slide -->
 
-<!-- wp:profchoice/carousel-control-prev {"inactive":[],"style":{"spacing":{"padding":{"right":"0","left":"0"}},"dimensions":{"minWidth":"149px"}}} -->
+<!-- wp:profchoice/carousel-control-prev {"style":{"spacing":{"padding":{"right":"0","left":"0"}},"dimensions":{"minWidth":"149px"}}} -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"tagName":"button","textColor":"cbv-primary-contrast","style":{"elements":{"link":{"color":{"text":"var:preset|color|cbv-primary-contrast"}}},"border":{"width":"2px"},"color":{"background":"#ffffff00"},"spacing":{"padding":{"left":"6px","right":"6px","top":"6px","bottom":"6px"}}},"borderColor":"cbv-primary-contrast"} -->
 <div class="wp-block-button"><button type="button" class="wp-block-button__link has-cbv-primary-contrast-color has-text-color has-background has-link-color has-border-color has-cbv-primary-contrast-border-color wp-element-button" style="border-width:2px;background-color:#ffffff00;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px"><img data-icon="core/arrow-left" alt="" class="pc-inline-icon"><span class="pc-visually-hidden">Previous</span></button></div>
@@ -650,8 +650,8 @@
   <wp:post_id>51</wp:post_id>
   <wp:post_date>2026-09-28 14:24:12</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:24:12</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 08:53:24</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 08:53:24</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 08:55:02</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 08:55:02</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>homepage</wp:post_name>
