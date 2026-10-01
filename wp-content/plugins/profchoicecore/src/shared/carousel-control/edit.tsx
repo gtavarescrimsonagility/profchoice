@@ -49,8 +49,9 @@ const buttonText = ( direction: Direction ): string => {
 };
 
 /**
- * A round Button block inside Buttons (core/button only lives in
- * core/buttons).
+ * A Button block inside Buttons (core/button only lives in core/buttons).
+ * Its look (round, 2rem icon, 0.5rem padding) comes from style.scss, so the
+ * block's own settings only hold customizations.
  *
  * @param direction Previous or next.
  * @return Inner blocks template.
@@ -58,7 +59,7 @@ const buttonText = ( direction: Direction ): string => {
 const template = ( direction: Direction ): TemplateArray => [
 	[
 		'core/buttons',
-		{ layout: { type: 'flex', justifyContent: 'center' } },
+		{},
 		[
 			[
 				'core/button',
@@ -66,31 +67,6 @@ const template = ( direction: Direction ): TemplateArray => [
 					tagName: 'button',
 					type: 'button',
 					text: buttonText( direction ),
-					style: {
-						border: {
-							radius: {
-								topLeft: '50%',
-								topRight: '50%',
-								bottomLeft: '50%',
-								bottomRight: '50%',
-							},
-						},
-						typography: { fontSize: '2rem', lineHeight: '1' },
-						spacing: {
-							padding: {
-								top: 'var:preset|spacing|40',
-								right: '1rem',
-								bottom: 'var:preset|spacing|40',
-								left: '1rem',
-							},
-						},
-						':hover': {
-							color: { text: '#ffffffe6' },
-							elements: {
-								link: { color: { text: '#ffffffe6' } },
-							},
-						},
-					},
 				},
 			],
 		],

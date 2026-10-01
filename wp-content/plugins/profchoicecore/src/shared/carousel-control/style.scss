@@ -59,8 +59,22 @@
 	margin: 0;
 }
 
+// Default look; the Button block's own settings (inline styles, and
+// !important pseudo states) override it. Beats the theme's :where() button
+// styles.
 .pc-carousel__control .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+	border-radius: 50%;
+	font-size: 2rem;
+	line-height: 1;
 	cursor: pointer;
+
+	&:hover {
+		color: #ffffffe6;
+	}
 
 	&:disabled {
 		cursor: not-allowed;
