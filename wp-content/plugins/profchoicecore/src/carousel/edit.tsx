@@ -211,12 +211,12 @@ export default function Edit( {
 						value={ transition }
 						options={ [
 							{
-								label: __( 'Fade', 'profchoicecore' ),
-								value: 'fade',
-							},
-							{
 								label: __( 'Slide', 'profchoicecore' ),
 								value: 'slide',
+							},
+							{
+								label: __( 'Fade', 'profchoicecore' ),
+								value: 'fade',
 							},
 						] }
 						onChange={ ( value: string ) =>

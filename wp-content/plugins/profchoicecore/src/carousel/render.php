@@ -27,7 +27,7 @@ foreach ( $block->inner_blocks as $pc_inner ) {
 
 $pc_count      = count( $pc_slides );
 $pc_loop       = ! empty( $attributes['loop'] );
-$pc_transition = isset( $attributes['transition'] ) && 'slide' === $attributes['transition'] ? 'slide' : 'fade';
+$pc_transition = isset( $attributes['transition'] ) && 'fade' === $attributes['transition'] ? 'fade' : 'slide';
 $pc_label      = ! empty( $attributes['ariaLabel'] ) ? $attributes['ariaLabel'] : __( 'Carousel', 'profchoicecore' );
 
 $pc_context = array(

@@ -23,7 +23,7 @@
 		"transition": {
 			"type": "string",
 			"enum": [ "fade", "slide" ],
-			"default": "fade"
+			"default": "slide"
 		},
 		"loop": {
 			"type": "boolean",
