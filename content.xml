@@ -531,18 +531,18 @@
 <!-- /wp:media-text --></div>
 <!-- /wp:profchoice/carousel-slide -->
 
-<!-- wp:profchoice/carousel-control-prev {"inactive":{"opacity":"1"},"style":{"spacing":{"padding":{"right":"0","left":"0"}},"dimensions":{"minWidth":"149px"}}} -->
+<!-- wp:profchoice/carousel-control-prev {"active":{"background":"var(\u002d\u002dcbv-primary-contrast)","color":"var(\u002d\u002dcbv-text)"},"inactive":{"opacity":"1","background":"#14161a00","color":"var(\u002d\u002dcbv-primary-contrast)"},"style":{"spacing":{"padding":{"right":"0","left":"0"}},"dimensions":{"minWidth":"149px"}}} -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"tagName":"button","textColor":"cbv-primary-contrast","style":{"elements":{"link":{"color":{"text":"var:preset|color|cbv-primary-contrast"}}},"border":{"width":"2px"},"color":{"background":"#ffffff00"},"spacing":{"padding":{"left":"6px","right":"6px","top":"6px","bottom":"6px"}}},"borderColor":"cbv-primary-contrast"} -->
-<div class="wp-block-button"><button type="button" class="wp-block-button__link has-cbv-primary-contrast-color has-text-color has-background has-link-color has-border-color has-cbv-primary-contrast-border-color wp-element-button" style="border-width:2px;background-color:#ffffff00;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px"><img data-icon="core/arrow-left" alt="" class="pc-inline-icon"><span class="pc-visually-hidden">Previous</span></button></div>
+<div class="wp-block-buttons"><!-- wp:button {"tagName":"button","style":{"border":{"width":"2px"},"spacing":{"padding":{"left":"6px","right":"6px","top":"6px","bottom":"6px"}}},"borderColor":"cbv-primary-contrast"} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-border-color has-cbv-primary-contrast-border-color wp-element-button" style="border-width:2px;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px"><img data-icon="core/arrow-left" alt="" class="pc-inline-icon"><span class="pc-visually-hidden">Previous</span></button></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 <!-- /wp:profchoice/carousel-control-prev -->
 
-<!-- wp:profchoice/carousel-control-next {"inactive":{"opacity":"1"},"style":{"dimensions":{"minWidth":"149px"}}} -->
+<!-- wp:profchoice/carousel-control-next {"active":{"background":"var(\u002d\u002dcbv-primary-contrast)","color":"var(\u002d\u002dcbv-text)"},"inactive":{"opacity":"1","background":"#14161a00","color":"var(\u002d\u002dcbv-primary-contrast)"},"style":{"dimensions":{"minWidth":"149px"}}} -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"tagName":"button","backgroundColor":"cbv-primary-contrast","style":{"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"border":{"width":"2px"},"spacing":{"padding":{"left":"6px","right":"6px","top":"6px","bottom":"6px"}}},"borderColor":"cbv-primary-contrast"} -->
-<div class="wp-block-button"><button type="button" class="wp-block-button__link has-cbv-primary-contrast-background-color has-text-color has-background has-link-color has-border-color has-cbv-primary-contrast-border-color wp-element-button" style="border-width:2px;color:#14161a;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px"><span class="pc-visually-hidden">Next</span><img data-icon="core/arrow-right" alt="" class="pc-inline-icon"></button></div>
+<div class="wp-block-buttons"><!-- wp:button {"tagName":"button","style":{"border":{"width":"2px"},"spacing":{"padding":{"left":"6px","right":"6px","top":"6px","bottom":"6px"}}},"borderColor":"cbv-primary-contrast"} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-border-color has-cbv-primary-contrast-border-color wp-element-button" style="border-width:2px;padding-top:6px;padding-right:6px;padding-bottom:6px;padding-left:6px"><span class="pc-visually-hidden">Next</span><img data-icon="core/arrow-right" alt="" class="pc-inline-icon"></button></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 <!-- /wp:profchoice/carousel-control-next -->
@@ -650,8 +650,8 @@
   <wp:post_id>51</wp:post_id>
   <wp:post_date>2026-09-28 14:24:12</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:24:12</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 09:30:41</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 09:30:41</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-01 09:44:41</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-01 09:44:41</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>homepage</wp:post_name>
