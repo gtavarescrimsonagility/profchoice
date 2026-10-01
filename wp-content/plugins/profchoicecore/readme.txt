@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.18.5
+Stable tag: 0.18.6
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.18.6 =
+* Carousel Previous/Next: a disabled arrow defaults to 0.65 opacity (was 0.35); the Inactive control Opacity slider starts there.
+* Carousel Previous now ships its own stylesheet (it shared Carousel Next's, so it was unstyled without a Next block).
 
 = 0.18.5 =
 * Inline icon and Visually hidden styles are printed inline (they declare their file path, so core inlines them like small block styles) instead of as render-blocking links.
