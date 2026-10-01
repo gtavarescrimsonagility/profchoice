@@ -26,17 +26,31 @@ const STATES = [
 ];
 
 const LABELS: Record< Direction, string > = {
-	prev: __( 'Previous slide', 'profchoicecore' ),
-	next: __( 'Next slide', 'profchoicecore' ),
+	prev: __( 'Previous', 'profchoicecore' ),
+	next: __( 'Next', 'profchoicecore' ),
 };
 
-const COLORS: Record< Direction, { background: string; text: string } > = {
-	prev: { background: '#ffffff00', text: '#ffffff' },
-	next: { background: '#ffffff', text: '#14161a' },
+const ICONS: Record< Direction, string > = {
+	prev: 'core/chevron-left',
+	next: 'core/chevron-right',
 };
 
 /**
- * A Button block inside Buttons (core/button only lives in core/buttons).
+ * The button text: a chevron Inline icon and a Visually hidden label, the
+ * icon on the side the button points to.
+ *
+ * @param direction Previous or next.
+ * @return Button text HTML.
+ */
+const buttonText = ( direction: Direction ): string => {
+	const icon = `<img data-icon="${ ICONS[ direction ] }" alt="" class="pc-inline-icon">`;
+	const label = `<span class="pc-visually-hidden">${ LABELS[ direction ] }</span>`;
+	return direction === 'prev' ? icon + label : label + icon;
+};
+
+/**
+ * A round Button block inside Buttons (core/button only lives in
+ * core/buttons).
  *
  * @param direction Previous or next.
  * @return Inner blocks template.
@@ -44,29 +58,36 @@ const COLORS: Record< Direction, { background: string; text: string } > = {
 const template = ( direction: Direction ): TemplateArray => [
 	[
 		'core/buttons',
-		{},
+		{ layout: { type: 'flex', justifyContent: 'center' } },
 		[
 			[
 				'core/button',
 				{
 					tagName: 'button',
 					type: 'button',
-					text: LABELS[ direction ],
-					className: `pc-carousel__arrow pc-carousel__arrow--${ direction }`,
+					text: buttonText( direction ),
 					style: {
-						color: COLORS[ direction ],
 						border: {
-							width: '2px',
-							style: 'solid',
-							color: '#ffffff',
-							radius: '50%',
+							radius: {
+								topLeft: '50%',
+								topRight: '50%',
+								bottomLeft: '50%',
+								bottomRight: '50%',
+							},
 						},
+						typography: { fontSize: '2rem', lineHeight: '1' },
 						spacing: {
 							padding: {
-								top: '13.5px',
-								right: '13.5px',
-								bottom: '13.5px',
-								left: '13.5px',
+								top: 'var:preset|spacing|40',
+								right: '1rem',
+								bottom: 'var:preset|spacing|40',
+								left: '1rem',
+							},
+						},
+						':hover': {
+							color: { text: '#ffffffe6' },
+							elements: {
+								link: { color: { text: '#ffffffe6' } },
 							},
 						},
 					},
@@ -78,8 +99,7 @@ const template = ( direction: Direction ): TemplateArray => [
 
 /**
  * Edit component of the Previous or Next control: a Button block locked in
- * place (it can be styled, not removed). The button text is the accessible
- * name; the arrow icon is drawn in CSS.
+ * place (it can be styled, not removed).
  *
  * @param direction Previous or next.
  * @return Edit component.

@@ -3,7 +3,7 @@ Contributors: crimsonagility
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.14.1
+Stable tag: 0.15.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,11 @@ The GitHub Action builds, lints, type-checks and tests every change, and publish
 The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt-carousel), GPL-2.0-or-later, and uses Embla Carousel (MIT). The CSV helpers are adapted from the axellcore plugin.
 
 == Changelog ==
+
+= 0.15.0 =
+* Carousel Previous/Next default look: a round button (2rem chevron Inline icon, Visually hidden "Previous"/"Next" label, 1rem padding, lighter text on hover). Overlaid, each control is a full-height strip at its edge, 15% wide by default (new Min. width setting), with the button centred; `--pc-carousel-arrows-inset` now defaults to 0.
+* Buttons from earlier versions (`pc-carousel__arrow` class) keep their CSS arrow and position (1rem in from the edge, or `--pc-carousel-arrows-inset`).
+* The Active/Inactive control settings apply to any button in the control, not only `pc-carousel__arrow` ones.
 
 = 0.14.1 =
 * Carousel Dots: in the editor, the active dot follows the slide shown (picked in the carousel toolbar) instead of always being the first.
