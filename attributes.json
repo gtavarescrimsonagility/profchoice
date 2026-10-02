@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Color",
+        "slug": "color",
+        "type": "wc-visual",
+        "order_by": "menu_order",
+        "has_archives": false
+    },
+    {
+        "name": "Size",
+        "slug": "size",
+        "type": "button",
+        "order_by": "menu_order",
+        "has_archives": false
+    }
+]

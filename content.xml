@@ -53,6 +53,14 @@
   <wp:term_slug>black</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Black]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#141416]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>37</wp:term_id>
@@ -60,6 +68,14 @@
   <wp:term_slug>brown</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Brown]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[12]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#6b4423]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>28</wp:term_id>
@@ -67,6 +83,14 @@
   <wp:term_slug>charcoal</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Charcoal]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#5c5b63]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>23</wp:term_id>
@@ -120,6 +144,14 @@
   <wp:term_slug>jet</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Jet]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[6]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#111111]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>43</wp:term_id>
@@ -127,6 +159,10 @@
   <wp:term_slug>l</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[L]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>42</wp:term_id>
@@ -134,6 +170,10 @@
   <wp:term_slug>m</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[M]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>29</wp:term_id>
@@ -141,6 +181,14 @@
   <wp:term_slug>navy</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Navy]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#1f2740]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>31</wp:term_id>
@@ -148,6 +196,14 @@
   <wp:term_slug>onyx</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Onyx]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[5]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#1f2128]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>10</wp:term_id>
@@ -197,6 +253,14 @@
   <wp:term_slug>red</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Red]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[10]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#b71c1c]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>36</wp:term_id>
@@ -204,6 +268,14 @@
   <wp:term_slug>royal</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Royal]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[11]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#1f3a93]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>41</wp:term_id>
@@ -211,6 +283,10 @@
   <wp:term_slug>s</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[S]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>39</wp:term_id>
@@ -218,6 +294,14 @@
   <wp:term_slug>sand</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Sand]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[4]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#d4b896]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>38</wp:term_id>
@@ -225,6 +309,14 @@
   <wp:term_slug>silver</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Silver]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[8]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#c0c5ce]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>3</wp:term_id>
@@ -239,6 +331,14 @@
   <wp:term_slug>slate</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Slate]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[7]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#7a828e]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>33</wp:term_id>
@@ -246,6 +346,14 @@
   <wp:term_slug>tan</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Tan]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[9]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#8b6f4a]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>16</wp:term_id>
@@ -278,6 +386,14 @@
   <wp:term_slug>white</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[White]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#ffffff]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>44</wp:term_id>
@@ -285,6 +401,10 @@
   <wp:term_slug>xl</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[XL]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[4]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>40</wp:term_id>
@@ -292,6 +412,10 @@
   <wp:term_slug>xs</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[XS]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>25</wp:term_id>
@@ -4562,6 +4686,2250 @@
   <wp:postmeta>
     <wp:meta_key>_price</wp:meta_key>
     <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, XS]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=xs</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=749</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Black, Size: XS]]></excerpt:encoded>
+  <wp:post_id>749</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-black-xs</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="product_visibility" nicename="outofstock"><![CDATA[outofstock]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-BLACK-XS]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[outofstock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[xs]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, S]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=s</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=750</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Black, Size: S]]></excerpt:encoded>
+  <wp:post_id>750</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-black-s</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>1</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-BLACK-S]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[s]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, M]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=m</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=751</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Black, Size: M]]></excerpt:encoded>
+  <wp:post_id>751</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-black-m</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>2</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-BLACK-M]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[m]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, L]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=l</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=752</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Black, Size: L]]></excerpt:encoded>
+  <wp:post_id>752</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-black-l</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>3</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-BLACK-L]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[l]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, XL]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=xl</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=753</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Black, Size: XL]]></excerpt:encoded>
+  <wp:post_id>753</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-black-xl</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>4</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-BLACK-XL]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[xl]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, XS]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=xs</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=754</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Charcoal, Size: XS]]></excerpt:encoded>
+  <wp:post_id>754</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-xs</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>5</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="product_visibility" nicename="outofstock"><![CDATA[outofstock]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-CHARCOAL-XS]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[outofstock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[xs]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, S]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=s</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=755</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Charcoal, Size: S]]></excerpt:encoded>
+  <wp:post_id>755</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-s</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>6</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-CHARCOAL-S]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[s]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, M]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=m</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=756</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Charcoal, Size: M]]></excerpt:encoded>
+  <wp:post_id>756</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-m</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>7</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-CHARCOAL-M]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[m]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, L]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=l</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=757</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Charcoal, Size: L]]></excerpt:encoded>
+  <wp:post_id>757</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-l</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>8</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-CHARCOAL-L]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[l]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, XL]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=xl</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=758</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Charcoal, Size: XL]]></excerpt:encoded>
+  <wp:post_id>758</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-xl</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>9</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-CHARCOAL-XL]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[xl]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, XS]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=xs</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=759</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Navy, Size: XS]]></excerpt:encoded>
+  <wp:post_id>759</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-xs</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>10</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="product_visibility" nicename="outofstock"><![CDATA[outofstock]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-NAVY-XS]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[outofstock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[xs]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, S]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=s</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=760</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Navy, Size: S]]></excerpt:encoded>
+  <wp:post_id>760</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-s</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>11</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-NAVY-S]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[s]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, M]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=m</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=761</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Navy, Size: M]]></excerpt:encoded>
+  <wp:post_id>761</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-m</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>12</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-NAVY-M]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[m]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, L]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=l</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=762</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Navy, Size: L]]></excerpt:encoded>
+  <wp:post_id>762</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-l</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>13</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-NAVY-L]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[l]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, XL]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=xl</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=763</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: Navy, Size: XL]]></excerpt:encoded>
+  <wp:post_id>763</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-xl</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>14</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-NAVY-XL]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[xl]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, XS]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=xs</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=764</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: White, Size: XS]]></excerpt:encoded>
+  <wp:post_id>764</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-white-xs</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>15</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="product_visibility" nicename="outofstock"><![CDATA[outofstock]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-WHITE-XS]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[outofstock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[xs]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, S]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=s</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=765</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: White, Size: S]]></excerpt:encoded>
+  <wp:post_id>765</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-white-s</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>16</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-WHITE-S]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[s]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, M]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=m</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=766</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: White, Size: M]]></excerpt:encoded>
+  <wp:post_id>766</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-white-m</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>17</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-WHITE-M]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[m]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, L]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=l</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=767</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: White, Size: L]]></excerpt:encoded>
+  <wp:post_id>767</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-white-l</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>18</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-WHITE-L]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[l]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, XL]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=xl</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=768</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[Color: White, Size: XL]]></excerpt:encoded>
+  <wp:post_id>768</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:16</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-white-xl</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>19</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520-WHITE-XL]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[xl]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
   </wp:postmeta>
 </item>
   </channel>
