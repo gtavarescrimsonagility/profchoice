@@ -112,6 +112,21 @@
       "code": "<?php\nrequire '/wordpress/wp-load.php';\n\n// Modules that work without a WordPress.com connection: Critical CSS\n// (generated from Boost's admin page), deferred non-essential JavaScript and\n// CSS/JS concatenation. Image CDN and LCP optimization need a public site.\nforeach ( array( 'critical-css', 'render-blocking-js', 'minify-css', 'minify-js' ) as $module ) {\n\tupdate_option( \"jetpack_boost_status_{$module}\", '1' );\n}\n\n// jquery-migrate and wp-util (needed by WooCommerce's variations form) stay out\n// of JS concatenation (like jQuery): concatenated, their URL loses the port\n// under Studio/Playground URL mapping and is CORB-blocked.\nupdate_option( 'jetpack_boost_ds_minify_js_excludes', array( 'jquery', 'jquery-core', 'jquery-migrate', 'underscore', 'backbone', 'wp-util' ) );\n"
     },
     {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/attributes.json",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice/bundle/attributes.json"
+      }
+    },
+    {
+      "step": "runPHP",
+      "progress": {
+        "caption": "Creating product attributes"
+      },
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\n\n// WooCommerce global attributes (with their swatch types) before content.xml:\n// otherwise WooCommerce's importer compatibility creates them as \"select\".\n$file = WP_CONTENT_DIR . '/attributes.json';\n$attributes = is_file( $file ) ? json_decode( file_get_contents( $file ), true ) : array();\n// The swatch types are registered by profchoicecore, which is active here.\nforeach ( (array) $attributes as $attribute ) {\n\tif ( ! wc_attribute_taxonomy_id_by_name( $attribute['slug'] ) ) {\n\t\twc_create_attribute( $attribute );\n\t}\n}\n@unlink( $file );\n"
+    },
+    {
       "step": "importWxr",
       "file": {
         "resource": "url",

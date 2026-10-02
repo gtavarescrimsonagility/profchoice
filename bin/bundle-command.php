@@ -18,7 +18,8 @@ class ProfChoice_Bundle_Command {
 	/**
 	 * Exports pages, block content, custom CSS and the media they use.
 	 *
-	 * Writes `content.xml` (WXR) into the bundle worktree and the media, laid
+	 * Writes `content.xml` (WXR) and `attributes.json` (WooCommerce global
+	 * attributes, which WXR has no place for) into the bundle worktree and the media, laid
 	 * out as in wp-content/uploads (YYYY/MM/...), into the uploads repository,
 	 * with upload URLs rewritten to that repository on raw.githubusercontent.com.
 	 *
@@ -83,6 +84,7 @@ class ProfChoice_Bundle_Command {
 		// attachment URLs use siteurl, so match any host.
 		$wxr = preg_replace( '#https?://[^/"\'\s<]+/wp-content/uploads/#', self::UPLOADS_URL . '/', $wxr );
 		$wxr = $this->add_term_meta( $wxr );
+		$this->write_attributes( $dir . '/attributes.json' );
 		// Drop export timestamps so unchanged content produces no diff.
 		$wxr = preg_replace( '#(<!-- generator="[^"]*") created="[^"]*"#', '$1', $wxr );
 		$wxr = preg_replace( '#\n<pubDate>[^<]*</pubDate>(?=[\s\S]*?<item>)#', '', $wxr, 1 );
@@ -140,6 +142,20 @@ class ProfChoice_Bundle_Command {
 			'fields'      => 'ids',
 		) );
 
+		// Variations of the exported products (their parent maps on import).
+		if ( $ids && post_type_exists( 'product_variation' ) ) {
+			$ids = array_merge(
+				$ids,
+				get_posts( array(
+					'post_type'       => 'product_variation',
+					'post_status'     => array( 'publish', 'private' ),
+					'post_parent__in' => $ids,
+					'numberposts'     => -1,
+					'fields'          => 'ids',
+				) )
+			);
+		}
+
 		$css = wp_get_custom_css_post();
 		if ( $css ) {
 			$ids[] = $css->ID;
@@ -169,6 +185,15 @@ class ProfChoice_Bundle_Command {
 			$thumbnail = (int) get_post_thumbnail_id( $post_id );
 			if ( $thumbnail ) {
 				$found[] = $thumbnail;
+			}
+
+			// Product gallery and the profchoicecore rider card images.
+			$gallery = (string) get_post_meta( $post_id, '_product_image_gallery', true );
+			$found   = array_merge( $found, array_map( 'intval', array_filter( explode( ',', $gallery ) ) ) );
+			$rider   = get_post_meta( $post_id, '_profchoice_rider', true );
+			if ( is_array( $rider ) ) {
+				$found[] = (int) ( $rider['image'] ?? 0 );
+				$found[] = (int) ( $rider['image_mobile'] ?? 0 );
 			}
 
 			preg_match_all( '#"(?:id|mediaId)":(\d+)#', $content, $m );
@@ -205,15 +230,23 @@ class ProfChoice_Bundle_Command {
 
 	/**
 	 * `wp export` leaves out term meta; add the product categories' (image,
-	 * order, display type) as <wp:termmeta>, which the WordPress Importer
-	 * reads. Attachment IDs stay valid when the import keeps the original IDs
-	 * (the blueprint resets the tables first).
+	 * order, display type) and the attribute terms' (order, swatch color or
+	 * image) as <wp:termmeta>, which the WordPress Importer reads. Attachment
+	 * IDs stay valid when the import keeps the original IDs (the blueprint
+	 * resets the tables first).
 	 */
 	private function add_term_meta( $wxr ) {
-		if ( ! taxonomy_exists( 'product_cat' ) ) {
+		$taxonomies = array_filter(
+			array_merge(
+				array( 'product_cat' ),
+				function_exists( 'wc_get_attribute_taxonomy_names' ) ? wc_get_attribute_taxonomy_names() : array()
+			),
+			'taxonomy_exists'
+		);
+		if ( ! $taxonomies ) {
 			return $wxr;
 		}
-		foreach ( get_terms( array( 'taxonomy' => 'product_cat', 'hide_empty' => false ) ) as $term ) {
+		foreach ( get_terms( array( 'taxonomy' => $taxonomies, 'hide_empty' => false ) ) as $term ) {
 			$meta = '';
 			foreach ( get_term_meta( $term->term_id ) as $key => $values ) {
 				// Counts are a WooCommerce cache it rebuilds.
@@ -228,13 +261,42 @@ class ProfChoice_Bundle_Command {
 				continue;
 			}
 			$wxr = preg_replace(
-				'#(<wp:term>(?:(?!</wp:term>).)*?<wp:term_taxonomy>(?:<!\[CDATA\[)?product_cat(?:\]\]>)?</wp:term_taxonomy>(?:(?!</wp:term>).)*?<wp:term_slug>(?:<!\[CDATA\[)?' . preg_quote( $term->slug, '#' ) . '(?:\]\]>)?</wp:term_slug>(?:(?!</wp:term>).)*?)(</wp:term>)#s',
+				'#(<wp:term>(?:(?!</wp:term>).)*?<wp:term_taxonomy>(?:<!\[CDATA\[)?' . preg_quote( $term->taxonomy, '#' ) . '(?:\]\]>)?</wp:term_taxonomy>(?:(?!</wp:term>).)*?<wp:term_slug>(?:<!\[CDATA\[)?' . preg_quote( $term->slug, '#' ) . '(?:\]\]>)?</wp:term_slug>(?:(?!</wp:term>).)*?)(</wp:term>)#s',
 				'$1' . $meta . '$2',
 				$wxr,
 				1
 			);
 		}
 		return $wxr;
+	}
+
+	/**
+	 * WooCommerce global attributes (name, slug, type such as the swatch
+	 * types, term order), which the blueprint creates before importing
+	 * content.xml: otherwise WooCommerce's importer compatibility recreates
+	 * them as plain "select" attributes.
+	 */
+	private function write_attributes( $file ) {
+		if ( ! function_exists( 'wc_get_attribute_taxonomies' ) ) {
+			return;
+		}
+		$attributes = array();
+		foreach ( wc_get_attribute_taxonomies() as $attribute ) {
+			$attributes[] = array(
+				'name'         => $attribute->attribute_label,
+				'slug'         => $attribute->attribute_name,
+				'type'         => $attribute->attribute_type,
+				'order_by'     => $attribute->attribute_orderby,
+				'has_archives' => (bool) $attribute->attribute_public,
+			);
+		}
+		usort(
+			$attributes,
+			static function ( $a, $b ) {
+				return strcmp( $a['slug'], $b['slug'] );
+			}
+		);
+		file_put_contents( $file, wp_json_encode( $attributes, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . "\n" );
 	}
 
 	/**
