@@ -1,0 +1,41 @@
+// WooCommerce's classic variations form laid out as the reference's form.
+@mixin woocommerce {
+	// The wrappers WooCommerce's script needs don't take part in the layout.
+	.variations,
+	.single_variation_wrap {
+		display: contents;
+	}
+
+	// Price and availability of the chosen variation: the info column shows
+	// them, so screen readers keep this live region and nobody else sees it.
+	.single_variation {
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		overflow: hidden !important;
+		clip-path: inset(50%) !important;
+		white-space: nowrap !important;
+	}
+
+	// Swatches block defaults the design replaces.
+	.pc-swatch {
+		min-width: 0;
+		min-height: 0;
+		box-shadow: none;
+		opacity: 1;
+	}
+
+	// The quantity field drawn as the reference's value.
+	.pdp-qty__value {
+		appearance: textfield;
+		border: 0;
+		background: none;
+		text-align: center;
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			appearance: none;
+			margin: 0;
+		}
+	}
+}

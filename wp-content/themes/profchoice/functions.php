@@ -9,6 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+require_once __DIR__ . '/inc/pdp.php';
+
 /*
  * Brand palette (from the Figma design) as the parent's palette defaults. The parent
  * turns each entry into a Customizer control, a --cbv-{slug} variable and an

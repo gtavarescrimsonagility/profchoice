@@ -1,0 +1,68 @@
+// Shared base of the PDP reference (pages-sections-from-figma/pdp/style.css).
+@mixin base {
+	// Reset inside the product page (as the HTML reference).
+	&,
+	& *,
+	& *::before,
+	& *::after {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	// The reference page's body: browser defaults, not the parent's body text.
+	& {
+		color: #000;
+		font-family: serif;
+		font-size: 1rem;
+		line-height: normal;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	// Links as the browser draws them; the parent theme removes the underline.
+	& a {
+		color: #0000ee;
+		text-decoration: underline;
+	}
+
+	.container {
+		margin-inline: auto;
+	}
+
+	.container.wide {
+		max-width: 85rem;
+	}
+
+	& :where(a, button):focus-visible {
+		outline: 2px solid #14161a;
+		outline-offset: 2px;
+	}
+
+	& button {
+		border: 0;
+		background: none;
+		color: inherit;
+		font: inherit;
+		cursor: pointer;
+	}
+
+	.pdp-visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+
+	.pc-inline-icon {
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		vertical-align: -0.125em;
+	}
+
+	svg.pc-inline-icon {
+		fill: currentcolor;
+	}
+}

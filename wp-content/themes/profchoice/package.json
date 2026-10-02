@@ -1,0 +1,14 @@
+{
+	"name": "profchoice",
+	"version": "0.2.0",
+	"private": true,
+	"description": "Professional's Choice child theme styles.",
+	"license": "UNLICENSED",
+	"scripts": {
+		"build": "sass --no-source-map --style=compressed src/scss/pdp.scss build/css/pdp.css",
+		"start": "sass --watch --embed-source-map src/scss/pdp.scss build/css/pdp.css"
+	},
+	"devDependencies": {
+		"sass": "^1.93.2"
+	}
+}

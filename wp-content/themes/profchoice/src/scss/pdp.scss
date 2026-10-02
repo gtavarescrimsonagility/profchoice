@@ -1,0 +1,14 @@
+// Product page (classic single product template). Built to build/css/pdp.css.
+@use "base";
+@use "woocommerce";
+@use "breadcrumb";
+@use "main";
+@use "related";
+
+.pdp {
+	@include base.base;
+	@include woocommerce.woocommerce;
+	@include breadcrumb.breadcrumb;
+	@include main.main;
+	@include related.related;
+}

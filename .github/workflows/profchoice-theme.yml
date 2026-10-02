@@ -20,7 +20,7 @@ env:
   SLUG: profchoice
 
 jobs:
-  check:
+  build:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -29,6 +29,14 @@ jobs:
       version: ${{ steps.version.outputs.version }}
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: wp-content/themes/profchoice/.nvmrc
+          cache: npm
+          cache-dependency-path: wp-content/themes/profchoice/package-lock.json
+
+      - run: npm ci
 
       - name: Version
         id: version
@@ -39,18 +47,31 @@ jobs:
           echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: theme.json and style variations are valid JSON
-        run: find . -name '*.json' -print0 | xargs -0 -n1 python3 -m json.tool > /dev/null
+        run: find . -name '*.json' -not -path './node_modules/*' -print0 | xargs -0 -n1 python3 -m json.tool > /dev/null
 
       - name: PHP syntax
-        run: find . -name '*.php' -print0 | xargs -0 -n1 php -l
+        run: find . -name '*.php' -not -path './node_modules/*' -print0 | xargs -0 -n1 php -l
+
+      - name: style.css and package.json versions match
+        run: test "$(node -p "require('./package.json').version")" = "${{ steps.version.outputs.version }}"
+
+      # Styles are built from src/scss; build/ is not committed.
+      - run: npm run build
+      - run: test -s build/css/pdp.css
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: wp-content/themes/profchoice/build
+          if-no-files-found: error
 
   release:
-    needs: check
+    needs: build
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
-      VERSION: ${{ needs.check.outputs.version }}
+      VERSION: ${{ needs.build.outputs.version }}
     steps:
       - uses: actions/checkout@v4
 
@@ -61,11 +82,23 @@ jobs:
             echo "exists=true" >> "$GITHUB_OUTPUT"
           fi
 
+      - uses: actions/download-artifact@v4
+        if: steps.check.outputs.exists != 'true'
+        with:
+          name: build
+          path: build
+
       - name: Package
         if: steps.check.outputs.exists != 'true'
         run: |
           mkdir -p /tmp/pkg
+          # git archive skips ignored files, so the built styles are copied in.
           git archive "HEAD:$THEME_DIR" --prefix="$SLUG/" | tar -x -C /tmp/pkg
+          cp -r build "/tmp/pkg/$SLUG/build"
+          cd "/tmp/pkg/$SLUG"
+          while IFS= read -r entry; do
+            [ -n "$entry" ] && rm -rf -- "$entry"
+          done < .distignore
           cd /tmp/pkg
           zip -rq "$SLUG.$VERSION.zip" "$SLUG"
           unzip -l "$SLUG.$VERSION.zip" | tail -n 3

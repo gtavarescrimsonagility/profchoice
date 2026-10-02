@@ -1,0 +1,7 @@
+.distignore
+.gitignore
+.nvmrc
+node_modules
+src
+package.json
+package-lock.json
