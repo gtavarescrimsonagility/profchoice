@@ -37,10 +37,8 @@ do_action( 'woocommerce_before_add_to_cart_form' );
 						'options'             => $pdp_options,
 						'attribute'           => $pdp_attribute,
 						'product'             => $product,
-						'profchoice_swatches' => array(
-							'className'    => 'pdp-option',
-							'sizeGuideUrl' => 'pa_size' === $pdp_attribute ? '#size-guide' : '',
-						),
+						// The Size Guide link comes from the attribute's size guide page.
+						'profchoice_swatches' => array( 'className' => 'pdp-option' ),
 					)
 				);
 			}
