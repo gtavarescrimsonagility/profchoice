@@ -101,6 +101,16 @@ $pc_show_value = ( ! isset( $attributes['showValue'] ) || $attributes['showValue
 $pc_guide_url  = ! empty( $attributes['sizeGuideUrl'] ) ? (string) $attributes['sizeGuideUrl'] : '';
 $pc_guide_text = ! empty( $attributes['sizeGuideText'] ) ? (string) $attributes['sizeGuideText'] : __( 'Size Guide', 'profchoicecore' );
 $pc_label      = wc_attribute_label( $pc_taxonomy, $pc_product );
+/**
+ * Filters the guide link shown in the swatches' head (e.g. the Size Guide
+ * module's link). Without one, the `sizeGuideUrl` attribute's plain link.
+ *
+ * @param string     $html       Guide markup (empty).
+ * @param string     $taxonomy   Attribute taxonomy.
+ * @param WC_Product $product    Product.
+ * @param array      $attributes Block attributes.
+ */
+$pc_guide = (string) apply_filters( 'profchoicecore_swatches_guide', '', $pc_taxonomy, $pc_product, $attributes );
 ?>
 <div
 	<?php echo $pc_wrapper; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
@@ -123,7 +133,9 @@ $pc_label      = wc_attribute_label( $pc_taxonomy, $pc_product );
 		<?php if ( $pc_show_value ) : ?>
 			<p class="pc-swatches__value" data-wp-text="state.selectedLabel"></p>
 		<?php endif; ?>
-		<?php if ( $pc_guide_url ) : ?>
+		<?php if ( '' !== $pc_guide ) : ?>
+			<?php echo $pc_guide; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		<?php elseif ( $pc_guide_url ) : ?>
 			<a class="pc-swatches__guide" href="<?php echo esc_url( $pc_guide_url ); ?>"><?php echo esc_html( $pc_guide_text ); ?></a>
 		<?php endif; ?>
 	</div>

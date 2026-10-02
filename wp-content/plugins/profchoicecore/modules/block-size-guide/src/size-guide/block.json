@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/size-guide",
+	"version": "0.2.0",
+	"title": "Size Guide",
+	"category": "profchoice",
+	"icon": "editor-table",
+	"description": "A Size Guide link that opens a page (the attribute's size guide, or a chosen page) in a modal.",
+	"keywords": [ "size", "guide", "chart", "modal" ],
+	"textdomain": "profchoicecore",
+	"attributes": {
+		"attribute": {
+			"type": "string",
+			"default": ""
+		},
+		"pageId": {
+			"type": "number"
+		},
+		"text": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"text": true
+		},
+		"typography": {
+			"fontSize": true
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "profchoice-size-guide-store",
+	"render": "file:./render.php"
+}

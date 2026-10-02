@@ -122,10 +122,10 @@ const { state } = store( 'profchoice/wishlist', {
 			return state.count ? '' : 'none';
 		},
 		get outlineDisplay(): string {
-			return state.isSaved ? 'none' : '';
+			return state.isSaved ? 'none' : 'contents';
 		},
 		get filledDisplay(): string {
-			return state.isSaved ? '' : 'none';
+			return state.isSaved ? 'contents' : 'none';
 		},
 		get dialogListName(): string {
 			return (

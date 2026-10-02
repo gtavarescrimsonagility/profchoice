@@ -28,7 +28,7 @@
 	color: #b71c1c;
 }
 
-.pc-wishlist-button.is-saved .pc-wishlist-button__filled {
+.pc-wishlist-button.is-saved .pc-wishlist-button__filled .pc-inline-icon {
 	animation: pc-wishlist-pop 0.3s ease-out;
 }
 
@@ -301,7 +301,7 @@
 
 @media (prefers-reduced-motion: reduce) {
 
-	.pc-wishlist-button.is-saved .pc-wishlist-button__filled,
+	.pc-wishlist-button.is-saved .pc-wishlist-button__filled .pc-inline-icon,
 	.pc-wishlist-dialog[open] {
 		animation: none;
 	}

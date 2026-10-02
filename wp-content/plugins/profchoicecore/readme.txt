@@ -32,6 +32,11 @@ Editor features:
 * **Inline icon** (rich text format): inserts any registered icon into text, with the same Icon library picker as the Icon block. It renders as an `<svg>` in the text color.
 * **Visually hidden** (rich text format): hides the selected text on screen while keeping it for screen readers (e.g. an icon-only button's label). The editor shows it while the text is focused.
 
+Size Guide (`block-size-guide` module):
+
+* Products > Attributes > (attribute) > **Size guide**: a page for that attribute. The swatches of the attribute then show a "Size Guide" link (through the `profchoicecore_swatches_guide` filter) that opens the page in a modal; without JavaScript it links to the page. No page, no link.
+* **Size Guide** block (`profchoice/size-guide`, Interactivity API store `profchoice/size-guide`): the link and its modal (native dialog: Esc, close button and backdrop close it, focus returns to the link), for an attribute or a chosen page. `[profchoice_size_guide attribute="pa_size"]` and `do_action( 'profchoicecore_size_guide', 'pa_size' )` render the same block; `profchoicecore_size_guide_page` filters the page.
+
 Wishlist (`wishlist` module, Interactivity API store `profchoice/wishlist`):
 
 * **Wishlist Button** (`profchoice/wishlist-button`): a heart, filled while the product is in a list (every heart of the same product updates together). It saves the product (and the chosen variation, on its page) to the visitor's default list. With Multiple lists on, a "Saved to" dialog then lets the visitor move it to another list or a new one; a filled heart opens the dialog to move or remove it.
@@ -56,6 +61,7 @@ Hooks:
 Each feature is a self-contained folder in `modules/` (PHP in `includes/`, sources in `src/`, its own `build/`, assets, tests). The plugin loads every `modules/<name>/module.php`, skipping a module whose `Requires Plugins` header names an inactive plugin. Deleting a module's folder removes only that feature; the `profchoicecore_modules` filter turns one off without deleting it.
 
 * `block-swatches`: Variation Swatches (WooCommerce).
+* `block-size-guide`: Size Guide (WooCommerce).
 * `product-page`: badge and "As ridden by" card (WooCommerce).
 * `block-slider`: Carousel and its children.
 * `block-lead-capture`: Newsletter, subscribers and CSV export.

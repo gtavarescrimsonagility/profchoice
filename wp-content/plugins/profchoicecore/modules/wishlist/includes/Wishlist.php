@@ -163,10 +163,10 @@ final class Wishlist {
 					return wp_interactivity_state( self::STORE )['count'] ? '' : 'none';
 				},
 				'outlineDisplay' => static function () use ( $saved ) {
-					return $saved() ? 'none' : '';
+					return $saved() ? 'none' : 'contents';
 				},
 				'filledDisplay'  => static function () use ( $saved ) {
-					return $saved() ? '' : 'none';
+					return $saved() ? 'contents' : 'none';
 				},
 				// Closures are not sent to the client, so the store's getters keep working.
 				'dialogListName' => static function () {

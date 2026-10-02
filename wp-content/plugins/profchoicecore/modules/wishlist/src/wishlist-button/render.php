@@ -50,7 +50,9 @@ $pc_wrapper = get_block_wrapper_attributes(
 	data-wp-bind--aria-label="state.buttonLabel"
 >
 	<?php
-	echo str_replace( '<svg ', '<svg data-wp-style--display="state.outlineDisplay" ', Wishlist::heart( false, 'pc-wishlist-button__outline' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-	echo str_replace( '<svg ', '<svg data-wp-style--display="state.filledDisplay" ', Wishlist::heart( true, 'pc-wishlist-button__filled' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	// Directives on <svg> are not processed server-side: each heart sits in a
+	// box-less span (display: contents) that shows or hides it.
+	echo '<span class="pc-wishlist-button__outline" data-wp-style--display="state.outlineDisplay">' . Wishlist::heart( false ) . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo '<span class="pc-wishlist-button__filled" data-wp-style--display="state.filledDisplay">' . Wishlist::heart( true ) . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	?>
 </button>
