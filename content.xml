@@ -48,6 +48,27 @@
   <wp:term_name><![CDATA[Main Menu]]></wp:term_name>
 </wp:term>
 <wp:term>
+  <wp:term_id>27</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>black</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Black]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>37</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>brown</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Brown]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>28</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>charcoal</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Charcoal]]></wp:term_name>
+</wp:term>
+<wp:term>
   <wp:term_id>23</wp:term_id>
   <wp:term_taxonomy>product_cat</wp:term_taxonomy>
   <wp:term_slug>english</wp:term_slug>
@@ -94,6 +115,41 @@
   <wp:term_name><![CDATA[grouped]]></wp:term_name>
 </wp:term>
 <wp:term>
+  <wp:term_id>34</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>jet</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Jet]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>43</wp:term_id>
+  <wp:term_taxonomy>pa_size</wp:term_taxonomy>
+  <wp:term_slug>l</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[L]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>42</wp:term_id>
+  <wp:term_taxonomy>pa_size</wp:term_taxonomy>
+  <wp:term_slug>m</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[M]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>29</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>navy</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Navy]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>31</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>onyx</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Onyx]]></wp:term_name>
+</wp:term>
+<wp:term>
   <wp:term_id>10</wp:term_id>
   <wp:term_taxonomy>product_visibility</wp:term_taxonomy>
   <wp:term_slug>outofstock</wp:term_slug>
@@ -136,11 +192,60 @@
   <wp:term_name><![CDATA[rated-5]]></wp:term_name>
 </wp:term>
 <wp:term>
+  <wp:term_id>35</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>red</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Red]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>36</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>royal</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Royal]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>41</wp:term_id>
+  <wp:term_taxonomy>pa_size</wp:term_taxonomy>
+  <wp:term_slug>s</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[S]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>39</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>sand</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Sand]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>38</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>silver</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Silver]]></wp:term_name>
+</wp:term>
+<wp:term>
   <wp:term_id>3</wp:term_id>
   <wp:term_taxonomy>product_type</wp:term_taxonomy>
   <wp:term_slug>simple</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[simple]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>32</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>slate</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Slate]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>33</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>tan</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Tan]]></wp:term_name>
 </wp:term>
 <wp:term>
   <wp:term_id>16</wp:term_id>
@@ -166,6 +271,41 @@
 		<wp:meta_key><![CDATA[thumbnail_id]]></wp:meta_key>
 		<wp:meta_value><![CDATA[355]]></wp:meta_value>
 	</wp:termmeta>
+</wp:term>
+<wp:term>
+  <wp:term_id>30</wp:term_id>
+  <wp:term_taxonomy>pa_color</wp:term_taxonomy>
+  <wp:term_slug>white</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[White]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>44</wp:term_id>
+  <wp:term_taxonomy>pa_size</wp:term_taxonomy>
+  <wp:term_slug>xl</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[XL]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>40</wp:term_id>
+  <wp:term_taxonomy>pa_size</wp:term_taxonomy>
+  <wp:term_slug>xs</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[XS]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>25</wp:term_id>
+  <wp:term_taxonomy>product_cat</wp:term_taxonomy>
+  <wp:term_slug>boots-wraps</wp:term_slug>
+  <wp:term_parent>western</wp:term_parent>
+  <wp:term_name><![CDATA[Boots &amp; Wraps]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>26</wp:term_id>
+  <wp:term_taxonomy>product_cat</wp:term_taxonomy>
+  <wp:term_slug>sports-medicine-boots</wp:term_slug>
+  <wp:term_parent>boots-wraps</wp:term_parent>
+  <wp:term_name><![CDATA[Sports Medicine Boots]]></wp:term_name>
 </wp:term>
 <generator>https://wordpress.org/?v=7.1.2</generator>
 <item>
@@ -777,43 +917,43 @@
 	margin-block-start: 0;
 }
 /* Hover and focus motion, as the HTML reference (the static state is unchanged). */
-.pdp :where(a, button):focus-visible {
+.page-id-678 .pdp :where(a, button):focus-visible {
 	outline: 2px solid #14161a;
 	outline-offset: 2px;
 }
-.pdp-breadcrumb .wp-block-breadcrumbs a {
+.page-id-678 .pdp-breadcrumb .wp-block-breadcrumbs a {
 	text-decoration: underline;
 	text-decoration-color: transparent;
 	text-underline-offset: 0.3em;
 	transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
-.pdp-breadcrumb .wp-block-breadcrumbs a:is(:hover, :focus-visible) {
+.page-id-678 .pdp-breadcrumb .wp-block-breadcrumbs a:is(:hover, :focus-visible) {
 	color: #14161a;
 	text-decoration-color: currentColor;
 }
-.pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a {
+.page-id-678 .pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a {
 	transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 /* Underlined links (284 reviews, Size Guide): the underline goes away on hover. */
-.pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a:is(:hover, :focus-visible) {
+.page-id-678 .pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a:is(:hover, :focus-visible) {
 	color: #14161a;
 	text-decoration-color: transparent;
 }
-.pdp :is(.pdp-main__fav, .pdp-card__fav) .pc-inline-icon {
+.page-id-678 .pdp :is(.pdp-main__fav, .pdp-card__fav) .pc-inline-icon {
 	transition: color 0.2s ease, transform 0.2s ease;
 }
-.pdp :is(.pdp-main__fav, .pdp-card__fav) .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon {
+.page-id-678 .pdp :is(.pdp-main__fav, .pdp-card__fav) .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon {
 	color: #b71c1c;
 	transform: scale(1.12);
 }
-.pdp-main .pdp-main__thumbs > figure {
+.page-id-678 .pdp-main .pdp-main__thumbs > figure {
 	position: relative;
 	overflow: hidden;
 }
-.pdp-main .pdp-main__thumbs img {
+.page-id-678 .pdp-main .pdp-main__thumbs img {
 	transition: transform 0.3s ease;
 }
-.pdp-main .pdp-main__thumbs > figure:not(.active)::after {
+.page-id-678 .pdp-main .pdp-main__thumbs > figure:not(.active)::after {
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -821,151 +961,151 @@
 	transition: box-shadow 0.2s ease;
 	pointer-events: none;
 }
-.pdp-main .pdp-main__thumbs > figure:not(.active):hover::after {
+.page-id-678 .pdp-main .pdp-main__thumbs > figure:not(.active):hover::after {
 	box-shadow: inset 0 0 0 1px #8c8f96;
 }
-.pdp-main .pdp-main__thumbs > figure:hover img {
+.page-id-678 .pdp-main .pdp-main__thumbs > figure:hover img {
 	transform: scale(1.05);
 }
-.pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) {
+.page-id-678 .pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) {
 	overflow: hidden;
 }
-.pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) img {
+.page-id-678 .pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) img {
 	transition: transform 0.6s ease;
 }
-.pdp-main .pdp-rider:hover :is(.pdp-rider__image, .pdp-rider__image--mobile) img {
+.page-id-678 .pdp-main .pdp-rider:hover :is(.pdp-rider__image, .pdp-rider__image--mobile) img {
 	transform: scale(1.04);
 }
-.pdp-main .pdp-rider__link .pc-inline-icon {
+.page-id-678 .pdp-main .pdp-rider__link .pc-inline-icon {
 	transition: transform 0.25s ease;
 }
-.pdp-main .pdp-rider__link .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon {
+.page-id-678 .pdp-main .pdp-rider__link .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon {
 	transform: translateX(0.35em);
 }
-.pdp-main .pdp-option__swatches > div {
+.page-id-678 .pdp-main .pdp-option__swatches > div {
 	transition: transform 0.2s ease;
 }
-.pdp-main .pdp-option__swatches > div:hover {
+.page-id-678 .pdp-main .pdp-option__swatches > div:hover {
 	transform: scale(1.1);
 }
-.pdp-main .pdp-size {
+.page-id-678 .pdp-main .pdp-size {
 	transition: border-color 0.2s ease;
 }
-.pdp-main .pdp-size:not(:first-child, :nth-child(3)):hover {
+.page-id-678 .pdp-main .pdp-size:not(:first-child, :nth-child(3)):hover {
 	border-color: #14161a !important;
 }
-.pdp-main .pdp-qty__step {
+.page-id-678 .pdp-main .pdp-qty__step {
 	transition: color 0.2s ease;
 }
-.pdp-main .pdp-qty__step:hover {
+.page-id-678 .pdp-main .pdp-qty__step:hover {
 	color: #b71c1c !important;
 }
-.pdp-related .pdp-card__media img {
+.page-id-678 .pdp-related .pdp-card__media img {
 	transition: transform 0.6s ease;
 }
-.pdp-related .pdp-card:hover .pdp-card__media img {
+.page-id-678 .pdp-related .pdp-card:hover .pdp-card__media img {
 	transform: scale(1.04);
 }
-.pdp-related .pdp-card__name a {
+.page-id-678 .pdp-related .pdp-card__name a {
 	text-decoration: underline;
 	text-decoration-color: transparent;
 	text-underline-offset: 0.2em;
 	transition: text-decoration-color 0.2s ease;
 }
-.pdp-related .pdp-card:hover .pdp-card__name a,
-.pdp-related .pdp-card__name a:focus-visible {
+.page-id-678 .pdp-related .pdp-card:hover .pdp-card__name a,
+.page-id-678 .pdp-related .pdp-card__name a:focus-visible {
 	text-decoration-color: currentColor;
 }
-.pdp-related .pdp-related__all a {
+.page-id-678 .pdp-related .pdp-related__all a {
 	transition: text-decoration-color 0.2s ease;
 }
 /* View All: the underline goes away on hover, like 284 reviews and Size Guide. */
-.pdp-related .pdp-related__all a:is(:hover, :focus-visible) {
+.page-id-678 .pdp-related .pdp-related__all a:is(:hover, :focus-visible) {
 	text-decoration-color: transparent;
 }
-.pdp-related .pdp-card__quick {
+.page-id-678 .pdp-related .pdp-card__quick {
 	transform: translateY(0.5rem);
 	transition: opacity 0.2s ease, transform 0.25s ease;
 }
-.pdp-related .pdp-card:is(:hover, :focus-within) .pdp-card__quick {
+.page-id-678 .pdp-related .pdp-card:is(:hover, :focus-within) .pdp-card__quick {
 	opacity: 1;
 	transform: none;
 }
 @media (prefers-reduced-motion: reduce) {
-	.pdp-breadcrumb .wp-block-breadcrumbs a,
-	.pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a,
-	.pdp :is(.pdp-main__fav, .pdp-card__fav) .pc-inline-icon,
-	.pdp-main .pdp-main__thumbs img,
-	.pdp-main .pdp-main__thumbs > figure::after,
-	.pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) img,
-	.pdp-main .pdp-rider__link .pc-inline-icon,
-	.pdp-main .pdp-option__swatches > div,
-	.pdp-main .pdp-size,
-	.pdp-main .pdp-qty__step,
-	.pdp-related .pdp-card__media img,
-	.pdp-related .pdp-card__name a,
-	.pdp-related .pdp-related__all a,
-	.pdp-related .pdp-card__quick {
+	.page-id-678 .pdp-breadcrumb .wp-block-breadcrumbs a,
+	.page-id-678 .pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a,
+	.page-id-678 .pdp :is(.pdp-main__fav, .pdp-card__fav) .pc-inline-icon,
+	.page-id-678 .pdp-main .pdp-main__thumbs img,
+	.page-id-678 .pdp-main .pdp-main__thumbs > figure::after,
+	.page-id-678 .pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) img,
+	.page-id-678 .pdp-main .pdp-rider__link .pc-inline-icon,
+	.page-id-678 .pdp-main .pdp-option__swatches > div,
+	.page-id-678 .pdp-main .pdp-size,
+	.page-id-678 .pdp-main .pdp-qty__step,
+	.page-id-678 .pdp-related .pdp-card__media img,
+	.page-id-678 .pdp-related .pdp-card__name a,
+	.page-id-678 .pdp-related .pdp-related__all a,
+	.page-id-678 .pdp-related .pdp-card__quick {
 		transition: none;
 	}
-	.pdp :is(.pdp-main__fav, .pdp-card__fav) .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon,
-	.pdp-main .pdp-main__thumbs > figure:hover img,
-	.pdp-main .pdp-rider:hover :is(.pdp-rider__image, .pdp-rider__image--mobile) img,
-	.pdp-main .pdp-rider__link .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon,
-	.pdp-main .pdp-option__swatches > div:hover,
-	.pdp-related .pdp-card:hover .pdp-card__media img,
-	.pdp-related .pdp-card__quick {
+	.page-id-678 .pdp :is(.pdp-main__fav, .pdp-card__fav) .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon,
+	.page-id-678 .pdp-main .pdp-main__thumbs > figure:hover img,
+	.page-id-678 .pdp-main .pdp-rider:hover :is(.pdp-rider__image, .pdp-rider__image--mobile) img,
+	.page-id-678 .pdp-main .pdp-rider__link .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon,
+	.page-id-678 .pdp-main .pdp-option__swatches > div:hover,
+	.page-id-678 .pdp-related .pdp-card:hover .pdp-card__media img,
+	.page-id-678 .pdp-related .pdp-card__quick {
 		transform: none;
 	}
 }
 /* Thumbnails shrink together, keeping their proportion, when the column is
    narrower than four of them (as the reference). */
-.pdp-main .pdp-main__thumbs > figure {
+.page-id-678 .pdp-main .pdp-main__thumbs > figure {
 	flex: 0 1 5rem;
 	min-width: 0;
 	aspect-ratio: 5 / 6;
 }
-.pdp-main .pdp-main__thumbs--mobile > figure {
+.page-id-678 .pdp-main .pdp-main__thumbs--mobile > figure {
 	flex-basis: 4rem;
 	aspect-ratio: 64 / 76;
 }
-.pdp-main .pdp-main__thumbs img {
+.page-id-678 .pdp-main .pdp-main__thumbs img {
 	width: 100% !important;
 	height: 100% !important;
 }
 /* Tablet: one column with desktop type (as the reference's 30rem–48.875rem range). */
 @media (30rem < width <= 48.875rem) {
-	.pdp-breadcrumb {
+	.page-id-678 .pdp-breadcrumb {
 		padding: 1rem 1.5rem !important;
 	}
-	.pdp-main {
+	.page-id-678 .pdp-main {
 		padding: 1rem 1.5rem 3rem !important;
 	}
-	.pdp-main .pdp-main__layout {
+	.page-id-678 .pdp-main .pdp-main__layout {
 		flex-direction: column;
 		align-items: stretch;
 		gap: 1.5rem;
 	}
-	.pdp-main .pdp-main__stage {
+	.page-id-678 .pdp-main .pdp-main__stage {
 		aspect-ratio: 1;
 	}
-	.pdp-related {
+	.page-id-678 .pdp-related {
 		padding: 1.25rem 1.5rem 3rem !important;
 	}
-	.pdp-related .pdp-related__list {
+	.page-id-678 .pdp-related .pdp-related__list {
 		flex-wrap: wrap;
 		gap: 1.5rem 1rem;
 	}
-	.pdp-related .pdp-card {
+	.page-id-678 .pdp-related .pdp-card {
 		flex: 1 1 calc(50% - 0.5rem);
 	}
 }
 /* Narrow desktop: the card's photo keeps 40% instead of a fixed text column. */
 @media (48.875rem < width <= 72rem) {
-	.pdp-main .pdp-rider__image {
+	.page-id-678 .pdp-main .pdp-rider__image {
 		flex: 0 0 40%;
 	}
-	.pdp-main .pdp-rider__body {
+	.page-id-678 .pdp-main .pdp-rider__body {
 		flex: 1;
 		width: auto;
 	}
@@ -973,162 +1113,164 @@
 /* Responsive rules without a block-attribute equivalent (font family per breakpoint, gaps, layout). */
 @media (width <= 30rem) {
 	/* Breadcrumb */
-	.pdp-breadcrumb .wp-block-breadcrumbs.has-dm-sans-font-family {
+	.page-id-678 .pdp-breadcrumb .wp-block-breadcrumbs.has-dm-sans-font-family {
 		font-family: var(--wp--preset--font-family--montserrat) !important;
 	}
-	.pdp-breadcrumb .wp-block-breadcrumbs ol {
+	.page-id-678 .pdp-breadcrumb .wp-block-breadcrumbs ol {
 		gap: 0.25rem;
 	}
-	.pdp-breadcrumb .wp-block-breadcrumbs li {
+	.page-id-678 .pdp-breadcrumb .wp-block-breadcrumbs li {
 		gap: 0.25rem;
 	}
-	.pdp-breadcrumb .wp-block-breadcrumbs li + li::before {
+	.page-id-678 .pdp-breadcrumb .wp-block-breadcrumbs li + li::before {
 		font-family: var(--wp--preset--font-family--dm-sans);
 		font-size: 0.75rem;
 	}
 
 	/* Main: stacked; Montserrat where the mobile design uses it. */
-	.pdp-main .pdp-main__layout {
+	.page-id-678 .pdp-main .pdp-main__layout {
 		flex-direction: column;
 		align-items: stretch;
 	}
-	.pdp-main .pdp-main__media,
-	.pdp-main .pdp-main__info {
+	.page-id-678 .pdp-main .pdp-main__media,
+	.page-id-678 .pdp-main .pdp-main__info {
 		flex: none;
 	}
-	.pdp-main .pdp-main__stage {
+	.page-id-678 .pdp-main .pdp-main__stage {
 		aspect-ratio: 1;
 	}
-	.pdp-main .pdp-main__badge {
+	.page-id-678 .pdp-main .pdp-main__badge {
 		top: 1rem;
 		left: 1rem;
 	}
-	.pdp-main .pdp-main__fav--overlay .wp-block-button__link {
+	.page-id-678 .pdp-main .pdp-main__fav--overlay .wp-block-button__link {
 		width: 2.125rem !important;
 		height: 2.125rem !important;
 		border-radius: 1.0625rem !important;
 	}
-	.pdp-main .pdp-main__thumbs {
+	.page-id-678 .pdp-main .pdp-main__thumbs {
 		overflow-x: auto;
 	}
 	/* Mobile thumbnails are their own 64x76 files (the reference's srcset). */
-	.pdp-main .pdp-main__thumbs--desktop {
+	.page-id-678 .pdp-main .pdp-main__thumbs--desktop {
 		display: none !important;
 	}
-	.pdp-main .pdp-main__thumbs--mobile {
+	.page-id-678 .pdp-main .pdp-main__thumbs--mobile {
 		display: flex !important;
 	}
-	.pdp-main :is(.pdp-main__badge, .pdp-main__title, .pdp-main__rating, .pdp-main__reviews, .pdp-main__sku, .pdp-main__price, .pdp-main__description, .pdp-rider__eyebrow, .pdp-rider__name, .pdp-rider__link .wp-block-button__link, .pdp-qty__step, .pdp-main__cart .wp-block-button__link) {
+	.page-id-678 .pdp-main :is(.pdp-main__badge, .pdp-main__title, .pdp-main__rating, .pdp-main__reviews, .pdp-main__sku, .pdp-main__price, .pdp-main__description, .pdp-rider__eyebrow, .pdp-rider__name, .pdp-rider__link .wp-block-button__link, .pdp-qty__step, .pdp-main__cart .wp-block-button__link) {
 		font-family: var(--wp--preset--font-family--montserrat) !important;
 	}
-	.pdp-main .pdp-option__label {
+	.page-id-678 .pdp-main .pdp-option__label {
 		font-family: var(--wp--preset--font-family--dm-sans) !important;
 	}
-	.pdp-main .pdp-main__meta {
+	.page-id-678 .pdp-main .pdp-main__meta {
 		flex-direction: column;
 		align-items: stretch;
 	}
-	.pdp-main .pdp-main__rating {
+	.page-id-678 .pdp-main .pdp-main__rating {
 		flex: none;
 	}
-	.pdp-main .pdp-main__stars {
+	.page-id-678 .pdp-main .pdp-main__stars {
 		min-width: 5rem;
 	}
-	.pdp-main .pdp-main__score {
+	.page-id-678 .pdp-main .pdp-main__score {
 		font-weight: 700 !important;
 	}
-	.pdp-main .pdp-main__price-row {
+	.page-id-678 .pdp-main .pdp-main__price-row {
 		justify-content: flex-start;
 	}
-	.pdp-main .pdp-main__price {
+	.page-id-678 .pdp-main .pdp-main__price {
 		flex: none;
 	}
-	.pdp-main .pdp-main__stock::before {
+	.page-id-678 .pdp-main .pdp-main__stock::before {
 		width: 0.4375rem;
 		height: 0.4375rem;
 	}
-	.pdp-main .pdp-rider {
+	.page-id-678 .pdp-main .pdp-rider {
 		align-items: stretch;
 		overflow: hidden;
 	}
-	.pdp-main .pdp-rider__image {
+	.page-id-678 .pdp-main .pdp-rider__image {
 		display: none;
 	}
-	.pdp-main .pdp-rider__image--mobile {
+	.page-id-678 .pdp-main .pdp-rider__image--mobile {
 		display: block;
 		flex: none;
 		width: 9.375rem;
 		min-height: 7.5rem;
 	}
-	.pdp-main .pdp-rider__body {
+	.page-id-678 .pdp-main .pdp-rider__body {
 		flex: 1;
 		width: auto;
 	}
-	.pdp-main .pdp-size {
+	.page-id-678 .pdp-main .pdp-size {
 		min-width: 2.875rem;
 	}
-	.pdp-main .pdp-qty__step {
+	.page-id-678 .pdp-main .pdp-qty__step {
 		width: 2.375rem;
 	}
-	.pdp-main .pdp-qty__value {
+	.page-id-678 .pdp-main .pdp-qty__value {
 		width: 2rem;
 	}
-	.pdp-main .pdp-main__cart .wp-block-button__link {
+	.page-id-678 .pdp-main .pdp-main__cart .wp-block-button__link {
 		min-height: 0;
 	}
-	.pdp-main .pdp-main__fav--box .wp-block-button__link {
+	.page-id-678 .pdp-main .pdp-main__fav--box .wp-block-button__link {
 		height: auto !important;
 		min-height: 3.25rem;
 	}
 
 	/* Related: a scrolling row of 180px cards, Montserrat type. */
-	.pdp-related :is(.pdp-related__title, .pdp-related__all) {
+	.page-id-678 .pdp-related :is(.pdp-related__title, .pdp-related__all) {
 		font-family: var(--wp--preset--font-family--montserrat) !important;
 	}
-	.pdp-related .pdp-related__list {
+	.page-id-678 .pdp-related .pdp-related__list {
 		justify-content: flex-start;
 		overflow-x: auto;
 	}
-	.pdp-related .pdp-card {
+	.page-id-678 .pdp-related .pdp-card {
 		flex: none;
 		width: 11.25rem;
 	}
-	.pdp-related .pdp-card__media {
+	.page-id-678 .pdp-related .pdp-card__media {
 		height: 13.75rem;
 		aspect-ratio: auto;
 	}
-	.pdp-related .pdp-card__badge {
+	.page-id-678 .pdp-related .pdp-card__badge {
 		top: 0.5rem;
 		left: 0.5rem;
 	}
-	.pdp-related .pdp-card__fav {
+	.page-id-678 .pdp-related .pdp-card__fav {
 		top: 0.5rem;
 		right: 0.375rem;
 	}
-	.pdp-related .pdp-card__fav .wp-block-button__link {
+	.page-id-678 .pdp-related .pdp-card__fav .wp-block-button__link {
 		width: 1.625rem !important;
 		height: 1.625rem !important;
 	}
-	.pdp-related .pdp-card__quick {
+	.page-id-678 .pdp-related .pdp-card__quick {
 		display: none;
 	}
-	.pdp-related .pdp-card__swatch {
+	.page-id-678 .pdp-related .pdp-card__swatch {
 		width: 0.6875rem;
 		height: 0.6875rem;
 	}
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.pdp-related .pdp-card__quick {
+	.page-id-678 .pdp-related .pdp-card__quick {
 		transition: none;
 	}
 }
 /* tail COMB-593 PDP */
 
 /* head TEMP */
-/* Development only: hide the theme header and footer on the PDP page while it is compared with the HTML bases. Remove before delivery. */
+/* Development only: hide the theme header and footer on the PDP page and product pages while it is compared with the HTML bases. Remove before delivery. */
 .page-id-678 .cbv-header,
-.page-id-678 .cbv-footer {
+.page-id-678 .cbv-footer,
+.single-product .cbv-header,
+.single-product .cbv-footer {
 	display: none;
 }
 /* tail TEMP */
@@ -1137,8 +1279,8 @@
   <wp:post_id>60</wp:post_id>
   <wp:post_date>2026-09-28 14:47:52</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:47:52</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 19:05:06</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 19:05:06</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-02 20:07:00</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:07:00</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>profchoice</wp:post_name>
@@ -2409,8 +2551,8 @@
   <wp:post_id>650</wp:post_id>
   <wp:post_date>2026-10-01 10:02:49</wp:post_date>
   <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 10:41:37</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 10:41:37</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-02 20:07:24</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:07:24</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>ventech-sport-boots</wp:post_name>
@@ -2423,7 +2565,6 @@
   <category domain="product_cat" nicename="english"><![CDATA[English]]></category>
   <category domain="product_visibility" nicename="featured"><![CDATA[featured]]></category>
   <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
-  <category domain="product_cat" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
   <category domain="product_cat" nicename="western"><![CDATA[Western]]></category>
   <wp:postmeta>
     <wp:meta_key>total_sales</wp:meta_key>
@@ -2506,8 +2647,8 @@
   <wp:post_id>651</wp:post_id>
   <wp:post_date>2026-10-01 10:02:49</wp:post_date>
   <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 10:09:19</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 10:09:19</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-02 20:07:24</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:07:24</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>stealth-air-ride-saddle-pad</wp:post_name>
@@ -2520,7 +2661,6 @@
   <category domain="product_cat" nicename="english"><![CDATA[English]]></category>
   <category domain="product_visibility" nicename="featured"><![CDATA[featured]]></category>
   <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
-  <category domain="product_cat" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
   <category domain="product_cat" nicename="western"><![CDATA[Western]]></category>
   <wp:postmeta>
     <wp:meta_key>total_sales</wp:meta_key>
@@ -2603,8 +2743,8 @@
   <wp:post_id>652</wp:post_id>
   <wp:post_date>2026-10-01 10:02:49</wp:post_date>
   <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 10:09:19</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 10:09:19</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-02 20:07:24</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:07:24</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>comfort-fit-fly-mask</wp:post_name>
@@ -2617,7 +2757,6 @@
   <category domain="product_cat" nicename="english"><![CDATA[English]]></category>
   <category domain="product_visibility" nicename="featured"><![CDATA[featured]]></category>
   <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
-  <category domain="product_cat" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
   <category domain="product_cat" nicename="western"><![CDATA[Western]]></category>
   <wp:postmeta>
     <wp:meta_key>total_sales</wp:meta_key>
@@ -2700,8 +2839,8 @@
   <wp:post_id>653</wp:post_id>
   <wp:post_date>2026-10-01 10:02:49</wp:post_date>
   <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 10:09:18</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 10:09:18</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-02 20:07:24</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:07:24</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>pro-performance-front-splint-boots</wp:post_name>
@@ -2714,7 +2853,6 @@
   <category domain="product_cat" nicename="english"><![CDATA[English]]></category>
   <category domain="product_visibility" nicename="featured"><![CDATA[featured]]></category>
   <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
-  <category domain="product_cat" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
   <category domain="product_cat" nicename="western"><![CDATA[Western]]></category>
   <wp:postmeta>
     <wp:meta_key>total_sales</wp:meta_key>
@@ -3310,7 +3448,11 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb0.webp";s:8:"filesize";i:6404;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb0.webp";s:8:"filesize";i:6404;s:5:"sizes";a:1:{s:19:"profchoice-thumb-sm";a:4:{s:4:"file";s:23:"pdp-thumb0-64x76-1.webp";s:5:"width";i:64;s:6:"height";i:76;s:9:"mime-type";s:10:"image/webp";}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Black]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -3376,7 +3518,11 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb1.webp";s:8:"filesize";i:5326;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb1.webp";s:8:"filesize";i:5326;s:5:"sizes";a:1:{s:19:"profchoice-thumb-sm";a:4:{s:4:"file";s:23:"pdp-thumb1-64x76-1.webp";s:5:"width";i:64;s:6:"height";i:76;s:9:"mime-type";s:10:"image/webp";}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Charcoal]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -3442,7 +3588,11 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb2.webp";s:8:"filesize";i:6942;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb2.webp";s:8:"filesize";i:6942;s:5:"sizes";a:1:{s:19:"profchoice-thumb-sm";a:4:{s:4:"file";s:23:"pdp-thumb2-64x76-1.webp";s:5:"width";i:64;s:6:"height";i:76;s:9:"mime-type";s:10:"image/webp";}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Navy]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -3508,7 +3658,11 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb3.webp";s:8:"filesize";i:6564;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb3.webp";s:8:"filesize";i:6564;s:5:"sizes";a:1:{s:19:"profchoice-thumb-sm";a:4:{s:4:"file";s:23:"pdp-thumb3-64x76-1.webp";s:5:"width";i:64;s:6:"height";i:76;s:9:"mime-type";s:10:"image/webp";}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[White]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -3648,7 +3802,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:33:"2026/10/pdp-rear-ankle-boots.webp";s:8:"filesize";i:18148;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:33:"2026/10/pdp-rear-ankle-boots.webp";s:8:"filesize";i:18148;s:5:"sizes";a:1:{s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:33:"pdp-rear-ankle-boots-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:12330;s:9:"uncropped";b:0;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -3681,7 +3835,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:27:"2026/10/pdp-skid-boots.webp";s:8:"filesize";i:27690;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:27:"2026/10/pdp-skid-boots.webp";s:8:"filesize";i:27690;s:5:"sizes";a:1:{s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:27:"pdp-skid-boots-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:19180;s:9:"uncropped";b:0;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -3714,7 +3868,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:42:"2026/10/pdp-ballistic-overreach-boots.webp";s:8:"filesize";i:20700;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:42:"2026/10/pdp-ballistic-overreach-boots.webp";s:8:"filesize";i:20700;s:5:"sizes";a:1:{s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:42:"pdp-ballistic-overreach-boots-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:12948;s:9:"uncropped";b:0;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -3747,7 +3901,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:44:"2026/10/pdp-smb-3-sports-medicine-boots.webp";s:8:"filesize";i:38168;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:44:"2026/10/pdp-smb-3-sports-medicine-boots.webp";s:8:"filesize";i:38168;s:5:"sizes";a:1:{s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:44:"pdp-smb-3-sports-medicine-boots-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:23814;s:9:"uncropped";b:0;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -3821,6 +3975,594 @@
   <wp:post_type>page</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
+</item>
+<item>
+  <title><![CDATA[Rear Ankle Boots]]></title>
+  <link>https://professionals-choice.wp.local/product/rear-ankle-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:14 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/rear-ankle-boots/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>744</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:14</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:14</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>rear-ankle-boots</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="pa_color" nicename="onyx"><![CDATA[Onyx]]></category>
+  <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+  <category domain="pa_color" nicename="slate"><![CDATA[Slate]]></category>
+  <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
+  <category domain="pa_color" nicename="tan"><![CDATA[Tan]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[PC-RAB]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[234.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[691]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_attributes</wp:meta_key>
+    <wp:meta_value><![CDATA[a:1:{s:8:"pa_color";a:6:{s:4:"name";s:8:"pa_color";s:5:"value";s:0:"";s:8:"position";i:0;s:10:"is_visible";i:1;s:12:"is_variation";i:0;s:11:"is_taxonomy";i:1;}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[234.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_profchoice_badge</wp:meta_key>
+    <wp:meta_value><![CDATA[New]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Skid Boots]]></title>
+  <link>https://professionals-choice.wp.local/product/skid-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:14 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/skid-boots/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>745</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:14</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:14</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>skid-boots</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="pa_color" nicename="brown"><![CDATA[Brown]]></category>
+  <category domain="pa_color" nicename="jet"><![CDATA[Jet]]></category>
+  <category domain="pa_color" nicename="red"><![CDATA[Red]]></category>
+  <category domain="pa_color" nicename="royal"><![CDATA[Royal]]></category>
+  <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+  <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[PC-SKB]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[119.99]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[692]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_attributes</wp:meta_key>
+    <wp:meta_value><![CDATA[a:1:{s:8:"pa_color";a:6:{s:4:"name";s:8:"pa_color";s:5:"value";s:0:"";s:8:"position";i:0;s:10:"is_visible";i:1;s:12:"is_variation";i:0;s:11:"is_taxonomy";i:1;}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[119.99]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_profchoice_badge</wp:meta_key>
+    <wp:meta_value><![CDATA[Sale]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Ballistic Overreach Boots]]></title>
+  <link>https://professionals-choice.wp.local/product/ballistic-overreach-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:14 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/ballistic-overreach-boots/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>746</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:14</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:14</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>ballistic-overreach-boots</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="pa_color" nicename="silver"><![CDATA[Silver]]></category>
+  <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+  <category domain="pa_color" nicename="slate"><![CDATA[Slate]]></category>
+  <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[PC-BOB]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[154.00]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[693]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_attributes</wp:meta_key>
+    <wp:meta_value><![CDATA[a:1:{s:8:"pa_color";a:6:{s:4:"name";s:8:"pa_color";s:5:"value";s:0:"";s:8:"position";i:0;s:10:"is_visible";i:1;s:12:"is_variation";i:0;s:11:"is_taxonomy";i:1;}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[154.00]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_profchoice_badge</wp:meta_key>
+    <wp:meta_value><![CDATA[Pro Pick]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[SMB 3 Sports Medicine Boots]]></title>
+  <link>https://professionals-choice.wp.local/product/smb-3-sports-medicine-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:14 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/smb-3-sports-medicine-boots/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>747</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:14</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:14</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>smb-3-sports-medicine-boots</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="pa_color" nicename="onyx"><![CDATA[Onyx]]></category>
+  <category domain="pa_color" nicename="red"><![CDATA[Red]]></category>
+  <category domain="pa_color" nicename="sand"><![CDATA[Sand]]></category>
+  <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
+  <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
+  <category domain="pa_color" nicename="tan"><![CDATA[Tan]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[PC-SMB3]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_regular_price</wp:meta_key>
+    <wp:meta_value><![CDATA[14.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[694]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_attributes</wp:meta_key>
+    <wp:meta_value><![CDATA[a:1:{s:8:"pa_color";a:6:{s:4:"name";s:8:"pa_color";s:5:"value";s:0:"";s:8:"position";i:0;s:10:"is_visible";i:1;s:12:"is_variation";i:0;s:11:"is_taxonomy";i:1;}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[14.95]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_profchoice_badge</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/</link>
+  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/</guid>
+  <description/>
+  <content:encoded><![CDATA[Beautiful quilted satin top layer with a rope border detailed with crystals. VenTECH mesh liner is absorbent, quick drying, extremely breathable and lightweight. Antimicrobial so it will not harbor bacteria. Reinforced ballistic billet guards provide extra durability. Contoured spine for wither clearance and correct fit, keeping the pad securely in place. Webbed D ring straps feature hook and loop for easy application.]]></content:encoded>
+  <excerpt:encoded><![CDATA[Beautiful quilted satin top layer with a rope border detailed with crystals. VenTECH mesh liner is absorbent, quick drying, extremely breathable and lightweight. Antimicrobial so it will not harbor bacteria. Reinforced ballistic billet guards provide extra durability. Contoured spine for wither clearance and correct fit, keeping the pad securely in place. Webbed D ring straps feature hook and loop for easy application.]]></excerpt:encoded>
+  <wp:post_id>748</wp:post_id>
+  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 20:08:06</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 20:08:06</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>product</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <category domain="pa_color" nicename="black"><![CDATA[Black]]></category>
+  <category domain="pa_color" nicename="charcoal"><![CDATA[Charcoal]]></category>
+  <category domain="pa_size" nicename="l"><![CDATA[L]]></category>
+  <category domain="pa_size" nicename="m"><![CDATA[M]]></category>
+  <category domain="pa_color" nicename="navy"><![CDATA[Navy]]></category>
+  <category domain="pa_size" nicename="s"><![CDATA[S]]></category>
+  <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
+  <category domain="product_type" nicename="variable"><![CDATA[variable]]></category>
+  <category domain="pa_color" nicename="white"><![CDATA[White]]></category>
+  <category domain="pa_size" nicename="xl"><![CDATA[XL]]></category>
+  <category domain="pa_size" nicename="xs"><![CDATA[XS]]></category>
+  <wp:postmeta>
+    <wp:meta_key>_sku</wp:meta_key>
+    <wp:meta_value><![CDATA[EPS520]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_upsell_ids</wp:meta_key>
+    <wp:meta_value><![CDATA[a:4:{i:0;i:744;i:1;i:745;i:2;i:746;i:3;i:747;}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_default_attributes</wp:meta_key>
+    <wp:meta_value><![CDATA[a:2:{s:8:"pa_color";s:5:"black";s:7:"pa_size";s:1:"m";}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_image_gallery</wp:meta_key>
+    <wp:meta_value><![CDATA[681,683,685,687]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_thumbnail_id</wp:meta_key>
+    <wp:meta_value><![CDATA[680]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[4.9]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[284]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_attributes</wp:meta_key>
+    <wp:meta_value><![CDATA[a:2:{s:8:"pa_color";a:6:{s:4:"name";s:8:"pa_color";s:5:"value";s:0:"";s:8:"position";i:0;s:10:"is_visible";i:1;s:12:"is_variation";i:1;s:11:"is_taxonomy";i:1;}s:7:"pa_size";a:6:{s:4:"name";s:7:"pa_size";s:5:"value";s:0:"";s:8:"position";i:1;s:10:"is_visible";i:1;s:12:"is_variation";i:1;s:11:"is_taxonomy";i:1;}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_rating_count</wp:meta_key>
+    <wp:meta_value><![CDATA[a:1:{i:5;i:284;}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_profchoice_badge</wp:meta_key>
+    <wp:meta_value><![CDATA[Pro Pick]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_profchoice_rider</wp:meta_key>
+    <wp:meta_value><![CDATA[a:7:{s:7:"eyebrow";s:12:"As ridden by";s:4:"name";s:48:"Hailey Kinsel · Barrel Racing, 3x NFR Qualifier";s:5:"image";i:689;s:12:"image_mobile";i:690;s:3:"alt";s:27:"Hailey Kinsel barrel racing";s:9:"link_text";s:15:"Watch her setup";s:8:"link_url";s:1:"#";}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+  </wp:postmeta>
 </item>
   </channel>
 </rss>
