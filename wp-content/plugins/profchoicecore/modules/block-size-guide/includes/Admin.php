@@ -112,10 +112,16 @@ final class Admin {
 		if ( ! isset( $_POST['profchoice_size_guide'] ) || ! current_user_can( 'manage_product_terms' ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Verified by the callers.
 			return;
 		}
-		$pages = SizeGuide::pages();
-		$page  = absint( wp_unslash( $_POST['profchoice_size_guide'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		$pages    = SizeGuide::pages();
+		$page     = absint( wp_unslash( $_POST['profchoice_size_guide'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		$taxonomy = wc_attribute_taxonomy_name_by_id( (int) $id );
+		// The previous page no longer guides this attribute.
+		if ( ! empty( $pages[ (int) $id ] ) && get_post_meta( $pages[ (int) $id ], SizeGuide::META, true ) === $taxonomy ) {
+			delete_post_meta( $pages[ (int) $id ], SizeGuide::META );
+		}
 		if ( $page ) {
 			$pages[ (int) $id ] = $page;
+			update_post_meta( $page, SizeGuide::META, $taxonomy );
 		} else {
 			unset( $pages[ (int) $id ] );
 		}

@@ -15,6 +15,8 @@ namespace ProfChoiceCore\SizeGuide;
 final class SizeGuide {
 
 	const OPTION = 'profchoice_size_guides';
+	// On the page too (exported with the content): the attribute taxonomy it guides.
+	const META   = '_profchoice_size_guide_attribute';
 	const STORE  = 'profchoice/size-guide';
 	const MODULE = 'profchoice-size-guide-store';
 
@@ -79,6 +81,20 @@ final class SizeGuide {
 			$pages = self::pages();
 			$id    = wc_attribute_taxonomy_id_by_name( $taxonomy );
 			$page  = isset( $pages[ $id ] ) ? $pages[ $id ] : 0;
+			if ( ! $page ) {
+				// An imported site has the page (and its meta) but not the option.
+				$found = get_posts(
+					array(
+						'post_type'      => 'page',
+						'post_status'    => 'publish',
+						'posts_per_page' => 1,
+						'fields'         => 'ids',
+						'meta_key'       => self::META, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_query_meta_key
+						'meta_value'     => (string) $taxonomy, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_query_meta_value
+					)
+				);
+				$page  = $found ? (int) $found[0] : 0;
+			}
 		}
 		/**
 		 * Filters the size guide page of an attribute.
