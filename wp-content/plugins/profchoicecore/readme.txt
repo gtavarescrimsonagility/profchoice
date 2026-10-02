@@ -43,12 +43,12 @@ Hooks:
 
 Each feature is a self-contained folder in `modules/` (PHP in `includes/`, sources in `src/`, its own `build/`, assets, tests). The plugin loads every `modules/<name>/module.php`, skipping a module whose `Requires Plugins` header names an inactive plugin. Deleting a module's folder removes only that feature; the `profchoicecore_modules` filter turns one off without deleting it.
 
-* `swatches`: Variation Swatches (WooCommerce).
+* `block-swatches`: Variation Swatches (WooCommerce).
 * `product-page`: badge and "As ridden by" card (WooCommerce).
 * `block-slider`: Carousel and its children.
 * `block-lead-capture`: Newsletter, subscribers and CSV export.
 * `block-bindings`: WooCommerce block bindings (WooCommerce).
-* `cover-video`: video covers and the Play style.
+* `block-cover-video`: video covers and the Play style.
 * `icons`: icon collection and Inline icon format.
 * `visually-hidden`: Visually hidden format.
 
