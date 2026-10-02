@@ -1,0 +1,1 @@
+{ "script": { "cover-extension/index": "./src/cover-extension/index.tsx" }, "module": { "cover-extension/view": "./src/cover-extension/view.ts" } }

@@ -47,7 +47,7 @@ final class Icons {
 			)
 		);
 
-		$directory = PROFCHOICECORE_DIR . 'icons/';
+		$directory = dirname( __DIR__ ) . '/icons/';
 		$manifest  = include $directory . 'manifest.php';
 		foreach ( (array) $manifest as $name => $icon ) {
 			wp_register_icon(

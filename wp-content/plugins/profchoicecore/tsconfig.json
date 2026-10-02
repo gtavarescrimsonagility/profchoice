@@ -16,5 +16,6 @@
 		"noUnusedParameters": true,
 		"types": []
 	},
-	"include": [ "src/**/*", "tests/**/*" ]
+	"include": [ "src/**/*", "tests/**/*", "modules/*/src/**/*", "modules/*/tests/**/*" ],
+	"exclude": [ "modules/*/build" ]
 }

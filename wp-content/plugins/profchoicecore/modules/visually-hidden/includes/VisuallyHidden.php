@@ -37,8 +37,8 @@ final class VisuallyHidden {
 	 * @return void
 	 */
 	public static function register_assets() {
-		$build = PROFCHOICECORE_DIR . 'build/visually-hidden/';
-		$url   = plugins_url( 'build/visually-hidden/', PROFCHOICECORE_FILE );
+		$build = dirname( __DIR__ ) . '/build/visually-hidden/';
+		$url   = plugins_url( 'build/visually-hidden/', dirname( __DIR__ ) . '/module.php' );
 		if ( ! file_exists( $build . 'index.asset.php' ) ) {
 			return;
 		}

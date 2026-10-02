@@ -5,8 +5,8 @@ import {
 	callbacks,
 	findVideo,
 	state,
-} from '../../src/cover-extension/view';
-import type { CoverVideoContext } from '../../src/cover-extension/view';
+} from '../src/cover-extension/view';
+import type { CoverVideoContext } from '../src/cover-extension/view';
 
 const fakeVideo = ( paused: boolean ) => {
 	const listeners: Record< string, () => void > = {};

@@ -3,8 +3,8 @@ import { getContext } from '@wordpress/interactivity';
 import {
 	applyTransitionOverrides,
 	baseOptions,
-} from '../../src/carousel/embla-options';
-import { formatAnnouncement, state } from '../../src/carousel/view';
+} from '../src/carousel/embla-options';
+import { formatAnnouncement, state } from '../src/carousel/view';
 
 const mockContext = ( context: Record< string, unknown > ) =>
 	( getContext as Mock ).mockReturnValue( context );

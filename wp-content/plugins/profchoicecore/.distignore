@@ -3,6 +3,10 @@
 node_modules
 src
 tests
+bin
+modules/*/src
+modules/*/tests
+modules/*/entries.json
 jest.config.js
 package.json
 package-lock.json

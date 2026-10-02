@@ -3,8 +3,8 @@ import {
 	missingOptions,
 	nextValue,
 	unavailableValues,
-} from '../../src/swatches/availability';
-import type { Variation } from '../../src/swatches/types';
+} from '../src/swatches/availability';
+import type { Variation } from '../src/swatches/types';
 
 const variation = (
 	color: string,

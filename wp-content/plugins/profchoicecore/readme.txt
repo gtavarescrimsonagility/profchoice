@@ -39,9 +39,22 @@ Hooks:
 * `profchoicecore_newsletter_confirmation_email` filters the confirmation email (to, subject, message, headers).
 * `profchoicecore_swatches_block_attributes( $attributes, $args, $product )` filters the swatches block of each attribute in the classic form. Themes can also pass block attributes (e.g. `className`, `sizeGuideUrl`, `showValue`) in the `profchoice_swatches` argument of `wc_dropdown_variation_attribute_options()`.
 
+== Modules ==
+
+Each feature is a self-contained folder in `modules/` (PHP in `includes/`, sources in `src/`, its own `build/`, assets, tests). The plugin loads every `modules/<name>/module.php`, skipping a module whose `Requires Plugins` header names an inactive plugin. Deleting a module's folder removes only that feature; the `profchoicecore_modules` filter turns one off without deleting it.
+
+* `swatches`: Variation Swatches (WooCommerce).
+* `product-page`: badge and "As ridden by" card (WooCommerce).
+* `block-slider`: Carousel and its children.
+* `block-lead-capture`: Newsletter, subscribers and CSV export.
+* `block-bindings`: WooCommerce block bindings (WooCommerce).
+* `cover-video`: video covers and the Play style.
+* `icons`: icon collection and Inline icon format.
+* `visually-hidden`: Visually hidden format.
+
 == Development ==
 
-Sources live in `src/` (TypeScript + SCSS). The built `build/` folder is not committed:
+Sources live in each module's `src/` (TypeScript + SCSS) and build into that module's `build/` folder, which is not committed (`bin/build.mjs` runs wp-scripts once per module; extra non-block entries go in the module's `entries.json`):
 
     npm ci
     npm run build   # or: npm start

@@ -1,0 +1,1 @@
+{ "script": { "bindings/index": "./src/bindings/index.ts" } }

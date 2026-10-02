@@ -11,7 +11,7 @@ vi.mock( '@wordpress/i18n', () => ( { __: ( text: string ) => text } ) );
 import {
 	addAttributes,
 	PLAYBACK_ATTRIBUTES,
-} from '../../src/cover-extension/index';
+} from '../src/cover-extension/index';
 
 describe( 'cover playback attributes', () => {
 	it( 'adds autoplay, loop and muted to core/cover', () => {

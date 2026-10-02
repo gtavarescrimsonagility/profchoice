@@ -1,6 +1,6 @@
 import { describe, expect, it, type Mock } from 'vitest';
 import { getContext } from '@wordpress/interactivity';
-import { state } from '../../src/newsletter-form/view';
+import { state } from '../src/newsletter-form/view';
 
 const withStatus = ( status: string, hasPending = true ) =>
 	( getContext as Mock ).mockReturnValue( { status, hasPending } );

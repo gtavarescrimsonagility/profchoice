@@ -8,8 +8,7 @@
 namespace ProfChoiceCore;
 
 /**
- * Registers every block found in build/ through the blocks manifest that
- * `wp-scripts build --blocks-manifest` generates.
+ * The block category, and block registration for modules.
  */
 final class Blocks {
 
@@ -19,8 +18,6 @@ final class Blocks {
 	 * @return void
 	 */
 	public static function register_hooks() {
-		add_action( 'init', array( __CLASS__, 'register' ) );
-		add_filter( 'wp_theme_json_data_default', array( __CLASS__, 'default_settings' ) );
 		// After the theme's category (commercebuild, priority 10), so ours is first.
 		add_filter( 'block_categories_all', array( __CLASS__, 'add_category' ), 20 );
 	}
@@ -51,74 +48,22 @@ final class Blocks {
 	}
 
 	/**
-	 * Default per-block settings and styles, like core's theme.json does for
-	 * core/button: the width/height presets of the indicator and arrow state
-	 * panels, and the indicators' gap. Themes can override them under
-	 * settings.blocks and styles.blocks in their theme.json.
+	 * Register the blocks a module built into its build/ folder (through the
+	 * blocks manifest `wp-scripts build --blocks-manifest` generates).
 	 *
-	 * @param \WP_Theme_JSON_Data $theme_json Core default theme.json data.
-	 * @return \WP_Theme_JSON_Data
-	 */
-	public static function default_settings( $theme_json ) {
-		$sizes = static function ( array $values ) {
-			return array_map(
-				static function ( $size ) {
-					return array(
-						'name' => $size,
-						'slug' => (string) (float) $size,
-						'size' => $size,
-					);
-				},
-				$values
-			);
-		};
-
-		$arrow_sizes = array(
-			'dimensions' => array(
-				'dimensionSizes' => $sizes( array( '32px', '40px', '48px', '56px', '64px' ) ),
-			),
-		);
-
-		return $theme_json->update_with(
-			array(
-				'version'  => 3,
-				'settings' => array(
-					'blocks' => array(
-						'profchoice/carousel-indicators'   => array(
-							'dimensions' => array(
-								'dimensionSizes' => $sizes( array( '3px', '6px', '8px', '10px', '12px', '16px', '22px', '30px', '32px' ) ),
-							),
-						),
-						'profchoice/carousel-control-prev' => $arrow_sizes,
-						'profchoice/carousel-control-next' => $arrow_sizes,
-					),
-				),
-				// No gap: the indicators' own 3px inline margins space them, as
-				// Bootstrap's; a Block spacing adds to that.
-				'styles'   => array(
-					'blocks' => array(
-						'profchoice/carousel-indicators' => array(
-							'spacing' => array( 'blockGap' => '0' ),
-						),
-					),
-				),
-			)
-		);
-	}
-
-	/**
-	 * Register the block types from build/blocks-manifest.php.
-	 *
+	 * @param string $module_dir Module folder.
 	 * @return void
 	 */
-	public static function register() {
-		$build    = PROFCHOICECORE_DIR . 'build';
-		$manifest = $build . '/blocks-manifest.php';
-
-		if ( ! file_exists( $manifest ) ) {
-			return;
-		}
-
-		wp_register_block_types_from_metadata_collection( $build, $manifest );
+	public static function register_collection( $module_dir ) {
+		add_action(
+			'init',
+			static function () use ( $module_dir ) {
+				$build    = $module_dir . '/build';
+				$manifest = $build . '/blocks-manifest.php';
+				if ( file_exists( $manifest ) ) {
+					wp_register_block_types_from_metadata_collection( $build, $manifest );
+				}
+			}
+		);
 	}
 }

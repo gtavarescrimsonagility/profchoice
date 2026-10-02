@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { resolvePreset, stateStyleProps } from '../../src/shared/state-style';
+import { resolvePreset, stateStyleProps } from '../src/shared/state-style';
 
 describe( 'stateStyleProps', () => {
 	it( 'maps set values to variables and has-* classes', () => {

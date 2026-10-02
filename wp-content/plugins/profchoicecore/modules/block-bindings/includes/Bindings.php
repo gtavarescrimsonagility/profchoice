@@ -259,12 +259,12 @@ final class Bindings {
 	 * @return void
 	 */
 	public static function register_assets() {
-		$build = PROFCHOICECORE_DIR . 'build/bindings/';
+		$build = dirname( __DIR__ ) . '/build/bindings/';
 		if ( ! file_exists( $build . 'index.asset.php' ) ) {
 			return;
 		}
 		$asset = require $build . 'index.asset.php';
-		wp_register_script( self::HANDLE, plugins_url( 'build/bindings/index.js', PROFCHOICECORE_FILE ), $asset['dependencies'], $asset['version'], true );
+		wp_register_script( self::HANDLE, plugins_url( 'build/bindings/index.js', dirname( __DIR__ ) . '/module.php' ), $asset['dependencies'], $asset['version'], true );
 		wp_set_script_translations( self::HANDLE, 'profchoicecore' );
 	}
 

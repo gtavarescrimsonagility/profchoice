@@ -69,8 +69,8 @@ final class CoverVideo {
 	 * @return void
 	 */
 	public static function register_assets() {
-		$build = PROFCHOICECORE_DIR . 'build/cover-extension/';
-		$url   = plugins_url( 'build/cover-extension/', PROFCHOICECORE_FILE );
+		$build = dirname( __DIR__ ) . '/build/cover-extension/';
+		$url   = plugins_url( 'build/cover-extension/', dirname( __DIR__ ) . '/module.php' );
 		if ( ! file_exists( $build . 'index.asset.php' ) ) {
 			return;
 		}

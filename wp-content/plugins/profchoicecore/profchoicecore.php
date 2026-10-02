@@ -22,22 +22,8 @@ define( 'PROFCHOICECORE_VERSION', '0.2.0' );
 define( 'PROFCHOICECORE_FILE', __FILE__ );
 define( 'PROFCHOICECORE_DIR', plugin_dir_path( __FILE__ ) );
 
-require_once PROFCHOICECORE_DIR . 'includes/Csv.php';
-require_once PROFCHOICECORE_DIR . 'includes/StateStyle.php';
 require_once PROFCHOICECORE_DIR . 'includes/Blocks.php';
-require_once PROFCHOICECORE_DIR . 'includes/CarouselControl.php';
-require_once PROFCHOICECORE_DIR . 'includes/Bindings.php';
-require_once PROFCHOICECORE_DIR . 'includes/CoverVideo.php';
-require_once PROFCHOICECORE_DIR . 'includes/Icons.php';
-require_once PROFCHOICECORE_DIR . 'includes/InlineIcon.php';
-require_once PROFCHOICECORE_DIR . 'includes/VisuallyHidden.php';
-require_once PROFCHOICECORE_DIR . 'includes/Swatches.php';
-require_once PROFCHOICECORE_DIR . 'includes/SwatchesAdmin.php';
-require_once PROFCHOICECORE_DIR . 'includes/ProductMeta.php';
-require_once PROFCHOICECORE_DIR . 'includes/Newsletter/Subscribers.php';
-require_once PROFCHOICECORE_DIR . 'includes/Newsletter/Confirmation.php';
-require_once PROFCHOICECORE_DIR . 'includes/Newsletter/Subscribe.php';
-require_once PROFCHOICECORE_DIR . 'includes/Newsletter/Exporter.php';
+require_once PROFCHOICECORE_DIR . 'includes/Modules.php';
 require_once PROFCHOICECORE_DIR . 'includes/Plugin.php';
 
 ProfChoiceCore\Plugin::boot();

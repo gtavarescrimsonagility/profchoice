@@ -38,8 +38,8 @@ final class InlineIcon {
 	 * @return void
 	 */
 	public static function register_assets() {
-		$build = PROFCHOICECORE_DIR . 'build/inline-icon/';
-		$url   = plugins_url( 'build/inline-icon/', PROFCHOICECORE_FILE );
+		$build = dirname( __DIR__ ) . '/build/inline-icon/';
+		$url   = plugins_url( 'build/inline-icon/', dirname( __DIR__ ) . '/module.php' );
 		if ( ! file_exists( $build . 'index.asset.php' ) ) {
 			return;
 		}

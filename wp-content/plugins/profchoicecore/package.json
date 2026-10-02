@@ -5,13 +5,13 @@
 	"description": "Professional's Choice blocks: newsletter form and carousel.",
 	"license": "GPL-2.0-or-later",
 	"scripts": {
-		"build": "wp-scripts build --blocks-manifest --experimental-modules",
-		"start": "wp-scripts start --blocks-manifest --experimental-modules",
+		"build": "node bin/build.mjs",
+		"start": "node bin/build.mjs --watch",
 		"check-types": "tsc --noEmit",
-		"lint:js": "wp-scripts lint-js src tests",
-		"lint:css": "wp-scripts lint-style \"src/**/*.scss\"",
+		"lint:js": "wp-scripts lint-js src tests modules/*/src modules/*/tests bin webpack.config.js",
+		"lint:css": "wp-scripts lint-style \"modules/*/src/**/*.scss\"",
 		"test": "wp-scripts test-unit-js",
-		"format": "wp-scripts format src tests"
+		"format": "wp-scripts format src tests modules/*/src modules/*/tests"
 	},
 	"dependencies": {
 		"@wordpress/api-fetch": "^7.56.0",
