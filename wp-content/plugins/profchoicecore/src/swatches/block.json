@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/swatches",
+	"version": "0.2.0",
+	"title": "Variation Swatches",
+	"category": "profchoice",
+	"icon": "art",
+	"description": "One attribute of a variable product as color, image or button swatches. Inside the product's variations form it selects the variation.",
+	"keywords": [ "swatches", "variation", "color", "size", "woocommerce" ],
+	"textdomain": "profchoicecore",
+	"usesContext": [ "postId" ],
+	"attributes": {
+		"attribute": {
+			"type": "string",
+			"default": ""
+		},
+		"productId": {
+			"type": "number"
+		},
+		"selected": {
+			"type": "string"
+		},
+		"name": {
+			"type": "string"
+		},
+		"showLabel": {
+			"type": "boolean",
+			"default": true
+		},
+		"showValue": {
+			"type": "boolean",
+			"default": true
+		},
+		"sizeGuideUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"sizeGuideText": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

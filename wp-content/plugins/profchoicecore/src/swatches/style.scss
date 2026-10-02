@@ -1,0 +1,68 @@
+// Functional defaults only, at zero specificity: themes style the swatches.
+
+:where(.pc-swatches) {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+:where(.pc-swatches__head) {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+	justify-content: space-between;
+
+	> * {
+		margin: 0;
+	}
+}
+
+:where(.pc-swatches__items) {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+:where(.pc-swatch) {
+	flex-shrink: 0;
+	min-width: 1.5rem;
+	min-height: 1.5rem;
+	padding: 0;
+	border: 1px solid currentcolor;
+	background: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+}
+
+:where(.pc-swatch--color, .pc-swatch--image) {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background: var(--swatch);
+}
+
+:where(.pc-swatch--button) {
+	padding: 0.5rem 0.75rem;
+}
+
+:where(.pc-swatch[aria-checked="true"]) {
+	box-shadow: 0 0 0 2px currentcolor;
+}
+
+:where(.pc-swatch[aria-disabled="true"]) {
+	opacity: 0.5;
+	text-decoration: line-through;
+	cursor: not-allowed;
+}
+
+// WooCommerce's select stays in the form for its script, out of sight.
+.pc-swatches__select {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
