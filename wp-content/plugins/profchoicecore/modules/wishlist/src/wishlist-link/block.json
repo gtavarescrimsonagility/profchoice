@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/wishlist-link",
+	"version": "0.2.0",
+	"title": "Wishlist Link",
+	"category": "profchoice",
+	"icon": "heart",
+	"description": "Link to the wishlist with a heart and the number of saved products, for headers.",
+	"keywords": [ "wishlist", "favorites", "header", "count" ],
+	"textdomain": "profchoicecore",
+	"attributes": {
+		"showLabel": {
+			"type": "boolean",
+			"default": true
+		},
+		"label": {
+			"type": "string"
+		},
+		"innerClasses": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"text": true
+		},
+		"typography": {
+			"fontSize": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "profchoice-wishlist-store",
+	"render": "file:./render.php"
+}

@@ -28,15 +28,27 @@ Editor features:
 
 * **WooCommerce bindings**: designed blocks (headings, buttons, images) can take a product category's or product's name, link and image, or the shop link, through the block bindings `profchoice/product-category`, `profchoice/product` (by ID or featured position) and `profchoice/shop`. Without WooCommerce or matching data, blocks keep their saved values.
 * **Video covers**: a Cover with a video background gets a Video panel (Autoplay, Loop, Muted; Muted is locked on while Autoplay is on). A Button with the **Play** style inside it plays and pauses the video and fades out while it plays; focus then moves to the cover, so Space pauses it. The Play style only sets the shape (a circle); colors and the Hover/Focus/Active states come from the Button's own settings.
-* **Icons**: a "Professional's Choice" icon collection (Play, Pause, Arrow Right, Arrow Long Right, Heart, Check Circle, Info Circle, Alert Circle, Close) registered with the Icons API, so it shows in the Icon block and the inline icon picker. Add an icon with an SVG in `icons/` and a line in `icons/manifest.php`.
+* **Icons**: a "Professional's Choice" icon collection (Play, Pause, Arrow Right, Arrow Long Right, Heart, Heart Filled, Check Circle, Info Circle, Alert Circle, Close) registered with the Icons API, so it shows in the Icon block and the inline icon picker. Add an icon with an SVG in `icons/` and a line in `icons/manifest.php`.
 * **Inline icon** (rich text format): inserts any registered icon into text, with the same Icon library picker as the Icon block. It renders as an `<svg>` in the text color.
 * **Visually hidden** (rich text format): hides the selected text on screen while keeping it for screen readers (e.g. an icon-only button's label). The editor shows it while the text is focused.
+
+Wishlist (`wishlist` module, Interactivity API store `profchoice/wishlist`):
+
+* **Wishlist Button** (`profchoice/wishlist-button`): a heart, filled while the product is in a list (every heart of the same product updates together). It saves the product (and the chosen variation, on its page) to the visitor's default list. With Multiple lists on, a "Saved to" dialog then lets the visitor move it to another list or a new one; a filled heart opens the dialog to move or remove it.
+* **Wishlist Link** (`profchoice/wishlist-link`): heart, count badge and label, for headers (`innerClasses` reuses a theme's header classes).
+* **Wishlist** (`profchoice/wishlist`): the lists (tabs), rename, make default, delete, new list, and the saved products with add to cart, move and remove. On the Wishlist page and in My Account > Wishlists.
+* Shortcodes `[profchoice_wishlist]`, `[profchoice_wishlist_button product="123"]` and `[profchoice_wishlist_link]` render the same blocks; `ProfChoiceCore\Wishlist\Wishlist::render_button()` / `render_link()` / `render_page()` for templates.
+* Settings in WooCommerce > Settings > Wishlist: guests (saved with a browser cookie and kept after they log in) or login required, wishlist page, multiple lists and confirmation alerts (both off by default), guest list retention. Products list: a sortable Wishlists column (how many lists have each product).
+* Lists are private `pc_wishlist` posts; REST API under `profchoicecore/v1/wishlist` and `/wishlists`.
 
 Hooks:
 
 * `profchoicecore_newsletter_subscribed( $email, $user_id )` after a subscription (after confirming, when email confirmation is on).
 * `profchoicecore_newsletter_pending( $email, $user_id )` after a subscription that waits for confirmation.
 * `profchoicecore_newsletter_confirmation_email` filters the confirmation email (to, subject, message, headers).
+* `profchoicecore_wishlist_item_added( $product_id, $list_id, $user_id, $variation_id )`, `profchoicecore_wishlist_item_removed( $product_id, $list_id, $user_id )`, `profchoicecore_wishlist_list_created( $list_id, $owner )`, `profchoicecore_wishlist_list_deleted( $list_id, $owner )`.
+* `profchoicecore_wishlist_button_attributes`, `profchoicecore_wishlist_page_id` and `profchoicecore_wishlist_guests_allowed` filters.
+* `profchoicecore_modules` filters the modules to load.
 * `profchoicecore_swatches_block_attributes( $attributes, $args, $product )` filters the swatches block of each attribute in the classic form. Themes can also pass block attributes (e.g. `className`, `sizeGuideUrl`, `showValue`) in the `profchoice_swatches` argument of `wc_dropdown_variation_attribute_options()`.
 
 == Modules ==
@@ -51,6 +63,7 @@ Each feature is a self-contained folder in `modules/` (PHP in `includes/`, sourc
 * `block-cover-video`: video covers and the Play style.
 * `icons`: icon collection and Inline icon format.
 * `visually-hidden`: Visually hidden format.
+* `wishlist`: Wishlist (WooCommerce).
 
 == Development ==
 

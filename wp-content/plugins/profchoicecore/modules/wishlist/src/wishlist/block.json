@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/wishlist",
+	"version": "0.2.0",
+	"title": "Wishlist",
+	"category": "profchoice",
+	"icon": "heart",
+	"description": "The visitor's wishlists: tabs per list, rename, make default, delete, new list, and the saved products with add to cart, move and remove.",
+	"keywords": [ "wishlist", "favorites", "lists" ],
+	"textdomain": "profchoicecore",
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "profchoice-wishlist-store",
+	"render": "file:./render.php"
+}

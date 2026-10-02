@@ -1,0 +1,324 @@
+@use "../../../../src/shared/breakpoints" as *;
+
+// Heart button, "Saved to" dialog and confirmation toast. Defaults are kept
+// at low specificity so themes restyle the heart where they place it.
+
+:where(.pc-wishlist-button) {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1.5rem;
+	min-height: 1.5rem;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+}
+
+.pc-wishlist-button .pc-inline-icon {
+	width: 1em;
+	height: 1em;
+	fill: currentcolor;
+}
+
+// Saved: filled heart in the brand red, with a short pop.
+.pc-wishlist-button.is-saved {
+	color: #b71c1c;
+}
+
+.pc-wishlist-button.is-saved .pc-wishlist-button__filled {
+	animation: pc-wishlist-pop 0.3s ease-out;
+}
+
+@keyframes pc-wishlist-pop {
+
+	50% {
+		transform: scale(1.25);
+	}
+}
+
+// Dialog.
+.pc-wishlist-dialog {
+	width: min(26rem, calc(100vw - 2rem));
+	max-height: calc(100dvh - 2rem);
+	padding: 1.5rem;
+	border: 1px solid #e5e2dc;
+	background: #fff;
+	color: #14161a;
+	font-family: "DM Sans", sans-serif;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	box-shadow: 0 1.5rem 3rem rgba(20, 22, 26, 0.18);
+
+	&[open] {
+		animation: pc-wishlist-in 0.2s ease-out;
+	}
+
+	&::backdrop {
+		background: rgba(20, 22, 26, 0.45);
+	}
+
+	p,
+	h2,
+	fieldset {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+}
+
+.pc-wishlist-dialog__head {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.pc-wishlist-dialog__eyebrow,
+.pc-wishlist-dialog__legend {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #6e727a;
+	font-size: 0.6875rem;
+	font-weight: 700;
+	letter-spacing: 0.125rem;
+	text-transform: uppercase;
+}
+
+.pc-wishlist-dialog__eyebrow {
+	margin-bottom: 0.25rem;
+}
+
+.pc-wishlist-dialog__title {
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.375rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.pc-wishlist-dialog__close {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	margin: -0.25rem -0.5rem 0 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: opacity 0.2s ease;
+
+	&:is(:hover, :focus-visible) {
+		opacity: 1;
+	}
+}
+
+.pc-wishlist-dialog__close-icon {
+	width: 1.125rem;
+	height: 1.125rem;
+	fill: currentcolor;
+}
+
+.pc-wishlist-dialog__product {
+	margin-top: 0.5rem !important;
+	color: #3a3d44;
+}
+
+.pc-wishlist-dialog__lists {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.25rem !important;
+	padding-top: 1rem !important;
+	border-top: 1px solid #e5e2dc !important;
+}
+
+.pc-wishlist-dialog__option {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+	padding: 0.625rem 0.75rem;
+	border: 1px solid #e5e2dc;
+	cursor: pointer;
+	transition: border-color 0.2s ease, background-color 0.2s ease;
+
+	& + & {
+		margin-top: -1px;
+	}
+
+	&:hover {
+		background: #faf7f2;
+	}
+
+	&:has(input:checked) {
+		position: relative;
+		border-color: #14161a;
+		background: #faf7f2;
+	}
+
+	input {
+		margin: 0;
+		accent-color: #14161a;
+	}
+}
+
+.pc-wishlist-dialog__name {
+	flex: 1;
+	font-weight: 600;
+}
+
+.pc-wishlist-dialog__count {
+	color: #6e727a;
+	font-size: 0.8125rem;
+}
+
+.pc-wishlist-dialog__create {
+	margin-top: 1.25rem;
+}
+
+.pc-wishlist-dialog__row {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.pc-wishlist-dialog__input {
+	flex: 1;
+	min-width: 0;
+	min-height: 2.75rem;
+	padding: 0 0.75rem;
+	border: 1px solid #c8c4bc;
+	border-radius: 0;
+	background: #fff;
+	color: inherit;
+	font: inherit;
+
+	&:focus-visible {
+		outline: 2px solid #14161a;
+		outline-offset: -1px;
+	}
+}
+
+.pc-wishlist-dialog__button {
+	min-height: 2.75rem;
+	padding: 0 1.25rem;
+	border: 1px solid #14161a;
+	border-radius: 0;
+	background: #fff;
+	color: #14161a;
+	font-family: "DM Sans", sans-serif;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.125rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 0.2s ease, color 0.2s ease;
+
+	&:is(:hover, :focus-visible) {
+		background: #14161a;
+		color: #fff;
+	}
+}
+
+.pc-wishlist-dialog__button--primary {
+	border-color: #b71c1c;
+	background: #b71c1c;
+	color: #fff;
+
+	&:is(:hover, :focus-visible) {
+		border-color: #8e1b1a;
+		background: #8e1b1a;
+	}
+}
+
+.pc-wishlist-dialog__foot {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 1.25rem;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid #e5e2dc;
+}
+
+// Text actions: underlined, the underline goes away on hover.
+.pc-wishlist-dialog__remove,
+.pc-wishlist-dialog__link {
+	padding: 0;
+	border: 0;
+	background: none;
+	color: #3a3d44;
+	font-family: "DM Sans", sans-serif;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.125rem;
+	text-decoration: underline;
+	text-underline-offset: 0.3em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: color 0.2s ease, text-decoration-color 0.2s ease;
+
+	&:is(:hover, :focus-visible) {
+		color: #14161a;
+		text-decoration-color: transparent;
+	}
+}
+
+.pc-wishlist-dialog__remove {
+	margin-right: auto;
+	color: #8e1b1a;
+
+	&:is(:hover, :focus-visible) {
+		color: #b71c1c;
+	}
+}
+
+// Confirmation toast (alert markup from the theme's notice styles).
+.pc-wishlist-toast {
+	position: fixed;
+	z-index: 100000;
+	right: 1rem;
+	bottom: 1rem;
+	width: min(28rem, calc(100vw - 2rem));
+
+	.pc-alert {
+		box-shadow: 0 0.75rem 2rem rgba(20, 22, 26, 0.12);
+	}
+}
+
+@keyframes pc-wishlist-in {
+
+	from {
+		opacity: 0;
+		transform: translateY(0.5rem);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.pc-wishlist-button.is-saved .pc-wishlist-button__filled,
+	.pc-wishlist-dialog[open] {
+		animation: none;
+	}
+}
+
+@include media-breakpoint-down(tablet) {
+
+	.pc-wishlist-dialog {
+		margin: auto 0 0;
+		width: 100vw;
+		max-width: 100vw;
+		padding: 1.25rem 1rem;
+	}
+
+	.pc-wishlist-toast {
+		right: 1rem;
+		left: 1rem;
+		width: auto;
+	}
+}

@@ -9,7 +9,7 @@
 		"start": "node bin/build.mjs --watch",
 		"check-types": "tsc --noEmit",
 		"lint:js": "wp-scripts lint-js src tests modules/*/src modules/*/tests bin webpack.config.js",
-		"lint:css": "wp-scripts lint-style \"modules/*/src/**/*.scss\"",
+		"lint:css": "wp-scripts lint-style \"src/**/*.scss\" \"modules/*/src/**/*.scss\"",
 		"test": "wp-scripts test-unit-js",
 		"format": "wp-scripts format src tests modules/*/src modules/*/tests"
 	},

@@ -26,6 +26,10 @@ return array(
 		'label'    => _x( 'Heart', 'icon label', 'profchoicecore' ),
 		'filePath' => 'heart.svg',
 	),
+	'heart-filled'     => array(
+		'label'    => _x( 'Heart Filled', 'icon label', 'profchoicecore' ),
+		'filePath' => 'heart-filled.svg',
+	),
 	'check-circle'     => array(
 		'label'    => _x( 'Check Circle', 'icon label', 'profchoicecore' ),
 		'filePath' => 'check-circle.svg',
