@@ -95,7 +95,8 @@ final class Settings {
 	}
 
 	/**
-	 * Create the Wishlist page (with the wishlist block) when none is set.
+	 * Set the Wishlist page: an existing `wishlist` page with the block, or a
+	 * new one, when none is set.
 	 *
 	 * @return void
 	 */
@@ -106,6 +107,12 @@ final class Settings {
 		update_option( 'profchoice_wishlist_page_created', 1, false );
 		$page = self::page_id();
 		if ( $page && get_post( $page ) ) {
+			return;
+		}
+		// An imported site already has the page (content.xml), not the option.
+		$existing = get_page_by_path( 'wishlist' );
+		if ( $existing && has_block( 'profchoice/wishlist', $existing ) ) {
+			update_option( 'profchoice_wishlist_page_id', $existing->ID );
 			return;
 		}
 		$id = wp_insert_post(
