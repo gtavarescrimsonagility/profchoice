@@ -1,3 +1,5 @@
+@use "breakpoints" as *;
+
 // Notices on the product page: between the breadcrumb and the main section,
 // in the wide container, with the breadcrumb's gutters.
 @mixin notices {
@@ -5,13 +7,13 @@
 		padding: 0.5rem 2.5rem 0;
 	}
 
-	@media (30rem < width <= 48.875rem) {
+	@include media-breakpoint-only(tablet) {
 		.pdp-notices {
 			padding-inline: 1.5rem;
 		}
 	}
 
-	@media (width <= 30rem) {
+	@include media-breakpoint-down(tablet) {
 		.pdp-notices {
 			padding-inline: 1rem;
 		}

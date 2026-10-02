@@ -1,3 +1,5 @@
+@use "breakpoints" as *;
+
 // 01-breadcrumb.
 @mixin breadcrumb {
 	/* Breadcrumb */
@@ -58,14 +60,14 @@
 	}
 
 	/* Tablet: desktop type, tighter gutters. */
-	@media (30rem < width <= 48.875rem) {
+	@include media-breakpoint-only(tablet) {
 		.pdp-breadcrumb {
 			padding: 1rem 1.5rem;
 		}
 	}
 
 	/* Mobile: Montserrat items, DM Sans slashes, divider below; long trails wrap. */
-	@media (width <= 30rem) {
+	@include media-breakpoint-down(tablet) {
 		.pdp-breadcrumb {
 			margin-top: 0;
 			padding: 0.875rem 1rem;

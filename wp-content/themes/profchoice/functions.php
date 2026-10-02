@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once __DIR__ . '/inc/pdp.php';
 require_once __DIR__ . '/inc/notices.php';
+require_once __DIR__ . '/inc/wishlist.php';
 
 /*
  * Brand palette (from the Figma design) as the parent's palette defaults. The parent

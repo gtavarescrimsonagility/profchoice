@@ -29,7 +29,6 @@ if ( ! $pdp_products ) {
 
 $pdp_terms   = wc_get_product_terms( $product->get_id(), 'product_cat', array( 'orderby' => 'parent', 'order' => 'DESC' ) );
 $pdp_all_url = $pdp_terms ? get_term_link( $pdp_terms[0] ) : wc_get_page_permalink( 'shop' );
-$pdp_heart   = profchoice_icon( 'heart' );
 ?>
 <section class="pdp-related" aria-labelledby="pdp-related-title">
 	<div class="container wide">
@@ -66,9 +65,7 @@ $pdp_heart   = profchoice_icon( 'heart' );
 						<?php if ( $pdp_badge ) : ?>
 							<span class="pdp-card__badge<?php echo 'sale' === sanitize_title( $pdp_badge ) ? ' pdp-card__badge--sale' : ''; ?>"><?php echo esc_html( $pdp_badge ); ?></span>
 						<?php endif; ?>
-						<button class="pdp-card__fav" type="button" aria-label="<?php echo esc_attr( sprintf( /* translators: %s: product name. */ __( 'Add %s to favorites', 'profchoice' ), $pdp_name ) ); ?>">
-							<?php echo $pdp_heart; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-						</button>
+						<?php echo profchoice_wishlist_button( $pdp_card->get_id(), 'pdp-card__fav', sprintf( /* translators: %s: product name. */ __( 'Add %s to favorites', 'profchoice' ), $pdp_name ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						<?php if ( $pdp_card->is_purchasable() && $pdp_card->is_in_stock() && $pdp_card->is_type( 'simple' ) ) : ?>
 							<button class="pdp-card__quick add_to_cart_button ajax_add_to_cart" type="button" data-product_id="<?php echo absint( $pdp_card->get_id() ); ?>" data-product_sku="<?php echo esc_attr( $pdp_card->get_sku() ); ?>" data-quantity="1"><?php esc_html_e( '+ Quick Add', 'profchoice' ); ?><span class="pdp-visually-hidden"> <?php echo esc_html( $pdp_name ); ?></span></button>
 						<?php else : ?>

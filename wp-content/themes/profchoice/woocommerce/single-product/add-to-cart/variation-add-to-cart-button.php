@@ -43,9 +43,7 @@ $pdp_price = html_entity_decode( wp_strip_all_tags( $product->get_price_html() )
 		?>
 	</button>
 	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-	<button class="pdp-main__fav pdp-main__fav--box" type="button" aria-label="<?php esc_attr_e( 'Add to favorites', 'profchoice' ); ?>">
-		<?php echo profchoice_icon( 'heart' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-	</button>
+	<?php echo profchoice_wishlist_button( $product->get_id(), 'pdp-main__fav pdp-main__fav--box', __( 'Add to favorites', 'profchoice' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>" />
 	<input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />

@@ -1,3 +1,5 @@
+@use "breakpoints" as *;
+
 // 02-main: gallery, product info, options (profchoice/swatches) and purchase.
 @mixin main {
 	/* Main: gallery and product info side by side. */
@@ -575,7 +577,7 @@
 	}
 
 	/* Tablet: one column, desktop type. */
-	@media (30rem < width <= 48.875rem) {
+	@include media-breakpoint-only(tablet) {
 		.pdp-main {
 			padding: 1rem 1.5rem 3rem;
 		}
@@ -592,7 +594,7 @@
 	}
 
 	/* Narrow desktop: the card's photo keeps 40% instead of a fixed text column. */
-	@media (48.875rem < width <= 72rem) {
+	@include media-breakpoint-only(desktop) {
 		.pdp-rider__media {
 			flex: 0 0 40%;
 		}
@@ -604,7 +606,7 @@
 	}
 
 	/* Mobile: stacked, Montserrat type, full-bleed gallery. */
-	@media (width <= 30rem) {
+	@include media-breakpoint-down(tablet) {
 		.pdp-main {
 			padding: 0 0 0.265625px;
 		}
@@ -839,5 +841,10 @@
 			min-height: 3.25rem;
 			font-size: 1.125rem;
 		}
+	}
+
+	// Wishlist hearts (profchoicecore): filled in the brand red when saved.
+	.pc-wishlist-button.is-saved {
+		color: #b71c1c;
 	}
 }

@@ -13,7 +13,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 $pdp_badge = profchoice_badge( $product->get_id() );
-$pdp_heart = profchoice_icon( 'heart' );
 
 // Gallery thumbnails pick the color their alt text names.
 $pdp_colors = array();
@@ -71,9 +70,7 @@ $pdp_reviews = (int) $product->get_review_count();
 					<?php if ( $pdp_badge ) : ?>
 						<span class="pdp-main__badge"><?php echo esc_html( $pdp_badge ); ?></span>
 					<?php endif; ?>
-					<button class="pdp-main__fav pdp-main__fav--overlay" type="button" aria-label="<?php esc_attr_e( 'Add to favorites', 'profchoice' ); ?>">
-						<?php echo $pdp_heart; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-					</button>
+					<?php echo profchoice_wishlist_button( $product->get_id(), 'pdp-main__fav pdp-main__fav--overlay', __( 'Add to favorites', 'profchoice' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</div>
 				<?php if ( $pdp_thumbs ) : ?>
 					<div class="pdp-main__thumbs">

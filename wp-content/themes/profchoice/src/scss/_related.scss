@@ -1,3 +1,5 @@
+@use "breakpoints" as *;
+
 // 03-related: "May We Suggest" product cards.
 @mixin related {
 	/* Related products */
@@ -235,7 +237,7 @@
 	}
 
 	/* Tablet: two cards per row. */
-	@media (30rem < width <= 48.875rem) {
+	@include media-breakpoint-only(tablet) {
 		.pdp-related {
 			padding: 1.25rem 1.5rem 3rem;
 		}
@@ -251,7 +253,7 @@
 	}
 
 	/* Mobile: Montserrat type, a scrolling row of 180px cards. */
-	@media (width <= 30rem) {
+	@include media-breakpoint-down(tablet) {
 		.pdp-related {
 			padding: 0 0 0.59375px;
 			border-top: 0;

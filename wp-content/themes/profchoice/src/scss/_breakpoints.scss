@@ -1,0 +1,118 @@
+// Breakpoint mixins in the spirit of Bootstrap's _breakpoints.scss. Each
+// breakpoint is where its range starts; a range runs up to (and including)
+// the next breakpoint, matching WordPress's @mobile (width <= 480px) and
+// @tablet (width <= 782px). For example:
+//   @include media-breakpoint-down(tablet) { … }   // width <= 30rem (mobile)
+//   @include media-breakpoint-only(tablet) { … } // 30rem < width <= 48.875rem
+//   @include media-breakpoint-between(tablet, wide) { … }
+//   @include media-breakpoint-up(desktop) { … }    // 48.875rem < width
+@use "sass:list";
+@use "sass:map";
+
+$breakpoints: (
+	mobile: 0,
+	tablet: 30rem,
+	desktop: 48.875rem,
+	wide: 72rem,
+) !default;
+
+// Where a range starts (null for the first one, which starts at 0).
+@function breakpoint-min($name, $breakpoints: $breakpoints) {
+
+	@if not map.has-key($breakpoints, $name) {
+
+		@error "Unknown breakpoint `#{$name}`. Use #{map.keys($breakpoints)}.";
+	}
+	$min: map.get($breakpoints, $name);
+
+	@if $min == 0 {
+
+		@return null;
+	}
+
+	@return $min;
+}
+
+// The next breakpoint's name (null for the last one).
+@function breakpoint-next($name, $breakpoints: $breakpoints) {
+	$names: map.keys($breakpoints);
+	$index: list.index($names, $name);
+
+	@if not $index {
+
+		@error "Unknown breakpoint `#{$name}`. Use #{$names}.";
+	}
+
+	@if $index < list.length($names) {
+
+		@return list.nth($names, $index + 1);
+	}
+
+	@return null;
+}
+
+// Where a range ends: the next breakpoint (null for the last range).
+@function breakpoint-max($name, $breakpoints: $breakpoints) {
+	$next: breakpoint-next($name, $breakpoints);
+
+	@if $next {
+
+		@return breakpoint-min($next, $breakpoints);
+	}
+
+	@return null;
+}
+
+@mixin media-range($min, $max) {
+
+	@if $min and $max {
+
+		@media (#{$min} < width <= #{$max}) {
+			@content;
+		}
+	} @else if $max {
+
+		@media (width <= #{$max}) {
+			@content;
+		}
+	} @else if $min {
+
+		@media (#{$min} < width) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+// Above the breakpoint $name.
+@mixin media-breakpoint-up($name, $breakpoints: $breakpoints) {
+
+	@include media-range(breakpoint-min($name, $breakpoints), null) {
+		@content;
+	}
+}
+
+// Up to the breakpoint $name (every range below it).
+@mixin media-breakpoint-down($name, $breakpoints: $breakpoints) {
+
+	@include media-range(null, breakpoint-min($name, $breakpoints)) {
+		@content;
+	}
+}
+
+// From the breakpoint $lower up to the breakpoint $upper.
+@mixin media-breakpoint-between($lower, $upper, $breakpoints: $breakpoints) {
+
+	@include media-range(breakpoint-min($lower, $breakpoints), breakpoint-min($upper, $breakpoints)) {
+		@content;
+	}
+}
+
+// Only the range that starts at the breakpoint $name.
+@mixin media-breakpoint-only($name, $breakpoints: $breakpoints) {
+
+	@include media-range(breakpoint-min($name, $breakpoints), breakpoint-max($name, $breakpoints)) {
+		@content;
+	}
+}
