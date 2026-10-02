@@ -31,7 +31,7 @@
       "step": "installTheme",
       "themeData": {
         "resource": "url",
-        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoice.0.1.0/profchoice.0.1.0.zip"
+        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoice.0.2.0/profchoice.0.2.0.zip"
       },
       "options": {
         "activate": true
@@ -80,7 +80,7 @@
       "step": "installPlugin",
       "pluginData": {
         "resource": "url",
-        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoicecore.0.1.0/profchoicecore.0.1.0.zip"
+        "url": "https://github.com/gtavarescrimsonagility/profchoice/releases/download/profchoicecore.0.2.0/profchoicecore.0.2.0.zip"
       },
       "options": {
         "activate": true
@@ -109,7 +109,7 @@
       "progress": {
         "caption": "Setting up Jetpack Boost"
       },
-      "code": "<?php\nrequire '/wordpress/wp-load.php';\n\n// Modules that work without a WordPress.com connection: Critical CSS\n// (generated from Boost's admin page), deferred non-essential JavaScript and\n// CSS/JS concatenation. Image CDN and LCP optimization need a public site.\nforeach ( array( 'critical-css', 'render-blocking-js', 'minify-css', 'minify-js' ) as $module ) {\n\tupdate_option( \"jetpack_boost_status_{$module}\", '1' );\n}\n\n// jquery-migrate stays out of JS concatenation (like jQuery): concatenated, its\n// URL loses the port under Studio/Playground URL mapping and is CORB-blocked.\nupdate_option( 'jetpack_boost_ds_minify_js_excludes', array( 'jquery', 'jquery-core', 'jquery-migrate', 'underscore', 'backbone' ) );\n"
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\n\n// Modules that work without a WordPress.com connection: Critical CSS\n// (generated from Boost's admin page), deferred non-essential JavaScript and\n// CSS/JS concatenation. Image CDN and LCP optimization need a public site.\nforeach ( array( 'critical-css', 'render-blocking-js', 'minify-css', 'minify-js' ) as $module ) {\n\tupdate_option( \"jetpack_boost_status_{$module}\", '1' );\n}\n\n// jquery-migrate and wp-util (needed by WooCommerce's variations form) stay out\n// of JS concatenation (like jQuery): concatenated, their URL loses the port\n// under Studio/Playground URL mapping and is CORB-blocked.\nupdate_option( 'jetpack_boost_ds_minify_js_excludes', array( 'jquery', 'jquery-core', 'jquery-migrate', 'underscore', 'backbone', 'wp-util' ) );\n"
     },
     {
       "step": "importWxr",
