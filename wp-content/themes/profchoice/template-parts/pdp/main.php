@@ -111,7 +111,8 @@ $pdp_reviews = (int) $product->get_review_count();
 				<div class="pdp-main__meta">
 					<?php if ( $pdp_reviews ) : ?>
 						<div class="pdp-main__rating">
-							<span class="pdp-main__stars" aria-hidden="true"><?php echo esc_html( str_repeat( '★', (int) round( $pdp_rating ) ) ); ?></span>
+							<?php $pdp_filled = (int) round( $pdp_rating ); ?>
+							<span class="pdp-main__stars" aria-hidden="true"><?php echo esc_html( str_repeat( '★', $pdp_filled ) ); ?><?php if ( $pdp_filled < 5 ) : ?><span class="pdp-main__stars-off"><?php echo esc_html( str_repeat( '★', 5 - $pdp_filled ) ); ?></span><?php endif; ?></span>
 							<span class="pdp-main__score"><span class="pdp-visually-hidden"><?php esc_html_e( 'Rated', 'profchoice' ); ?> </span><?php echo esc_html( number_format_i18n( $pdp_rating, 1 ) ); ?></span>
 							<span class="pdp-main__dot" aria-hidden="true">·</span>
 							<a class="pdp-main__reviews" href="#reviews">

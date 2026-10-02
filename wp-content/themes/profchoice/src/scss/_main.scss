@@ -847,4 +847,9 @@
 	.pc-wishlist-button.is-saved {
 		color: #b71c1c;
 	}
+
+	// Stars above the rating, dimmed.
+	.pdp-main__stars-off {
+		opacity: 0.25;
+	}
 }
