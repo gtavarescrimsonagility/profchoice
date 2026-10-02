@@ -48,10 +48,11 @@ add_action(
 /**
  * An icon of the profchoicecore collection as inline SVG (currentColor).
  *
- * @param string $name Icon name in the profchoice collection.
- * @return string
+ * @param string $name  Icon name in the profchoice collection.
+ * @param string $class Class of the svg.
+ * @return string Empty when the icon (or the icons module) is missing.
  */
-function profchoice_icon( $name ) {
+function profchoice_icon( $name, $class = 'pc-inline-icon' ) {
 	if ( ! function_exists( 'wp_get_icon' ) ) {
 		return '';
 	}
@@ -60,7 +61,7 @@ function profchoice_icon( $name ) {
 			'profchoice/' . $name,
 			array(
 				'size'  => null,
-				'class' => 'pc-inline-icon',
+				'class' => $class,
 			)
 		)
 	);

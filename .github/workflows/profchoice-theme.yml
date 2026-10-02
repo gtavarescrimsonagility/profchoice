@@ -57,7 +57,7 @@ jobs:
 
       # Styles are built from src/scss; build/ is not committed.
       - run: npm run build
-      - run: test -s build/css/pdp.css
+      - run: test -s build/css/pdp.css && test -s build/css/notices.css
 
       - uses: actions/upload-artifact@v4
         with:

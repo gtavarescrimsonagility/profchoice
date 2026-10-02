@@ -12,6 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
+// Notices print after the breadcrumb (template-parts/pdp/notices.php).
+remove_action( 'woocommerce_before_single_product', 'woocommerce_output_all_notices', 10 );
+
 /** This action is documented in woocommerce/templates/content-single-product.php */
 do_action( 'woocommerce_before_single_product' );
 
@@ -23,6 +26,7 @@ if ( post_password_required() ) {
 <article id="product-<?php the_ID(); ?>" <?php wc_product_class( 'pdp', $product ); ?>>
 	<?php
 	get_template_part( 'template-parts/pdp/breadcrumb' );
+	get_template_part( 'template-parts/pdp/notices' );
 	get_template_part( 'template-parts/pdp/main' );
 	get_template_part( 'template-parts/pdp/related' );
 

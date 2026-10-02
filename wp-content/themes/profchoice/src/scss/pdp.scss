@@ -2,6 +2,7 @@
 @use "base";
 @use "woocommerce";
 @use "breadcrumb";
+@use "pdp-notices";
 @use "main";
 @use "related";
 
@@ -9,6 +10,7 @@
 	@include base.base;
 	@include woocommerce.woocommerce;
 	@include breadcrumb.breadcrumb;
+	@include pdp-notices.notices;
 	@include main.main;
 	@include related.related;
 }

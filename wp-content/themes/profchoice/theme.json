@@ -5,7 +5,7 @@
 		"appearanceTools": true,
 		"layout": {
 			"contentSize": "1208px",
-			"wideSize": "1208px"
+			"wideSize": "85rem"
 		},
 		"spacing": {
 			"units": [ "px", "em", "rem", "%", "vh", "vw" ]

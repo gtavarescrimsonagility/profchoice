@@ -29,8 +29,9 @@
 		margin-inline: auto;
 	}
 
+	// The theme.json wide size (85rem).
 	.container.wide {
-		max-width: 85rem;
+		max-width: var(--wp--style--global--wide-size, 85rem);
 	}
 
 	& :where(a, button):focus-visible {

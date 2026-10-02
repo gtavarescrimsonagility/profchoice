@@ -26,4 +26,20 @@ return array(
 		'label'    => _x( 'Heart', 'icon label', 'profchoicecore' ),
 		'filePath' => 'heart.svg',
 	),
+	'check-circle'     => array(
+		'label'    => _x( 'Check Circle', 'icon label', 'profchoicecore' ),
+		'filePath' => 'check-circle.svg',
+	),
+	'info-circle'      => array(
+		'label'    => _x( 'Info Circle', 'icon label', 'profchoicecore' ),
+		'filePath' => 'info-circle.svg',
+	),
+	'alert-circle'     => array(
+		'label'    => _x( 'Alert Circle', 'icon label', 'profchoicecore' ),
+		'filePath' => 'alert-circle.svg',
+	),
+	'close'            => array(
+		'label'    => _x( 'Close', 'icon label', 'profchoicecore' ),
+		'filePath' => 'close.svg',
+	),
 );
