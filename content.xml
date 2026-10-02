@@ -764,13 +764,381 @@
 	}
 }
 /* tail COMB-598 Homepage */
+
+/* head COMB-593 PDP */
+/* PDP page (page-id 678): edge to edge, no page title, like the Homepage. */
+.page-id-678 .cbv-content {
+	padding-block: 0;
+}
+.page-id-678 .cbv-entry__title {
+	display: none;
+}
+.page-id-678 .cbv-content .alignfull:first-child {
+	margin-block-start: 0;
+}
+/* Hover and focus motion, as the HTML reference (the static state is unchanged). */
+.pdp :where(a, button):focus-visible {
+	outline: 2px solid #14161a;
+	outline-offset: 2px;
+}
+.pdp-breadcrumb .wp-block-breadcrumbs a {
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: 0.3em;
+	transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.pdp-breadcrumb .wp-block-breadcrumbs a:is(:hover, :focus-visible) {
+	color: #14161a;
+	text-decoration-color: currentColor;
+}
+.pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a {
+	transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+/* Underlined links (284 reviews, Size Guide): the underline goes away on hover. */
+.pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a:is(:hover, :focus-visible) {
+	color: #14161a;
+	text-decoration-color: transparent;
+}
+.pdp :is(.pdp-main__fav, .pdp-card__fav) .pc-inline-icon {
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+.pdp :is(.pdp-main__fav, .pdp-card__fav) .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon {
+	color: #b71c1c;
+	transform: scale(1.12);
+}
+.pdp-main .pdp-main__thumbs > figure {
+	position: relative;
+	overflow: hidden;
+}
+.pdp-main .pdp-main__thumbs img {
+	transition: transform 0.3s ease;
+}
+.pdp-main .pdp-main__thumbs > figure:not(.active)::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	box-shadow: inset 0 0 0 1px transparent;
+	transition: box-shadow 0.2s ease;
+	pointer-events: none;
+}
+.pdp-main .pdp-main__thumbs > figure:not(.active):hover::after {
+	box-shadow: inset 0 0 0 1px #8c8f96;
+}
+.pdp-main .pdp-main__thumbs > figure:hover img {
+	transform: scale(1.05);
+}
+.pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) {
+	overflow: hidden;
+}
+.pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) img {
+	transition: transform 0.6s ease;
+}
+.pdp-main .pdp-rider:hover :is(.pdp-rider__image, .pdp-rider__image--mobile) img {
+	transform: scale(1.04);
+}
+.pdp-main .pdp-rider__link .pc-inline-icon {
+	transition: transform 0.25s ease;
+}
+.pdp-main .pdp-rider__link .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon {
+	transform: translateX(0.35em);
+}
+.pdp-main .pdp-option__swatches > div {
+	transition: transform 0.2s ease;
+}
+.pdp-main .pdp-option__swatches > div:hover {
+	transform: scale(1.1);
+}
+.pdp-main .pdp-size {
+	transition: border-color 0.2s ease;
+}
+.pdp-main .pdp-size:not(:first-child, :nth-child(3)):hover {
+	border-color: #14161a !important;
+}
+.pdp-main .pdp-qty__step {
+	transition: color 0.2s ease;
+}
+.pdp-main .pdp-qty__step:hover {
+	color: #b71c1c !important;
+}
+.pdp-related .pdp-card__media img {
+	transition: transform 0.6s ease;
+}
+.pdp-related .pdp-card:hover .pdp-card__media img {
+	transform: scale(1.04);
+}
+.pdp-related .pdp-card__name a {
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: 0.2em;
+	transition: text-decoration-color 0.2s ease;
+}
+.pdp-related .pdp-card:hover .pdp-card__name a,
+.pdp-related .pdp-card__name a:focus-visible {
+	text-decoration-color: currentColor;
+}
+.pdp-related .pdp-related__all a {
+	transition: text-decoration-color 0.2s ease;
+}
+/* View All: the underline goes away on hover, like 284 reviews and Size Guide. */
+.pdp-related .pdp-related__all a:is(:hover, :focus-visible) {
+	text-decoration-color: transparent;
+}
+.pdp-related .pdp-card__quick {
+	transform: translateY(0.5rem);
+	transition: opacity 0.2s ease, transform 0.25s ease;
+}
+.pdp-related .pdp-card:is(:hover, :focus-within) .pdp-card__quick {
+	opacity: 1;
+	transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+	.pdp-breadcrumb .wp-block-breadcrumbs a,
+	.pdp-main :is(.pdp-main__reviews, .pdp-option__guide) a,
+	.pdp :is(.pdp-main__fav, .pdp-card__fav) .pc-inline-icon,
+	.pdp-main .pdp-main__thumbs img,
+	.pdp-main .pdp-main__thumbs > figure::after,
+	.pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) img,
+	.pdp-main .pdp-rider__link .pc-inline-icon,
+	.pdp-main .pdp-option__swatches > div,
+	.pdp-main .pdp-size,
+	.pdp-main .pdp-qty__step,
+	.pdp-related .pdp-card__media img,
+	.pdp-related .pdp-card__name a,
+	.pdp-related .pdp-related__all a,
+	.pdp-related .pdp-card__quick {
+		transition: none;
+	}
+	.pdp :is(.pdp-main__fav, .pdp-card__fav) .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon,
+	.pdp-main .pdp-main__thumbs > figure:hover img,
+	.pdp-main .pdp-rider:hover :is(.pdp-rider__image, .pdp-rider__image--mobile) img,
+	.pdp-main .pdp-rider__link .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon,
+	.pdp-main .pdp-option__swatches > div:hover,
+	.pdp-related .pdp-card:hover .pdp-card__media img,
+	.pdp-related .pdp-card__quick {
+		transform: none;
+	}
+}
+/* Thumbnails shrink together, keeping their proportion, when the column is
+   narrower than four of them (as the reference). */
+.pdp-main .pdp-main__thumbs > figure {
+	flex: 0 1 5rem;
+	min-width: 0;
+	aspect-ratio: 5 / 6;
+}
+.pdp-main .pdp-main__thumbs--mobile > figure {
+	flex-basis: 4rem;
+	aspect-ratio: 64 / 76;
+}
+.pdp-main .pdp-main__thumbs img {
+	width: 100% !important;
+	height: 100% !important;
+}
+/* Tablet: one column with desktop type (as the reference's 30rem–48.875rem range). */
+@media (30rem < width <= 48.875rem) {
+	.pdp-breadcrumb {
+		padding: 1rem 1.5rem !important;
+	}
+	.pdp-main {
+		padding: 1rem 1.5rem 3rem !important;
+	}
+	.pdp-main .pdp-main__layout {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 1.5rem;
+	}
+	.pdp-main .pdp-main__stage {
+		aspect-ratio: 1;
+	}
+	.pdp-related {
+		padding: 1.25rem 1.5rem 3rem !important;
+	}
+	.pdp-related .pdp-related__list {
+		flex-wrap: wrap;
+		gap: 1.5rem 1rem;
+	}
+	.pdp-related .pdp-card {
+		flex: 1 1 calc(50% - 0.5rem);
+	}
+}
+/* Narrow desktop: the card's photo keeps 40% instead of a fixed text column. */
+@media (48.875rem < width <= 72rem) {
+	.pdp-main .pdp-rider__image {
+		flex: 0 0 40%;
+	}
+	.pdp-main .pdp-rider__body {
+		flex: 1;
+		width: auto;
+	}
+}
+/* Responsive rules without a block-attribute equivalent (font family per breakpoint, gaps, layout). */
+@media (width <= 30rem) {
+	/* Breadcrumb */
+	.pdp-breadcrumb .wp-block-breadcrumbs.has-dm-sans-font-family {
+		font-family: var(--wp--preset--font-family--montserrat) !important;
+	}
+	.pdp-breadcrumb .wp-block-breadcrumbs ol {
+		gap: 0.25rem;
+	}
+	.pdp-breadcrumb .wp-block-breadcrumbs li {
+		gap: 0.25rem;
+	}
+	.pdp-breadcrumb .wp-block-breadcrumbs li + li::before {
+		font-family: var(--wp--preset--font-family--dm-sans);
+		font-size: 0.75rem;
+	}
+
+	/* Main: stacked; Montserrat where the mobile design uses it. */
+	.pdp-main .pdp-main__layout {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.pdp-main .pdp-main__media,
+	.pdp-main .pdp-main__info {
+		flex: none;
+	}
+	.pdp-main .pdp-main__stage {
+		aspect-ratio: 1;
+	}
+	.pdp-main .pdp-main__badge {
+		top: 1rem;
+		left: 1rem;
+	}
+	.pdp-main .pdp-main__fav--overlay .wp-block-button__link {
+		width: 2.125rem !important;
+		height: 2.125rem !important;
+		border-radius: 1.0625rem !important;
+	}
+	.pdp-main .pdp-main__thumbs {
+		overflow-x: auto;
+	}
+	/* Mobile thumbnails are their own 64x76 files (the reference's srcset). */
+	.pdp-main .pdp-main__thumbs--desktop {
+		display: none !important;
+	}
+	.pdp-main .pdp-main__thumbs--mobile {
+		display: flex !important;
+	}
+	.pdp-main :is(.pdp-main__badge, .pdp-main__title, .pdp-main__rating, .pdp-main__reviews, .pdp-main__sku, .pdp-main__price, .pdp-main__description, .pdp-rider__eyebrow, .pdp-rider__name, .pdp-rider__link .wp-block-button__link, .pdp-qty__step, .pdp-main__cart .wp-block-button__link) {
+		font-family: var(--wp--preset--font-family--montserrat) !important;
+	}
+	.pdp-main .pdp-option__label {
+		font-family: var(--wp--preset--font-family--dm-sans) !important;
+	}
+	.pdp-main .pdp-main__meta {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.pdp-main .pdp-main__rating {
+		flex: none;
+	}
+	.pdp-main .pdp-main__stars {
+		min-width: 5rem;
+	}
+	.pdp-main .pdp-main__score {
+		font-weight: 700 !important;
+	}
+	.pdp-main .pdp-main__price-row {
+		justify-content: flex-start;
+	}
+	.pdp-main .pdp-main__price {
+		flex: none;
+	}
+	.pdp-main .pdp-main__stock::before {
+		width: 0.4375rem;
+		height: 0.4375rem;
+	}
+	.pdp-main .pdp-rider {
+		align-items: stretch;
+		overflow: hidden;
+	}
+	.pdp-main .pdp-rider__image {
+		display: none;
+	}
+	.pdp-main .pdp-rider__image--mobile {
+		display: block;
+		flex: none;
+		width: 9.375rem;
+		min-height: 7.5rem;
+	}
+	.pdp-main .pdp-rider__body {
+		flex: 1;
+		width: auto;
+	}
+	.pdp-main .pdp-size {
+		min-width: 2.875rem;
+	}
+	.pdp-main .pdp-qty__step {
+		width: 2.375rem;
+	}
+	.pdp-main .pdp-qty__value {
+		width: 2rem;
+	}
+	.pdp-main .pdp-main__cart .wp-block-button__link {
+		min-height: 0;
+	}
+	.pdp-main .pdp-main__fav--box .wp-block-button__link {
+		height: auto !important;
+		min-height: 3.25rem;
+	}
+
+	/* Related: a scrolling row of 180px cards, Montserrat type. */
+	.pdp-related :is(.pdp-related__title, .pdp-related__all) {
+		font-family: var(--wp--preset--font-family--montserrat) !important;
+	}
+	.pdp-related .pdp-related__list {
+		justify-content: flex-start;
+		overflow-x: auto;
+	}
+	.pdp-related .pdp-card {
+		flex: none;
+		width: 11.25rem;
+	}
+	.pdp-related .pdp-card__media {
+		height: 13.75rem;
+		aspect-ratio: auto;
+	}
+	.pdp-related .pdp-card__badge {
+		top: 0.5rem;
+		left: 0.5rem;
+	}
+	.pdp-related .pdp-card__fav {
+		top: 0.5rem;
+		right: 0.375rem;
+	}
+	.pdp-related .pdp-card__fav .wp-block-button__link {
+		width: 1.625rem !important;
+		height: 1.625rem !important;
+	}
+	.pdp-related .pdp-card__quick {
+		display: none;
+	}
+	.pdp-related .pdp-card__swatch {
+		width: 0.6875rem;
+		height: 0.6875rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.pdp-related .pdp-card__quick {
+		transition: none;
+	}
+}
+/* tail COMB-593 PDP */
+
+/* head TEMP */
+/* Development only: hide the theme header and footer on the PDP page while it is compared with the HTML bases. Remove before delivery. */
+.page-id-678 .cbv-header,
+.page-id-678 .cbv-footer {
+	display: none;
+}
+/* tail TEMP */
 ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>60</wp:post_id>
   <wp:post_date>2026-09-28 14:47:52</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:47:52</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 19:25:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 19:25:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-02 19:05:06</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 19:05:06</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>profchoice</wp:post_name>
@@ -2416,6 +2784,1043 @@
     <wp:meta_key>_edit_last</wp:meta_key>
     <wp:meta_value><![CDATA[1]]></wp:meta_value>
   </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining]]></title>
+  <link>https://professionals-choice.wp.local/shop/western/boots-wraps/sports-medicine-boots/satin-dressage-pad-with-ventech-lining/</link>
+  <pubDate>Fri, 02 Oct 2026 17:41:57 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/pdp/</guid>
+  <description/>
+  <content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"PDP"},"align":"full","className":"pdp","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull pdp"><!-- wp:group {"metadata":{"name":"Breadcrumb"},"align":"full","className":"pdp-breadcrumb","style":{"spacing":{"padding":{"top":"1rem","right":"2.5rem","bottom":"1rem","left":"2.5rem"},"blockGap":"0","margin":{"top":"0.375rem"}},"@mobile":{"spacing":{"padding":{"top":"0.875rem","right":"1rem","bottom":"0.875rem","left":"1rem"},"margin":{"top":"0"}},"border":{"bottom":{"width":"1px","style":"solid","color":"#e5e2dc"}}}},"layout":{"type":"constrained","contentSize":"85rem"}} -->
+<div class="wp-block-group alignfull pdp-breadcrumb" style="margin-top:0.375rem;padding-top:1rem;padding-right:2.5rem;padding-bottom:1rem;padding-left:2.5rem"><!-- wp:breadcrumbs {"metadata":{"name":"Trail"},"style":{"color":{"text":"#6e727a"},"typography":{"fontSize":"0.71875rem","fontWeight":"600","letterSpacing":"0.125rem","textTransform":"uppercase","lineHeight":"normal"},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"@mobile":{"typography":{"fontSize":"0.75rem","fontWeight":"700","letterSpacing":"0.1rem"}},"css":"\u0026 ol {\ngap: 0.25rem 0.5rem;\n}\n\u0026 li {\nalign-items: baseline !important;\nmin-width: 0;\ngap: 0.5rem;\n}\n\u0026 li:not(:last-child)::after {\ncontent: none !important;\n}\n\u0026 li + li::before {\ncontent: var(\u002d\u002dseparator, \u0022/\u0022) / \u0022\u0022;\ncolor: #6e727a;\nfont-family: var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dfont-family\u002d\u002dinter);\nopacity: 0.5;\n}\n\u0026 a {\ncolor: inherit;\ntext-decoration: none;\n}\n\u0026 a:hover,\n\u0026 a:focus-visible {\ncolor: #14161a;\n}\n\u0026 li:last-child {\ncolor: #14161a;\n}"},"fontFamily":"dm-sans"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Main"},"align":"full","className":"pdp-main","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal"},"spacing":{"blockGap":"0","padding":{"top":"1rem","right":"2.5rem","bottom":"calc(5rem + 0.625px)","left":"2.5rem"}},"@mobile":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0.265625px","left":"0"}}}},"layout":{"type":"constrained","contentSize":"85rem"}} -->
+<section class="wp-block-group alignfull pdp-main has-text-color" style="color:#14161a;padding-top:1rem;padding-right:2.5rem;padding-bottom:calc(5rem + 0.625px);padding-left:2.5rem;line-height:normal"><!-- wp:group {"metadata":{"name":"Layout"},"className":"pdp-main__layout","style":{"spacing":{"blockGap":"2.25rem"},"@mobile":{"spacing":{"blockGap":"0.3125rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group pdp-main__layout"><!-- wp:group {"metadata":{"name":"Media"},"className":"pdp-main__media","style":{"spacing":{"blockGap":"1.0625rem"},"@mobile":{"spacing":{"blockGap":"0"}},"css":"\u0026 {\nflex: 1;\nmin-width: 0;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-main__media has-custom-css"><!-- wp:group {"metadata":{"name":"Stage"},"className":"pdp-main__stage","style":{"css":"\u0026 {\nposition: relative;\naspect-ratio: 662 / 794.39;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-main__stage has-custom-css"><!-- wp:image {"id":680,"width":"100%","scale":"contain","sizeSlug":"full","metadata":{"name":"Product image"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: absolute;\ninset: 0;\n}\n\u0026 img {\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: contain;\n}"}} -->
+<figure class="wp-block-image size-full is-resized has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-product.webp" alt="Satin Dressage Pad with VenTECH™ Lining, black" class="wp-image-680" style="object-fit:contain;width:100%;height:auto"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"metadata":{"name":"Badge"},"className":"pdp-main__badge","style":{"color":{"text":"#14161a","background":"#ffffff"},"typography":{"lineHeight":"normal","fontSize":"0.65625rem","fontWeight":"700","letterSpacing":"0.13125rem","textTransform":"uppercase"},"spacing":{"padding":{"top":"0.375rem","right":"0.6875rem","bottom":"0.375rem","left":"0.6875rem"}},"@mobile":{"typography":{"fontSize":"0.5625rem","letterSpacing":"0.0875rem"},"spacing":{"padding":{"top":"0.3125rem","right":"0.625rem","bottom":"0.3125rem","left":"0.625rem"}}},"css":"\u0026 {\nposition: absolute;\ntop: 1.125rem;\nleft: 1.125rem;\nmargin: 0;\n}"},"fontFamily":"inter"} -->
+<p class="pdp-main__badge has-custom-css has-text-color has-background has-inter-font-family" style="color:#14161a;background-color:#ffffff;padding-top:0.375rem;padding-right:0.6875rem;padding-bottom:0.375rem;padding-left:0.6875rem;font-size:0.65625rem;font-weight:700;letter-spacing:0.13125rem;line-height:normal;text-transform:uppercase">Pro Pick</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"metadata":{"name":"Favorite"},"className":"pdp-main__fav pdp-main__fav\u002d\u002doverlay","style":{"css":"\u0026 {\nposition: absolute;\ntop: 1rem;\nright: 1rem;\nmargin: 0;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\nalign-items: center;\njustify-content: center;\nwidth: 2.375rem !important;\nheight: 2.375rem !important;\n}"}} -->
+<div class="wp-block-buttons pdp-main__fav pdp-main__fav--overlay has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#ffffffe6","text":"#14161a"},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontSize":"1rem","lineHeight":"1"},"border":{"radius":"1.1875rem","width":"0px","style":"none"},":hover":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus-visible":{"color":{"background":"#ffffffe6","text":"#14161a"}},":active":{"color":{"background":"#ffffffe6","text":"#14161a"}},"@mobile":{"typography":{"fontSize":"0.9375rem"}}}} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:1.1875rem;color:#14161a;background-color:#ffffffe6;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:1rem;line-height:1"><span class="pc-visually-hidden">Add to favorites</span><img data-icon="profchoice/heart" alt="" class="pc-inline-icon"></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Thumbnails"},"className":"pdp-main__thumbs pdp-main__thumbs\u002d\u002ddesktop","style":{"spacing":{"blockGap":"0.75rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"top":"0.625rem","right":"1rem","bottom":"0.25rem","left":"1rem"}}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group pdp-main__thumbs pdp-main__thumbs--desktop"><!-- wp:image {"id":681,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Black"},"className":"active","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: relative;\n}\n\u0026::after {\ncontent: \u0022\u0022;\nposition: absolute;\ninset: 0;\nbox-shadow: inset 0 0 0 2px #14161a;\npointer-events: none;\n}"}} -->
+<figure class="wp-block-image size-full is-resized active has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb0.webp" alt="" class="wp-image-681" style="object-fit:cover;width:5rem;height:6rem" title="Black"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":683,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Charcoal"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb1.webp" alt="" class="wp-image-683" style="object-fit:cover;width:5rem;height:6rem" title="Charcoal"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":685,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Navy"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb2.webp" alt="" class="wp-image-685" style="object-fit:cover;width:5rem;height:6rem" title="Navy"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":687,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail White"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb3.webp" alt="" class="wp-image-687" style="object-fit:cover;width:5rem;height:6rem" title="White"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Thumbnails (mobile)"},"className":"pdp-main__thumbs pdp-main__thumbs\u002d\u002dmobile","style":{"spacing":{"blockGap":"0.75rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"top":"0.625rem","right":"1rem","bottom":"0.25rem","left":"1rem"}}},"css":"\u0026 {\ndisplay: none !important;\n}"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group pdp-main__thumbs pdp-main__thumbs--mobile has-custom-css"><!-- wp:image {"id":682,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Black (mobile)"},"className":"active","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: relative;\n}\n\u0026::after {\ncontent: \u0022\u0022;\nposition: absolute;\ninset: 0;\nbox-shadow: inset 0 0 0 2px #14161a;\npointer-events: none;\n}"}} -->
+<figure class="wp-block-image size-full is-resized active has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb0-64x76-1.webp" alt="" class="wp-image-682" style="object-fit:cover;width:4rem;height:4.75rem" title="Black"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":684,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Charcoal (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb1-64x76-1.webp" alt="" class="wp-image-684" style="object-fit:cover;width:4rem;height:4.75rem" title="Charcoal"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":686,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Navy (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb2-64x76-1.webp" alt="" class="wp-image-686" style="object-fit:cover;width:4rem;height:4.75rem" title="Navy"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":688,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail White (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb3-64x76-1.webp" alt="" class="wp-image-688" style="object-fit:cover;width:4rem;height:4.75rem" title="White"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Info"},"className":"pdp-main__info","style":{"spacing":{"blockGap":"1.125rem"},"@mobile":{"spacing":{"blockGap":"0.375rem","padding":{"top":"1.125rem","right":"1rem","bottom":"0","left":"1rem"}}},"css":"\u0026 {\nflex: 1;\nmin-width: 0;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-main__info has-custom-css"><!-- wp:heading {"level":1,"metadata":{"name":"Title"},"className":"pdp-main__title","style":{"color":{"text":"#14161a"},"typography":{"fontSize":"2.375rem","fontWeight":"500","lineHeight":"2.49375rem","letterSpacing":"-0.0375rem","fontStyle":"normal"},"spacing":{"padding":{"top":"0","bottom":"0.055625rem"}},"@mobile":{"typography":{"fontSize":"1.625rem","lineHeight":"1.7875rem","letterSpacing":"-0.025rem"},"spacing":{"padding":{"bottom":"0"}}}},"fontFamily":"dm-sans"} -->
+<h1 class="wp-block-heading pdp-main__title has-text-color has-dm-sans-font-family" style="color:#14161a;padding-top:0;padding-bottom:0.055625rem;font-size:2.375rem;font-style:normal;font-weight:500;letter-spacing:-0.0375rem;line-height:2.49375rem">Satin Dressage Pad with VenTECH™ Lining</h1>
+<!-- /wp:heading -->
+
+<!-- wp:group {"metadata":{"name":"Meta"},"className":"pdp-main__meta","style":{"spacing":{"blockGap":"0"},"@mobile":{"spacing":{"blockGap":"0.375rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-main__meta"><!-- wp:group {"metadata":{"name":"Rating"},"className":"pdp-main__rating","style":{"color":{"text":"#3a3d44"},"typography":{"lineHeight":"normal","fontSize":"0.8125rem"},"spacing":{"blockGap":"0.5rem"},"@mobile":{"typography":{"fontSize":"0.75rem"},"dimensions":{"minHeight":"1.3125rem"}},"css":"\u0026 {\nflex: 1;\n}"},"fontFamily":"inter","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-main__rating has-custom-css has-text-color has-inter-font-family" style="color:#3a3d44;font-size:0.8125rem;line-height:normal"><!-- wp:paragraph {"metadata":{"name":"Stars"},"className":"pdp-main__stars","style":{"color":{"text":"#b71c1c"},"typography":{"fontSize":"0.875rem","letterSpacing":"0.125rem"},"spacing":{"padding":{"bottom":"0.125rem"}},"@mobile":{"spacing":{"padding":{"bottom":"0.0625rem"}}},"css":"\u0026 {\nfont-family: \u0022Inter\u0022, sans-serif !important;\n}"}} -->
+<p class="pdp-main__stars has-custom-css has-text-color" style="color:#b71c1c;padding-bottom:0.125rem;font-size:0.875rem;letter-spacing:0.125rem">★★★★★</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Score"},"className":"pdp-main__score","style":{"typography":{"fontWeight":"600"}}} -->
+<p class="pdp-main__score" style="font-weight:600">4.9</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Dot"},"className":"pdp-main__dot","style":{"css":"\u0026 {\nopacity: 0.5;\n}"}} -->
+<p class="pdp-main__dot has-custom-css">·</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Reviews"},"className":"pdp-main__reviews","style":{"elements":{"link":{"color":{"text":"#3a3d44"},"typography":{"textDecoration":"underline"}}}},"fontFamily":"dm-sans"} -->
+<p class="pdp-main__reviews has-link-color has-dm-sans-font-family"><a href="#reviews">284 reviews</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"metadata":{"name":"SKU"},"className":"pdp-main__sku","style":{"color":{"text":"#6e727a"},"typography":{"lineHeight":"normal","fontSize":"0.6875rem","fontWeight":"600","letterSpacing":"0.11875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.625rem","fontWeight":"700","letterSpacing":"0.1125rem"}}},"fontFamily":"dm-sans"} -->
+<p class="pdp-main__sku has-text-color has-dm-sans-font-family" style="color:#6e727a;font-size:0.6875rem;font-weight:600;letter-spacing:0.11875rem;line-height:normal;text-transform:uppercase">SKU: EPS520</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Price row"},"className":"pdp-main__price-row","style":{"spacing":{"blockGap":"0"},"@mobile":{"spacing":{"blockGap":"0.684375rem","padding":{"top":"0.5rem"}}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-main__price-row"><!-- wp:paragraph {"metadata":{"name":"Price"},"className":"pdp-main__price","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"1.75rem","fontWeight":"700"},"spacing":{"padding":{"top":"0.125rem"}},"@mobile":{"typography":{"fontSize":"1.625rem"},"spacing":{"padding":{"top":"0"}}},"css":"\u0026 {\nflex: 1;\n}"},"fontFamily":"dm-sans"} -->
+<p class="pdp-main__price has-custom-css has-text-color has-dm-sans-font-family" style="color:#14161a;padding-top:0.125rem;font-size:1.75rem;font-weight:700;line-height:normal">$123.95</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Stock"},"className":"pdp-main__stock","style":{"color":{"text":"#1e6a1e","background":"#e8f4e8"},"typography":{"lineHeight":"normal","fontSize":"0.6875rem","fontWeight":"700","letterSpacing":"0.09375rem","textTransform":"uppercase"},"spacing":{"padding":{"top":"0.375rem","right":"0.875rem","bottom":"0.375rem","left":"0.875rem"}},"border":{"radius":"100px"},"@mobile":{"typography":{"fontSize":"0.625rem","letterSpacing":"0.0875rem"},"spacing":{"padding":{"top":"0.375rem","right":"0.75rem","bottom":"0.375rem","left":"0.75rem"}}},"css":"\u0026 {\ndisplay: flex;\nflex-shrink: 0;\ngap: 0.5rem;\nalign-items: center;\n}\n\u0026::before {\ncontent: \u0022\u0022;\nflex-shrink: 0;\nwidth: 0.5rem;\nheight: 0.5rem;\nborder-radius: 0.25rem;\nbackground: #1e9a1e;\n}"},"fontFamily":"dm-sans"} -->
+<p class="pdp-main__stock has-custom-css has-text-color has-background has-dm-sans-font-family" style="border-radius:100px;color:#1e6a1e;background-color:#e8f4e8;padding-top:0.375rem;padding-right:0.875rem;padding-bottom:0.375rem;padding-left:0.875rem;font-size:0.6875rem;font-weight:700;letter-spacing:0.09375rem;line-height:normal;text-transform:uppercase">In Stock</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"metadata":{"name":"Description"},"className":"pdp-main__description","style":{"color":{"text":"#3a3d44"},"typography":{"fontSize":"0.90625rem","lineHeight":"1.495625rem"},"spacing":{"padding":{"top":"0.25rem"}},"@mobile":{"typography":{"fontSize":"0.84375rem","lineHeight":"1.3925rem"},"spacing":{"padding":{"top":"0.439375rem"}}}},"fontFamily":"dm-sans"} -->
+<p class="pdp-main__description has-text-color has-dm-sans-font-family" style="color:#3a3d44;padding-top:0.25rem;font-size:0.90625rem;line-height:1.495625rem">Beautiful quilted satin top layer with a rope border detailed with crystals. VenTECH mesh liner is absorbent, quick drying, extremely breathable and lightweight. Antimicrobial so it will not harbor bacteria. Reinforced ballistic billet guards provide extra durability. Contoured spine for wither clearance and correct fit, keeping the pad securely in place. Webbed D ring straps feature hook and loop for easy application.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"tagName":"aside","metadata":{"name":"Rider"},"className":"pdp-rider","style":{"color":{"background":"#faf7f2"},"spacing":{"blockGap":"1rem","padding":{"right":"1rem"},"margin":{"top":"0.375rem"}},"@mobile":{"spacing":{"blockGap":"0","padding":{"right":"0"},"margin":{"top":"0"}},"dimensions":{"minHeight":"7.5rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<aside class="wp-block-group pdp-rider has-background" style="background-color:#faf7f2;margin-top:0.375rem;padding-right:1rem"><!-- wp:image {"id":689,"sizeSlug":"full","metadata":{"name":"Rider photo"},"className":"pdp-rider__image","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nflex: 1;\nalign-self: stretch;\nmin-width: 0;\nmin-height: 7.9375rem;\n}\n\u0026 img {\ndisplay: block;\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: cover;\n}"}} -->
+<figure class="wp-block-image size-full pdp-rider__image has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-rider-desktop.webp" alt="Hailey Kinsel barrel racing" class="wp-image-689"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":690,"sizeSlug":"full","metadata":{"name":"Rider photo (mobile)"},"className":"pdp-rider__image\u002d\u002dmobile","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\ndisplay: none;\n}\n\u0026 img {\ndisplay: block;\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: cover;\n}"}} -->
+<figure class="wp-block-image size-full pdp-rider__image--mobile has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-rider-mobile.webp" alt="Hailey Kinsel barrel racing" class="wp-image-690"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"metadata":{"name":"Rider body"},"className":"pdp-rider__body","style":{"spacing":{"blockGap":"2.3125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem","padding":{"top":"1rem","right":"1rem","bottom":"0.875rem","left":"1rem"}}},"css":"\u0026 {\nflex-shrink: 0;\nwidth: 20.1875rem;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-rider__body has-custom-css"><!-- wp:group {"metadata":{"name":"Rider heading"},"style":{"spacing":{"blockGap":"0.125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"metadata":{"name":"Eyebrow"},"className":"pdp-rider__eyebrow","style":{"color":{"text":"#b8533f"},"typography":{"lineHeight":"normal","fontSize":"0.65625rem","fontWeight":"700","letterSpacing":"0.125rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.5625rem","letterSpacing":"0.1125rem"}}},"fontFamily":"dm-sans"} -->
+<p class="pdp-rider__eyebrow has-text-color has-dm-sans-font-family" style="color:#b8533f;font-size:0.65625rem;font-weight:700;letter-spacing:0.125rem;line-height:normal;text-transform:uppercase">As ridden by</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Rider name"},"className":"pdp-rider__name","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.9375rem","fontWeight":"700"},"@mobile":{"typography":{"fontSize":"0.8125rem"},"spacing":{"padding":{"bottom":"0.5625rem"}}}},"fontFamily":"dm-sans"} -->
+<p class="pdp-rider__name has-text-color has-dm-sans-font-family" style="color:#14161a;font-size:0.9375rem;font-weight:700;line-height:normal">Hailey Kinsel · Barrel Racing, 3x NFR Qualifier</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons {"metadata":{"name":"Rider link"},"className":"pdp-rider__link","style":{"css":"\u0026 {\nalign-self: flex-start;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\ngap: 0.8333em;\nalign-items: center;\n}\n\u0026 .pc-inline-icon {\nflex-shrink: 0;\nwidth: 1.5625em !important;\nheight: 1.3392em !important;\n}"}} -->
+<div class="wp-block-buttons pdp-rider__link has-custom-css"><!-- wp:button {"style":{"color":{"background":"#ffffff00","text":"#14161a"},":hover":{"color":{"background":"#ffffff00","text":"#14161a"}},":focus":{"color":{"background":"#ffffff00","text":"#14161a"}},":focus-visible":{"color":{"background":"#ffffff00","text":"#14161a"}},":active":{"color":{"background":"#ffffff00","text":"#14161a"}},"typography":{"lineHeight":"normal","fontSize":"0.75rem","fontWeight":"600","letterSpacing":"0.135rem","textTransform":"uppercase","textAlign":"left"},"spacing":{"padding":{"top":"0.3rem","right":"0","bottom":"0.25rem","left":"0"}},"border":{"radius":"0px","top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"},"bottom":{"width":"1px","style":"solid","color":"#14161a"}},"@mobile":{"typography":{"fontSize":"0.625rem","fontWeight":"700","letterSpacing":"0.1125rem"},"spacing":{"padding":{"top":"0","right":"0","bottom":"0.125rem","left":"0"}}}},"fontFamily":"dm-sans"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-dm-sans-font-family has-text-align-left has-custom-font-size wp-element-button" href="#" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:#14161a;border-bottom-style:solid;border-bottom-width:1px;border-left-style:none;border-left-width:0px;color:#14161a;background-color:#ffffff00;padding-top:0.3rem;padding-right:0;padding-bottom:0.25rem;padding-left:0;font-size:0.75rem;font-weight:600;letter-spacing:0.135rem;line-height:normal;text-transform:uppercase">Watch her setup<img data-icon="profchoice/arrow-long-right" alt="" class="pc-inline-icon"></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></aside>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Options"},"className":"pdp-main__form","style":{"spacing":{"blockGap":"1.125rem","padding":{"top":"0.375rem"}},"@mobile":{"spacing":{"blockGap":"0","padding":{"top":"0"},"margin":{"top":"1.0625rem"}}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-main__form" style="padding-top:0.375rem"><!-- wp:group {"metadata":{"name":"Color"},"className":"pdp-option","style":{"spacing":{"blockGap":"0.75rem","padding":{"top":"1rem"}},"border":{"top":{"width":"1px","style":"solid","color":"#e5e2dc"}},"@mobile":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"},"margin":{"top":"0"}}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-option" style="border-top-color:#e5e2dc;border-top-style:solid;border-top-width:1px;padding-top:1rem"><!-- wp:group {"metadata":{"name":"Color head"},"className":"pdp-option__head","style":{"spacing":{"blockGap":"0.75rem"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-option__head"><!-- wp:paragraph {"metadata":{"name":"Color label"},"className":"pdp-option__label","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.75rem","fontWeight":"700","letterSpacing":"0.11875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","letterSpacing":"0.1125rem"}}},"fontFamily":"inter"} -->
+<p class="pdp-option__label has-text-color has-inter-font-family" style="color:#14161a;font-size:0.75rem;font-weight:700;letter-spacing:0.11875rem;line-height:normal;text-transform:uppercase">Color</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Color value"},"className":"pdp-option__value","style":{"color":{"text":"#3a3d44"},"typography":{"lineHeight":"normal","fontSize":"0.875rem","fontWeight":"500","textAlign":"right"},"@mobile":{"typography":{"fontSize":"0.78125rem","fontWeight":"400"}}},"fontFamily":"dm-sans"} -->
+<p class="has-text-align-right pdp-option__value has-text-color has-dm-sans-font-family" style="color:#3a3d44;font-size:0.875rem;font-weight:500;line-height:normal">Black</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Swatches"},"className":"pdp-option__swatches","style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-option__swatches"><!-- wp:group {"metadata":{"name":"Swatch Black"},"style":{"color":{"background":"#141416"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#ff0000"},"css":"\u0026 {\nflex-shrink: 0;\nwidth: 2rem;\nheight: 2rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-custom-css has-background" style="border-color:#ff0000;border-style:solid;border-width:1px;border-radius:50%;background-color:#141416"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Swatch Charcoal"},"style":{"color":{"background":"#5c5b63"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nflex-shrink: 0;\nwidth: 2rem;\nheight: 2rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#5c5b63"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Swatch Navy"},"style":{"color":{"background":"#1f2740"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nflex-shrink: 0;\nwidth: 2rem;\nheight: 2rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#1f2740"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Swatch White"},"style":{"color":{"background":"#ffffff"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nflex-shrink: 0;\nwidth: 2rem;\nheight: 2rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#ffffff"></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Size"},"className":"pdp-option","style":{"spacing":{"blockGap":"0.75rem","padding":{"top":"1rem"},"margin":{"top":"0.375rem"}},"border":{"top":{"width":"1px","style":"solid","color":"#e5e2dc"}},"@mobile":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"},"margin":{"top":"0"}}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-option" style="border-top-color:#e5e2dc;border-top-style:solid;border-top-width:1px;margin-top:0.375rem;padding-top:1rem"><!-- wp:group {"metadata":{"name":"Size head"},"className":"pdp-option__head","style":{"spacing":{"blockGap":"0.75rem"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-option__head"><!-- wp:paragraph {"metadata":{"name":"Size label"},"className":"pdp-option__label","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.75rem","fontWeight":"700","letterSpacing":"0.11875rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.6875rem","letterSpacing":"0.1125rem"}}},"fontFamily":"inter"} -->
+<p class="pdp-option__label has-text-color has-inter-font-family" style="color:#14161a;font-size:0.75rem;font-weight:700;letter-spacing:0.11875rem;line-height:normal;text-transform:uppercase">Size</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Size guide"},"className":"pdp-option__guide","style":{"typography":{"lineHeight":"normal","fontSize":"0.875rem","fontWeight":"700","letterSpacing":"0.0625rem"},"elements":{"link":{"color":{"text":"#3a3d44"},"typography":{"textDecoration":"underline"}}},"@mobile":{"typography":{"fontSize":"0.75rem","letterSpacing":"normal"}}},"fontFamily":"dm-sans"} -->
+<p class="pdp-option__guide has-link-color has-dm-sans-font-family" style="font-size:0.875rem;font-weight:700;letter-spacing:0.0625rem;line-height:normal"><a href="#size-guide">Size Guide</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Sizes"},"className":"pdp-option__sizes","style":{"spacing":{"blockGap":{"top":"0","left":"0.5rem"}}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group pdp-option__sizes"><!-- wp:paragraph {"metadata":{"name":"Size XS"},"className":"pdp-size","style":{"color":{"text":"#6e727a","background":"#faf7f2"},"typography":{"lineHeight":"normal","fontSize":"0.8125rem","fontWeight":"600","textAlign":"center","textDecoration":"line-through"},"spacing":{"padding":{"top":"0","right":"0.75rem","bottom":"0","left":"0.75rem"}},"border":{"width":"1px","style":"solid","color":"#e5e2dc"},"dimensions":{"minHeight":"2.5rem"},"@mobile":{"typography":{"fontWeight":"700"}},"css":"\u0026 {\ndisplay: flex;\nflex-shrink: 0;\nalign-items: center;\njustify-content: center;\nmin-width: 3.125rem;\n}"},"fontFamily":"dm-sans"} -->
+<p class="has-text-align-center pdp-size has-border-color has-custom-css has-text-color has-background has-dm-sans-font-family" style="border-color:#e5e2dc;border-style:solid;border-width:1px;color:#6e727a;background-color:#faf7f2;min-height:2.5rem;padding-top:0;padding-right:0.75rem;padding-bottom:0;padding-left:0.75rem;font-size:0.8125rem;font-weight:600;line-height:normal;text-decoration:line-through">XS</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Size S"},"className":"pdp-size","style":{"color":{"text":"#14161a","background":"#ffffff"},"typography":{"lineHeight":"normal","fontSize":"0.8125rem","fontWeight":"600","textAlign":"center"},"spacing":{"padding":{"top":"0","right":"0.75rem","bottom":"0","left":"0.75rem"}},"border":{"width":"1px","style":"solid","color":"#e5e2dc"},"dimensions":{"minHeight":"2.5rem"},"@mobile":{"typography":{"fontWeight":"700"}},"css":"\u0026 {\ndisplay: flex;\nflex-shrink: 0;\nalign-items: center;\njustify-content: center;\nmin-width: 3.125rem;\n}"},"fontFamily":"dm-sans"} -->
+<p class="has-text-align-center pdp-size has-border-color has-custom-css has-text-color has-background has-dm-sans-font-family" style="border-color:#e5e2dc;border-style:solid;border-width:1px;color:#14161a;background-color:#ffffff;min-height:2.5rem;padding-top:0;padding-right:0.75rem;padding-bottom:0;padding-left:0.75rem;font-size:0.8125rem;font-weight:600;line-height:normal">S</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Size M"},"className":"pdp-size","style":{"color":{"text":"#ffffff","background":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.8125rem","fontWeight":"600","textAlign":"center"},"spacing":{"padding":{"top":"0","right":"0.75rem","bottom":"0","left":"0.75rem"}},"border":{"width":"1px","style":"solid","color":"#b71c1c"},"dimensions":{"minHeight":"2.5rem"},"@mobile":{"typography":{"fontWeight":"700"}},"css":"\u0026 {\ndisplay: flex;\nflex-shrink: 0;\nalign-items: center;\njustify-content: center;\nmin-width: 3.125rem;\n}"},"fontFamily":"dm-sans"} -->
+<p class="has-text-align-center pdp-size has-border-color has-custom-css has-text-color has-background has-dm-sans-font-family" style="border-color:#b71c1c;border-style:solid;border-width:1px;color:#ffffff;background-color:#14161a;min-height:2.5rem;padding-top:0;padding-right:0.75rem;padding-bottom:0;padding-left:0.75rem;font-size:0.8125rem;font-weight:600;line-height:normal">M</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Size L"},"className":"pdp-size","style":{"color":{"text":"#14161a","background":"#ffffff"},"typography":{"lineHeight":"normal","fontSize":"0.8125rem","fontWeight":"600","textAlign":"center"},"spacing":{"padding":{"top":"0","right":"0.75rem","bottom":"0","left":"0.75rem"}},"border":{"width":"1px","style":"solid","color":"#e5e2dc"},"dimensions":{"minHeight":"2.5rem"},"@mobile":{"typography":{"fontWeight":"700"}},"css":"\u0026 {\ndisplay: flex;\nflex-shrink: 0;\nalign-items: center;\njustify-content: center;\nmin-width: 3.125rem;\n}"},"fontFamily":"dm-sans"} -->
+<p class="has-text-align-center pdp-size has-border-color has-custom-css has-text-color has-background has-dm-sans-font-family" style="border-color:#e5e2dc;border-style:solid;border-width:1px;color:#14161a;background-color:#ffffff;min-height:2.5rem;padding-top:0;padding-right:0.75rem;padding-bottom:0;padding-left:0.75rem;font-size:0.8125rem;font-weight:600;line-height:normal">L</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Size XL"},"className":"pdp-size","style":{"color":{"text":"#14161a","background":"#ffffff"},"typography":{"lineHeight":"normal","fontSize":"0.8125rem","fontWeight":"600","textAlign":"center"},"spacing":{"padding":{"top":"0","right":"0.75rem","bottom":"0","left":"0.75rem"}},"border":{"width":"1px","style":"solid","color":"#e5e2dc"},"dimensions":{"minHeight":"2.5rem"},"@mobile":{"typography":{"fontWeight":"700"}},"css":"\u0026 {\ndisplay: flex;\nflex-shrink: 0;\nalign-items: center;\njustify-content: center;\nmin-width: 3.125rem;\n}"},"fontFamily":"dm-sans"} -->
+<p class="has-text-align-center pdp-size has-border-color has-custom-css has-text-color has-background has-dm-sans-font-family" style="border-color:#e5e2dc;border-style:solid;border-width:1px;color:#14161a;background-color:#ffffff;min-height:2.5rem;padding-top:0;padding-right:0.75rem;padding-bottom:0;padding-left:0.75rem;font-size:0.8125rem;font-weight:600;line-height:normal">XL</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Purchase"},"className":"pdp-main__purchase","style":{"spacing":{"blockGap":"0.625rem","margin":{"top":"0.5rem"}},"@mobile":{"spacing":{"margin":{"top":"0"},"padding":{"top":"1rem"}}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group pdp-main__purchase" style="margin-top:0.5rem"><!-- wp:group {"metadata":{"name":"Quantity"},"className":"pdp-qty","style":{"spacing":{"blockGap":"0"},"border":{"width":"1px","style":"solid","color":"#e5e2dc"},"dimensions":{"minHeight":"3.25rem"},"css":"\u0026 {\nflex-shrink: 0;\n}"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-qty has-border-color has-custom-css" style="border-color:#e5e2dc;border-style:solid;border-width:1px;min-height:3.25rem"><!-- wp:paragraph {"metadata":{"name":"Decrease"},"className":"pdp-qty__step","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"1.125rem","textAlign":"center"},"css":"\u0026 {\ndisplay: flex;\nalign-items: center;\nalign-self: stretch;\njustify-content: center;\nwidth: 2.5rem;\n}"},"fontFamily":"inter"} -->
+<p class="has-text-align-center pdp-qty__step has-custom-css has-text-color has-inter-font-family" style="color:#14161a;font-size:1.125rem;line-height:normal">−</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Quantity value"},"className":"pdp-qty__value","style":{"color":{"text":"#3a3d44"},"typography":{"lineHeight":"normal","fontSize":"0.875rem","fontWeight":"600","textAlign":"center"},"@mobile":{"typography":{"fontWeight":"700"}},"css":"\u0026 {\nwidth: 2.25rem;\n}"},"fontFamily":"dm-sans"} -->
+<p class="has-text-align-center pdp-qty__value has-custom-css has-text-color has-dm-sans-font-family" style="color:#3a3d44;font-size:0.875rem;font-weight:600;line-height:normal">1</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Increase"},"className":"pdp-qty__step","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"1.125rem","textAlign":"center"},"css":"\u0026 {\ndisplay: flex;\nalign-items: center;\nalign-self: stretch;\njustify-content: center;\nwidth: 2.5rem;\n}"},"fontFamily":"inter"} -->
+<p class="has-text-align-center pdp-qty__step has-custom-css has-text-color has-inter-font-family" style="color:#14161a;font-size:1.125rem;line-height:normal">+</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons {"metadata":{"name":"Add to cart"},"className":"pdp-main__cart","style":{"css":"\u0026 {\nflex: 1;\n}\n\u0026 .wp-block-button {\nwidth: 100%;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\nalign-items: center;\njustify-content: center;\nwidth: 100%;\nmin-height: 3.25rem;\n}"}} -->
+<div class="wp-block-buttons pdp-main__cart has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#b71c1c","text":"#ffffff"},":hover":{"color":{"background":"#a8201f","text":"#ffffff"}},":focus":{"color":{"background":"#a8201f","text":"#ffffff"}},":focus-visible":{"color":{"background":"#a8201f","text":"#ffffff"}},":active":{"color":{"background":"#8e1b1a","text":"#ffffff"}},"typography":{"lineHeight":"normal","fontSize":"0.78125rem","fontWeight":"600","letterSpacing":"0.125rem","textTransform":"uppercase","textAlign":"center"},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"radius":"0px","width":"0px","style":"none"},"@mobile":{"typography":{"fontSize":"0.75rem","fontWeight":"700","letterSpacing":"0.1125rem"},"spacing":{"padding":{"top":"0.625rem","right":"0.375rem","bottom":"0.625rem","left":"0.375rem"}}}},"fontFamily":"dm-sans"} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-dm-sans-font-family has-text-align-center has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:0px;color:#ffffff;background-color:#b71c1c;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:0.78125rem;font-weight:600;letter-spacing:0.125rem;line-height:normal;text-transform:uppercase">Add to Cart — $123.95</button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons {"metadata":{"name":"Favorite (purchase)"},"className":"pdp-main__fav pdp-main__fav\u002d\u002dbox","style":{"css":"\u0026 {\nflex-shrink: 0;\nmargin: 0;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\nalign-items: center;\njustify-content: center;\nwidth: 3.25rem !important;\nheight: 3.25rem !important;\n}"}} -->
+<div class="wp-block-buttons pdp-main__fav pdp-main__fav--box has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#ffffff00","text":"#14161a"},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontSize":"1.1875rem","lineHeight":"1"},"border":{"radius":"0px","width":"1px","style":"solid","color":"#e5e2dc"},":hover":{"color":{"background":"#ffffff00","text":"#14161a"}},":focus":{"color":{"background":"#ffffff00","text":"#14161a"}},":focus-visible":{"color":{"background":"#ffffff00","text":"#14161a"}},":active":{"color":{"background":"#ffffff00","text":"#14161a"}},"@mobile":{"typography":{"fontSize":"1.125rem"}}}} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-border-color has-custom-font-size wp-element-button" style="border-color:#e5e2dc;border-style:solid;border-width:1px;border-radius:0px;color:#14161a;background-color:#ffffff00;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:1.1875rem;line-height:1"><span class="pc-visually-hidden">Add to favorites</span><img data-icon="profchoice/heart" alt="" class="pc-inline-icon"></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Related"},"align":"full","className":"pdp-related","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal"},"spacing":{"blockGap":"0","padding":{"top":"1.25rem","right":"2.5rem","bottom":"calc(5rem + 0.25px)","left":"2.5rem"}},"border":{"top":{"width":"1px","style":"solid","color":"#e5e2dc"}},"@mobile":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0.59375px","left":"0"}},"border":{"top":{"width":"0px"}}}},"layout":{"type":"constrained","contentSize":"85rem"}} -->
+<section class="wp-block-group alignfull pdp-related has-text-color" style="border-top-color:#e5e2dc;border-top-style:solid;border-top-width:1px;color:#14161a;padding-top:1.25rem;padding-right:2.5rem;padding-bottom:calc(5rem + 0.25px);padding-left:2.5rem;line-height:normal"><!-- wp:group {"metadata":{"name":"Head"},"className":"pdp-related__head","style":{"spacing":{"blockGap":"0","padding":{"top":"2rem","right":"0","bottom":"1.5rem","left":"0"}},"@mobile":{"spacing":{"padding":{"top":"2rem","right":"1rem","bottom":"1rem","left":"1rem"}}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"stretch"}} -->
+<div class="wp-block-group pdp-related__head" style="padding-top:2rem;padding-right:0;padding-bottom:1.5rem;padding-left:0"><!-- wp:heading {"metadata":{"name":"Title"},"className":"pdp-related__title","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"1.75rem","fontWeight":"700","fontStyle":"normal"},"@mobile":{"typography":{"fontSize":"1.25rem"}}},"fontFamily":"dm-sans"} -->
+<h2 class="wp-block-heading pdp-related__title has-text-color has-dm-sans-font-family" style="color:#14161a;font-size:1.75rem;font-style:normal;font-weight:700;line-height:normal">May We Suggest</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"metadata":{"name":"View all"},"className":"pdp-related__all","style":{"typography":{"lineHeight":"normal","fontSize":"0.71875rem","fontWeight":"700","letterSpacing":"0.1rem"},"elements":{"link":{"color":{"text":"#14161a"},"typography":{"textDecoration":"underline"}}},"@mobile":{"typography":{"fontSize":"0.65625rem","letterSpacing":"0.0875rem"}},"css":"\u0026 {\ndisplay: flex;\nalign-items: center;\n}"},"fontFamily":"inter"} -->
+<p class="pdp-related__all has-custom-css has-link-color has-inter-font-family" style="font-size:0.71875rem;font-weight:700;letter-spacing:0.1rem;line-height:normal"><a href="#">View All</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Products"},"className":"pdp-related__list","style":{"spacing":{"blockGap":"1.75rem","padding":{"bottom":"1.875rem"}},"@mobile":{"spacing":{"blockGap":"0.875rem","padding":{"top":"0","right":"1rem","bottom":"2rem","left":"1rem"}}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"top"}} -->
+<div class="wp-block-group pdp-related__list" style="padding-bottom:1.875rem"><!-- wp:group {"metadata":{"name":"Rear Ankle Boots"},"className":"pdp-card","style":{"spacing":{"blockGap":"0.25rem"},"css":"\u0026 {\nposition: relative;\nflex: 1;\nmin-width: 0;\n}\n\u0026:hover .pdp-card__quick,\n\u0026:focus-within .pdp-card__quick {\nopacity: 1;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-card has-custom-css"><!-- wp:group {"metadata":{"name":"Media"},"className":"pdp-card__media","style":{"color":{"background":"#f3eee4"},"css":"\u0026 {\nposition: relative;\noverflow: hidden;\naspect-ratio: 319 / 398.75;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__media has-custom-css has-background" style="background-color:#f3eee4"><!-- wp:image {"id":691,"sizeSlug":"full","linkDestination":"custom","metadata":{"name":"Photo"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: absolute;\ninset: 0;\n}\n\u0026 img {\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: cover;\n}\n\u0026 a {\ndisplay: block;\nwidth: 100%;\nheight: 100%;\n}"}} -->
+<figure class="wp-block-image size-full has-custom-css" style="margin-top:0;margin-bottom:0"><a href="#"><img src="/wp-content/uploads/2026/10/pdp-rear-ankle-boots.webp" alt="Rear Ankle Boots" class="wp-image-691"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"metadata":{"name":"Badge"},"className":"pdp-card__badge","style":{"color":{"text":"#14161a","background":"#ffffff"},"typography":{"lineHeight":"normal","fontSize":"0.625rem","fontWeight":"700","letterSpacing":"0.1125rem","textTransform":"uppercase"},"spacing":{"padding":{"top":"0.3125rem","right":"0.625rem","bottom":"0.3125rem","left":"0.625rem"}},"@mobile":{"typography":{"fontSize":"0.5rem","letterSpacing":"0.075rem"},"spacing":{"padding":{"top":"0.25rem","right":"0.5rem","bottom":"0.25rem","left":"0.5rem"}}},"css":"\u0026 {\nposition: absolute;\ntop: 0.75rem;\nleft: 0.75rem;\nmargin: 0;\n}"},"fontFamily":"montserrat"} -->
+<p class="pdp-card__badge has-custom-css has-text-color has-background has-montserrat-font-family" style="color:#14161a;background-color:#ffffff;padding-top:0.3125rem;padding-right:0.625rem;padding-bottom:0.3125rem;padding-left:0.625rem;font-size:0.625rem;font-weight:700;letter-spacing:0.1125rem;line-height:normal;text-transform:uppercase">New</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"metadata":{"name":"Favorite"},"className":"pdp-card__fav","style":{"css":"\u0026 {\nposition: absolute;\ntop: 0.625rem;\nright: 0.4375rem;\nmargin: 0;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\nalign-items: center;\njustify-content: center;\nwidth: 2rem !important;\nheight: 2rem !important;\n}"}} -->
+<div class="wp-block-buttons pdp-card__fav has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#ffffffe6","text":"#14161a"},":hover":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus-visible":{"color":{"background":"#ffffffe6","text":"#14161a"}},":active":{"color":{"background":"#ffffffe6","text":"#14161a"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontSize":"0.9375rem","lineHeight":"1"},"border":{"radius":"1rem","width":"0px","style":"none"},"@mobile":{"typography":{"fontSize":"0.75rem"},"border":{"radius":"0.8125rem"}}}} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:1rem;color:#14161a;background-color:#ffffffe6;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:0.9375rem;line-height:1"><span class="pc-visually-hidden">Add Rear Ankle Boots to favorites</span><img data-icon="profchoice/heart" alt="" class="pc-inline-icon"></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons {"metadata":{"name":"Quick add"},"className":"pdp-card__quick","style":{"css":"\u0026 {\nposition: absolute;\nright: 0.75rem;\nbottom: 0.75rem;\nleft: 0.75rem;\nmargin: 0;\nopacity: 0;\ntransition: opacity 0.2s;\n}\n\u0026 .wp-block-button {\nwidth: 100%;\n}\n\u0026 .wp-block-button__link {\nwidth: 100%;\n}"}} -->
+<div class="wp-block-buttons pdp-card__quick has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#14161a","text":"#ffffff"},":hover":{"color":{"background":"#2a2d33","text":"#ffffff"}},":focus":{"color":{"background":"#2a2d33","text":"#ffffff"}},":focus-visible":{"color":{"background":"#2a2d33","text":"#ffffff"}},":active":{"color":{"background":"#2a2d33","text":"#ffffff"}},"spacing":{"padding":{"top":"0.625rem","right":"0.625rem","bottom":"0.625rem","left":"0.625rem"}},"border":{"radius":"2px","width":"0px","style":"none"},"typography":{"lineHeight":"normal","fontSize":"0.6875rem","fontWeight":"600","letterSpacing":"0.11rem","textTransform":"uppercase","textAlign":"center"}},"fontFamily":"inter"} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-inter-font-family has-text-align-center has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:2px;color:#ffffff;background-color:#14161a;padding-top:0.625rem;padding-right:0.625rem;padding-bottom:0.625rem;padding-left:0.625rem;font-size:0.6875rem;font-weight:600;letter-spacing:0.11rem;line-height:normal;text-transform:uppercase">+ Quick Add<span class="pc-visually-hidden"> Rear Ankle Boots</span></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":3,"metadata":{"name":"Name"},"className":"pdp-card__name","style":{"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"lineHeight":"normal","fontSize":"1.125rem","fontWeight":"400","fontStyle":"normal"},"spacing":{"margin":{"top":"0.25rem"}},"@mobile":{"typography":{"fontSize":"0.875rem","lineHeight":"1.1375rem"}},"css":"\u0026 {\nmin-height: 2lh;\n}\n\u0026 a {\ntext-decoration: none;\n}"},"fontFamily":"montserrat"} -->
+<h3 class="wp-block-heading pdp-card__name has-custom-css has-text-color has-link-color has-montserrat-font-family" style="color:#14161a;margin-top:0.25rem;font-size:1.125rem;font-style:normal;font-weight:400;line-height:normal"><a href="#">Rear Ankle Boots</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"metadata":{"name":"Foot"},"className":"pdp-card__foot","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-card__foot"><!-- wp:paragraph {"metadata":{"name":"Price"},"className":"pdp-card__price","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.9375rem","fontWeight":"600"},"@mobile":{"typography":{"fontSize":"0.84375rem","fontWeight":"700"}}},"fontFamily":"montserrat"} -->
+<p class="pdp-card__price has-text-color has-montserrat-font-family" style="color:#14161a;font-size:0.9375rem;font-weight:600;line-height:normal">$234.95</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"metadata":{"name":"Swatches"},"className":"pdp-card__swatches","style":{"spacing":{"blockGap":"0.3125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-card__swatches"><!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#1f2128"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#1f2128"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#7a828e"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#7a828e"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#8b6f4a"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#8b6f4a"></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Skid Boots"},"className":"pdp-card","style":{"spacing":{"blockGap":"0.25rem"},"css":"\u0026 {\nposition: relative;\nflex: 1;\nmin-width: 0;\n}\n\u0026:hover .pdp-card__quick,\n\u0026:focus-within .pdp-card__quick {\nopacity: 1;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-card has-custom-css"><!-- wp:group {"metadata":{"name":"Media"},"className":"pdp-card__media","style":{"color":{"background":"#f3eee4"},"css":"\u0026 {\nposition: relative;\noverflow: hidden;\naspect-ratio: 319 / 398.75;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__media has-custom-css has-background" style="background-color:#f3eee4"><!-- wp:image {"id":692,"sizeSlug":"full","linkDestination":"custom","metadata":{"name":"Photo"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: absolute;\ninset: 0;\n}\n\u0026 img {\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: cover;\n}\n\u0026 a {\ndisplay: block;\nwidth: 100%;\nheight: 100%;\n}"}} -->
+<figure class="wp-block-image size-full has-custom-css" style="margin-top:0;margin-bottom:0"><a href="#"><img src="/wp-content/uploads/2026/10/pdp-skid-boots.webp" alt="Skid Boots" class="wp-image-692"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"metadata":{"name":"Badge"},"className":"pdp-card__badge","style":{"color":{"text":"#b71c1c","background":"#ffffff"},"typography":{"lineHeight":"normal","fontSize":"0.625rem","fontWeight":"700","letterSpacing":"0.1125rem","textTransform":"uppercase"},"spacing":{"padding":{"top":"0.3125rem","right":"0.625rem","bottom":"0.3125rem","left":"0.625rem"}},"@mobile":{"typography":{"fontSize":"0.5rem","letterSpacing":"0.075rem"},"spacing":{"padding":{"top":"0.25rem","right":"0.5rem","bottom":"0.25rem","left":"0.5rem"}}},"css":"\u0026 {\nposition: absolute;\ntop: 0.75rem;\nleft: 0.75rem;\nmargin: 0;\n}"},"fontFamily":"montserrat"} -->
+<p class="pdp-card__badge has-custom-css has-text-color has-background has-montserrat-font-family" style="color:#b71c1c;background-color:#ffffff;padding-top:0.3125rem;padding-right:0.625rem;padding-bottom:0.3125rem;padding-left:0.625rem;font-size:0.625rem;font-weight:700;letter-spacing:0.1125rem;line-height:normal;text-transform:uppercase">Sale</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"metadata":{"name":"Favorite"},"className":"pdp-card__fav","style":{"css":"\u0026 {\nposition: absolute;\ntop: 0.625rem;\nright: 0.4375rem;\nmargin: 0;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\nalign-items: center;\njustify-content: center;\nwidth: 2rem !important;\nheight: 2rem !important;\n}"}} -->
+<div class="wp-block-buttons pdp-card__fav has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#ffffffe6","text":"#14161a"},":hover":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus-visible":{"color":{"background":"#ffffffe6","text":"#14161a"}},":active":{"color":{"background":"#ffffffe6","text":"#14161a"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontSize":"0.9375rem","lineHeight":"1"},"border":{"radius":"1rem","width":"0px","style":"none"},"@mobile":{"typography":{"fontSize":"0.75rem"},"border":{"radius":"0.8125rem"}}}} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:1rem;color:#14161a;background-color:#ffffffe6;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:0.9375rem;line-height:1"><span class="pc-visually-hidden">Add Skid Boots to favorites</span><img data-icon="profchoice/heart" alt="" class="pc-inline-icon"></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons {"metadata":{"name":"Quick add"},"className":"pdp-card__quick","style":{"css":"\u0026 {\nposition: absolute;\nright: 0.75rem;\nbottom: 0.75rem;\nleft: 0.75rem;\nmargin: 0;\nopacity: 0;\ntransition: opacity 0.2s;\n}\n\u0026 .wp-block-button {\nwidth: 100%;\n}\n\u0026 .wp-block-button__link {\nwidth: 100%;\n}"}} -->
+<div class="wp-block-buttons pdp-card__quick has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#14161a","text":"#ffffff"},":hover":{"color":{"background":"#2a2d33","text":"#ffffff"}},":focus":{"color":{"background":"#2a2d33","text":"#ffffff"}},":focus-visible":{"color":{"background":"#2a2d33","text":"#ffffff"}},":active":{"color":{"background":"#2a2d33","text":"#ffffff"}},"spacing":{"padding":{"top":"0.625rem","right":"0.625rem","bottom":"0.625rem","left":"0.625rem"}},"border":{"radius":"2px","width":"0px","style":"none"},"typography":{"lineHeight":"normal","fontSize":"0.6875rem","fontWeight":"600","letterSpacing":"0.11rem","textTransform":"uppercase","textAlign":"center"}},"fontFamily":"inter"} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-inter-font-family has-text-align-center has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:2px;color:#ffffff;background-color:#14161a;padding-top:0.625rem;padding-right:0.625rem;padding-bottom:0.625rem;padding-left:0.625rem;font-size:0.6875rem;font-weight:600;letter-spacing:0.11rem;line-height:normal;text-transform:uppercase">+ Quick Add<span class="pc-visually-hidden"> Skid Boots</span></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":3,"metadata":{"name":"Name"},"className":"pdp-card__name","style":{"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"lineHeight":"normal","fontSize":"1.125rem","fontWeight":"400","fontStyle":"normal"},"spacing":{"margin":{"top":"0.25rem"}},"@mobile":{"typography":{"fontSize":"0.875rem","lineHeight":"1.1375rem"}},"css":"\u0026 {\nmin-height: 2lh;\n}\n\u0026 a {\ntext-decoration: none;\n}"},"fontFamily":"montserrat"} -->
+<h3 class="wp-block-heading pdp-card__name has-custom-css has-text-color has-link-color has-montserrat-font-family" style="color:#14161a;margin-top:0.25rem;font-size:1.125rem;font-style:normal;font-weight:400;line-height:normal"><a href="#">Skid Boots</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"metadata":{"name":"Foot"},"className":"pdp-card__foot","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-card__foot"><!-- wp:paragraph {"metadata":{"name":"Price"},"className":"pdp-card__price","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.9375rem","fontWeight":"600"},"@mobile":{"typography":{"fontSize":"0.84375rem","fontWeight":"700"}}},"fontFamily":"montserrat"} -->
+<p class="pdp-card__price has-text-color has-montserrat-font-family" style="color:#14161a;font-size:0.9375rem;font-weight:600;line-height:normal">$119.99</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"metadata":{"name":"Swatches"},"className":"pdp-card__swatches","style":{"spacing":{"blockGap":"0.3125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-card__swatches"><!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#111111"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#111111"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#b71c1c"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#b71c1c"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#1f3a93"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#1f3a93"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#6b4423"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#6b4423"></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Ballistic Overreach Boots"},"className":"pdp-card","style":{"spacing":{"blockGap":"0.25rem"},"css":"\u0026 {\nposition: relative;\nflex: 1;\nmin-width: 0;\n}\n\u0026:hover .pdp-card__quick,\n\u0026:focus-within .pdp-card__quick {\nopacity: 1;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-card has-custom-css"><!-- wp:group {"metadata":{"name":"Media"},"className":"pdp-card__media","style":{"color":{"background":"#f3eee4"},"css":"\u0026 {\nposition: relative;\noverflow: hidden;\naspect-ratio: 319 / 398.75;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__media has-custom-css has-background" style="background-color:#f3eee4"><!-- wp:image {"id":693,"sizeSlug":"full","linkDestination":"custom","metadata":{"name":"Photo"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: absolute;\ninset: 0;\n}\n\u0026 img {\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: cover;\n}\n\u0026 a {\ndisplay: block;\nwidth: 100%;\nheight: 100%;\n}"}} -->
+<figure class="wp-block-image size-full has-custom-css" style="margin-top:0;margin-bottom:0"><a href="#"><img src="/wp-content/uploads/2026/10/pdp-ballistic-overreach-boots.webp" alt="Ballistic Overreach Boots" class="wp-image-693"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"metadata":{"name":"Badge"},"className":"pdp-card__badge","style":{"color":{"text":"#14161a","background":"#ffffff"},"typography":{"lineHeight":"normal","fontSize":"0.625rem","fontWeight":"700","letterSpacing":"0.1125rem","textTransform":"uppercase"},"spacing":{"padding":{"top":"0.3125rem","right":"0.625rem","bottom":"0.3125rem","left":"0.625rem"}},"@mobile":{"typography":{"fontSize":"0.5rem","letterSpacing":"0.075rem"},"spacing":{"padding":{"top":"0.25rem","right":"0.5rem","bottom":"0.25rem","left":"0.5rem"}}},"css":"\u0026 {\nposition: absolute;\ntop: 0.75rem;\nleft: 0.75rem;\nmargin: 0;\n}"},"fontFamily":"montserrat"} -->
+<p class="pdp-card__badge has-custom-css has-text-color has-background has-montserrat-font-family" style="color:#14161a;background-color:#ffffff;padding-top:0.3125rem;padding-right:0.625rem;padding-bottom:0.3125rem;padding-left:0.625rem;font-size:0.625rem;font-weight:700;letter-spacing:0.1125rem;line-height:normal;text-transform:uppercase">Pro Pick</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"metadata":{"name":"Favorite"},"className":"pdp-card__fav","style":{"css":"\u0026 {\nposition: absolute;\ntop: 0.625rem;\nright: 0.4375rem;\nmargin: 0;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\nalign-items: center;\njustify-content: center;\nwidth: 2rem !important;\nheight: 2rem !important;\n}"}} -->
+<div class="wp-block-buttons pdp-card__fav has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#ffffffe6","text":"#14161a"},":hover":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus-visible":{"color":{"background":"#ffffffe6","text":"#14161a"}},":active":{"color":{"background":"#ffffffe6","text":"#14161a"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontSize":"0.9375rem","lineHeight":"1"},"border":{"radius":"1rem","width":"0px","style":"none"},"@mobile":{"typography":{"fontSize":"0.75rem"},"border":{"radius":"0.8125rem"}}}} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:1rem;color:#14161a;background-color:#ffffffe6;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:0.9375rem;line-height:1"><span class="pc-visually-hidden">Add Ballistic Overreach Boots to favorites</span><img data-icon="profchoice/heart" alt="" class="pc-inline-icon"></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons {"metadata":{"name":"Quick add"},"className":"pdp-card__quick","style":{"css":"\u0026 {\nposition: absolute;\nright: 0.75rem;\nbottom: 0.75rem;\nleft: 0.75rem;\nmargin: 0;\nopacity: 0;\ntransition: opacity 0.2s;\n}\n\u0026 .wp-block-button {\nwidth: 100%;\n}\n\u0026 .wp-block-button__link {\nwidth: 100%;\n}"}} -->
+<div class="wp-block-buttons pdp-card__quick has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#14161a","text":"#ffffff"},":hover":{"color":{"background":"#2a2d33","text":"#ffffff"}},":focus":{"color":{"background":"#2a2d33","text":"#ffffff"}},":focus-visible":{"color":{"background":"#2a2d33","text":"#ffffff"}},":active":{"color":{"background":"#2a2d33","text":"#ffffff"}},"spacing":{"padding":{"top":"0.625rem","right":"0.625rem","bottom":"0.625rem","left":"0.625rem"}},"border":{"radius":"2px","width":"0px","style":"none"},"typography":{"lineHeight":"normal","fontSize":"0.6875rem","fontWeight":"600","letterSpacing":"0.11rem","textTransform":"uppercase","textAlign":"center"}},"fontFamily":"inter"} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-inter-font-family has-text-align-center has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:2px;color:#ffffff;background-color:#14161a;padding-top:0.625rem;padding-right:0.625rem;padding-bottom:0.625rem;padding-left:0.625rem;font-size:0.6875rem;font-weight:600;letter-spacing:0.11rem;line-height:normal;text-transform:uppercase">+ Quick Add<span class="pc-visually-hidden"> Ballistic Overreach Boots</span></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":3,"metadata":{"name":"Name"},"className":"pdp-card__name","style":{"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"lineHeight":"normal","fontSize":"1.125rem","fontWeight":"400","fontStyle":"normal"},"spacing":{"margin":{"top":"0.25rem"}},"@mobile":{"typography":{"fontSize":"0.875rem","lineHeight":"1.1375rem"}},"css":"\u0026 {\nmin-height: 2lh;\n}\n\u0026 a {\ntext-decoration: none;\n}"},"fontFamily":"montserrat"} -->
+<h3 class="wp-block-heading pdp-card__name has-custom-css has-text-color has-link-color has-montserrat-font-family" style="color:#14161a;margin-top:0.25rem;font-size:1.125rem;font-style:normal;font-weight:400;line-height:normal"><a href="#">Ballistic Overreach Boots</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"metadata":{"name":"Foot"},"className":"pdp-card__foot","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-card__foot"><!-- wp:paragraph {"metadata":{"name":"Price"},"className":"pdp-card__price","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.9375rem","fontWeight":"600"},"@mobile":{"typography":{"fontSize":"0.84375rem","fontWeight":"700"}}},"fontFamily":"montserrat"} -->
+<p class="pdp-card__price has-text-color has-montserrat-font-family" style="color:#14161a;font-size:0.9375rem;font-weight:600;line-height:normal">$154.00</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"metadata":{"name":"Swatches"},"className":"pdp-card__swatches","style":{"spacing":{"blockGap":"0.3125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-card__swatches"><!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#7a828e"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#7a828e"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#c0c5ce"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#c0c5ce"></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"SMB 3 Sports Medicine Boots"},"className":"pdp-card","style":{"spacing":{"blockGap":"0.25rem"},"css":"\u0026 {\nposition: relative;\nflex: 1;\nmin-width: 0;\n}\n\u0026:hover .pdp-card__quick,\n\u0026:focus-within .pdp-card__quick {\nopacity: 1;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-card has-custom-css"><!-- wp:group {"metadata":{"name":"Media"},"className":"pdp-card__media","style":{"color":{"background":"#f3eee4"},"css":"\u0026 {\nposition: relative;\noverflow: hidden;\naspect-ratio: 319 / 398.75;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__media has-custom-css has-background" style="background-color:#f3eee4"><!-- wp:image {"id":694,"sizeSlug":"full","linkDestination":"custom","metadata":{"name":"Photo"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: absolute;\ninset: 0;\n}\n\u0026 img {\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: cover;\n}\n\u0026 a {\ndisplay: block;\nwidth: 100%;\nheight: 100%;\n}"}} -->
+<figure class="wp-block-image size-full has-custom-css" style="margin-top:0;margin-bottom:0"><a href="#"><img src="/wp-content/uploads/2026/10/pdp-smb-3-sports-medicine-boots.webp" alt="SMB 3 Sports Medicine Boots" class="wp-image-694"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:buttons {"metadata":{"name":"Favorite"},"className":"pdp-card__fav","style":{"css":"\u0026 {\nposition: absolute;\ntop: 0.625rem;\nright: 0.4375rem;\nmargin: 0;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\nalign-items: center;\njustify-content: center;\nwidth: 2rem !important;\nheight: 2rem !important;\n}"}} -->
+<div class="wp-block-buttons pdp-card__fav has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#ffffffe6","text":"#14161a"},":hover":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus":{"color":{"background":"#ffffffe6","text":"#14161a"}},":focus-visible":{"color":{"background":"#ffffffe6","text":"#14161a"}},":active":{"color":{"background":"#ffffffe6","text":"#14161a"}},"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontSize":"0.9375rem","lineHeight":"1"},"border":{"radius":"1rem","width":"0px","style":"none"},"@mobile":{"typography":{"fontSize":"0.75rem"},"border":{"radius":"0.8125rem"}}}} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:1rem;color:#14161a;background-color:#ffffffe6;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:0.9375rem;line-height:1"><span class="pc-visually-hidden">Add SMB 3 Sports Medicine Boots to favorites</span><img data-icon="profchoice/heart" alt="" class="pc-inline-icon"></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons {"metadata":{"name":"Quick add"},"className":"pdp-card__quick","style":{"css":"\u0026 {\nposition: absolute;\nright: 0.75rem;\nbottom: 0.75rem;\nleft: 0.75rem;\nmargin: 0;\nopacity: 0;\ntransition: opacity 0.2s;\n}\n\u0026 .wp-block-button {\nwidth: 100%;\n}\n\u0026 .wp-block-button__link {\nwidth: 100%;\n}"}} -->
+<div class="wp-block-buttons pdp-card__quick has-custom-css"><!-- wp:button {"tagName":"button","style":{"color":{"background":"#14161a","text":"#ffffff"},":hover":{"color":{"background":"#2a2d33","text":"#ffffff"}},":focus":{"color":{"background":"#2a2d33","text":"#ffffff"}},":focus-visible":{"color":{"background":"#2a2d33","text":"#ffffff"}},":active":{"color":{"background":"#2a2d33","text":"#ffffff"}},"spacing":{"padding":{"top":"0.625rem","right":"0.625rem","bottom":"0.625rem","left":"0.625rem"}},"border":{"radius":"2px","width":"0px","style":"none"},"typography":{"lineHeight":"normal","fontSize":"0.6875rem","fontWeight":"600","letterSpacing":"0.11rem","textTransform":"uppercase","textAlign":"center"}},"fontFamily":"inter"} -->
+<div class="wp-block-button"><button type="button" class="wp-block-button__link has-text-color has-background has-inter-font-family has-text-align-center has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:2px;color:#ffffff;background-color:#14161a;padding-top:0.625rem;padding-right:0.625rem;padding-bottom:0.625rem;padding-left:0.625rem;font-size:0.6875rem;font-weight:600;letter-spacing:0.11rem;line-height:normal;text-transform:uppercase">+ Quick Add<span class="pc-visually-hidden"> SMB 3 Sports Medicine Boots</span></button></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":3,"metadata":{"name":"Name"},"className":"pdp-card__name","style":{"color":{"text":"#14161a"},"elements":{"link":{"color":{"text":"#14161a"}}},"typography":{"lineHeight":"normal","fontSize":"1.125rem","fontWeight":"400","fontStyle":"normal"},"spacing":{"margin":{"top":"0.25rem"}},"@mobile":{"typography":{"fontSize":"0.875rem","lineHeight":"1.1375rem"}},"css":"\u0026 {\nmin-height: 2lh;\n}\n\u0026 a {\ntext-decoration: none;\n}"},"fontFamily":"montserrat"} -->
+<h3 class="wp-block-heading pdp-card__name has-custom-css has-text-color has-link-color has-montserrat-font-family" style="color:#14161a;margin-top:0.25rem;font-size:1.125rem;font-style:normal;font-weight:400;line-height:normal"><a href="#">SMB 3 Sports Medicine Boots</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"metadata":{"name":"Foot"},"className":"pdp-card__foot","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group pdp-card__foot"><!-- wp:paragraph {"metadata":{"name":"Price"},"className":"pdp-card__price","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.9375rem","fontWeight":"600"},"@mobile":{"typography":{"fontSize":"0.84375rem","fontWeight":"700"}}},"fontFamily":"montserrat"} -->
+<p class="pdp-card__price has-text-color has-montserrat-font-family" style="color:#14161a;font-size:0.9375rem;font-weight:600;line-height:normal">$14.95</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"metadata":{"name":"Swatches"},"className":"pdp-card__swatches","style":{"spacing":{"blockGap":"0.3125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-card__swatches"><!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#d4b896"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#d4b896"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#1f2128"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#1f2128"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#8b6f4a"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#8b6f4a"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"pdp-card__swatch","style":{"color":{"background":"#b71c1c"},"border":{"radius":"50%","width":"1px","style":"solid","color":"#8c8f96"},"css":"\u0026 {\nwidth: 0.8125rem;\nheight: 0.8125rem;\n}"},"layout":{"type":"default"}} -->
+<div class="wp-block-group pdp-card__swatch has-border-color has-custom-css has-background" style="border-color:#8c8f96;border-style:solid;border-width:1px;border-radius:50%;background-color:#b71c1c"></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group --></div>
+<!-- /wp:group -->]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>678</wp:post_id>
+  <wp:post_date>2026-10-02 17:41:57</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:41:57</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 19:00:16</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 19:00:16</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>708</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>page</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH Lining, black]]></title>
+  <link>https://professionals-choice.wp.local/satin-dressage-pad-with-ventech-lining-black/</link>
+  <pubDate>Fri, 02 Oct 2026 17:42:47 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-product.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>680</wp:post_id>
+  <wp:post_date>2026-10-02 17:42:47</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:42:47</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:42:47</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:42:47</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-black</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-product.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-product.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:500;s:6:"height";i:500;s:4:"file";s:24:"2026/10/pdp-product.webp";s:8:"filesize";i:26112;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Satin Dressage Pad with VenTECH™ Lining, black]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[PDP thumbnail Black]]></title>
+  <link>https://professionals-choice.wp.local/pdp-thumbnail-black/</link>
+  <pubDate>Fri, 02 Oct 2026 17:42:56 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb0.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>681</wp:post_id>
+  <wp:post_date>2026-10-02 17:42:56</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:42:56</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:42:56</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:42:56</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pdp-thumbnail-black</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb0.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-thumb0.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb0.webp";s:8:"filesize";i:6404;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[PDP thumbnail Black 64x76]]></title>
+  <link>https://professionals-choice.wp.local/pdp-thumbnail-black-64x76/</link>
+  <pubDate>Fri, 02 Oct 2026 17:42:59 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb0-64x76-1.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>682</wp:post_id>
+  <wp:post_date>2026-10-02 17:42:59</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:42:59</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:42:59</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:42:59</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pdp-thumbnail-black-64x76</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb0-64x76-1.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-thumb0-64x76-1.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:64;s:6:"height";i:76;s:4:"file";s:31:"2026/10/pdp-thumb0-64x76-1.webp";s:8:"filesize";i:4562;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[PDP thumbnail Charcoal]]></title>
+  <link>https://professionals-choice.wp.local/pdp-thumbnail-charcoal/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:02 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb1.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>683</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:02</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:02</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:02</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:02</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pdp-thumbnail-charcoal</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb1.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-thumb1.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb1.webp";s:8:"filesize";i:5326;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[PDP thumbnail Charcoal 64x76]]></title>
+  <link>https://professionals-choice.wp.local/pdp-thumbnail-charcoal-64x76/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:05 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb1-64x76-1.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>684</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:05</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:05</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:05</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:05</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pdp-thumbnail-charcoal-64x76</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb1-64x76-1.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-thumb1-64x76-1.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:64;s:6:"height";i:76;s:4:"file";s:31:"2026/10/pdp-thumb1-64x76-1.webp";s:8:"filesize";i:3778;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[PDP thumbnail Navy]]></title>
+  <link>https://professionals-choice.wp.local/pdp-thumbnail-navy/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:08 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb2.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>685</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:08</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:08</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:08</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:08</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pdp-thumbnail-navy</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb2.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-thumb2.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb2.webp";s:8:"filesize";i:6942;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[PDP thumbnail Navy 64x76]]></title>
+  <link>https://professionals-choice.wp.local/pdp-thumbnail-navy-64x76/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:11 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb2-64x76-1.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>686</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:11</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:11</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:11</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:11</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pdp-thumbnail-navy-64x76</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb2-64x76-1.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-thumb2-64x76-1.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:64;s:6:"height";i:76;s:4:"file";s:31:"2026/10/pdp-thumb2-64x76-1.webp";s:8:"filesize";i:4650;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[PDP thumbnail White]]></title>
+  <link>https://professionals-choice.wp.local/pdp-thumbnail-white/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:14 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb3.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>687</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:14</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:14</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:14</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:14</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pdp-thumbnail-white</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb3.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-thumb3.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb3.webp";s:8:"filesize";i:6564;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[PDP thumbnail White 64x76]]></title>
+  <link>https://professionals-choice.wp.local/pdp-thumbnail-white-64x76/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:17 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb3-64x76-1.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>688</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:17</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:17</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:17</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:17</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>pdp-thumbnail-white-64x76</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb3-64x76-1.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-thumb3-64x76-1.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:64;s:6:"height";i:76;s:4:"file";s:31:"2026/10/pdp-thumb3-64x76-1.webp";s:8:"filesize";i:4284;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Hailey Kinsel barrel racing (desktop crop)]]></title>
+  <link>https://professionals-choice.wp.local/hailey-kinsel-barrel-racing-desktop-crop/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:20 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider-desktop.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>689</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:20</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:20</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:20</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:20</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>hailey-kinsel-barrel-racing-desktop-crop</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider-desktop.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-rider-desktop.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:307;s:6:"height";i:127;s:4:"file";s:30:"2026/10/pdp-rider-desktop.webp";s:8:"filesize";i:7530;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Hailey Kinsel barrel racing]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Hailey Kinsel barrel racing (mobile crop)]]></title>
+  <link>https://professionals-choice.wp.local/hailey-kinsel-barrel-racing-mobile-crop/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:23 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider-mobile.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>690</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:23</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:23</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:23</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:23</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>hailey-kinsel-barrel-racing-mobile-crop</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider-mobile.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-rider-mobile.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:150;s:6:"height";i:120;s:4:"file";s:29:"2026/10/pdp-rider-mobile.webp";s:8:"filesize";i:5934;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Hailey Kinsel barrel racing]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[rear-ankle-boots]]></title>
+  <link>https://professionals-choice.wp.local/rear-ankle-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:26 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rear-ankle-boots.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>691</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:26</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:26</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:26</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>rear-ankle-boots</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rear-ankle-boots.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-rear-ankle-boots.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:33:"2026/10/pdp-rear-ankle-boots.webp";s:8:"filesize";i:18148;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[skid-boots]]></title>
+  <link>https://professionals-choice.wp.local/skid-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:29 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-skid-boots.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>692</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:29</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:29</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:29</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:29</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>skid-boots</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-skid-boots.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-skid-boots.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:27:"2026/10/pdp-skid-boots.webp";s:8:"filesize";i:27690;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[ballistic-overreach-boots]]></title>
+  <link>https://professionals-choice.wp.local/ballistic-overreach-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:32 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-ballistic-overreach-boots.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>693</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:32</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:32</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:32</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:32</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>ballistic-overreach-boots</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-ballistic-overreach-boots.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-ballistic-overreach-boots.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:42:"2026/10/pdp-ballistic-overreach-boots.webp";s:8:"filesize";i:20700;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[smb-3-sports-medicine-boots]]></title>
+  <link>https://professionals-choice.wp.local/smb-3-sports-medicine-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 17:43:35 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-smb-3-sports-medicine-boots.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>694</wp:post_id>
+  <wp:post_date>2026-10-02 17:43:35</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:43:35</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:43:35</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:43:35</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>smb-3-sports-medicine-boots</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-smb-3-sports-medicine-boots.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-smb-3-sports-medicine-boots.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:319;s:6:"height";i:399;s:4:"file";s:44:"2026/10/pdp-smb-3-sports-medicine-boots.webp";s:8:"filesize";i:38168;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Western]]></title>
+  <link>https://professionals-choice.wp.local/shop/western/</link>
+  <pubDate>Fri, 02 Oct 2026 17:59:03 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/shop/western/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>706</wp:post_id>
+  <wp:post_date>2026-10-02 17:59:03</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:59:03</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:59:03</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:59:03</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>western</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>645</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>page</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+</item>
+<item>
+  <title><![CDATA[Boots & Wraps]]></title>
+  <link>https://professionals-choice.wp.local/shop/western/boots-wraps/</link>
+  <pubDate>Fri, 02 Oct 2026 17:59:06 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/shop/western/boots-wraps/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>707</wp:post_id>
+  <wp:post_date>2026-10-02 17:59:06</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:59:06</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:59:06</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:59:06</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>boots-wraps</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>706</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>page</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+</item>
+<item>
+  <title><![CDATA[Sports Medicine Boots]]></title>
+  <link>https://professionals-choice.wp.local/shop/western/boots-wraps/sports-medicine-boots/</link>
+  <pubDate>Fri, 02 Oct 2026 17:59:09 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://professionals-choice.wp.local/shop/western/boots-wraps/sports-medicine-boots/</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>708</wp:post_id>
+  <wp:post_date>2026-10-02 17:59:09</wp:post_date>
+  <wp:post_date_gmt>2026-10-02 17:59:09</wp:post_date_gmt>
+  <wp:post_modified>2026-10-02 17:59:09</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-02 17:59:09</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>sports-medicine-boots</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>707</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>page</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
 </item>
   </channel>
 </rss>
