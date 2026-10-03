@@ -46,4 +46,16 @@ return array(
 		'label'    => _x( 'Close', 'icon label', 'profchoicecore' ),
 		'filePath' => 'close.svg',
 	),
+	'star'             => array(
+		'label'    => _x( 'Star', 'icon label', 'profchoicecore' ),
+		'filePath' => 'star.svg',
+	),
+	'star-filled'      => array(
+		'label'    => _x( 'Star Filled', 'icon label', 'profchoicecore' ),
+		'filePath' => 'star-filled.svg',
+	),
+	'star-half'        => array(
+		'label'    => _x( 'Star Half', 'icon label', 'profchoicecore' ),
+		'filePath' => 'star-half.svg',
+	),
 );

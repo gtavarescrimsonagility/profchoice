@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "profchoice/reviews",
+	"version": "0.2.0",
+	"title": "Product Reviews",
+	"category": "profchoice",
+	"icon": "star-filled",
+	"description": "A product's reviews: rating summary, a slider loaded page by page from the Store API, and a Write a Review form. Collapsed, it opens from #reviews links.",
+	"keywords": [ "reviews", "rating", "stars", "woocommerce" ],
+	"textdomain": "profchoicecore",
+	"usesContext": [ "postId" ],
+	"attributes": {
+		"productId": {
+			"type": "number"
+		},
+		"perPage": {
+			"type": "number",
+			"default": 2
+		},
+		"collapsed": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "profchoice-reviews-store",
+	"render": "file:./render.php"
+}

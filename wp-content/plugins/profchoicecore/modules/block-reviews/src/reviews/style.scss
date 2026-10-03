@@ -1,0 +1,95 @@
+// Functional defaults; themes style the reviews (see the child theme).
+
+.pc-reviews[hidden],
+.pc-review-form[hidden],
+.pc-review[hidden] {
+	display: none !important;
+}
+
+// Each star slot wraps its full/half SVGs (only one shown).
+.pc-reviews__star {
+	display: contents;
+}
+
+:where(.pc-reviews__stars) {
+	display: inline-flex;
+	gap: 0.25em;
+	align-items: center;
+}
+
+:where(.pc-reviews__stars) .pc-inline-icon {
+	width: 1em;
+	height: 1em;
+	fill: currentcolor;
+}
+
+// The slider: one row of cards, moved by Previous/Next (and swipe).
+:where(.pc-reviews__list) {
+	display: flex;
+	gap: 1.5rem;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	list-style: none;
+}
+
+// Loading: a card of placeholder lines (stars, name and date, text), only
+// the lines shimmer.
+:where(.pc-review--skeleton) {
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+}
+
+:where(.pc-skeleton) {
+	display: block;
+	height: 0.75rem;
+	background: linear-gradient(90deg, #f1eee8 0%, #faf8f4 50%, #f1eee8 100%) 0 0 / 200% 100%;
+	animation: pc-reviews-shimmer 1.4s ease-in-out infinite;
+}
+
+:where(.pc-skeleton__meta) {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+:where(.pc-skeleton--stars) {
+	width: 5.5rem;
+	height: 0.625rem;
+}
+
+:where(.pc-skeleton--name) {
+	width: 9rem;
+}
+
+:where(.pc-skeleton--date) {
+	width: 5rem;
+}
+
+:where(.pc-skeleton--short) {
+	width: 60%;
+}
+
+@keyframes pc-reviews-shimmer {
+
+	to {
+		background-position: -200% 0;
+	}
+}
+
+.pc-visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.pc-skeleton {
+		animation: none;
+	}
+}

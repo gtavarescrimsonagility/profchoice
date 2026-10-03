@@ -28,7 +28,7 @@ Editor features:
 
 * **WooCommerce bindings**: designed blocks (headings, buttons, images) can take a product category's or product's name, link and image, or the shop link, through the block bindings `profchoice/product-category`, `profchoice/product` (by ID or featured position) and `profchoice/shop`. Without WooCommerce or matching data, blocks keep their saved values.
 * **Video covers**: a Cover with a video background gets a Video panel (Autoplay, Loop, Muted; Muted is locked on while Autoplay is on). A Button with the **Play** style inside it plays and pauses the video and fades out while it plays; focus then moves to the cover, so Space pauses it. The Play style only sets the shape (a circle); colors and the Hover/Focus/Active states come from the Button's own settings.
-* **Icons**: a "Professional's Choice" icon collection (Play, Pause, Arrow Right, Arrow Long Right, Heart, Heart Filled, Check Circle, Info Circle, Alert Circle, Close) registered with the Icons API, so it shows in the Icon block and the inline icon picker. Add an icon with an SVG in `icons/` and a line in `icons/manifest.php`.
+* **Icons**: a "Professional's Choice" icon collection (Play, Pause, Arrow Right, Arrow Long Right, Heart, Heart Filled, Star, Star Filled, Star Half, Check Circle, Info Circle, Alert Circle, Close) registered with the Icons API, so it shows in the Icon block and the inline icon picker. Add an icon with an SVG in `icons/` and a line in `icons/manifest.php`.
 * **Inline icon** (rich text format): inserts any registered icon into text, with the same Icon library picker as the Icon block. It renders as an `<svg>` in the text color.
 * **Visually hidden** (rich text format): hides the selected text on screen while keeping it for screen readers (e.g. an icon-only button's label). The editor shows it while the text is focused.
 
@@ -36,6 +36,13 @@ Size Guide (`block-size-guide` module):
 
 * Products > Attributes > (attribute) > **Size guide**: a page for that attribute. The swatches of the attribute then show a "Size Guide" link (through the `profchoicecore_swatches_guide` filter) that opens the page in a modal; without JavaScript it links to the page. No page, no link.
 * **Size Guide** block (`profchoice/size-guide`, Interactivity API store `profchoice/size-guide`): the link and its modal (native dialog: Esc, close button and backdrop close it, focus returns to the link), for an attribute or a chosen page. `[profchoice_size_guide attribute="pa_size"]` and `do_action( 'profchoicecore_size_guide', 'pa_size' )` render the same block; `profchoicecore_size_guide_page` filters the page.
+
+Product Reviews (`block-reviews` module):
+
+* **Product Reviews** block (`profchoice/reviews`, Interactivity API store `profchoice/reviews`): rating summary, the newest reviews (two per view on desktop, one on mobile) and Previous/Next (and swipe on mobile) that load the rest from the Store API with skeleton placeholders. Stars show the rating only (whole stars, a half star from .25, a full one from .5; no empty stars). Reviewers show as first name and last initial, in the block and in the Store API's product reviews.
+* **Write a Review** opens a form under the head (the button toggles it) that posts to `wp-comments-post.php` like WooCommerce's review form; a "will appear once approved" notice follows a held review.
+* **Collapsed** (attribute): hidden until a link to `#reviews` is clicked (or the URL points at `#reviews` or a review), then it scrolls into view.
+* `[profchoice_reviews product="123" collapsed="true"]` and `do_action( 'profchoicecore_reviews', $product_id, array( 'collapsed' => true ) )` render the same block.
 
 Wishlist (`wishlist` module, Interactivity API store `profchoice/wishlist`):
 
@@ -62,6 +69,7 @@ Each feature is a self-contained folder in `modules/` (PHP in `includes/`, sourc
 
 * `block-swatches`: Variation Swatches (WooCommerce).
 * `block-size-guide`: Size Guide (WooCommerce).
+* `block-reviews`: Product Reviews (WooCommerce).
 * `product-page`: badge and "As ridden by" card (WooCommerce).
 * `block-slider`: Carousel and its children.
 * `block-lead-capture`: Newsletter, subscribers and CSV export.
