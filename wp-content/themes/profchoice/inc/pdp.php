@@ -45,6 +45,21 @@ add_action(
 	110
 );
 
+/*
+ * Product images: the stage at 1x (662) and on mobile (390), and the
+ * gallery thumbnails (80x96 and 2x, center crop). Larger stage widths come
+ * from core's sizes; the lightbox opens the full image.
+ */
+add_action(
+	'after_setup_theme',
+	function () {
+		add_image_size( 'profchoice-stage', 662, 662 );
+		add_image_size( 'profchoice-stage-mobile', 390, 390 );
+		add_image_size( 'profchoice-thumb', 80, 96, true );
+		add_image_size( 'profchoice-thumb-2x', 160, 192, true );
+	}
+);
+
 /**
  * An icon of the profchoicecore collection as inline SVG (currentColor).
  *
@@ -200,6 +215,7 @@ function profchoice_stage_gallery( $product ) {
 			false,
 			array(
 				'class'         => 'pdp-main__image wp-image-' . $id,
+				'sizes'         => '(width <= 48.875rem) 100vw, 662px',
 				'fetchpriority' => $first ? 'high' : false,
 				'loading'       => $first ? false : 'lazy',
 			)

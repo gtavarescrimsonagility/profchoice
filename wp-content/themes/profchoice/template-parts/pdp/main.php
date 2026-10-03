@@ -14,18 +14,23 @@ global $product;
 
 $pdp_badges = profchoice_badges( $product->get_id() );
 
-// Gallery thumbnails pick the color their alt text names.
+// Gallery thumbnails pick the color whose variations use that image.
 $pdp_colors = array();
-if ( class_exists( 'ProfChoiceCore\Swatches' ) && $product->is_type( 'variable' ) ) {
-	foreach ( ProfChoiceCore\Swatches::items( $product, 'pa_color' ) as $pdp_item ) {
-		$pdp_colors[ $pdp_item['label'] ] = $pdp_item['value'];
+if ( $product->is_type( 'variable' ) ) {
+	foreach ( $product->get_available_variations( 'objects' ) as $pdp_variation ) {
+		$pdp_attributes = $pdp_variation->get_attributes();
+		$pdp_image      = (int) $pdp_variation->get_image_id();
+		if ( ! empty( $pdp_attributes['pa_color'] ) && $pdp_image && ! isset( $pdp_colors[ $pdp_image ] ) ) {
+			$pdp_colors[ $pdp_image ] = $pdp_attributes['pa_color'];
+		}
 	}
 }
-$pdp_color = $product->is_type( 'variable' ) ? $product->get_variation_default_attribute( 'pa_color' ) : '';
+$pdp_color  = $product->is_type( 'variable' ) ? $product->get_variation_default_attribute( 'pa_color' ) : '';
 $pdp_thumbs = array();
 foreach ( $product->get_gallery_image_ids() as $pdp_index => $pdp_image_id ) {
-	$pdp_label    = (string) get_post_meta( $pdp_image_id, '_wp_attachment_image_alt', true );
-	$pdp_value    = isset( $pdp_colors[ $pdp_label ] ) ? $pdp_colors[ $pdp_label ] : '';
+	$pdp_value    = isset( $pdp_colors[ $pdp_image_id ] ) ? $pdp_colors[ $pdp_image_id ] : '';
+	$pdp_term     = $pdp_value ? get_term_by( 'slug', $pdp_value, 'pa_color' ) : false;
+	$pdp_label    = $pdp_term ? $pdp_term->name : (string) get_post_meta( $pdp_image_id, '_wp_attachment_image_alt', true );
 	$pdp_thumbs[] = array(
 		'id'     => $pdp_image_id,
 		'label'  => $pdp_label,
@@ -83,7 +88,7 @@ $pdp_reviews = (int) $product->get_review_count();
 								<?php
 								echo wp_get_attachment_image( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 									$pdp_thumb['id'],
-									'full',
+									'profchoice-thumb-2x',
 									false,
 									array(
 										'alt'     => '',
