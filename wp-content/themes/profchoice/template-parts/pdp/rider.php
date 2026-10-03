@@ -15,17 +15,13 @@ $pdp_rider = class_exists( 'ProfChoiceCore\ProductMeta' ) ? ProfChoiceCore\Produ
 if ( ! $pdp_rider ) {
 	return;
 }
-$pdp_desktop = $pdp_rider['image'] ? wp_get_attachment_image_src( $pdp_rider['image'], 'full' ) : false;
-$pdp_mobile  = $pdp_rider['image_mobile'] ? wp_get_attachment_image_src( $pdp_rider['image_mobile'], 'full' ) : false;
+$pdp_image = $pdp_rider['image'] ? wp_get_attachment_image_src( $pdp_rider['image'], 'full' ) : false;
 ?>
 <aside class="pdp-rider">
-	<?php if ( $pdp_desktop ) : ?>
-		<picture class="pdp-rider__media">
-			<?php if ( $pdp_mobile ) : ?>
-				<source media="(width <= 30rem)" srcset="<?php echo esc_url( $pdp_mobile[0] ); ?>" width="<?php echo esc_attr( $pdp_mobile[1] ); ?>" height="<?php echo esc_attr( $pdp_mobile[2] ); ?>">
-			<?php endif; ?>
-			<img class="pdp-rider__image" src="<?php echo esc_url( $pdp_desktop[0] ); ?>" width="<?php echo esc_attr( $pdp_desktop[1] ); ?>" height="<?php echo esc_attr( $pdp_desktop[2] ); ?>" alt="<?php echo esc_attr( $pdp_rider['alt'] ); ?>" decoding="async">
-		</picture>
+	<?php if ( $pdp_image ) : ?>
+		<div class="pdp-rider__media">
+			<img class="pdp-rider__image" src="<?php echo esc_url( $pdp_image[0] ); ?>" width="<?php echo esc_attr( $pdp_image[1] ); ?>" height="<?php echo esc_attr( $pdp_image[2] ); ?>" alt="<?php echo esc_attr( $pdp_rider['alt'] ); ?>" decoding="async">
+		</div>
 	<?php endif; ?>
 	<div class="pdp-rider__body">
 		<div class="pdp-rider__heading">

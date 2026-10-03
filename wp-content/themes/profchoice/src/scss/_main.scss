@@ -239,11 +239,8 @@
 	}
 
 	.pdp-rider__media {
-		display: block;
-		flex: 1;
-		align-self: stretch;
-		min-width: 0;
-		min-height: 7.9375rem;
+		flex: 0 0 14.5625rem;
+		aspect-ratio: 233 / 127;
 	}
 
 	.pdp-rider__image {
@@ -255,10 +252,10 @@
 
 	.pdp-rider__body {
 		display: flex;
+		flex: 1;
 		flex-direction: column;
-		flex-shrink: 0;
 		gap: 2.3125rem;
-		width: 20.1875rem;
+		min-width: 0;
 	}
 
 	.pdp-rider__heading {
@@ -612,18 +609,6 @@
 		}
 	}
 
-	/* Narrow desktop: the card's photo keeps 40% instead of a fixed text column. */
-	@include media-breakpoint-only(desktop) {
-		.pdp-rider__media {
-			flex: 0 0 40%;
-		}
-
-		.pdp-rider__body {
-			flex: 1;
-			width: auto;
-		}
-	}
-
 	/* Mobile: stacked, Montserrat type, full-bleed gallery. */
 	@include media-breakpoint-down(tablet) {
 		.pdp-main {
@@ -755,23 +740,20 @@
 
 		.pdp-rider {
 			gap: 0;
-			align-items: stretch;
 			min-height: 7.5rem;
 			margin-top: 0;
 			padding-right: 0;
 			overflow: hidden;
 		}
 
+		/* 220x120: the desktop crop's ratio rounded to whole pixels. */
 		.pdp-rider__media {
-			flex: none;
-			width: 9.375rem;
-			min-height: 7.5rem;
+			flex-basis: 13.75rem;
+			aspect-ratio: 11 / 6;
 		}
 
 		.pdp-rider__body {
-			flex: 1;
 			gap: 0.25rem;
-			width: auto;
 			padding: 1rem 1rem 0.875rem;
 		}
 
