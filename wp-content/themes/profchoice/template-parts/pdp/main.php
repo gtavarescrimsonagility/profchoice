@@ -55,18 +55,7 @@ $pdp_reviews = (int) $product->get_review_count();
 		>
 			<div class="pdp-main__media">
 				<div class="pdp-main__stage">
-					<?php
-					echo wp_get_attachment_image( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-						$product->get_image_id(),
-						'full',
-						false,
-						array(
-							'class'         => 'pdp-main__image',
-							'fetchpriority' => 'high',
-							'loading'       => false,
-						)
-					);
-					?>
+					<?php echo profchoice_stage_gallery( $product ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					<?php if ( $pdp_badges ) : ?>
 						<span class="pdp-main__badges">
 							<?php foreach ( $pdp_badges as $pdp_slug => $pdp_badge ) : ?>

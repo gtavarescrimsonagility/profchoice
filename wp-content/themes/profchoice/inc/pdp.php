@@ -155,3 +155,95 @@ function profchoice_card_colors( $product ) {
 	}
 	return $colors;
 }
+
+/**
+ * The product stage as a core Gallery of Image blocks with "Expand on
+ * click", so core's lightbox (full screen, previous and next) opens on it.
+ * One image per color: the featured image, then each distinct variation
+ * image, in the color terms' order. Only the current color's image shows
+ * (profchoice/pdp state.isStageHidden), the first one by default.
+ *
+ * @param WC_Product $product Product.
+ * @return string
+ */
+function profchoice_stage_gallery( $product ) {
+	$featured = (int) $product->get_image_id();
+	$items    = array();
+	if ( $featured ) {
+		$items[ $featured ] = array();
+	}
+	if ( $product->is_type( 'variable' ) && taxonomy_exists( 'pa_color' ) ) {
+		$by_color = array();
+		foreach ( $product->get_available_variations( 'objects' ) as $variation ) {
+			$color = $variation->get_attribute( 'pa_color' ) ? $variation->get_attributes()['pa_color'] : '';
+			$image = (int) $variation->get_image_id();
+			if ( $color && $image && ! isset( $by_color[ $color ] ) ) {
+				$by_color[ $color ] = $image;
+			}
+		}
+		foreach ( wc_get_product_terms( $product->get_id(), 'pa_color', array( 'fields' => 'slugs' ) ) as $slug ) {
+			if ( isset( $by_color[ $slug ] ) ) {
+				$items[ $by_color[ $slug ] ][] = $slug;
+			}
+		}
+	}
+	if ( ! $items ) {
+		return '';
+	}
+
+	$images = array();
+	$first  = true;
+	foreach ( $items as $id => $colors ) {
+		$img      = wp_get_attachment_image(
+			$id,
+			'full',
+			false,
+			array(
+				'class'         => 'pdp-main__image wp-image-' . $id,
+				'fetchpriority' => $first ? 'high' : false,
+				'loading'       => $first ? false : 'lazy',
+			)
+		);
+		$images[] = array(
+			'blockName'    => 'core/image',
+			'attrs'        => array(
+				'id'              => $id,
+				'sizeSlug'        => 'full',
+				'linkDestination' => 'none',
+				'lightbox'        => array( 'enabled' => true ),
+			),
+			'innerBlocks'  => array(),
+			'innerHTML'    => '<figure class="wp-block-image size-full">' . $img . '</figure>',
+			'innerContent' => array( '<figure class="wp-block-image size-full">' . $img . '</figure>' ),
+		);
+		$first    = false;
+	}
+	$html = render_block(
+		array(
+			'blockName'    => 'core/gallery',
+			'attrs'        => array(
+				'linkTo'    => 'none',
+				'imageCrop' => false,
+				'className' => 'pdp-main__gallery',
+			),
+			'innerBlocks'  => $images,
+			'innerHTML'    => '<figure class="wp-block-gallery pdp-main__gallery"></figure>',
+			'innerContent' => array_merge( array( '<figure class="wp-block-gallery pdp-main__gallery">' ), array_fill( 0, count( $images ), null ), array( '</figure>' ) ),
+		)
+	);
+
+	// Which colors each image shows; the first one is the default.
+	$processor = new WP_HTML_Tag_Processor( $html );
+	$index     = 0;
+	$colors    = array_values( $items );
+	while ( $processor->next_tag( array( 'tag_name' => 'figure', 'class_name' => 'wp-block-image' ) ) ) {
+		$processor->set_attribute( 'data-pc-colors', implode( ' ', $colors[ $index ] ?? array() ) );
+		$processor->set_attribute( 'data-pc-default', 0 === $index ? 'true' : 'false' );
+		$processor->set_attribute( 'data-wp-bind--hidden', 'profchoice/pdp::state.isStageHidden' );
+		if ( $index > 0 ) {
+			$processor->set_attribute( 'hidden', true );
+		}
+		++$index;
+	}
+	return $processor->get_updated_html();
+}

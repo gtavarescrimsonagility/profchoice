@@ -30,6 +30,24 @@
 		aspect-ratio: 662 / 794.39;
 	}
 
+	// The stage is a core Gallery of Image blocks (core's lightbox); its
+	// wrappers don't add boxes, so each image fills the stage.
+	.pdp-main__gallery,
+	.pdp-main__gallery > .wp-block-image {
+		display: contents;
+	}
+
+	.pdp-main__gallery > .wp-block-image[hidden] {
+		display: none;
+	}
+
+	// Core's expand button, bottom right (the heart is top right).
+	.pdp-main__gallery .lightbox-trigger {
+		top: auto !important;
+		right: 1rem !important;
+		bottom: 1rem;
+	}
+
 	.pdp-main__image {
 		position: absolute;
 		inset: 0;

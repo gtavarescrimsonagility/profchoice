@@ -1,6 +1,6 @@
 /**
  * Product page store: gallery thumbnails pick a color (through the color
- * swatch), the quantity stepper, and the price, stock and add to cart label
+ * swatch), the stage shows the chosen color's image, the quantity stepper, and the price, stock and add to cart label
  * of the chosen variation (from WooCommerce's variations form events).
  */
 import {
@@ -23,6 +23,23 @@ const { state } = store( 'profchoice/pdp', {
 		get isThumbActive() {
 			const context = getContext();
 			return context.value === context.color;
+		},
+		// Stage figures (core/image blocks in a core/gallery) list the colors
+		// they show; with no color, or one without its own image, the first.
+		get isStageHidden() {
+			const { color } = getContext( 'profchoice/pdp' );
+			const { attributes, ref } = getElement();
+			const colors = ( attributes[ 'data-pc-colors' ] || '' ).split( ' ' );
+			if ( color && colors.includes( color ) ) {
+				return false;
+			}
+			const stage = ref?.closest( '.pdp-main__gallery' );
+			const own =
+				color &&
+				stage?.querySelector(
+					`[data-pc-colors~="${ CSS.escape( color ) }"]`
+				);
+			return own ? true : attributes[ 'data-pc-default' ] !== 'true';
 		},
 		get cartLabel() {
 			const { price } = getContext();
