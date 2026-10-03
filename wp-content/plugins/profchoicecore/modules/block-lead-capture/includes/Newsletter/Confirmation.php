@@ -1,8 +1,10 @@
 <?php
 /**
- * Optional email confirmation (double opt-in) for newsletter subscriptions.
+ * How a subscription is confirmed (Settings > Subscribers): right away,
+ * right away with an email to unsubscribe (opt-out, see Unsubscribe), or
+ * by email confirmation (double opt-in).
  *
- * When enabled in Settings > Subscribers, a new subscription creates an
+ * With double opt-in, a new subscription creates an
  * `unconfirmed` user and emails a confirmation link, shaped like core's
  * privacy request confirmation link (wp-login.php?action=…&confirm_key=…
  * &login=…). Following it turns
@@ -22,6 +24,7 @@ final class Confirmation {
 
 	const ROLE       = 'unconfirmed';
 	const OPTION     = 'profchoicecore_newsletter_confirm';
+	const MODE       = 'profchoicecore_newsletter_mode';
 	const PAGE       = 'pc-subscribers-settings';
 	const ACTION     = 'pc-confirm-subscription';
 	const META_KEY   = '_pc_confirm_key';
@@ -41,12 +44,43 @@ final class Confirmation {
 	}
 
 	/**
-	 * Whether new subscriptions need email confirmation.
+	 * Subscription mode: `none` (subscribed, no email), `opt-out`
+	 * (subscribed, with an email to unsubscribe) or `opt-in` (subscribed
+	 * after confirming by email). Sites that only had the old confirmation
+	 * checkbox keep its value.
+	 *
+	 * @return string
+	 */
+	public static function mode() {
+		$mode = (string) get_option( self::MODE, '' );
+		if ( ! in_array( $mode, array( 'none', 'opt-out', 'opt-in' ), true ) ) {
+			$mode = get_option( self::OPTION, false ) ? 'opt-in' : 'none';
+		}
+		/**
+		 * Filters the subscription mode.
+		 *
+		 * @param string $mode none, opt-out or opt-in.
+		 */
+		return (string) apply_filters( 'profchoicecore_newsletter_mode', $mode );
+	}
+
+	/**
+	 * Whether new subscriptions need email confirmation (opt-in).
 	 *
 	 * @return bool
 	 */
 	public static function is_enabled() {
-		return (bool) get_option( self::OPTION, false );
+		return 'opt-in' === self::mode();
+	}
+
+	/**
+	 * Sanitize the mode.
+	 *
+	 * @param mixed $value Raw value.
+	 * @return string
+	 */
+	public static function sanitize_mode( $value ) {
+		return in_array( $value, array( 'none', 'opt-out', 'opt-in' ), true ) ? $value : 'none';
 	}
 
 	/**
@@ -68,21 +102,20 @@ final class Confirmation {
 	public static function register_setting() {
 		register_setting(
 			self::PAGE,
-			self::OPTION,
+			self::MODE,
 			array(
-				'type'              => 'boolean',
-				'default'           => false,
-				'sanitize_callback' => 'rest_sanitize_boolean',
+				'type'              => 'string',
+				'default'           => '',
+				'sanitize_callback' => array( __CLASS__, 'sanitize_mode' ),
 			)
 		);
 		add_settings_section( 'pc-subscribers', '', '__return_false', self::PAGE );
 		add_settings_field(
-			self::OPTION,
-			__( 'Email confirmation', 'profchoicecore' ),
+			self::MODE,
+			__( 'New subscriptions', 'profchoicecore' ),
 			array( __CLASS__, 'render_field' ),
 			self::PAGE,
-			'pc-subscribers',
-			array( 'label_for' => self::OPTION )
+			'pc-subscribers'
 		);
 	}
 
@@ -122,18 +155,37 @@ final class Confirmation {
 	}
 
 	/**
-	 * Renders the checkbox.
+	 * Renders the mode choices.
 	 *
 	 * @return void
 	 */
 	public static function render_field() {
-		printf(
-			'<label><input type="checkbox" id="%1$s" name="%1$s" value="1" %2$s /> %3$s</label><p class="description">%4$s</p>',
-			esc_attr( self::OPTION ),
-			checked( self::is_enabled(), true, false ),
-			esc_html__( 'Require email confirmation', 'profchoicecore' ),
-			esc_html__( 'New subscribers get the Unconfirmed role and an email with a confirmation link. They become Subscribers once they confirm. The link expires after 7 days.', 'profchoicecore' )
+		$modes = array(
+			'none'    => array(
+				__( 'Subscribe right away', 'profchoicecore' ),
+				__( 'No email is sent.', 'profchoicecore' ),
+			),
+			'opt-out' => array(
+				__( 'Subscribe right away and email a link to unsubscribe (opt-out)', 'profchoicecore' ),
+				__( 'For an email typed by mistake, on purpose by someone else, or a change of mind. Unsubscribing removes the subscriber; customers keep their account.', 'profchoicecore' ),
+			),
+			'opt-in'  => array(
+				__( 'Require email confirmation (opt-in)', 'profchoicecore' ),
+				__( 'New subscribers get the Unconfirmed role and an email with a confirmation link. They become Subscribers once they confirm. The link expires after 7 days.', 'profchoicecore' ),
+			),
 		);
+		echo '<fieldset><legend class="screen-reader-text">' . esc_html__( 'New subscriptions', 'profchoicecore' ) . '</legend>';
+		foreach ( $modes as $value => $text ) {
+			printf(
+				'<p><label><input type="radio" name="%1$s" value="%2$s" %3$s /> %4$s</label></p><p class="description" style="margin: 0 0 0.75em 1.75em;">%5$s</p>',
+				esc_attr( self::MODE ),
+				esc_attr( $value ),
+				checked( self::mode(), $value, false ),
+				esc_html( $text[0] ),
+				esc_html( $text[1] )
+			);
+		}
+		echo '</fieldset>';
 	}
 
 	/**

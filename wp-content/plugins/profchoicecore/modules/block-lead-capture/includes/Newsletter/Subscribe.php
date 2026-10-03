@@ -14,7 +14,9 @@ use WP_REST_Response;
 /**
  * Subscribes an email: creates a `subscriber` user (which cannot log in,
  * see Subscribers), or, with email confirmation on, an `unconfirmed` user
- * plus a confirmation email (see Confirmation). No other email is sent.
+ * plus a confirmation email (see Confirmation). In opt-out mode the
+ * subscriber gets an email with a link to unsubscribe (see Unsubscribe).
+ * No other email is sent.
  *
  * No nonce by design: the form lives on cached public pages. Abuse is
  * limited by a honeypot field and a per-IP rate limit, and nothing here
@@ -189,6 +191,13 @@ final class Subscribe {
 		 * @param int    $user_id Subscriber user ID (an existing account is reused).
 		 */
 		do_action( 'profchoicecore_newsletter_subscribed', $email, $user_id );
+
+		if ( 'opt-out' === Confirmation::mode() ) {
+			$user = get_userdata( $user_id );
+			if ( $user ) {
+				Unsubscribe::send( $user );
+			}
+		}
 
 		return true;
 	}
