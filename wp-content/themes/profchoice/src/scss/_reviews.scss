@@ -40,6 +40,7 @@
 
 	.pc-reviews__head {
 		display: flex;
+		margin-block-end: 1rem;
 		align-items: center;
 		justify-content: space-between;
 		padding-top: 2.5rem;
@@ -120,7 +121,7 @@
 		display: flex;
 		gap: 1.75rem;
 		align-items: stretch;
-		margin-top: 1.75rem;
+		margin-block-start: 1rem;
 		list-style: none;
 	}
 
@@ -255,7 +256,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		margin-top: 1.75rem;
 		padding: 1.5rem;
 		border: 1px solid #e5e2dc;
 		background: #faf7f2;
@@ -485,7 +485,6 @@
 		.pc-reviews__list {
 			gap: 0.75rem;
 			align-items: stretch;
-			margin-top: 1.25rem;
 			overflow-x: auto;
 			scroll-snap-type: x mandatory;
 			scrollbar-width: none;
@@ -530,7 +529,6 @@
 		}
 
 		.pc-review-form {
-			margin-top: 1.25rem;
 			padding: 1rem;
 			font-family: "Montserrat", sans-serif;
 		}
