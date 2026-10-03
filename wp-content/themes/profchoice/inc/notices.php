@@ -105,7 +105,7 @@ add_action(
 			return;
 		}
 		if ( 'preview-single' === $mode ) {
-			wc_add_notice( __( 'Please enter a valid postcode to calculate shipping.', 'profchoice' ), 'error' );
+			wc_add_notice( __( 'Sorry, this product is unavailable. Please choose a different combination.', 'profchoice' ), 'error' );
 			return;
 		}
 		$cart = wc_get_cart_url();
@@ -120,8 +120,8 @@ add_action(
 		);
 		wc_add_notice( __( 'Please choose product options by visiting the product page.', 'profchoice' ), 'notice' );
 		wc_add_notice( __( 'Only 2 left in stock for this size. Order soon to get yours.', 'profchoice' ), 'notice', array( 'pc_variant' => 'warning' ) );
-		wc_add_notice( __( 'Sorry, this product is unavailable. Please choose a different combination.', 'profchoice' ), 'error' );
 		wc_add_notice( __( '<strong>Billing First name</strong> is a required field.', 'profchoice' ), 'error' );
 		wc_add_notice( __( '<strong>Billing Email address</strong> is not a valid email address.', 'profchoice' ), 'error' );
+		wc_add_notice( __( '<strong>Billing ZIP Code</strong> is not a valid postcode / ZIP.', 'profchoice' ), 'error' );
 	}
 );

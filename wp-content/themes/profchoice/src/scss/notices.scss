@@ -114,19 +114,30 @@
 	}
 }
 
-.pc-alert ul.pc-alert__body {
+// Several errors (a form): a title, then each error on its own row.
+.pc-alert .pc-alert__body--list {
 	flex-direction: column;
-	gap: 0.25rem;
+	align-items: stretch;
+	gap: 0.375rem;
 }
 
-// Several errors (a form): a bulleted list, each error on its own row.
-.pc-alert ul.pc-alert__body:has(> li + li) {
-	gap: 0.375rem;
+.pc-alert .pc-alert__title {
+	margin: 0;
+	font-weight: 700;
+}
+
+.pc-alert .pc-alert__list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin: 0;
 	padding-left: 1.125rem;
 	list-style: disc;
 
 	// WooCommerce removes the marker with `!important` (.woocommerce-error li).
 	li {
+		margin: 0;
+		padding: 0;
 		list-style: disc outside !important;
 	}
 
