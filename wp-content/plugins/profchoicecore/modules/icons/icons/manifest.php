@@ -42,6 +42,10 @@ return array(
 		'label'    => _x( 'Alert Circle', 'icon label', 'profchoicecore' ),
 		'filePath' => 'alert-circle.svg',
 	),
+	'alert-triangle'   => array(
+		'label'    => _x( 'Alert Triangle', 'icon label', 'profchoicecore' ),
+		'filePath' => 'alert-triangle.svg',
+	),
 	'close'            => array(
 		'label'    => _x( 'Close', 'icon label', 'profchoicecore' ),
 		'filePath' => 'close.svg',
