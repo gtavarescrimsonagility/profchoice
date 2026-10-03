@@ -42,7 +42,7 @@ $pdp_all_url = $pdp_terms ? get_term_link( $pdp_terms[0] ) : wc_get_page_permali
 			foreach ( $pdp_products as $pdp_card ) :
 				$pdp_name   = $pdp_card->get_name();
 				$pdp_link   = $pdp_card->get_permalink();
-				$pdp_badge  = profchoice_badge( $pdp_card->get_id() );
+				$pdp_badges = profchoice_badges( $pdp_card->get_id() );
 				$pdp_colors = profchoice_card_colors( $pdp_card );
 				?>
 				<li class="pdp-card">
@@ -62,8 +62,12 @@ $pdp_all_url = $pdp_terms ? get_term_link( $pdp_terms[0] ) : wc_get_page_permali
 							);
 							?>
 						</a>
-						<?php if ( $pdp_badge ) : ?>
-							<span class="pdp-card__badge<?php echo 'sale' === sanitize_title( $pdp_badge ) ? ' pdp-card__badge--sale' : ''; ?>"><?php echo esc_html( $pdp_badge ); ?></span>
+						<?php if ( $pdp_badges ) : ?>
+							<span class="pdp-card__badges">
+								<?php foreach ( $pdp_badges as $pdp_slug => $pdp_badge ) : ?>
+									<span class="pdp-card__badge pdp-card__badge--<?php echo esc_attr( $pdp_slug ); ?>"<?php profchoice_badge_style( $pdp_slug ); ?>><?php echo esc_html( $pdp_badge ); ?></span>
+								<?php endforeach; ?>
+							</span>
 						<?php endif; ?>
 						<?php echo profchoice_wishlist_button( $pdp_card->get_id(), 'pdp-card__fav', sprintf( /* translators: %s: product name. */ __( 'Add %s to favorites', 'profchoice' ), $pdp_name ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						<?php if ( $pdp_card->is_purchasable() && $pdp_card->is_in_stock() && $pdp_card->is_type( 'simple' ) ) : ?>

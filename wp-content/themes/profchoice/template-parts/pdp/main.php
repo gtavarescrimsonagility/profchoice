@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
-$pdp_badge = profchoice_badge( $product->get_id() );
+$pdp_badges = profchoice_badges( $product->get_id() );
 
 // Gallery thumbnails pick the color their alt text names.
 $pdp_colors = array();
@@ -67,8 +67,12 @@ $pdp_reviews = (int) $product->get_review_count();
 						)
 					);
 					?>
-					<?php if ( $pdp_badge ) : ?>
-						<span class="pdp-main__badge"><?php echo esc_html( $pdp_badge ); ?></span>
+					<?php if ( $pdp_badges ) : ?>
+						<span class="pdp-main__badges">
+							<?php foreach ( $pdp_badges as $pdp_slug => $pdp_badge ) : ?>
+								<span class="pdp-main__badge pdp-main__badge--<?php echo esc_attr( $pdp_slug ); ?>"<?php profchoice_badge_style( $pdp_slug ); ?>><?php echo esc_html( $pdp_badge ); ?></span>
+							<?php endforeach; ?>
+						</span>
 					<?php endif; ?>
 					<?php echo profchoice_wishlist_button( $product->get_id(), 'pdp-main__fav pdp-main__fav--overlay', __( 'Add to favorites', 'profchoice' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</div>

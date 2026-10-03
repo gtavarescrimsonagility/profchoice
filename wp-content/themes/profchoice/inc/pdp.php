@@ -68,13 +68,26 @@ function profchoice_icon( $name, $class = 'pc-inline-icon' ) {
 }
 
 /**
- * Badge text of a product (profchoicecore "Product page" tab).
+ * Badges of a product, slug => name (profchoicecore badge tags).
  *
  * @param int $product_id Product ID.
- * @return string
+ * @return array<string, string>
  */
-function profchoice_badge( $product_id ) {
-	return class_exists( 'ProfChoiceCore\ProductMeta' ) ? ProfChoiceCore\ProductMeta::badge( $product_id ) : '';
+function profchoice_badges( $product_id ) {
+	return class_exists( 'ProfChoiceCore\Badges' ) ? ProfChoiceCore\Badges::for_product( $product_id ) : array();
+}
+
+/**
+ * Print a badge's style attribute: the tag's colors as CSS variables.
+ *
+ * @param string $slug Tag slug.
+ * @return void
+ */
+function profchoice_badge_style( $slug ) {
+	$style = class_exists( 'ProfChoiceCore\Badges' ) ? ProfChoiceCore\Badges::style( $slug ) : '';
+	if ( '' !== $style ) {
+		echo ' style="' . esc_attr( $style ) . '"';
+	}
 }
 
 /**
