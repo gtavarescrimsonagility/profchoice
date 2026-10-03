@@ -27,6 +27,33 @@ final class Reviews {
 		add_action( 'profchoicecore_reviews', array( __CLASS__, 'action' ), 10, 2 );
 		add_filter( 'rest_post_dispatch', array( __CLASS__, 'store_api_names' ), 10, 3 );
 		add_filter( 'comment_post_redirect', array( __CLASS__, 'after_review' ), 10, 2 );
+		add_filter( 'pre_comment_approved', array( __CLASS__, 'hold_review' ), 20, 2 );
+	}
+
+	/**
+	 * Every product review waits for approval (Products > Reviews), also from
+	 * administrators, editors and customers with an approved review. Spam
+	 * and trash stay as they are.
+	 *
+	 * @param int|string|\WP_Error $approved    1, 0, 'spam', 'trash' or an error.
+	 * @param array                $commentdata Comment data.
+	 * @return int|string|\WP_Error
+	 */
+	public static function hold_review( $approved, $commentdata ) {
+		if ( is_wp_error( $approved ) || in_array( $approved, array( 'spam', 'trash' ), true ) ) {
+			return $approved;
+		}
+		$is_review = isset( $commentdata['comment_type'] ) && 'review' === $commentdata['comment_type'] && ! empty( $commentdata['comment_post_ID'] ) && 'product' === get_post_type( $commentdata['comment_post_ID'] );
+		/**
+		 * Filters whether product reviews wait for approval.
+		 *
+		 * @param bool  $hold        True by default.
+		 * @param array $commentdata Comment data.
+		 */
+		if ( $is_review && apply_filters( 'profchoicecore_reviews_hold_all', true, $commentdata ) ) {
+			return 0;
+		}
+		return $approved;
 	}
 
 	/**

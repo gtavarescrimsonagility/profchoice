@@ -40,7 +40,7 @@ Size Guide (`block-size-guide` module):
 Product Reviews (`block-reviews` module):
 
 * **Product Reviews** block (`profchoice/reviews`, Interactivity API store `profchoice/reviews`): rating summary, the newest reviews (two per view on desktop, one on mobile) and Previous/Next (and swipe on mobile) that load the rest from the Store API with skeleton placeholders. Stars show the rating only (whole stars, a half star from .25, a full one from .5; no empty stars). Reviewers show as first name and last initial, in the block and in the Store API's product reviews.
-* **Write a Review** opens a form under the head (the button toggles it) that posts to `wp-comments-post.php` like WooCommerce's review form; a "will appear once approved" notice follows a held review.
+* **Write a Review** opens a form under the head (the button toggles it) that posts to `wp-comments-post.php` like WooCommerce's review form. Every product review waits for approval (also from administrators; filter `profchoicecore_reviews_hold_all`), and the page comes back to the open reviews with a confirmation.
 * **Collapsed** (attribute): hidden until a link to `#reviews` is clicked (or the URL points at `#reviews` or a review), then it scrolls into view.
 * `[profchoice_reviews product="123" collapsed="true"]` and `do_action( 'profchoicecore_reviews', $product_id, array( 'collapsed' => true ) )` render the same block.
 
