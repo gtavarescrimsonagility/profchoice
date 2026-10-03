@@ -76,6 +76,19 @@ Text Domain: profchoice
 	transform: scale(1.04);
 }
 
+/* Cards linked as a whole (.pc-card-link on the card group): the card's
+ * button link stretches over the card, so the image and the title open it
+ * too, while assistive tech still finds one link per card. */
+.pc-card-link {
+	position: relative;
+}
+
+.pc-card-link .wp-block-button__link::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
 /* Newsletter (.insider-form): focus shown as a soft ring around the whole
  * form box instead of the browser outline inside it. */
 .insider-form {
