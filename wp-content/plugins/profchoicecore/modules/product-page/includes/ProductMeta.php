@@ -25,7 +25,6 @@ final class ProductMeta {
 			'eyebrow'      => __( 'Eyebrow', 'profchoicecore' ),
 			'name'         => __( 'Rider', 'profchoicecore' ),
 			'image'        => __( 'Image', 'profchoicecore' ),
-			'image_mobile' => __( 'Mobile image', 'profchoicecore' ),
 			'alt'          => __( 'Image alternative text', 'profchoicecore' ),
 			'link_text'    => __( 'Link text', 'profchoicecore' ),
 			'link_url'     => __( 'Link URL', 'profchoicecore' ),
@@ -84,7 +83,6 @@ final class ProductMeta {
 							'eyebrow'      => array( 'type' => 'string' ),
 							'name'         => array( 'type' => 'string' ),
 							'image'        => array( 'type' => 'integer' ),
-							'image_mobile' => array( 'type' => 'integer' ),
 							'alt'          => array( 'type' => 'string' ),
 							'link_text'    => array( 'type' => 'string' ),
 							'link_url'     => array( 'type' => 'string' ),
@@ -129,7 +127,7 @@ final class ProductMeta {
 		$clean = array();
 		foreach ( array_keys( self::rider_fields() ) as $key ) {
 			$raw = isset( $value[ $key ] ) ? $value[ $key ] : '';
-			if ( in_array( $key, array( 'image', 'image_mobile' ), true ) ) {
+			if ( 'image' === $key ) {
 				$clean[ $key ] = absint( $raw );
 			} elseif ( 'link_url' === $key ) {
 				$clean[ $key ] = esc_url_raw( (string) $raw );
@@ -171,7 +169,7 @@ final class ProductMeta {
 			<div class="options_group">
 				<?php
 				foreach ( self::rider_fields() as $key => $label ) {
-					if ( in_array( $key, array( 'image', 'image_mobile' ), true ) ) {
+					if ( 'image' === $key ) {
 						self::image_field( $key, $label, $rider[ $key ] );
 						continue;
 					}
