@@ -50,7 +50,7 @@
 <wp:term>
   <wp:term_id>27</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>black</wp:term_slug>
+  <wp:term_slug>bla</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Black]]></wp:term_name>
 	<wp:termmeta>
@@ -65,7 +65,7 @@
 <wp:term>
   <wp:term_id>37</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>brown</wp:term_slug>
+  <wp:term_slug>bro</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Brown]]></wp:term_name>
 	<wp:termmeta>
@@ -80,7 +80,7 @@
 <wp:term>
   <wp:term_id>28</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>charcoal</wp:term_slug>
+  <wp:term_slug>cha</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Charcoal]]></wp:term_name>
 	<wp:termmeta>
@@ -178,7 +178,7 @@
 <wp:term>
   <wp:term_id>29</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>navy</wp:term_slug>
+  <wp:term_slug>nav</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Navy]]></wp:term_name>
 	<wp:termmeta>
@@ -191,9 +191,20 @@
 	</wp:termmeta>
 </wp:term>
 <wp:term>
+  <wp:term_id>49</wp:term_id>
+  <wp:term_taxonomy>product_tag</wp:term_taxonomy>
+  <wp:term_slug>new</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[New]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2]]></wp:meta_value>
+	</wp:termmeta>
+</wp:term>
+<wp:term>
   <wp:term_id>31</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>onyx</wp:term_slug>
+  <wp:term_slug>ony</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Onyx]]></wp:term_name>
 	<wp:termmeta>
@@ -211,6 +222,17 @@
   <wp:term_slug>outofstock</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[outofstock]]></wp:term_name>
+</wp:term>
+<wp:term>
+  <wp:term_id>48</wp:term_id>
+  <wp:term_taxonomy>product_tag</wp:term_taxonomy>
+  <wp:term_slug>pro-pick</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Pro Pick]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+	</wp:termmeta>
 </wp:term>
 <wp:term>
   <wp:term_id>11</wp:term_id>
@@ -265,7 +287,7 @@
 <wp:term>
   <wp:term_id>36</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>royal</wp:term_slug>
+  <wp:term_slug>roy</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Royal]]></wp:term_name>
 	<wp:termmeta>
@@ -296,9 +318,24 @@
   <wp:term_name><![CDATA[Saddle Pads]]></wp:term_name>
 </wp:term>
 <wp:term>
+  <wp:term_id>47</wp:term_id>
+  <wp:term_taxonomy>product_tag</wp:term_taxonomy>
+  <wp:term_slug>sale</wp:term_slug>
+  <wp:term_parent/>
+  <wp:term_name><![CDATA[Sale]]></wp:term_name>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[order]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+	</wp:termmeta>
+	<wp:termmeta>
+		<wp:meta_key><![CDATA[color]]></wp:meta_key>
+		<wp:meta_value><![CDATA[#b71c1c]]></wp:meta_value>
+	</wp:termmeta>
+</wp:term>
+<wp:term>
   <wp:term_id>39</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>sand</wp:term_slug>
+  <wp:term_slug>san</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Sand]]></wp:term_name>
 	<wp:termmeta>
@@ -313,7 +350,7 @@
 <wp:term>
   <wp:term_id>38</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>silver</wp:term_slug>
+  <wp:term_slug>sil</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Silver]]></wp:term_name>
 	<wp:termmeta>
@@ -335,7 +372,7 @@
 <wp:term>
   <wp:term_id>32</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>slate</wp:term_slug>
+  <wp:term_slug>sla</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[Slate]]></wp:term_name>
 	<wp:termmeta>
@@ -390,7 +427,7 @@
 <wp:term>
   <wp:term_id>30</wp:term_id>
   <wp:term_taxonomy>pa_color</wp:term_taxonomy>
-  <wp:term_slug>white</wp:term_slug>
+  <wp:term_slug>whi</wp:term_slug>
   <wp:term_parent/>
   <wp:term_name><![CDATA[White]]></wp:term_name>
 	<wp:termmeta>
@@ -1105,13 +1142,13 @@
 .page-id-678 .pdp-main .pdp-main__thumbs > figure:hover img {
 	transform: scale(1.05);
 }
-.page-id-678 .pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) {
+.page-id-678 .pdp-main .pdp-rider > .wp-block-media-text__media {
 	overflow: hidden;
 }
-.page-id-678 .pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) img {
+.page-id-678 .pdp-main .pdp-rider > .wp-block-media-text__media img {
 	transition: transform 0.6s ease;
 }
-.page-id-678 .pdp-main .pdp-rider:hover :is(.pdp-rider__image, .pdp-rider__image--mobile) img {
+.page-id-678 .pdp-main .pdp-rider:hover > .wp-block-media-text__media img {
 	transform: scale(1.04);
 }
 .page-id-678 .pdp-main .pdp-rider__link .pc-inline-icon {
@@ -1175,7 +1212,7 @@
 	.page-id-678 .pdp :is(.pdp-main__fav, .pdp-card__fav) .pc-inline-icon,
 	.page-id-678 .pdp-main .pdp-main__thumbs img,
 	.page-id-678 .pdp-main .pdp-main__thumbs > figure::after,
-	.page-id-678 .pdp-main :is(.pdp-rider__image, .pdp-rider__image--mobile) img,
+	.page-id-678 .pdp-main .pdp-rider > .wp-block-media-text__media img,
 	.page-id-678 .pdp-main .pdp-rider__link .pc-inline-icon,
 	.page-id-678 .pdp-main .pdp-option__swatches > div,
 	.page-id-678 .pdp-main .pdp-size,
@@ -1188,7 +1225,7 @@
 	}
 	.page-id-678 .pdp :is(.pdp-main__fav, .pdp-card__fav) .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon,
 	.page-id-678 .pdp-main .pdp-main__thumbs > figure:hover img,
-	.page-id-678 .pdp-main .pdp-rider:hover :is(.pdp-rider__image, .pdp-rider__image--mobile) img,
+	.page-id-678 .pdp-main .pdp-rider:hover > .wp-block-media-text__media img,
 	.page-id-678 .pdp-main .pdp-rider__link .wp-block-button__link:is(:hover, :focus-visible) .pc-inline-icon,
 	.page-id-678 .pdp-main .pdp-option__swatches > div:hover,
 	.page-id-678 .pdp-related .pdp-card:hover .pdp-card__media img,
@@ -1236,16 +1273,6 @@
 	}
 	.page-id-678 .pdp-related .pdp-card {
 		flex: 1 1 calc(50% - 0.5rem);
-	}
-}
-/* Narrow desktop: the card's photo keeps 40% instead of a fixed text column. */
-@media (48.875rem < width <= 72rem) {
-	.page-id-678 .pdp-main .pdp-rider__image {
-		flex: 0 0 40%;
-	}
-	.page-id-678 .pdp-main .pdp-rider__body {
-		flex: 1;
-		width: auto;
 	}
 }
 /* Responsive rules without a block-attribute equivalent (font family per breakpoint, gaps, layout). */
@@ -1326,21 +1353,14 @@
 		height: 0.4375rem;
 	}
 	.page-id-678 .pdp-main .pdp-rider {
-		align-items: stretch;
+		grid-template-columns: 13.75rem minmax(0, 1fr) !important;
+		column-gap: 0;
+		min-height: 7.5rem;
 		overflow: hidden;
 	}
-	.page-id-678 .pdp-main .pdp-rider__image {
-		display: none;
-	}
-	.page-id-678 .pdp-main .pdp-rider__image--mobile {
-		display: block;
-		flex: none;
-		width: 9.375rem;
-		min-height: 7.5rem;
-	}
-	.page-id-678 .pdp-main .pdp-rider__body {
-		flex: 1;
-		width: auto;
+	/* 220x120: the desktop crop's ratio rounded to whole pixels. */
+	.page-id-678 .pdp-main .pdp-rider > .wp-block-media-text__media {
+		aspect-ratio: 11 / 6;
 	}
 	.page-id-678 .pdp-main .pdp-size {
 		min-width: 2.875rem;
@@ -1396,10 +1416,23 @@
 	}
 }
 
+/* Sale price: struck-through regular price, then the sale price. */
+.page-id-678 .pdp-related .pdp-card__price s {
+	margin-inline-end: 0.375rem;
+	color: #6e727a;
+	font-weight: 400;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	.page-id-678 .pdp-related .pdp-card__quick {
 		transition: none;
 	}
+}
+/* Core's expand button, bottom right (the heart is top right). */
+.page-id-678 .pdp-main .lightbox-trigger {
+	top: auto !important;
+	right: 1rem !important;
+	bottom: 1rem;
 }
 /* tail COMB-593 PDP */
 
@@ -1577,8 +1610,8 @@
   <wp:post_id>60</wp:post_id>
   <wp:post_date>2026-09-28 14:47:52</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:47:52</wp:post_date_gmt>
-  <wp:post_modified>2026-10-03 01:11:26</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-03 01:11:26</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:05:07</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:05:07</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>profchoice</wp:post_name>
@@ -2840,15 +2873,15 @@
 <item>
   <title><![CDATA[Ventech Sport Boots]]></title>
   <link>https://professionals-choice.wp.local/product/ventech-sport-boots/</link>
-  <pubDate>Thu, 01 Oct 2026 10:02:49 +0000</pubDate>
+  <pubDate>Sat, 01 Aug 2026 13:00:00 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://professionals-choice.wp.local/product/ventech-sport-boots/</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>650</wp:post_id>
-  <wp:post_date>2026-10-01 10:02:49</wp:post_date>
-  <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
+  <wp:post_date>2026-08-01 10:00:00</wp:post_date>
+  <wp:post_date_gmt>2026-08-01 13:00:00</wp:post_date_gmt>
   <wp:post_modified>2026-10-02 20:07:24</wp:post_modified>
   <wp:post_modified_gmt>2026-10-02 20:07:24</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
@@ -2936,15 +2969,15 @@
 <item>
   <title><![CDATA[Stealth Air Ride Saddle Pad]]></title>
   <link>https://professionals-choice.wp.local/product/stealth-air-ride-saddle-pad/</link>
-  <pubDate>Thu, 01 Oct 2026 10:02:49 +0000</pubDate>
+  <pubDate>Sat, 01 Aug 2026 13:00:00 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://professionals-choice.wp.local/product/stealth-air-ride-saddle-pad/</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>651</wp:post_id>
-  <wp:post_date>2026-10-01 10:02:49</wp:post_date>
-  <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
+  <wp:post_date>2026-08-01 10:00:00</wp:post_date>
+  <wp:post_date_gmt>2026-08-01 13:00:00</wp:post_date_gmt>
   <wp:post_modified>2026-10-02 20:07:24</wp:post_modified>
   <wp:post_modified_gmt>2026-10-02 20:07:24</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
@@ -3032,15 +3065,15 @@
 <item>
   <title><![CDATA[Comfort Fit Fly Mask]]></title>
   <link>https://professionals-choice.wp.local/product/comfort-fit-fly-mask/</link>
-  <pubDate>Thu, 01 Oct 2026 10:02:49 +0000</pubDate>
+  <pubDate>Sat, 01 Aug 2026 13:00:00 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://professionals-choice.wp.local/product/comfort-fit-fly-mask/</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>652</wp:post_id>
-  <wp:post_date>2026-10-01 10:02:49</wp:post_date>
-  <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
+  <wp:post_date>2026-08-01 10:00:00</wp:post_date>
+  <wp:post_date_gmt>2026-08-01 13:00:00</wp:post_date_gmt>
   <wp:post_modified>2026-10-02 20:07:24</wp:post_modified>
   <wp:post_modified_gmt>2026-10-02 20:07:24</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
@@ -3128,15 +3161,15 @@
 <item>
   <title><![CDATA[Pro Performance Front Splint Boots]]></title>
   <link>https://professionals-choice.wp.local/product/pro-performance-front-splint-boots/</link>
-  <pubDate>Thu, 01 Oct 2026 10:02:49 +0000</pubDate>
+  <pubDate>Sat, 01 Aug 2026 13:00:00 +0000</pubDate>
   <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://professionals-choice.wp.local/product/pro-performance-front-splint-boots/</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>653</wp:post_id>
-  <wp:post_date>2026-10-01 10:02:49</wp:post_date>
-  <wp:post_date_gmt>2026-10-01 10:02:49</wp:post_date_gmt>
+  <wp:post_date>2026-08-01 10:00:00</wp:post_date>
+  <wp:post_date_gmt>2026-08-01 13:00:00</wp:post_date_gmt>
   <wp:post_modified>2026-10-02 20:07:24</wp:post_modified>
   <wp:post_modified_gmt>2026-10-02 20:07:24</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
@@ -3237,8 +3270,8 @@
 <section class="wp-block-group alignfull pdp-main has-text-color" style="color:#14161a;padding-top:1rem;padding-right:2.5rem;padding-bottom:calc(5rem + 0.625px);padding-left:2.5rem;line-height:normal"><!-- wp:group {"metadata":{"name":"Layout"},"className":"pdp-main__layout","style":{"spacing":{"blockGap":"2.25rem"},"@mobile":{"spacing":{"blockGap":"0.3125rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
 <div class="wp-block-group pdp-main__layout"><!-- wp:group {"metadata":{"name":"Media"},"className":"pdp-main__media","style":{"spacing":{"blockGap":"1.0625rem"},"@mobile":{"spacing":{"blockGap":"0"}},"css":"\u0026 {\nflex: 1;\nmin-width: 0;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
 <div class="wp-block-group pdp-main__media has-custom-css"><!-- wp:group {"metadata":{"name":"Stage"},"className":"pdp-main__stage","style":{"css":"\u0026 {\nposition: relative;\naspect-ratio: 662 / 794.39;\n}"},"layout":{"type":"default"}} -->
-<div class="wp-block-group pdp-main__stage has-custom-css"><!-- wp:image {"id":680,"width":"100%","scale":"contain","sizeSlug":"full","metadata":{"name":"Product image"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: absolute;\ninset: 0;\n}\n\u0026 img {\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: contain;\n}"}} -->
-<figure class="wp-block-image size-full is-resized has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-product.webp" alt="Satin Dressage Pad with VenTECH™ Lining, black" class="wp-image-680" style="object-fit:contain;width:100%;height:auto"/></figure>
+<div class="wp-block-group pdp-main__stage has-custom-css"><!-- wp:image {"lightbox":{"enabled":true},"id":817,"width":"100%","scale":"contain","sizeSlug":"profchoice-stage","metadata":{"name":"Product image"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: absolute;\ninset: 0;\n}\n\u0026 img {\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: contain;\n}"}} -->
+<figure class="wp-block-image size-profchoice-stage is-resized has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-bla-662x662.webp" alt="Satin Dressage Pad with VenTECH™ Lining, black" class="wp-image-817" style="object-fit:contain;width:100%;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"metadata":{"name":"Badge"},"className":"pdp-main__badge","style":{"color":{"text":"#14161a","background":"#ffffff"},"typography":{"lineHeight":"normal","fontSize":"0.65625rem","fontWeight":"700","letterSpacing":"0.13125rem","textTransform":"uppercase"},"spacing":{"padding":{"top":"0.375rem","right":"0.6875rem","bottom":"0.375rem","left":"0.6875rem"}},"@mobile":{"typography":{"fontSize":"0.5625rem","letterSpacing":"0.0875rem"},"spacing":{"padding":{"top":"0.3125rem","right":"0.625rem","bottom":"0.3125rem","left":"0.625rem"}}},"css":"\u0026 {\nposition: absolute;\ntop: 1.125rem;\nleft: 1.125rem;\nmargin: 0;\n}"},"fontFamily":"inter"} -->
@@ -3253,38 +3286,38 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Thumbnails"},"className":"pdp-main__thumbs pdp-main__thumbs\u002d\u002ddesktop","style":{"spacing":{"blockGap":"0.75rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"top":"0.625rem","right":"1rem","bottom":"0.25rem","left":"1rem"}}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group pdp-main__thumbs pdp-main__thumbs--desktop"><!-- wp:image {"id":681,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Black"},"className":"active","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: relative;\n}\n\u0026::after {\ncontent: \u0022\u0022;\nposition: absolute;\ninset: 0;\nbox-shadow: inset 0 0 0 2px #14161a;\npointer-events: none;\n}"}} -->
-<figure class="wp-block-image size-full is-resized active has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb0.webp" alt="" class="wp-image-681" style="object-fit:cover;width:5rem;height:6rem" title="Black"/></figure>
+<div class="wp-block-group pdp-main__thumbs pdp-main__thumbs--desktop"><!-- wp:image {"id":817,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"profchoice-thumb","metadata":{"name":"Thumbnail Black"},"className":"active","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: relative;\n}\n\u0026::after {\ncontent: \u0022\u0022;\nposition: absolute;\ninset: 0;\nbox-shadow: inset 0 0 0 2px #14161a;\npointer-events: none;\n}"}} -->
+<figure class="wp-block-image size-profchoice-thumb is-resized active has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-bla-80x96.webp" alt="" class="wp-image-817" style="object-fit:cover;width:5rem;height:6rem" title="Black"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":683,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Charcoal"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb1.webp" alt="" class="wp-image-683" style="object-fit:cover;width:5rem;height:6rem" title="Charcoal"/></figure>
+<!-- wp:image {"id":818,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"profchoice-thumb","metadata":{"name":"Thumbnail Charcoal"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-profchoice-thumb is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-cha-80x96.webp" alt="" class="wp-image-818" style="object-fit:cover;width:5rem;height:6rem" title="Charcoal"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":685,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Navy"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb2.webp" alt="" class="wp-image-685" style="object-fit:cover;width:5rem;height:6rem" title="Navy"/></figure>
+<!-- wp:image {"id":819,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"profchoice-thumb","metadata":{"name":"Thumbnail Navy"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-profchoice-thumb is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-nav-80x96.webp" alt="" class="wp-image-819" style="object-fit:cover;width:5rem;height:6rem" title="Navy"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":687,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail White"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb3.webp" alt="" class="wp-image-687" style="object-fit:cover;width:5rem;height:6rem" title="White"/></figure>
+<!-- wp:image {"id":820,"width":"5rem","height":"6rem","scale":"cover","sizeSlug":"profchoice-thumb","metadata":{"name":"Thumbnail White"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-profchoice-thumb is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-whi-80x96.webp" alt="" class="wp-image-820" style="object-fit:cover;width:5rem;height:6rem" title="White"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Thumbnails (mobile)"},"className":"pdp-main__thumbs pdp-main__thumbs\u002d\u002dmobile","style":{"spacing":{"blockGap":"0.75rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"top":"0.625rem","right":"1rem","bottom":"0.25rem","left":"1rem"}}},"css":"\u0026 {\ndisplay: none !important;\n}"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group pdp-main__thumbs pdp-main__thumbs--mobile has-custom-css"><!-- wp:image {"id":682,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Black (mobile)"},"className":"active","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: relative;\n}\n\u0026::after {\ncontent: \u0022\u0022;\nposition: absolute;\ninset: 0;\nbox-shadow: inset 0 0 0 2px #14161a;\npointer-events: none;\n}"}} -->
-<figure class="wp-block-image size-full is-resized active has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb0-64x76-1.webp" alt="" class="wp-image-682" style="object-fit:cover;width:4rem;height:4.75rem" title="Black"/></figure>
+<div class="wp-block-group pdp-main__thumbs pdp-main__thumbs--mobile has-custom-css"><!-- wp:image {"id":817,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"profchoice-thumb","metadata":{"name":"Thumbnail Black (mobile)"},"className":"active","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nposition: relative;\n}\n\u0026::after {\ncontent: \u0022\u0022;\nposition: absolute;\ninset: 0;\nbox-shadow: inset 0 0 0 2px #14161a;\npointer-events: none;\n}"}} -->
+<figure class="wp-block-image size-profchoice-thumb is-resized active has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-bla-80x96.webp" alt="" class="wp-image-817" style="object-fit:cover;width:4rem;height:4.75rem" title="Black"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":684,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Charcoal (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb1-64x76-1.webp" alt="" class="wp-image-684" style="object-fit:cover;width:4rem;height:4.75rem" title="Charcoal"/></figure>
+<!-- wp:image {"id":818,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"profchoice-thumb","metadata":{"name":"Thumbnail Charcoal (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-profchoice-thumb is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-cha-80x96.webp" alt="" class="wp-image-818" style="object-fit:cover;width:4rem;height:4.75rem" title="Charcoal"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":686,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail Navy (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb2-64x76-1.webp" alt="" class="wp-image-686" style="object-fit:cover;width:4rem;height:4.75rem" title="Navy"/></figure>
+<!-- wp:image {"id":819,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"profchoice-thumb","metadata":{"name":"Thumbnail Navy (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-profchoice-thumb is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-nav-80x96.webp" alt="" class="wp-image-819" style="object-fit:cover;width:4rem;height:4.75rem" title="Navy"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":688,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"full","metadata":{"name":"Thumbnail White (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<figure class="wp-block-image size-full is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-thumb3-64x76-1.webp" alt="" class="wp-image-688" style="object-fit:cover;width:4rem;height:4.75rem" title="White"/></figure>
+<!-- wp:image {"id":820,"width":"4rem","height":"4.75rem","scale":"cover","sizeSlug":"profchoice-thumb","metadata":{"name":"Thumbnail White (mobile)"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<figure class="wp-block-image size-profchoice-thumb is-resized" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/08/eps520-whi-80x96.webp" alt="" class="wp-image-820" style="object-fit:cover;width:4rem;height:4.75rem" title="White"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -3332,17 +3365,9 @@
 <p class="pdp-main__description has-text-color has-dm-sans-font-family" style="color:#3a3d44;padding-top:0.25rem;font-size:0.90625rem;line-height:1.495625rem">Beautiful quilted satin top layer with a rope border detailed with crystals. VenTECH mesh liner is absorbent, quick drying, extremely breathable and lightweight. Antimicrobial so it will not harbor bacteria. Reinforced ballistic billet guards provide extra durability. Contoured spine for wither clearance and correct fit, keeping the pad securely in place. Webbed D ring straps feature hook and loop for easy application.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"tagName":"aside","metadata":{"name":"Rider"},"className":"pdp-rider","style":{"color":{"background":"#faf7f2"},"spacing":{"blockGap":"1rem","padding":{"right":"1rem"},"margin":{"top":"0.375rem"}},"@mobile":{"spacing":{"blockGap":"0","padding":{"right":"0"},"margin":{"top":"0"}},"dimensions":{"minHeight":"7.5rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<aside class="wp-block-group pdp-rider has-background" style="background-color:#faf7f2;margin-top:0.375rem;padding-right:1rem"><!-- wp:image {"id":689,"sizeSlug":"full","metadata":{"name":"Rider photo"},"className":"pdp-rider__image","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\nflex: 1;\nalign-self: stretch;\nmin-width: 0;\nmin-height: 7.9375rem;\n}\n\u0026 img {\ndisplay: block;\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: cover;\n}"}} -->
-<figure class="wp-block-image size-full pdp-rider__image has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-rider-desktop.webp" alt="Hailey Kinsel barrel racing" class="wp-image-689"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":690,"sizeSlug":"full","metadata":{"name":"Rider photo (mobile)"},"className":"pdp-rider__image\u002d\u002dmobile","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"css":"\u0026 {\ndisplay: none;\n}\n\u0026 img {\ndisplay: block;\nwidth: 100% !important;\nheight: 100% !important;\nobject-fit: cover;\n}"}} -->
-<figure class="wp-block-image size-full pdp-rider__image--mobile has-custom-css" style="margin-top:0;margin-bottom:0"><img src="/wp-content/uploads/2026/10/pdp-rider-mobile.webp" alt="Hailey Kinsel barrel racing" class="wp-image-690"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:group {"metadata":{"name":"Rider body"},"className":"pdp-rider__body","style":{"spacing":{"blockGap":"2.3125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem","padding":{"top":"1rem","right":"1rem","bottom":"0.875rem","left":"1rem"}}},"css":"\u0026 {\nflex-shrink: 0;\nwidth: 20.1875rem;\n}"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
-<div class="wp-block-group pdp-rider__body has-custom-css"><!-- wp:group {"metadata":{"name":"Rider heading"},"style":{"spacing":{"blockGap":"0.125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<!-- wp:media-text {"mediaId":809,"mediaLink":"http://localhost:8907/hailey-kinsel-barrel-racing/","mediaType":"image","mediaSizeSlug":"full","isStackedOnMobile":false,"imageFill":true,"metadata":{"name":"Rider"},"className":"pdp-rider","style":{"color":{"background":"#faf7f2"},"spacing":{"padding":{"right":"1rem"},"margin":{"top":"0.375rem"}},"@mobile":{"spacing":{"padding":{"right":"0"},"margin":{"top":"0"}}},"css":"\u0026 {\ngrid-template-columns: 14.5625rem minmax(0, 1fr) !important;\ncolumn-gap: 1rem;\n}\n\u0026 \u003e .wp-block-media-text__media {\nalign-self: center;\naspect-ratio: 233 / 127;\nheight: auto !important;\nmin-height: 0 !important;\noverflow: hidden;\n}\n\u0026 \u003e .wp-block-media-text__content {\npadding: 0 !important;\n}"}} -->
+<div class="wp-block-media-text is-image-fill-element pdp-rider has-custom-css has-background" style="background-color:#faf7f2;margin-top:0.375rem;padding-right:1rem"><figure class="wp-block-media-text__media"><img src="/wp-content/uploads/2026/10/pdp-rider.webp" alt="Hailey Kinsel barrel racing" class="wp-image-809 size-full" style="object-position:50% 50%"/></figure><div class="wp-block-media-text__content"><!-- wp:group {"metadata":{"name":"Rider body"},"className":"pdp-rider__body","style":{"spacing":{"blockGap":"2.3125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem","padding":{"top":"1rem","right":"1rem","bottom":"0.875rem","left":"1rem"}}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group pdp-rider__body"><!-- wp:group {"metadata":{"name":"Rider heading"},"style":{"spacing":{"blockGap":"0.125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"metadata":{"name":"Eyebrow"},"className":"pdp-rider__eyebrow","style":{"color":{"text":"#b8533f"},"typography":{"lineHeight":"normal","fontSize":"0.65625rem","fontWeight":"700","letterSpacing":"0.125rem","textTransform":"uppercase"},"@mobile":{"typography":{"fontSize":"0.5625rem","letterSpacing":"0.1125rem"}}},"fontFamily":"dm-sans"} -->
 <p class="pdp-rider__eyebrow has-text-color has-dm-sans-font-family" style="color:#b8533f;font-size:0.65625rem;font-weight:700;letter-spacing:0.125rem;line-height:normal;text-transform:uppercase">As ridden by</p>
 <!-- /wp:paragraph -->
@@ -3350,15 +3375,9 @@
 <!-- wp:paragraph {"metadata":{"name":"Rider name"},"className":"pdp-rider__name","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.9375rem","fontWeight":"700"},"@mobile":{"typography":{"fontSize":"0.8125rem"},"spacing":{"padding":{"bottom":"0.5625rem"}}}},"fontFamily":"dm-sans"} -->
 <p class="pdp-rider__name has-text-color has-dm-sans-font-family" style="color:#14161a;font-size:0.9375rem;font-weight:700;line-height:normal">Hailey Kinsel · Barrel Racing, 3x NFR Qualifier</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:buttons {"metadata":{"name":"Rider link"},"className":"pdp-rider__link","style":{"css":"\u0026 {\nalign-self: flex-start;\n}\n\u0026 .wp-block-button__link {\ndisplay: flex;\ngap: 0.8333em;\nalign-items: center;\n}\n\u0026 .pc-inline-icon {\nflex-shrink: 0;\nwidth: 1.5625em !important;\nheight: 1.3392em !important;\n}"}} -->
-<div class="wp-block-buttons pdp-rider__link has-custom-css"><!-- wp:button {"style":{"color":{"background":"#ffffff00","text":"#14161a"},":hover":{"color":{"background":"#ffffff00","text":"#14161a"}},":focus":{"color":{"background":"#ffffff00","text":"#14161a"}},":focus-visible":{"color":{"background":"#ffffff00","text":"#14161a"}},":active":{"color":{"background":"#ffffff00","text":"#14161a"}},"typography":{"lineHeight":"normal","fontSize":"0.75rem","fontWeight":"600","letterSpacing":"0.135rem","textTransform":"uppercase","textAlign":"left"},"spacing":{"padding":{"top":"0.3rem","right":"0","bottom":"0.25rem","left":"0"}},"border":{"radius":"0px","top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"},"bottom":{"width":"1px","style":"solid","color":"#14161a"}},"@mobile":{"typography":{"fontSize":"0.625rem","fontWeight":"700","letterSpacing":"0.1125rem"},"spacing":{"padding":{"top":"0","right":"0","bottom":"0.125rem","left":"0"}}}},"fontFamily":"dm-sans"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-dm-sans-font-family has-text-align-left has-custom-font-size wp-element-button" href="#" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:#14161a;border-bottom-style:solid;border-bottom-width:1px;border-left-style:none;border-left-width:0px;color:#14161a;background-color:#ffffff00;padding-top:0.3rem;padding-right:0;padding-bottom:0.25rem;padding-left:0;font-size:0.75rem;font-weight:600;letter-spacing:0.135rem;line-height:normal;text-transform:uppercase">Watch her setup<img data-icon="profchoice/arrow-long-right" alt="" class="pc-inline-icon"></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></aside>
-<!-- /wp:group -->
+<!-- /wp:group --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:media-text -->
 
 <!-- wp:group {"metadata":{"name":"Options"},"className":"pdp-main__form","style":{"spacing":{"blockGap":"1.125rem","padding":{"top":"0.375rem"}},"@mobile":{"spacing":{"blockGap":"0","padding":{"top":"0"},"margin":{"top":"1.0625rem"}}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
 <div class="wp-block-group pdp-main__form" style="padding-top:0.375rem"><!-- wp:group {"metadata":{"name":"Color"},"className":"pdp-option","style":{"spacing":{"blockGap":"0.75rem","padding":{"top":"1rem"}},"border":{"top":{"width":"1px","style":"solid","color":"#e5e2dc"}},"@mobile":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"},"margin":{"top":"0"}}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
@@ -3546,7 +3565,7 @@
 
 <!-- wp:group {"metadata":{"name":"Foot"},"className":"pdp-card__foot","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 <div class="wp-block-group pdp-card__foot"><!-- wp:paragraph {"metadata":{"name":"Price"},"className":"pdp-card__price","style":{"color":{"text":"#14161a"},"typography":{"lineHeight":"normal","fontSize":"0.9375rem","fontWeight":"600"},"@mobile":{"typography":{"fontSize":"0.84375rem","fontWeight":"700"}}},"fontFamily":"montserrat"} -->
-<p class="pdp-card__price has-text-color has-montserrat-font-family" style="color:#14161a;font-size:0.9375rem;font-weight:600;line-height:normal">$119.99</p>
+<p class="pdp-card__price has-text-color has-montserrat-font-family" style="color:#14161a;font-size:0.9375rem;font-weight:600;line-height:normal"><s><span class="woocommerce-Price-currencySymbol">$</span>139.99</s> <span class="woocommerce-Price-currencySymbol">$</span>119.99</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"metadata":{"name":"Swatches"},"className":"pdp-card__swatches","style":{"spacing":{"blockGap":"0.3125rem"},"@mobile":{"spacing":{"blockGap":"0.25rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -3667,8 +3686,8 @@
   <wp:post_id>678</wp:post_id>
   <wp:post_date>2026-10-02 17:41:57</wp:post_date>
   <wp:post_date_gmt>2026-10-02 17:41:57</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 19:00:16</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 19:00:16</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:22:02</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:22:02</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining</wp:post_name>
@@ -3678,397 +3697,6 @@
   <wp:post_type>page</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-</item>
-<item>
-  <title><![CDATA[Satin Dressage Pad with VenTECH Lining, black]]></title>
-  <link>https://professionals-choice.wp.local/satin-dressage-pad-with-ventech-lining-black/</link>
-  <pubDate>Fri, 02 Oct 2026 17:42:47 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-product.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>680</wp:post_id>
-  <wp:post_date>2026-10-02 17:42:47</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:42:47</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:42:47</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:42:47</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>satin-dressage-pad-with-ventech-lining-black</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-product.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-product.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:500;s:6:"height";i:500;s:4:"file";s:24:"2026/10/pdp-product.webp";s:8:"filesize";i:26112;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
-    <wp:meta_value><![CDATA[Satin Dressage Pad with VenTECH™ Lining, black]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[PDP thumbnail Black]]></title>
-  <link>https://professionals-choice.wp.local/pdp-thumbnail-black/</link>
-  <pubDate>Fri, 02 Oct 2026 17:42:56 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb0.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>681</wp:post_id>
-  <wp:post_date>2026-10-02 17:42:56</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:42:56</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:42:56</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:42:56</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pdp-thumbnail-black</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb0.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-thumb0.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb0.webp";s:8:"filesize";i:6404;s:5:"sizes";a:1:{s:19:"profchoice-thumb-sm";a:4:{s:4:"file";s:23:"pdp-thumb0-64x76-1.webp";s:5:"width";i:64;s:6:"height";i:76;s:9:"mime-type";s:10:"image/webp";}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
-    <wp:meta_value><![CDATA[Black]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[PDP thumbnail Black 64x76]]></title>
-  <link>https://professionals-choice.wp.local/pdp-thumbnail-black-64x76/</link>
-  <pubDate>Fri, 02 Oct 2026 17:42:59 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb0-64x76-1.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>682</wp:post_id>
-  <wp:post_date>2026-10-02 17:42:59</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:42:59</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:42:59</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:42:59</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pdp-thumbnail-black-64x76</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb0-64x76-1.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-thumb0-64x76-1.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:64;s:6:"height";i:76;s:4:"file";s:31:"2026/10/pdp-thumb0-64x76-1.webp";s:8:"filesize";i:4562;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[PDP thumbnail Charcoal]]></title>
-  <link>https://professionals-choice.wp.local/pdp-thumbnail-charcoal/</link>
-  <pubDate>Fri, 02 Oct 2026 17:43:02 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb1.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>683</wp:post_id>
-  <wp:post_date>2026-10-02 17:43:02</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:43:02</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:43:02</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:43:02</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pdp-thumbnail-charcoal</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb1.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-thumb1.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb1.webp";s:8:"filesize";i:5326;s:5:"sizes";a:1:{s:19:"profchoice-thumb-sm";a:4:{s:4:"file";s:23:"pdp-thumb1-64x76-1.webp";s:5:"width";i:64;s:6:"height";i:76;s:9:"mime-type";s:10:"image/webp";}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
-    <wp:meta_value><![CDATA[Charcoal]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[PDP thumbnail Charcoal 64x76]]></title>
-  <link>https://professionals-choice.wp.local/pdp-thumbnail-charcoal-64x76/</link>
-  <pubDate>Fri, 02 Oct 2026 17:43:05 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb1-64x76-1.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>684</wp:post_id>
-  <wp:post_date>2026-10-02 17:43:05</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:43:05</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:43:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:43:05</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pdp-thumbnail-charcoal-64x76</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb1-64x76-1.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-thumb1-64x76-1.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:64;s:6:"height";i:76;s:4:"file";s:31:"2026/10/pdp-thumb1-64x76-1.webp";s:8:"filesize";i:3778;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[PDP thumbnail Navy]]></title>
-  <link>https://professionals-choice.wp.local/pdp-thumbnail-navy/</link>
-  <pubDate>Fri, 02 Oct 2026 17:43:08 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb2.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>685</wp:post_id>
-  <wp:post_date>2026-10-02 17:43:08</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:43:08</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:43:08</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:43:08</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pdp-thumbnail-navy</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb2.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-thumb2.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb2.webp";s:8:"filesize";i:6942;s:5:"sizes";a:1:{s:19:"profchoice-thumb-sm";a:4:{s:4:"file";s:23:"pdp-thumb2-64x76-1.webp";s:5:"width";i:64;s:6:"height";i:76;s:9:"mime-type";s:10:"image/webp";}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
-    <wp:meta_value><![CDATA[Navy]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[PDP thumbnail Navy 64x76]]></title>
-  <link>https://professionals-choice.wp.local/pdp-thumbnail-navy-64x76/</link>
-  <pubDate>Fri, 02 Oct 2026 17:43:11 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb2-64x76-1.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>686</wp:post_id>
-  <wp:post_date>2026-10-02 17:43:11</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:43:11</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:43:11</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:43:11</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pdp-thumbnail-navy-64x76</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb2-64x76-1.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-thumb2-64x76-1.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:64;s:6:"height";i:76;s:4:"file";s:31:"2026/10/pdp-thumb2-64x76-1.webp";s:8:"filesize";i:4650;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[PDP thumbnail White]]></title>
-  <link>https://professionals-choice.wp.local/pdp-thumbnail-white/</link>
-  <pubDate>Fri, 02 Oct 2026 17:43:14 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb3.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>687</wp:post_id>
-  <wp:post_date>2026-10-02 17:43:14</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:43:14</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:43:14</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:43:14</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pdp-thumbnail-white</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb3.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-thumb3.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:80;s:6:"height";i:96;s:4:"file";s:23:"2026/10/pdp-thumb3.webp";s:8:"filesize";i:6564;s:5:"sizes";a:1:{s:19:"profchoice-thumb-sm";a:4:{s:4:"file";s:23:"pdp-thumb3-64x76-1.webp";s:5:"width";i:64;s:6:"height";i:76;s:9:"mime-type";s:10:"image/webp";}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
-    <wp:meta_value><![CDATA[White]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[PDP thumbnail White 64x76]]></title>
-  <link>https://professionals-choice.wp.local/pdp-thumbnail-white-64x76/</link>
-  <pubDate>Fri, 02 Oct 2026 17:43:17 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb3-64x76-1.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>688</wp:post_id>
-  <wp:post_date>2026-10-02 17:43:17</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:43:17</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:43:17</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:43:17</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>pdp-thumbnail-white-64x76</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-thumb3-64x76-1.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-thumb3-64x76-1.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:64;s:6:"height";i:76;s:4:"file";s:31:"2026/10/pdp-thumb3-64x76-1.webp";s:8:"filesize";i:4284;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[Hailey Kinsel barrel racing (desktop crop)]]></title>
-  <link>https://professionals-choice.wp.local/hailey-kinsel-barrel-racing-desktop-crop/</link>
-  <pubDate>Fri, 02 Oct 2026 17:43:20 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider-desktop.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>689</wp:post_id>
-  <wp:post_date>2026-10-02 17:43:20</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:43:20</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:43:20</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:43:20</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>hailey-kinsel-barrel-racing-desktop-crop</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider-desktop.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-rider-desktop.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:307;s:6:"height";i:127;s:4:"file";s:30:"2026/10/pdp-rider-desktop.webp";s:8:"filesize";i:7530;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
-    <wp:meta_value><![CDATA[Hailey Kinsel barrel racing]]></wp:meta_value>
-  </wp:postmeta>
-</item>
-<item>
-  <title><![CDATA[Hailey Kinsel barrel racing (mobile crop)]]></title>
-  <link>https://professionals-choice.wp.local/hailey-kinsel-barrel-racing-mobile-crop/</link>
-  <pubDate>Fri, 02 Oct 2026 17:43:23 +0000</pubDate>
-  <dc:creator/>
-  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider-mobile.webp</guid>
-  <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
-  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-  <wp:post_id>690</wp:post_id>
-  <wp:post_date>2026-10-02 17:43:23</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 17:43:23</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 17:43:23</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 17:43:23</wp:post_modified_gmt>
-  <wp:comment_status>open</wp:comment_status>
-  <wp:ping_status>closed</wp:ping_status>
-  <wp:post_name>hailey-kinsel-barrel-racing-mobile-crop</wp:post_name>
-  <wp:status>inherit</wp:status>
-  <wp:post_parent>0</wp:post_parent>
-  <wp:menu_order>0</wp:menu_order>
-  <wp:post_type>attachment</wp:post_type>
-  <wp:post_password/>
-  <wp:is_sticky>0</wp:is_sticky>
-  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider-mobile.webp</wp:attachment_url>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attached_file</wp:meta_key>
-    <wp:meta_value><![CDATA[2026/10/pdp-rider-mobile.webp]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:150;s:6:"height";i:120;s:4:"file";s:29:"2026/10/pdp-rider-mobile.webp";s:8:"filesize";i:5934;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
-    <wp:meta_value><![CDATA[Hailey Kinsel barrel racing]]></wp:meta_value>
-  </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[rear-ankle-boots]]></title>
@@ -4297,9 +3925,10 @@
   <wp:post_type>product</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <category domain="pa_color" nicename="onyx"><![CDATA[Onyx]]></category>
+  <category domain="product_tag" nicename="new"><![CDATA[New]]></category>
+  <category domain="pa_color" nicename="ony"><![CDATA[Onyx]]></category>
   <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
-  <category domain="pa_color" nicename="slate"><![CDATA[Slate]]></category>
+  <category domain="pa_color" nicename="sla"><![CDATA[Slate]]></category>
   <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
   <category domain="pa_color" nicename="tan"><![CDATA[Tan]]></category>
   <wp:postmeta>
@@ -4382,25 +4011,21 @@
     <wp:meta_key>_price</wp:meta_key>
     <wp:meta_value><![CDATA[234.95]]></wp:meta_value>
   </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_profchoice_badge</wp:meta_key>
-    <wp:meta_value><![CDATA[New]]></wp:meta_value>
-  </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Skid Boots]]></title>
   <link>https://professionals-choice.wp.local/product/skid-boots/</link>
-  <pubDate>Fri, 02 Oct 2026 19:53:14 +0000</pubDate>
+  <pubDate>Sat, 01 Aug 2026 13:00:00 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/product/skid-boots/</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>745</wp:post_id>
-  <wp:post_date>2026-10-02 19:53:14</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 19:53:14</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_date>2026-08-01 10:00:00</wp:post_date>
+  <wp:post_date_gmt>2026-08-01 13:00:00</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 02:03:44</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 02:03:44</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>skid-boots</wp:post_name>
@@ -4410,10 +4035,11 @@
   <wp:post_type>product</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <category domain="pa_color" nicename="brown"><![CDATA[Brown]]></category>
+  <category domain="pa_color" nicename="bro"><![CDATA[Brown]]></category>
   <category domain="pa_color" nicename="jet"><![CDATA[Jet]]></category>
   <category domain="pa_color" nicename="red"><![CDATA[Red]]></category>
-  <category domain="pa_color" nicename="royal"><![CDATA[Royal]]></category>
+  <category domain="pa_color" nicename="roy"><![CDATA[Royal]]></category>
+  <category domain="product_tag" nicename="sale"><![CDATA[Sale]]></category>
   <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
   <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
   <wp:postmeta>
@@ -4422,7 +4048,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_regular_price</wp:meta_key>
-    <wp:meta_value><![CDATA[119.99]]></wp:meta_value>
+    <wp:meta_value><![CDATA[139.99]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>total_sales</wp:meta_key>
@@ -4497,22 +4123,22 @@
     <wp:meta_value><![CDATA[119.99]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
-    <wp:meta_key>_profchoice_badge</wp:meta_key>
-    <wp:meta_value><![CDATA[Sale]]></wp:meta_value>
+    <wp:meta_key>_sale_price</wp:meta_key>
+    <wp:meta_value><![CDATA[119.99]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Ballistic Overreach Boots]]></title>
   <link>https://professionals-choice.wp.local/product/ballistic-overreach-boots/</link>
-  <pubDate>Fri, 02 Oct 2026 19:53:14 +0000</pubDate>
+  <pubDate>Sat, 01 Aug 2026 13:00:00 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/product/ballistic-overreach-boots/</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>746</wp:post_id>
-  <wp:post_date>2026-10-02 19:53:14</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 19:53:14</wp:post_date_gmt>
+  <wp:post_date>2026-08-01 10:00:00</wp:post_date>
+  <wp:post_date_gmt>2026-08-01 13:00:00</wp:post_date_gmt>
   <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
   <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
@@ -4524,9 +4150,10 @@
   <wp:post_type>product</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <category domain="pa_color" nicename="silver"><![CDATA[Silver]]></category>
+  <category domain="product_tag" nicename="pro-pick"><![CDATA[Pro Pick]]></category>
+  <category domain="pa_color" nicename="sil"><![CDATA[Silver]]></category>
   <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
-  <category domain="pa_color" nicename="slate"><![CDATA[Slate]]></category>
+  <category domain="pa_color" nicename="sla"><![CDATA[Slate]]></category>
   <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
   <wp:postmeta>
     <wp:meta_key>_sku</wp:meta_key>
@@ -4608,25 +4235,21 @@
     <wp:meta_key>_price</wp:meta_key>
     <wp:meta_value><![CDATA[154.00]]></wp:meta_value>
   </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_profchoice_badge</wp:meta_key>
-    <wp:meta_value><![CDATA[Pro Pick]]></wp:meta_value>
-  </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[SMB 3 Sports Medicine Boots]]></title>
   <link>https://professionals-choice.wp.local/product/smb-3-sports-medicine-boots/</link>
-  <pubDate>Fri, 02 Oct 2026 19:53:14 +0000</pubDate>
-  <dc:creator/>
+  <pubDate>Sat, 01 Aug 2026 13:00:00 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://professionals-choice.wp.local/product/smb-3-sports-medicine-boots/</guid>
   <description/>
   <content:encoded><![CDATA[]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>747</wp:post_id>
-  <wp:post_date>2026-10-02 19:53:14</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 19:53:14</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_date>2026-08-01 10:00:00</wp:post_date>
+  <wp:post_date_gmt>2026-08-01 13:00:00</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 02:10:07</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 02:10:07</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>smb-3-sports-medicine-boots</wp:post_name>
@@ -4636,9 +4259,9 @@
   <wp:post_type>product</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <category domain="pa_color" nicename="onyx"><![CDATA[Onyx]]></category>
+  <category domain="pa_color" nicename="ony"><![CDATA[Onyx]]></category>
   <category domain="pa_color" nicename="red"><![CDATA[Red]]></category>
-  <category domain="pa_color" nicename="sand"><![CDATA[Sand]]></category>
+  <category domain="pa_color" nicename="san"><![CDATA[Sand]]></category>
   <category domain="product_type" nicename="simple"><![CDATA[simple]]></category>
   <category domain="product_cat" nicename="sports-medicine-boots"><![CDATA[Sports Medicine Boots]]></category>
   <category domain="pa_color" nicename="tan"><![CDATA[Tan]]></category>
@@ -4723,24 +4346,24 @@
     <wp:meta_value><![CDATA[14.95]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
-    <wp:meta_key>_profchoice_badge</wp:meta_key>
-    <wp:meta_value><![CDATA[]]></wp:meta_value>
+    <wp:meta_key>_edit_last</wp:meta_key>
+    <wp:meta_value><![CDATA[1]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining]]></title>
   <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/</link>
-  <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
-  <dc:creator/>
+  <pubDate>Sat, 01 Aug 2026 13:00:00 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
   <guid isPermaLink="false">https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/</guid>
   <description/>
   <content:encoded><![CDATA[Beautiful quilted satin top layer with a rope border detailed with crystals. VenTECH mesh liner is absorbent, quick drying, extremely breathable and lightweight. Antimicrobial so it will not harbor bacteria. Reinforced ballistic billet guards provide extra durability. Contoured spine for wither clearance and correct fit, keeping the pad securely in place. Webbed D ring straps feature hook and loop for easy application.]]></content:encoded>
   <excerpt:encoded><![CDATA[Beautiful quilted satin top layer with a rope border detailed with crystals. VenTECH mesh liner is absorbent, quick drying, extremely breathable and lightweight. Antimicrobial so it will not harbor bacteria. Reinforced ballistic billet guards provide extra durability. Contoured spine for wither clearance and correct fit, keeping the pad securely in place. Webbed D ring straps feature hook and loop for easy application.]]></excerpt:encoded>
   <wp:post_id>748</wp:post_id>
-  <wp:post_date>2026-10-02 19:53:15</wp:post_date>
-  <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-03 01:04:49</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-03 01:04:49</wp:post_modified_gmt>
+  <wp:post_date>2026-08-01 10:00:00</wp:post_date>
+  <wp:post_date_gmt>2026-08-01 13:00:00</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>open</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining</wp:post_name>
@@ -4750,16 +4373,17 @@
   <wp:post_type>product</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <category domain="pa_color" nicename="black"><![CDATA[Black]]></category>
-  <category domain="pa_color" nicename="charcoal"><![CDATA[Charcoal]]></category>
+  <category domain="pa_color" nicename="bla"><![CDATA[Black]]></category>
+  <category domain="pa_color" nicename="cha"><![CDATA[Charcoal]]></category>
   <category domain="product_cat" nicename="dressage-pads"><![CDATA[Dressage Pads]]></category>
   <category domain="pa_size" nicename="l"><![CDATA[L]]></category>
   <category domain="pa_size" nicename="m"><![CDATA[M]]></category>
-  <category domain="pa_color" nicename="navy"><![CDATA[Navy]]></category>
+  <category domain="pa_color" nicename="nav"><![CDATA[Navy]]></category>
+  <category domain="product_tag" nicename="pro-pick"><![CDATA[Pro Pick]]></category>
   <category domain="product_visibility" nicename="rated-5"><![CDATA[rated-5]]></category>
   <category domain="pa_size" nicename="s"><![CDATA[S]]></category>
   <category domain="product_type" nicename="variable"><![CDATA[variable]]></category>
-  <category domain="pa_color" nicename="white"><![CDATA[White]]></category>
+  <category domain="pa_color" nicename="whi"><![CDATA[White]]></category>
   <category domain="pa_size" nicename="xl"><![CDATA[XL]]></category>
   <category domain="pa_size" nicename="xs"><![CDATA[XS]]></category>
   <wp:postmeta>
@@ -4796,7 +4420,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_default_attributes</wp:meta_key>
-    <wp:meta_value><![CDATA[a:2:{s:8:"pa_color";s:5:"black";s:7:"pa_size";s:1:"m";}]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:2:{s:8:"pa_color";s:3:"bla";s:7:"pa_size";s:1:"m";}]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_virtual</wp:meta_key>
@@ -4808,7 +4432,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_product_image_gallery</wp:meta_key>
-    <wp:meta_value><![CDATA[681,683,685,687]]></wp:meta_value>
+    <wp:meta_value><![CDATA[817,818,819,820]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_download_limit</wp:meta_key>
@@ -4820,7 +4444,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[680]]></wp:meta_value>
+    <wp:meta_value><![CDATA[817]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_stock</wp:meta_key>
@@ -4839,16 +4463,8 @@
     <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
-    <wp:meta_key>_profchoice_badge</wp:meta_key>
-    <wp:meta_value><![CDATA[Pro Pick]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
     <wp:meta_key>_profchoice_rider</wp:meta_key>
-    <wp:meta_value><![CDATA[a:7:{s:7:"eyebrow";s:12:"As ridden by";s:4:"name";s:48:"Hailey Kinsel · Barrel Racing, 3x NFR Qualifier";s:5:"image";i:689;s:12:"image_mobile";i:690;s:3:"alt";s:27:"Hailey Kinsel barrel racing";s:9:"link_text";s:15:"Watch her setup";s:8:"link_url";s:1:"#";}]]></wp:meta_value>
-  </wp:postmeta>
-  <wp:postmeta>
-    <wp:meta_key>_price</wp:meta_key>
-    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
+    <wp:meta_value><![CDATA[a:6:{s:7:"eyebrow";s:0:"";s:4:"name";s:48:"Hailey Kinsel · Barrel Racing, 3x NFR Qualifier";s:5:"image";i:809;s:3:"alt";s:27:"Hailey Kinsel barrel racing";s:9:"link_text";s:15:"Watch her setup";s:8:"link_url";s:0:"";}]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_wc_average_rating</wp:meta_key>
@@ -4864,7 +4480,15 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_pc_wishlist_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_edit_last</wp:meta_key>
     <wp:meta_value><![CDATA[1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_price</wp:meta_key>
+    <wp:meta_value><![CDATA[123.95]]></wp:meta_value>
   </wp:postmeta>
   <wp:comment>
     <wp:comment_id>2</wp:comment_id>
@@ -5023,7 +4647,7 @@
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, XS]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=xs</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=bla&amp;attribute_pa_size=xs</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=749</guid>
@@ -5033,8 +4657,8 @@
   <wp:post_id>749</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-black-xs</wp:post_name>
@@ -5115,7 +4739,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+    <wp:meta_value><![CDATA[bla]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -5131,12 +4755,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[817]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, S]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=s</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=bla&amp;attribute_pa_size=s</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=750</guid>
@@ -5146,8 +4770,8 @@
   <wp:post_id>750</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-black-s</wp:post_name>
@@ -5227,7 +4851,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+    <wp:meta_value><![CDATA[bla]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -5243,12 +4867,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[817]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, M]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=m</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=bla&amp;attribute_pa_size=m</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=751</guid>
@@ -5258,8 +4882,8 @@
   <wp:post_id>751</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-black-m</wp:post_name>
@@ -5339,7 +4963,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+    <wp:meta_value><![CDATA[bla]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -5355,12 +4979,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[817]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, L]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=l</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=bla&amp;attribute_pa_size=l</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=752</guid>
@@ -5370,8 +4994,8 @@
   <wp:post_id>752</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-black-l</wp:post_name>
@@ -5451,7 +5075,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+    <wp:meta_value><![CDATA[bla]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -5467,12 +5091,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[817]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Black, XL]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=black&amp;attribute_pa_size=xl</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=bla&amp;attribute_pa_size=xl</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=753</guid>
@@ -5482,8 +5106,8 @@
   <wp:post_id>753</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-black-xl</wp:post_name>
@@ -5563,7 +5187,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[black]]></wp:meta_value>
+    <wp:meta_value><![CDATA[bla]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -5579,12 +5203,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[817]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, XS]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=xs</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=cha&amp;attribute_pa_size=xs</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=754</guid>
@@ -5594,8 +5218,8 @@
   <wp:post_id>754</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-xs</wp:post_name>
@@ -5676,7 +5300,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+    <wp:meta_value><![CDATA[cha]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -5692,12 +5316,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[818]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, S]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=s</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=cha&amp;attribute_pa_size=s</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=755</guid>
@@ -5707,8 +5331,8 @@
   <wp:post_id>755</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-s</wp:post_name>
@@ -5788,7 +5412,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+    <wp:meta_value><![CDATA[cha]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -5804,12 +5428,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[818]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, M]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=m</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=cha&amp;attribute_pa_size=m</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=756</guid>
@@ -5819,8 +5443,8 @@
   <wp:post_id>756</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-m</wp:post_name>
@@ -5900,7 +5524,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+    <wp:meta_value><![CDATA[cha]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -5916,12 +5540,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[818]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, L]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=l</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=cha&amp;attribute_pa_size=l</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=757</guid>
@@ -5931,8 +5555,8 @@
   <wp:post_id>757</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-l</wp:post_name>
@@ -6012,7 +5636,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+    <wp:meta_value><![CDATA[cha]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6028,12 +5652,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[818]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Charcoal, XL]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=charcoal&amp;attribute_pa_size=xl</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=cha&amp;attribute_pa_size=xl</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=758</guid>
@@ -6043,8 +5667,8 @@
   <wp:post_id>758</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal-xl</wp:post_name>
@@ -6124,7 +5748,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[charcoal]]></wp:meta_value>
+    <wp:meta_value><![CDATA[cha]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6140,12 +5764,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[818]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, XS]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=xs</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=nav&amp;attribute_pa_size=xs</link>
   <pubDate>Fri, 02 Oct 2026 19:53:15 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=759</guid>
@@ -6155,8 +5779,8 @@
   <wp:post_id>759</wp:post_id>
   <wp:post_date>2026-10-02 19:53:15</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:15</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-xs</wp:post_name>
@@ -6237,7 +5861,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+    <wp:meta_value><![CDATA[nav]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6253,12 +5877,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[819]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, S]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=s</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=nav&amp;attribute_pa_size=s</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=760</guid>
@@ -6268,8 +5892,8 @@
   <wp:post_id>760</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-s</wp:post_name>
@@ -6349,7 +5973,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+    <wp:meta_value><![CDATA[nav]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6365,12 +5989,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[819]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, M]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=m</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=nav&amp;attribute_pa_size=m</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=761</guid>
@@ -6380,8 +6004,8 @@
   <wp:post_id>761</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-m</wp:post_name>
@@ -6461,7 +6085,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+    <wp:meta_value><![CDATA[nav]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6477,12 +6101,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[819]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, L]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=l</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=nav&amp;attribute_pa_size=l</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=762</guid>
@@ -6492,8 +6116,8 @@
   <wp:post_id>762</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-l</wp:post_name>
@@ -6573,7 +6197,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+    <wp:meta_value><![CDATA[nav]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6589,12 +6213,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[819]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - Navy, XL]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=navy&amp;attribute_pa_size=xl</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=nav&amp;attribute_pa_size=xl</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=763</guid>
@@ -6604,8 +6228,8 @@
   <wp:post_id>763</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-navy-xl</wp:post_name>
@@ -6685,7 +6309,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[navy]]></wp:meta_value>
+    <wp:meta_value><![CDATA[nav]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6701,12 +6325,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[819]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, XS]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=xs</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=whi&amp;attribute_pa_size=xs</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=764</guid>
@@ -6716,8 +6340,8 @@
   <wp:post_id>764</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-white-xs</wp:post_name>
@@ -6798,7 +6422,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+    <wp:meta_value><![CDATA[whi]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6814,12 +6438,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[820]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, S]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=s</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=whi&amp;attribute_pa_size=s</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=765</guid>
@@ -6829,8 +6453,8 @@
   <wp:post_id>765</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-white-s</wp:post_name>
@@ -6910,7 +6534,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+    <wp:meta_value><![CDATA[whi]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -6926,12 +6550,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[820]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, M]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=m</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=whi&amp;attribute_pa_size=m</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=766</guid>
@@ -6941,8 +6565,8 @@
   <wp:post_id>766</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-white-m</wp:post_name>
@@ -7022,7 +6646,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+    <wp:meta_value><![CDATA[whi]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -7038,12 +6662,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[820]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, L]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=l</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=whi&amp;attribute_pa_size=l</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=767</guid>
@@ -7053,8 +6677,8 @@
   <wp:post_id>767</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-white-l</wp:post_name>
@@ -7134,7 +6758,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+    <wp:meta_value><![CDATA[whi]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -7150,12 +6774,12 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[820]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
   <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining - White, XL]]></title>
-  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=white&amp;attribute_pa_size=xl</link>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/?attribute_pa_color=whi&amp;attribute_pa_size=xl</link>
   <pubDate>Fri, 02 Oct 2026 19:53:16 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">https://professionals-choice.wp.local/?post_type=product_variation&amp;p=768</guid>
@@ -7165,8 +6789,8 @@
   <wp:post_id>768</wp:post_id>
   <wp:post_date>2026-10-02 19:53:16</wp:post_date>
   <wp:post_date_gmt>2026-10-02 19:53:16</wp:post_date_gmt>
-  <wp:post_modified>2026-10-02 20:08:05</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-02 20:08:05</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:18:26</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:26</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>satin-dressage-pad-with-ventech-lining-white-xl</wp:post_name>
@@ -7246,7 +6870,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_color</wp:meta_key>
-    <wp:meta_value><![CDATA[white]]></wp:meta_value>
+    <wp:meta_value><![CDATA[whi]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>attribute_pa_size</wp:meta_key>
@@ -7262,7 +6886,7 @@
   </wp:postmeta>
   <wp:postmeta>
     <wp:meta_key>_thumbnail_id</wp:meta_key>
-    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+    <wp:meta_value><![CDATA[820]]></wp:meta_value>
   </wp:postmeta>
 </item>
 <item>
@@ -7466,6 +7090,287 @@
   <wp:post_type>page</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining]]></title>
+  <link>https://professionals-choice.wp.local/product/satin-dressage-pad-with-ventech-lining/</link>
+  <pubDate>Sat, 03 Oct 2026 02:26:15 +0000</pubDate>
+  <dc:creator>gtavares</dc:creator>
+  <guid isPermaLink="false">http://localhost:8907/?post_type=product_variation&amp;p=806</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>806</wp:post_id>
+  <wp:post_date>2026-10-03 02:26:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-03 02:26:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 02:26:15</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 02:26:15</wp:post_modified_gmt>
+  <wp:comment_status>closed</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>product_variation</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_variation_description</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>total_sales</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_status</wp:meta_key>
+    <wp:meta_value><![CDATA[taxable]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_tax_class</wp:meta_key>
+    <wp:meta_value><![CDATA[parent]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_manage_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_backorders</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_sold_individually</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_virtual</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_downloadable</wp:meta_key>
+    <wp:meta_value><![CDATA[no]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_limit</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_download_expiry</wp:meta_key>
+    <wp:meta_value><![CDATA[-1]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_stock_status</wp:meta_key>
+    <wp:meta_value><![CDATA[instock]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_average_rating</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wc_review_count</wp:meta_key>
+    <wp:meta_value><![CDATA[0]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_color</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>attribute_pa_size</wp:meta_key>
+    <wp:meta_value><![CDATA[]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_product_version</wp:meta_key>
+    <wp:meta_value><![CDATA[11.1.2]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Hailey Kinsel barrel racing]]></title>
+  <link>https://professionals-choice.wp.local/hailey-kinsel-barrel-racing/</link>
+  <pubDate>Sat, 03 Oct 2026 02:45:09 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>809</wp:post_id>
+  <wp:post_date>2026-10-03 02:45:09</wp:post_date>
+  <wp:post_date_gmt>2026-10-03 02:45:09</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 02:45:09</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 02:45:09</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>hailey-kinsel-barrel-racing</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/10/pdp-rider.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/10/pdp-rider.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:233;s:6:"height";i:127;s:4:"file";s:22:"2026/10/pdp-rider.webp";s:8:"filesize";i:7444;s:5:"sizes";a:2:{s:9:"thumbnail";a:5:{s:4:"file";s:22:"pdp-rider-150x127.webp";s:5:"width";i:150;s:6:"height";i:127;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:4408;}s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:22:"pdp-rider-100x100.webp";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:2580;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Hailey Kinsel barrel racing]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining, black]]></title>
+  <link>https://professionals-choice.wp.local/?attachment_id=817</link>
+  <pubDate>Sat, 03 Oct 2026 03:17:55 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/08/eps520-bla.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>817</wp:post_id>
+  <wp:post_date>2026-10-03 03:17:55</wp:post_date>
+  <wp:post_date_gmt>2026-10-03 03:17:55</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 03:17:55</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:17:55</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-black-2</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/08/eps520-bla.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/08/eps520-bla.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:1600;s:6:"height";i:1600;s:4:"file";s:23:"2026/08/eps520-bla.webp";s:8:"filesize";i:287436;s:5:"sizes";a:14:{s:6:"medium";a:5:{s:4:"file";s:23:"eps520-bla-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:12454;}s:5:"large";a:5:{s:4:"file";s:25:"eps520-bla-1024x1024.webp";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:103896;}s:9:"thumbnail";a:5:{s:4:"file";s:23:"eps520-bla-150x150.webp";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:4550;}s:12:"medium_large";a:5:{s:4:"file";s:23:"eps520-bla-768x768.webp";s:5:"width";i:768;s:6:"height";i:768;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:61596;}s:9:"1536x1536";a:5:{s:4:"file";s:25:"eps520-bla-1536x1536.webp";s:5:"width";i:1536;s:6:"height";i:1536;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:211782;}s:16:"profchoice-stage";a:5:{s:4:"file";s:23:"eps520-bla-662x662.webp";s:5:"width";i:662;s:6:"height";i:662;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:46514;}s:23:"profchoice-stage-mobile";a:5:{s:4:"file";s:23:"eps520-bla-390x390.webp";s:5:"width";i:390;s:6:"height";i:390;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:18414;}s:16:"profchoice-thumb";a:5:{s:4:"file";s:21:"eps520-bla-80x96.webp";s:5:"width";i:80;s:6:"height";i:96;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:2328;}s:19:"profchoice-thumb-2x";a:5:{s:4:"file";s:23:"eps520-bla-160x192.webp";s:5:"width";i:160;s:6:"height";i:192;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:6116;}s:8:"cbv-tile";a:5:{s:4:"file";s:23:"eps520-bla-480x480.webp";s:5:"width";i:480;s:6:"height";i:480;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:26296;}s:8:"cbv-hero";a:5:{s:4:"file";s:24:"eps520-bla-1600x900.webp";s:5:"width";i:1600;s:6:"height";i:900;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:213190;}s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:23:"eps520-bla-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:12454;s:9:"uncropped";b:0;}s:18:"woocommerce_single";a:5:{s:4:"file";s:23:"eps520-bla-600x600.webp";s:5:"width";i:600;s:6:"height";i:600;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:39020;}s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:23:"eps520-bla-100x100.webp";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:2508;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Satin Dressage Pad with VenTECH™ Lining, black]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining, charcoal]]></title>
+  <link>https://professionals-choice.wp.local/?attachment_id=818</link>
+  <pubDate>Sat, 03 Oct 2026 03:18:06 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/08/eps520-cha.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>818</wp:post_id>
+  <wp:post_date>2026-10-03 03:18:06</wp:post_date>
+  <wp:post_date_gmt>2026-10-03 03:18:06</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 03:18:06</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:06</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-charcoal</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/08/eps520-cha.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/08/eps520-cha.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:1600;s:6:"height";i:1600;s:4:"file";s:23:"2026/08/eps520-cha.webp";s:8:"filesize";i:152356;s:5:"sizes";a:14:{s:6:"medium";a:5:{s:4:"file";s:23:"eps520-cha-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:10824;}s:5:"large";a:5:{s:4:"file";s:25:"eps520-cha-1024x1024.webp";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:70490;}s:9:"thumbnail";a:5:{s:4:"file";s:23:"eps520-cha-150x150.webp";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:3862;}s:12:"medium_large";a:5:{s:4:"file";s:23:"eps520-cha-768x768.webp";s:5:"width";i:768;s:6:"height";i:768;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:45906;}s:9:"1536x1536";a:5:{s:4:"file";s:25:"eps520-cha-1536x1536.webp";s:5:"width";i:1536;s:6:"height";i:1536;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:125808;}s:16:"profchoice-stage";a:5:{s:4:"file";s:23:"eps520-cha-662x662.webp";s:5:"width";i:662;s:6:"height";i:662;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:36028;}s:23:"profchoice-stage-mobile";a:5:{s:4:"file";s:23:"eps520-cha-390x390.webp";s:5:"width";i:390;s:6:"height";i:390;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:15994;}s:16:"profchoice-thumb";a:5:{s:4:"file";s:21:"eps520-cha-80x96.webp";s:5:"width";i:80;s:6:"height";i:96;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:2018;}s:19:"profchoice-thumb-2x";a:5:{s:4:"file";s:23:"eps520-cha-160x192.webp";s:5:"width";i:160;s:6:"height";i:192;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:5612;}s:8:"cbv-tile";a:5:{s:4:"file";s:23:"eps520-cha-480x480.webp";s:5:"width";i:480;s:6:"height";i:480;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:21794;}s:8:"cbv-hero";a:5:{s:4:"file";s:24:"eps520-cha-1600x900.webp";s:5:"width";i:1600;s:6:"height";i:900;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:132168;}s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:23:"eps520-cha-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:10824;s:9:"uncropped";b:0;}s:18:"woocommerce_single";a:5:{s:4:"file";s:23:"eps520-cha-600x600.webp";s:5:"width";i:600;s:6:"height";i:600;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:30846;}s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:23:"eps520-cha-100x100.webp";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:2134;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Satin Dressage Pad with VenTECH™ Lining, charcoal]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining, navy]]></title>
+  <link>https://professionals-choice.wp.local/?attachment_id=819</link>
+  <pubDate>Sat, 03 Oct 2026 03:18:10 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/08/eps520-nav.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>819</wp:post_id>
+  <wp:post_date>2026-10-03 03:18:10</wp:post_date>
+  <wp:post_date_gmt>2026-10-03 03:18:10</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 03:18:10</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:10</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-navy</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/08/eps520-nav.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/08/eps520-nav.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:1600;s:6:"height";i:1600;s:4:"file";s:23:"2026/08/eps520-nav.webp";s:8:"filesize";i:128802;s:5:"sizes";a:14:{s:6:"medium";a:5:{s:4:"file";s:23:"eps520-nav-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:10108;}s:5:"large";a:5:{s:4:"file";s:25:"eps520-nav-1024x1024.webp";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:62172;}s:9:"thumbnail";a:5:{s:4:"file";s:23:"eps520-nav-150x150.webp";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:3686;}s:12:"medium_large";a:5:{s:4:"file";s:23:"eps520-nav-768x768.webp";s:5:"width";i:768;s:6:"height";i:768;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:40874;}s:9:"1536x1536";a:5:{s:4:"file";s:25:"eps520-nav-1536x1536.webp";s:5:"width";i:1536;s:6:"height";i:1536;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:107744;}s:16:"profchoice-stage";a:5:{s:4:"file";s:23:"eps520-nav-662x662.webp";s:5:"width";i:662;s:6:"height";i:662;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:33002;}s:23:"profchoice-stage-mobile";a:5:{s:4:"file";s:23:"eps520-nav-390x390.webp";s:5:"width";i:390;s:6:"height";i:390;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:14986;}s:16:"profchoice-thumb";a:5:{s:4:"file";s:21:"eps520-nav-80x96.webp";s:5:"width";i:80;s:6:"height";i:96;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:2070;}s:19:"profchoice-thumb-2x";a:5:{s:4:"file";s:23:"eps520-nav-160x192.webp";s:5:"width";i:160;s:6:"height";i:192;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:5568;}s:8:"cbv-tile";a:5:{s:4:"file";s:23:"eps520-nav-480x480.webp";s:5:"width";i:480;s:6:"height";i:480;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:20314;}s:8:"cbv-hero";a:5:{s:4:"file";s:24:"eps520-nav-1600x900.webp";s:5:"width";i:1600;s:6:"height";i:900;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:90382;}s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:23:"eps520-nav-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:10108;s:9:"uncropped";b:0;}s:18:"woocommerce_single";a:5:{s:4:"file";s:23:"eps520-nav-600x600.webp";s:5:"width";i:600;s:6:"height";i:600;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:28268;}s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:23:"eps520-nav-100x100.webp";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:2062;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Satin Dressage Pad with VenTECH™ Lining, navy]]></wp:meta_value>
+  </wp:postmeta>
+</item>
+<item>
+  <title><![CDATA[Satin Dressage Pad with VenTECH™ Lining, white]]></title>
+  <link>https://professionals-choice.wp.local/?attachment_id=820</link>
+  <pubDate>Sat, 03 Oct 2026 03:18:15 +0000</pubDate>
+  <dc:creator/>
+  <guid isPermaLink="false">https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/08/eps520-whi.webp</guid>
+  <description/>
+  <content:encoded><![CDATA[]]></content:encoded>
+  <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+  <wp:post_id>820</wp:post_id>
+  <wp:post_date>2026-10-03 03:18:15</wp:post_date>
+  <wp:post_date_gmt>2026-10-03 03:18:15</wp:post_date_gmt>
+  <wp:post_modified>2026-10-03 03:18:15</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:18:15</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>closed</wp:ping_status>
+  <wp:post_name>satin-dressage-pad-with-ventech-lining-white</wp:post_name>
+  <wp:status>inherit</wp:status>
+  <wp:post_parent>748</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>attachment</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:attachment_url>https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/08/eps520-whi.webp</wp:attachment_url>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attached_file</wp:meta_key>
+    <wp:meta_value><![CDATA[2026/08/eps520-whi.webp]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+    <wp:meta_value><![CDATA[a:6:{s:5:"width";i:1600;s:6:"height";i:1600;s:4:"file";s:23:"2026/08/eps520-whi.webp";s:8:"filesize";i:111446;s:5:"sizes";a:14:{s:6:"medium";a:5:{s:4:"file";s:23:"eps520-whi-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:6594;}s:5:"large";a:5:{s:4:"file";s:25:"eps520-whi-1024x1024.webp";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:50314;}s:9:"thumbnail";a:5:{s:4:"file";s:23:"eps520-whi-150x150.webp";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:2316;}s:12:"medium_large";a:5:{s:4:"file";s:23:"eps520-whi-768x768.webp";s:5:"width";i:768;s:6:"height";i:768;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:31296;}s:9:"1536x1536";a:5:{s:4:"file";s:25:"eps520-whi-1536x1536.webp";s:5:"width";i:1536;s:6:"height";i:1536;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:89004;}s:16:"profchoice-stage";a:5:{s:4:"file";s:23:"eps520-whi-662x662.webp";s:5:"width";i:662;s:6:"height";i:662;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:24126;}s:23:"profchoice-stage-mobile";a:5:{s:4:"file";s:23:"eps520-whi-390x390.webp";s:5:"width";i:390;s:6:"height";i:390;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:9830;}s:16:"profchoice-thumb";a:5:{s:4:"file";s:21:"eps520-whi-80x96.webp";s:5:"width";i:80;s:6:"height";i:96;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:1240;}s:19:"profchoice-thumb-2x";a:5:{s:4:"file";s:23:"eps520-whi-160x192.webp";s:5:"width";i:160;s:6:"height";i:192;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:3342;}s:8:"cbv-tile";a:5:{s:4:"file";s:23:"eps520-whi-480x480.webp";s:5:"width";i:480;s:6:"height";i:480;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:14008;}s:8:"cbv-hero";a:5:{s:4:"file";s:24:"eps520-whi-1600x900.webp";s:5:"width";i:1600;s:6:"height";i:900;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:61352;}s:21:"woocommerce_thumbnail";a:6:{s:4:"file";s:23:"eps520-whi-300x300.webp";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:6594;s:9:"uncropped";b:0;}s:18:"woocommerce_single";a:5:{s:4:"file";s:23:"eps520-whi-600x600.webp";s:5:"width";i:600;s:6:"height";i:600;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:20120;}s:29:"woocommerce_gallery_thumbnail";a:5:{s:4:"file";s:23:"eps520-whi-100x100.webp";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:10:"image/webp";s:8:"filesize";i:1288;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}]]></wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+    <wp:meta_value><![CDATA[Satin Dressage Pad with VenTECH™ Lining, white]]></wp:meta_value>
+  </wp:postmeta>
 </item>
   </channel>
 </rss>
