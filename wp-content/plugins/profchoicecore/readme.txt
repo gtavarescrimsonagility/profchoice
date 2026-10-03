@@ -82,6 +82,7 @@ Each feature is a self-contained folder in `modules/` (PHP in `includes/`, sourc
 * `icons`: icon collection and Inline icon format.
 * `visually-hidden`: Visually hidden format.
 * `wishlist`: Wishlist (WooCommerce).
+* `image-dimensions`: width and height for content images whose attachment has no size metadata (read from the file), so lazy-loaded images don't shift the layout.
 
 == Development ==
 
