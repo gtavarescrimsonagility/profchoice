@@ -523,7 +523,7 @@
 <!-- /wp:buttons -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"color":{"background":"#c32627"},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"0px","bottomRight":"0px"}},"typography":{"fontSize":"0.82rem","fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.123125rem"},":hover":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},"@mobile":{"typography":{"fontSize":"11px"}},":focus-visible":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":active":{"color":{"background":"#8e1b1a","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}}},"metadata":{"bindings":{"url":{"source":"profchoice/shop","args":{"key":"url"}}}}} -->
+<div class="wp-block-buttons"><!-- wp:button {"metadata":{"bindings":{"url":{"source":"profchoice/shop","args":{"key":"url"}}}},"style":{"color":{"background":"#c32627"},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"0px","bottomRight":"0px"}},"typography":{"fontSize":"0.82rem","fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.123125rem"},":hover":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},"@mobile":{"typography":{"fontSize":"11px"}},":focus-visible":{"color":{"background":"#a8201f","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}},":active":{"color":{"background":"#8e1b1a","text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"textDecoration":"none"}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-background has-custom-font-size wp-element-button" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;background-color:#c32627;font-size:0.82rem;font-style:normal;font-weight:700;letter-spacing:0.123125rem;text-transform:uppercase">Shop Now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
@@ -617,8 +617,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"metadata":{"name":"Products"},"className":"trending-grid","style":{"spacing":{"margin":{"top":"3rem"},"blockGap":"1.6rem"},"@mobile":{"spacing":{"margin":{"top":"1.75rem"},"blockGap":"0.75rem"}}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
-<div class="wp-block-group trending-grid" style="margin-top:3rem"><!-- wp:group {"metadata":{"name":"Ventech Sport Boots"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":359,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":1,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":1,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
+<div class="wp-block-group trending-grid" style="margin-top:3rem"><!-- wp:group {"metadata":{"name":"Ventech Sport Boots"},"className":"trending-card pc-hover-zoom pc-card-link","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group trending-card pc-hover-zoom pc-card-link has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":359,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":1,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":1,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/ventech-sport-boots.jpg" alt="" class="wp-image-359" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
@@ -633,8 +633,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Stealth Air Ride Saddle Pad"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":360,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":2,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":2,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
+<!-- wp:group {"metadata":{"name":"Stealth Air Ride Saddle Pad"},"className":"trending-card pc-hover-zoom pc-card-link","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group trending-card pc-hover-zoom pc-card-link has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":360,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":2,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":2,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/stealth-air-ride-saddle-pad.jpg" alt="" class="wp-image-360" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
@@ -649,8 +649,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Comfort Fit Fly Mask"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":361,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":3,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":3,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
+<!-- wp:group {"metadata":{"name":"Comfort Fit Fly Mask"},"className":"trending-card pc-hover-zoom pc-card-link","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group trending-card pc-hover-zoom pc-card-link has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":361,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":3,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":3,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/comfort-fit-fly-mask.webp" alt="" class="wp-image-361" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
@@ -665,8 +665,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Pro Performance Front Splint Boots"},"className":"trending-card pc-hover-zoom","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group trending-card pc-hover-zoom has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":362,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":4,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":4,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
+<!-- wp:group {"metadata":{"name":"Pro Performance Front Splint Boots"},"className":"trending-card pc-hover-zoom pc-card-link","style":{"color":{"background":"#ffffff"},"border":{"radius":"3px"},"spacing":{"padding":{"bottom":"2rem"},"blockGap":"1.25rem"},"@mobile":{"spacing":{"blockGap":"0.5rem","padding":{"bottom":"1rem"}}},"css":"overflow: hidden;"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group trending-card pc-hover-zoom pc-card-link has-custom-css has-background" style="border-radius:3px;background-color:#ffffff;padding-bottom:2rem"><!-- wp:image {"id":362,"aspectRatio":"29/30","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"bindings":{"id":{"source":"profchoice/product","args":{"featured":4,"key":"image_id"}},"url":{"source":"profchoice/product","args":{"featured":4,"key":"image_url"}}}},"style":{"css":"align-self: stretch;\nmargin: 0;\n\u0026 img {\nwidth: 100%;\n}"}} -->
 <figure class="wp-block-image size-full has-custom-css"><img src="https://raw.githubusercontent.com/gtavarescrimsonagility/profchoice-uploads/main/2026/09/pro-performance-front-splint-boots.jpg" alt="" class="wp-image-362" style="aspect-ratio:29/30;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
@@ -929,8 +929,8 @@
   <wp:post_id>9</wp:post_id>
   <wp:post_date>2026-09-28 14:24:12</wp:post_date>
   <wp:post_date_gmt>2026-09-28 14:24:12</wp:post_date_gmt>
-  <wp:post_modified>2026-10-01 18:38:52</wp:post_modified>
-  <wp:post_modified_gmt>2026-10-01 18:38:52</wp:post_modified_gmt>
+  <wp:post_modified>2026-10-03 03:42:51</wp:post_modified>
+  <wp:post_modified_gmt>2026-10-03 03:42:51</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>home</wp:post_name>
