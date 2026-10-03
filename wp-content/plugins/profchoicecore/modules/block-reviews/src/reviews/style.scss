@@ -6,6 +6,18 @@
 	display: none !important;
 }
 
+// The rating is a plain group (themes often style form fieldsets).
+.pc-review-form__rating {
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	legend {
+		padding: 0;
+	}
+}
+
 // Each star slot wraps its full/half SVGs (only one shown).
 .pc-reviews__star {
 	display: contents;

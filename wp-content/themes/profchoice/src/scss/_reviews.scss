@@ -266,14 +266,19 @@
 		display: none;
 	}
 
+	// The parent styles `.woocommerce form fieldset` and its legend (padding,
+	// margins); the rating is a plain group here.
 	.pc-review-form__rating {
-		margin-bottom: 0.75rem;
+		min-width: 0;
+		margin: 0 0 0.75rem;
+		padding: 0;
 		border: 0;
 	}
 
 	.pc-review-form__label {
 		display: block;
-		margin-bottom: 0.375rem;
+		margin: 0 0 0.375rem;
+		padding: 0;
 		color: #6e727a;
 		font-size: 0.6875rem;
 		font-weight: 700;
@@ -283,10 +288,13 @@
 
 	/* Rating: radios drawn as stars; the hovered or checked star and the ones
 		before it are red. */
+	// The first star's padding (its touch target) sits outside, so the stars
+	// line up with the label.
 	.pc-review-form__stars {
 		display: flex;
 		gap: 0.25rem;
 		width: max-content;
+		margin-left: -0.125rem;
 	}
 
 	.pc-review-form__star-input {
