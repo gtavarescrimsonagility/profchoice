@@ -1,7 +1,7 @@
 <?php
 /**
- * Video playback for core/cover: Autoplay, Loop and Muted settings, a "Play"
- * button style, and a Play/Pause button bound to the
+ * Video playback for core/cover: Autoplay, Loop, Muted and Lazy load
+ * settings, a "Play" button style, and a Play/Pause button bound to the
  * `profchoice/cover-video` Interactivity store.
  *
  * @package ProfChoiceCore
@@ -55,6 +55,10 @@ final class CoverVideo {
 					'muted'    => array(
 						'type'    => 'boolean',
 						'default' => true,
+					),
+					'lazyLoad' => array(
+						'type'    => 'boolean',
+						'default' => false,
 					),
 				)
 			);
@@ -150,6 +154,9 @@ final class CoverVideo {
 		$loop     = ! isset( $attributes['loop'] ) || ! empty( $attributes['loop'] );
 		// Browsers only autoplay muted video.
 		$muted = $autoplay || ! isset( $attributes['muted'] ) || ! empty( $attributes['muted'] );
+		// Lazy load needs the Play button (no autoplay) and a poster (checked
+		// on the video tag, where core/cover keeps it) to show until it loads.
+		$lazy = ! $autoplay && ! empty( $attributes['lazyLoad'] );
 
 		$tags = new \WP_HTML_Tag_Processor( $content );
 		if ( ! $tags->next_tag() ) {
@@ -161,14 +168,18 @@ final class CoverVideo {
 			'data-wp-context',
 			wp_json_encode(
 				array(
-					'isPlaying'  => $autoplay,
-					'playLabel'  => __( 'Play video', 'profchoicecore' ),
-					'pauseLabel' => __( 'Pause video', 'profchoicecore' ),
+					'isPlaying'    => $autoplay,
+					'isLoading'    => false,
+					'playLabel'    => __( 'Play video', 'profchoicecore' ),
+					'pauseLabel'   => __( 'Pause video', 'profchoicecore' ),
+					'loadingLabel' => __( 'Loading video', 'profchoicecore' ),
 				),
 				JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP
 			)
 		);
 		$tags->set_attribute( 'data-wp-class--is-playing', 'context.isPlaying' );
+		$tags->set_attribute( 'data-wp-class--is-loading', 'context.isLoading' );
+		$tags->set_attribute( 'data-wp-bind--aria-busy', 'context.isLoading' );
 		$tags->set_attribute( 'data-wp-init', 'callbacks.init' );
 		// Focusable from script (not a Tab stop): the Play button hands focus
 		// to the cover so Space then pauses the video.
@@ -178,6 +189,7 @@ final class CoverVideo {
 		}
 
 		$in_play_button = false;
+		$poster_image   = null;
 		while ( $tags->next_tag() ) {
 			if ( 'VIDEO' === $tags->get_tag() && $tags->has_class( 'wp-block-cover__video-background' ) ) {
 				foreach ( array(
@@ -190,6 +202,24 @@ final class CoverVideo {
 					} else {
 						$tags->remove_attribute( $name );
 					}
+				}
+				// Lazy load: the page only gets the poster, as an image that
+				// replaces the video tag below; the store creates the video
+				// when the Play button is clicked.
+				$src    = $tags->get_attribute( 'src' );
+				$poster = $tags->get_attribute( 'poster' );
+				if ( $lazy && null === $poster_image && is_string( $src ) && '' !== $src && is_string( $poster ) && '' !== $poster ) {
+					$poster_image = self::poster_image(
+						$poster,
+						array(
+							'data-video'           => $src,
+							'data-loop'            => $loop,
+							'data-muted'           => $muted,
+							'style'                => $tags->get_attribute( 'style' ),
+							'data-object-position' => $tags->get_attribute( 'data-object-position' ),
+						)
+					);
+					$tags->set_attribute( 'data-pc-lazy-video', true );
 				}
 				continue;
 			}
@@ -217,11 +247,67 @@ final class CoverVideo {
 			array(
 				'playLabel' => static function () {
 					$context = wp_interactivity_get_context( 'profchoice/cover-video' );
+					if ( ! empty( $context['isLoading'] ) ) {
+						return $context['loadingLabel'];
+					}
 					return empty( $context['isPlaying'] ) ? $context['playLabel'] : $context['pauseLabel'];
 				},
 			)
 		);
 
+		$html = $tags->get_updated_html();
+		if ( null !== $poster_image ) {
+			$html = (string) preg_replace_callback(
+				'#<video\b[^>]*\bdata-pc-lazy-video\b[^>]*>.*?</video>#s',
+				static function () use ( $poster_image ) {
+					return $poster_image;
+				},
+				$html,
+				1
+			);
+		}
+		return $html;
+	}
+
+	/**
+	 * The poster of a lazy-loaded video as the cover's background image, with
+	 * a srcset when it is an attachment. The video settings travel as data
+	 * attributes for the store (view.ts) to build the video on Play.
+	 *
+	 * @param string $poster Poster URL.
+	 * @param array  $video  Video URL (`data-video`), `data-loop` and
+	 *                       `data-muted` flags, `style` and
+	 *                       `data-object-position` from the video tag.
+	 * @return string
+	 */
+	private static function poster_image( $poster, $video ) {
+		$attributes = array(
+			'class'           => 'wp-block-cover__image-background pc-cover-video__poster',
+			'alt'             => '',
+			'data-object-fit' => 'cover',
+		);
+		foreach ( $video as $name => $value ) {
+			if ( true === $value ) {
+				$attributes[ $name ] = '';
+			} elseif ( is_string( $value ) && '' !== $value ) {
+				$attributes[ $name ] = $value;
+			}
+		}
+
+		$id = attachment_url_to_postid( $poster );
+		if ( $id ) {
+			$image = wp_get_attachment_image( $id, 'full', false, $attributes + array( 'sizes' => '100vw' ) );
+			if ( '' !== $image ) {
+				return $image;
+			}
+		}
+
+		$tags = new \WP_HTML_Tag_Processor( '<img>' );
+		$tags->next_tag();
+		$tags->set_attribute( 'src', $poster );
+		foreach ( $attributes as $name => $value ) {
+			$tags->set_attribute( $name, $value );
+		}
 		return $tags->get_updated_html();
 	}
 }

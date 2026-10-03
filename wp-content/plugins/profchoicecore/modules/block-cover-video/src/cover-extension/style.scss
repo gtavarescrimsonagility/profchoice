@@ -6,7 +6,9 @@
  * Visually hidden (it stays the accessible name). Colors, border
  * and shadow, per state (Hover/Focus/Active), come from the Button's own
  * settings. While the video plays the button fades out; keyboard focus shows
- * it again.
+ * it again. While a lazy-loaded video loads (`is-loading`), the button shows
+ * a spinner instead of its content: a circle with one transparent side,
+ * sized and drawn by --pc-cover-video-spinner-size and -width.
  */
 
 // The cover takes focus from the Play button while the video plays (see
@@ -42,10 +44,47 @@
 	}
 }
 
+.wp-block-cover.is-loading .wp-block-button.is-style-play {
+	opacity: 1;
+
+	.wp-block-button__link {
+		cursor: progress;
+
+		> * {
+			grid-area: 1 / 1;
+			visibility: hidden;
+		}
+
+		&::after {
+			content: "";
+			grid-area: 1 / 1;
+			box-sizing: border-box;
+			width: var(--pc-cover-video-spinner-size, 1.5em);
+			height: var(--pc-cover-video-spinner-size, 1.5em);
+			border: var(--pc-cover-video-spinner-width, 2px) solid currentcolor;
+			border-right-color: transparent;
+			border-radius: 50%;
+			animation: pc-cover-video-spin 0.8s linear infinite;
+		}
+	}
+}
+
+@keyframes pc-cover-video-spin {
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 @media (prefers-reduced-motion: reduce) {
 
 	.wp-block-button.is-style-play,
 	.wp-block-button.is-style-play .wp-block-button__link {
 		transition: none;
+	}
+
+	// The spinner tells that something is happening: slower, not stopped.
+	.wp-block-cover.is-loading .wp-block-button.is-style-play .wp-block-button__link::after {
+		animation-duration: 2s;
 	}
 }

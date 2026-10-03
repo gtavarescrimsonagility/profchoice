@@ -1,5 +1,5 @@
 /**
- * core/cover video playback: Autoplay, Loop and Muted settings for covers
+ * core/cover video playback: Autoplay, Loop, Muted and Lazy load settings for covers
  * with a video background (applied on render by includes/CoverVideo.php),
  * and the "Play" button style, styled in style.scss.
  */
@@ -17,7 +17,12 @@ import {
 import type { ComponentType } from '@wordpress/element';
 import './style.scss';
 
-type Playback = { autoplay: boolean; loop: boolean; muted: boolean };
+type Playback = {
+	autoplay: boolean;
+	loop: boolean;
+	muted: boolean;
+	lazyLoad: boolean;
+};
 
 type BlockSettings = {
 	attributes?: Record< string, unknown >;
@@ -26,7 +31,7 @@ type BlockSettings = {
 
 type EditProps = {
 	name: string;
-	attributes: Playback & { backgroundType?: string };
+	attributes: Playback & { backgroundType?: string; poster?: string };
 	setAttributes: ( attributes: Partial< Playback > ) => void;
 };
 
@@ -34,6 +39,7 @@ export const PLAYBACK_ATTRIBUTES = {
 	autoplay: { type: 'boolean', default: true },
 	loop: { type: 'boolean', default: true },
 	muted: { type: 'boolean', default: true },
+	lazyLoad: { type: 'boolean', default: false },
 };
 
 /**
@@ -71,13 +77,24 @@ addFilter(
  * @param root0.setAttributes
  */
 function PlaybackPanel( { attributes, setAttributes }: EditProps ) {
-	const { autoplay, loop, muted } = attributes;
+	const { autoplay, loop, muted, lazyLoad, poster } = attributes;
+	let lazyLoadHelp: string | undefined;
+	if ( autoplay ) {
+		lazyLoadHelp = __( 'Only without Autoplay.', 'profchoicecore' );
+	} else if ( ! poster ) {
+		lazyLoadHelp = __( 'Needs a poster image.', 'profchoicecore' );
+	}
 	return (
 		<InspectorControls>
 			<ToolsPanel
 				label={ __( 'Video', 'profchoicecore' ) }
 				resetAll={ () =>
-					setAttributes( { autoplay: true, loop: true, muted: true } )
+					setAttributes( {
+						autoplay: true,
+						loop: true,
+						muted: true,
+						lazyLoad: false,
+					} )
 				}
 			>
 				<ToolsPanelItem
@@ -89,6 +106,14 @@ function PlaybackPanel( { attributes, setAttributes }: EditProps ) {
 					<ToggleControl
 						__nextHasNoMarginBottom
 						label={ __( 'Autoplay', 'profchoicecore' ) }
+						help={
+							autoplay
+								? undefined
+								: __(
+										'Requires a poster image.',
+										'profchoicecore'
+									)
+						}
 						checked={ autoplay }
 						onChange={ ( value: boolean ) =>
 							setAttributes( { autoplay: value } )
@@ -124,6 +149,24 @@ function PlaybackPanel( { attributes, setAttributes }: EditProps ) {
 						disabled={ autoplay }
 						onChange={ ( value: boolean ) =>
 							setAttributes( { muted: value } )
+						}
+					/>
+				</ToolsPanelItem>
+				<ToolsPanelItem
+					label={ __( 'Lazy load', 'profchoicecore' ) }
+					hasValue={ () => lazyLoad }
+					onDeselect={ () => setAttributes( { lazyLoad: false } ) }
+					isShownByDefault
+				>
+					<ToggleControl
+						__nextHasNoMarginBottom
+						label={ __( 'Lazy load', 'profchoicecore' ) }
+						help={ lazyLoadHelp }
+						// The video loads when Play is clicked, so not with Autoplay.
+						checked={ ! autoplay && lazyLoad }
+						disabled={ autoplay }
+						onChange={ ( value: boolean ) =>
+							setAttributes( { lazyLoad: value } )
 						}
 					/>
 				</ToolsPanelItem>

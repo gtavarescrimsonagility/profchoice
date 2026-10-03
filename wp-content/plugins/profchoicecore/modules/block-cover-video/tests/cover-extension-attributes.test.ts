@@ -14,7 +14,7 @@ import {
 } from '../src/cover-extension/index';
 
 describe( 'cover playback attributes', () => {
-	it( 'adds autoplay, loop and muted to core/cover', () => {
+	it( 'adds autoplay, loop, muted and lazyLoad to core/cover', () => {
 		const settings = addAttributes(
 			{ attributes: { url: { type: 'string' } } },
 			'core/cover'
@@ -22,6 +22,13 @@ describe( 'cover playback attributes', () => {
 		expect( settings.attributes ).toEqual( {
 			url: { type: 'string' },
 			...PLAYBACK_ATTRIBUTES,
+		} );
+	} );
+
+	it( 'keeps lazy loading off by default', () => {
+		expect( PLAYBACK_ATTRIBUTES.lazyLoad ).toEqual( {
+			type: 'boolean',
+			default: false,
 		} );
 	} );
 

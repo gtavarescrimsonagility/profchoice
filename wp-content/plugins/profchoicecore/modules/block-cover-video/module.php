@@ -1,7 +1,7 @@
 <?php
 /**
  * Module Name: Video Covers
- * Description: Autoplay, Loop and Muted settings for Cover videos and a Play button style.
+ * Description: Autoplay, Loop, Muted and Lazy load settings for Cover videos and a Play button style.
  *
  * @package ProfChoiceCore
  */
