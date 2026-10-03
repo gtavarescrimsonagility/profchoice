@@ -23,7 +23,7 @@ WooCommerce swatches:
 * Whether an attribute shows swatches is its type in Products > Attributes: "Color / image" or "Button" show swatches, "Select" keeps WooCommerce's dropdown. Colors and images come from the attribute terms.
 * "Button" attributes get the term picker in the product's Attributes tab.
 * Product badges as product tags: Sale (`sale`) follows the product being on sale, including scheduled sales and variations; New (`new`) lasts a number of days after publishing (WooCommerce > Settings > Products > New badge, 30 by default, 0 turns it off); Pro Pick (`pro-pick`) is a checkbox next to Virtual and Downloadable in the product data header. Sale and New are kept in sync on save and by a daily pass, so editing those two tags by hand doesn't last. A product shows all its badges, in the tags' order (drag and drop in Products > Tags). Each tag can set a badge text and background color (Products > Tags), printed as the `--badge-color` and `--badge-background-color` CSS variables; without them the theme's colors apply. `profchoicecore_badge_tags` adds more tags as badges, `profchoicecore_new_days` filters the days.
-* A product's "As ridden by" tab: the rider card (rider, images from the Media Library, link), stored as `_profchoice_rider` and exposed in the REST API.
+* A product's "As ridden by" tab: the rider card (rider, images from the Media Library, link). Eyebrow and link text fall back to "As ridden by" and "Watch the setup" (shown as placeholders, `profchoicecore_rider_defaults`), stored as `_profchoice_rider` and exposed in the REST API.
 
 Editor features:
 

@@ -33,6 +33,26 @@ final class ProductMeta {
 	}
 
 	/**
+	 * Texts used when a field is empty (shown as its placeholder).
+	 *
+	 * @return array<string, string>
+	 */
+	public static function rider_defaults() {
+		/**
+		 * Filters the "As ridden by" card's default texts.
+		 *
+		 * @param array<string, string> $defaults Field => text.
+		 */
+		return (array) apply_filters(
+			'profchoicecore_rider_defaults',
+			array(
+				'eyebrow'   => __( 'As ridden by', 'profchoicecore' ),
+				'link_text' => __( 'Watch the setup', 'profchoicecore' ),
+			)
+		);
+	}
+
+	/**
 	 * Register hooks.
 	 *
 	 * @return void
@@ -87,7 +107,15 @@ final class ProductMeta {
 	 */
 	public static function rider( $product_id ) {
 		$rider = self::sanitize_rider( get_post_meta( $product_id, self::RIDER, true ) );
-		return '' !== $rider['name'] ? $rider : null;
+		if ( '' === $rider['name'] ) {
+			return null;
+		}
+		foreach ( self::rider_defaults() as $key => $text ) {
+			if ( isset( $rider[ $key ] ) && '' === $rider[ $key ] ) {
+				$rider[ $key ] = $text;
+			}
+		}
+		return $rider;
 	}
 
 	/**
@@ -136,7 +164,8 @@ final class ProductMeta {
 	public static function panel() {
 		global $product_object;
 		$id    = $product_object instanceof \WC_Product ? $product_object->get_id() : 0;
-		$rider = self::sanitize_rider( get_post_meta( $id, self::RIDER, true ) );
+		$rider    = self::sanitize_rider( get_post_meta( $id, self::RIDER, true ) );
+		$defaults = self::rider_defaults();
 		?>
 		<div id="profchoice_page_data" class="panel woocommerce_options_panel hidden">
 			<div class="options_group">
@@ -148,11 +177,12 @@ final class ProductMeta {
 					}
 					woocommerce_wp_text_input(
 						array(
-							'id'    => 'profchoice_rider_' . $key,
-							'name'  => 'profchoice_rider[' . $key . ']',
-							'label' => $label,
-							'type'  => 'link_url' === $key ? 'url' : 'text',
-							'value' => $rider[ $key ] ? $rider[ $key ] : '',
+							'id'          => 'profchoice_rider_' . $key,
+							'name'        => 'profchoice_rider[' . $key . ']',
+							'label'       => $label,
+							'type'        => 'link_url' === $key ? 'url' : 'text',
+							'value'       => $rider[ $key ] ? $rider[ $key ] : '',
+							'placeholder' => isset( $defaults[ $key ] ) ? $defaults[ $key ] : '',
 						)
 					);
 				}

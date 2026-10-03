@@ -1,6 +1,6 @@
 <?php
 /**
- * "As ridden by" card (profchoicecore "Product page" tab).
+ * "As ridden by" card (profchoicecore "As ridden by" tab).
  *
  * @package profchoice
  */
