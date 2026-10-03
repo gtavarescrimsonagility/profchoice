@@ -29,6 +29,7 @@ if ( post_password_required() ) {
 	get_template_part( 'template-parts/pdp/notices' );
 	get_template_part( 'template-parts/pdp/main' );
 	get_template_part( 'template-parts/pdp/related' );
+	get_template_part( 'template-parts/pdp/reviews' );
 
 	// Product structured data, which WooCommerce prints from the summary hook.
 	if ( isset( WC()->structured_data ) ) {

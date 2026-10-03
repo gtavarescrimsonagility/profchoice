@@ -5,6 +5,7 @@
 @use "pdp-notices";
 @use "main";
 @use "related";
+@use "reviews";
 
 .pdp {
 	@include base.base;
@@ -13,4 +14,5 @@
 	@include pdp-notices.notices;
 	@include main.main;
 	@include related.related;
+	@include reviews.reviews;
 }

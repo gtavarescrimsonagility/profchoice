@@ -1,0 +1,529 @@
+@use "breakpoints" as *;
+
+// Product reviews.
+@mixin reviews {
+	// Customer reviews (profchoicecore profchoice/reviews block), ported from
+	// pages-sections-from-figma/pdp-reviews (01-list/section/style.css).
+
+	/* Content width of the section (the reference's .container.wide). */
+	.pc-reviews__inner {
+		max-width: var(--wp--style--global--wide-size, 85rem);
+		margin-inline: auto;
+	}
+
+	/* Slider: two cards per view, the rest off to the right; one per view on mobile. */
+	.pc-reviews__list {
+		overflow: hidden;
+	}
+
+	.pc-reviews__list > .pc-review {
+		flex: 0 0 calc((100% - 1.75rem) / 2);
+	}
+
+	.pc-reviews__star {
+		display: contents;
+	}
+
+
+	.pc-reviews[hidden],
+	.pc-review[hidden],
+	.pc-review-form[hidden] {
+		display: none !important;
+	}
+
+	.pc-reviews {
+		/* Bottom padding snaps the section to whole pixels at the design widths,
+			so stacked sections never start at a sub-pixel offset. */
+		padding: 0 2.5rem calc(5.625rem + 0.03125px);
+		color: #14161a;
+	}
+
+	.pc-reviews__head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 2.5rem;
+		border-top: 1px solid #e5e2dc;
+	}
+
+	.pc-reviews__heading {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.pc-reviews__title {
+		font-family: "DM Sans", sans-serif;
+		font-size: 1.625rem;
+		font-weight: 700;
+	}
+
+	.pc-reviews__summary {
+		display: flex;
+		gap: 0.625rem;
+		align-items: center;
+	}
+
+	/* Stars: the icon library's SVGs on a row as tall as a line of their text. */
+	.pc-reviews__stars {
+		display: flex;
+		flex-shrink: 0;
+		gap: 0.34375rem;
+		align-items: center;
+		min-height: 1lh;
+		margin-bottom: 0.125rem;
+		color: #b71c1c;
+		font-family: "Inter", sans-serif;
+		font-size: 0.8125rem;
+	}
+
+	.pc-reviews__stars .pc-inline-icon {
+		flex-shrink: 0;
+		width: 0.625rem;
+		height: 0.625rem;
+	}
+
+	.pc-reviews__stars--summary {
+		gap: 0.375rem;
+		color: #6e727a;
+		font-size: 1rem;
+	}
+
+	.pc-reviews__stars--summary .pc-inline-icon {
+		width: 0.8125rem;
+		height: 0.8125rem;
+	}
+
+	.pc-reviews__count {
+		color: #6e727a;
+		font-family: "Inter", sans-serif;
+		font-size: 0.8125rem;
+	}
+
+	.pc-reviews__write {
+		flex-shrink: 0;
+		padding: 0.75rem 1.375rem;
+		background: #b71c1c;
+		color: #ffffff;
+		font-family: "Inter", sans-serif;
+		font-size: 0.71875rem;
+		font-weight: 600;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+	}
+
+	.pc-reviews__write[aria-expanded="true"] {
+		background: #8e1b1a;
+	}
+
+	.pc-reviews__list {
+		display: flex;
+		gap: 1.75rem;
+		align-items: stretch;
+		margin-top: 1.75rem;
+		list-style: none;
+	}
+
+	.pc-review {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		gap: 0.425rem;
+		min-width: 0;
+		padding: 1.25rem;
+		border: 1px solid #e5e2dc;
+	}
+
+	.pc-review__meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		align-items: center;
+		padding-top: 0.2rem;
+		font-family: "Inter", sans-serif;
+	}
+
+	.pc-review__author {
+		font-size: 0.8125rem;
+		font-weight: 700;
+	}
+
+	/* Author, badge and date wrap between, never inside. */
+	.pc-review__meta > * {
+		white-space: nowrap;
+	}
+
+	.pc-review__badge {
+		padding: 0.125rem 0.4375rem;
+		background: #e8f4e8;
+		color: #1e6a1e;
+		font-size: 0.625rem;
+		font-weight: 700;
+		letter-spacing: 0.0625rem;
+		text-transform: uppercase;
+	}
+
+	.pc-review__date {
+		margin-left: auto;
+		color: #6e727a;
+		font-size: 0.6875rem;
+	}
+
+	.pc-review__text {
+		color: #3a3d44;
+		font-family: "Inter", sans-serif;
+		font-size: 0.84375rem;
+		line-height: 1.35rem;
+	}
+
+	/* Pager: position and previous/next (the slider loads pages from the API). */
+	.pc-reviews__pager {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 1.75rem;
+	}
+
+	.pc-reviews__position {
+		color: #6e727a;
+		font-family: "Inter", sans-serif;
+		font-size: 0.75rem;
+		font-variant-numeric: tabular-nums;
+	}
+
+	.pc-reviews__arrows {
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	.pc-reviews__arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		border: 1px solid #e5e2dc;
+		color: #14161a;
+		font-size: 1rem;
+		transition: border-color 0.2s ease;
+	}
+
+	.pc-reviews__arrow .pc-inline-icon {
+		width: 1rem;
+		height: 1rem;
+	}
+
+	.pc-reviews__arrow--prev .pc-inline-icon {
+		transform: scaleX(-1);
+	}
+
+	.pc-reviews__arrow:not(:disabled):is(:hover, :focus-visible) {
+		border-color: #14161a;
+	}
+
+	.pc-reviews__arrow:disabled {
+		border-color: #f2f0ec;
+		color: #c8c9cc;
+		cursor: default;
+	}
+
+	// Loading: placeholder lines in the card (the block's .pc-skeleton bars).
+	.pc-review--skeleton {
+		gap: 0.75rem;
+		justify-content: flex-start;
+	}
+
+	.pc-review--skeleton .pc-skeleton--line {
+		height: 0.8125rem;
+	}
+
+	.pc-reviews__list[aria-busy="true"] .pc-review:not(.pc-review--skeleton) {
+		opacity: 0.5;
+	}
+
+	@keyframes pc-reviews-shimmer {
+		to {
+			background-position: -200% 0;
+		}
+	}
+
+	/* Write a Review form: a panel under the head, shown and hidden by the
+		Write a Review button. */
+	.pc-review-form {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		margin-top: 1.75rem;
+		padding: 1.5rem;
+		border: 1px solid #e5e2dc;
+		background: #faf7f2;
+		font-family: "DM Sans", sans-serif;
+		font-size: 0.875rem;
+		animation: pc-review-form-in 0.2s ease-out;
+	}
+
+	.pc-review-form[hidden] {
+		display: none;
+	}
+
+	.pc-review-form__rating {
+		margin-bottom: 0.75rem;
+		border: 0;
+	}
+
+	.pc-review-form__label {
+		display: block;
+		margin-bottom: 0.375rem;
+		color: #6e727a;
+		font-size: 0.6875rem;
+		font-weight: 700;
+		letter-spacing: 0.125rem;
+		text-transform: uppercase;
+	}
+
+	/* Rating: radios drawn as stars; the hovered or checked star and the ones
+		before it are red. */
+	.pc-review-form__stars {
+		display: flex;
+		gap: 0.25rem;
+		width: max-content;
+	}
+
+	.pc-review-form__star-input {
+		position: absolute;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.pc-review-form__star {
+		display: flex;
+		padding: 0.125rem;
+		color: #d9d6d0;
+		font-size: 1.75rem;
+		cursor: pointer;
+		transition: color 0.15s ease;
+	}
+
+	.pc-review-form__stars:has(.pc-review-form__star-input:checked) .pc-review-form__star,
+	.pc-review-form__stars:hover .pc-review-form__star {
+		color: #b71c1c;
+	}
+
+	.pc-review-form__star-input:checked ~ .pc-review-form__star-input + .pc-review-form__star,
+	.pc-review-form__stars .pc-review-form__star:hover ~ .pc-review-form__star {
+		color: #d9d6d0;
+	}
+
+	.pc-review-form__star-input:focus-visible + .pc-review-form__star {
+		outline: 2px solid #14161a;
+		outline-offset: 2px;
+	}
+
+	.pc-review-form__input {
+		width: 100%;
+		min-height: 2.75rem;
+		margin-bottom: 0.75rem;
+		padding: 0.625rem 0.75rem;
+		border: 1px solid #c8c4bc;
+		border-radius: 0;
+		background: #ffffff;
+		color: inherit;
+		font: inherit;
+		resize: vertical;
+	}
+
+	.pc-review-form__input:focus-visible {
+		outline: 2px solid #14161a;
+		outline-offset: -1px;
+	}
+
+	.pc-review-form__row {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.pc-review-form__field {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.pc-review-form__note {
+		margin-top: -0.25rem;
+		color: #6e727a;
+		font-size: 0.75rem;
+	}
+
+	.pc-review-form__submit {
+		align-self: flex-start;
+		margin-top: 1rem;
+		padding: 0.875rem 1.75rem;
+		background: #b71c1c;
+		color: #ffffff;
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.125rem;
+		text-transform: uppercase;
+		transition: background-color 0.2s ease;
+	}
+
+	.pc-review-form__submit:is(:hover, :focus-visible) {
+		background: #8e1b1a;
+	}
+
+	@keyframes pc-review-form-in {
+		from {
+			opacity: 0;
+			transform: translateY(0.5rem);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.pc-reviews__arrow,
+		.pc-review-form__star,
+		.pc-review-form__submit {
+			transition: none;
+		}
+
+		.pc-review--skeleton .pc-skeleton,
+		.pc-review-form {
+			animation: none;
+		}
+	}
+
+	/* Tablet: tighter gutters. */
+	@include media-breakpoint-only(tablet) {
+		.pc-reviews {
+			padding: 0 1.5rem 3.5rem;
+		}
+
+		.pc-reviews__list {
+			gap: 1rem;
+		}
+
+		.pc-reviews__list > .pc-review {
+			flex-basis: calc((100% - 1rem) / 2);
+		}
+	}
+
+	/* Mobile: Montserrat type, full-width button, one review per view. */
+	@include media-breakpoint-down(tablet) {
+		.pc-reviews__list > .pc-review {
+			flex-basis: 100%;
+		}
+
+		.pc-reviews {
+			padding: 0 1rem calc(3rem + 0.609375px);
+			border-top: 1px solid #e5e2dc;
+		}
+
+		.pc-reviews__head {
+			flex-direction: column;
+			gap: 1.25rem;
+			align-items: stretch;
+			padding-top: 2rem;
+			border-top: 0;
+		}
+
+		.pc-reviews__heading {
+			gap: 0.375rem;
+		}
+
+		.pc-reviews__title {
+			font-family: "Montserrat", sans-serif;
+			font-size: 1.25rem;
+		}
+
+		.pc-reviews__summary {
+			gap: 0.5rem;
+		}
+
+		.pc-reviews__stars {
+			gap: 0.3125rem;
+			font-family: "Montserrat", sans-serif;
+			font-size: 0.75rem;
+		}
+
+		.pc-reviews__stars--summary {
+			font-size: 0.8125rem;
+		}
+
+		.pc-reviews__stars--summary .pc-inline-icon {
+			width: 0.75rem;
+			height: 0.75rem;
+		}
+
+		.pc-reviews__count {
+			font-family: "Montserrat", sans-serif;
+			font-size: 0.75rem;
+		}
+
+		.pc-reviews__write {
+			min-height: 2.75rem;
+			font-family: "Montserrat", sans-serif;
+			font-size: 0.6875rem;
+			font-weight: 700;
+		}
+
+		.pc-reviews__list {
+			gap: 0.75rem;
+			align-items: stretch;
+			margin-top: 1.25rem;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+			scrollbar-width: none;
+		}
+
+		.pc-review {
+			flex: 0 0 100%;
+			gap: 0.375rem;
+			padding: 1rem;
+			scroll-snap-align: start;
+		}
+
+		.pc-review__meta {
+			flex-wrap: wrap;
+			gap: 0.375rem 0.5rem;
+			padding-top: 0.1875rem;
+			font-family: "Montserrat", sans-serif;
+		}
+
+		.pc-review__badge {
+			padding: 0.125rem 0.375rem;
+			font-size: 0.5625rem;
+			letter-spacing: 0.05625rem;
+		}
+
+		.pc-review__text {
+			font-family: "Montserrat", sans-serif;
+			font-size: 0.8125rem;
+			line-height: 1.3rem;
+		}
+
+		.pc-reviews__pager {
+			margin-top: 1.25rem;
+		}
+
+		.pc-reviews__position {
+			font-family: "Montserrat", sans-serif;
+		}
+
+		.pc-reviews__to {
+			display: none;
+		}
+
+		.pc-review-form {
+			margin-top: 1.25rem;
+			padding: 1rem;
+			font-family: "Montserrat", sans-serif;
+		}
+
+		.pc-review-form__row {
+			flex-direction: column;
+			gap: 0;
+		}
+
+		.pc-review-form__submit {
+			align-self: stretch;
+		}
+	}
+}
