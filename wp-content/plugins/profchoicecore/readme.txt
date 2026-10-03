@@ -20,10 +20,10 @@ Blocks (namespace `profchoice/`):
 WooCommerce swatches:
 
 * Attribute types "Color / image" (`wc-visual`, WooCommerce's own type, made available on any theme) and "Button" (`button`, for labels such as sizes). Term colors and images are edited with WooCommerce's Color / image fields in Products > Attributes and stored in its term meta (`color`, `image`), so WooCommerce's block product page and Product Filters show them too; `product_attribute_color` / `product_attribute_image` are read as fallbacks.
-* A product's Swatches tab (variable products) sets swatches or WooCommerce's dropdown per attribute, and a color or image per term for that product only (`_profchoice_swatches`).
+* Whether an attribute shows swatches is its type in Products > Attributes: "Color / image" or "Button" show swatches, "Select" keeps WooCommerce's dropdown. Colors and images come from the attribute terms.
 * "Button" attributes get the term picker in the product's Attributes tab.
 * Product badges as product tags: Sale (`sale`) follows the product being on sale, including scheduled sales and variations; New (`new`) lasts a number of days after publishing (WooCommerce > Settings > Products > New badge, 30 by default, 0 turns it off); Pro Pick (`pro-pick`) is a checkbox next to Virtual and Downloadable in the product data header. Sale and New are kept in sync on save and by a daily pass, so editing those two tags by hand doesn't last. A product shows all its badges, in the tags' order (drag and drop in Products > Tags). Each tag can set a badge text and background color (Products > Tags), printed as the `--badge-color` and `--badge-background-color` CSS variables; without them the theme's colors apply. `profchoicecore_badge_tags` adds more tags as badges, `profchoicecore_new_days` filters the days.
-* A product's "Product page" tab: an "As ridden by" card (rider, images, link), stored as `_profchoice_rider` and exposed in the REST API.
+* A product's "As ridden by" tab: the rider card (rider, images from the Media Library, link), stored as `_profchoice_rider` and exposed in the REST API.
 
 Editor features:
 
@@ -99,9 +99,9 @@ The carousel is adapted from rt-carousel by rtCamp (https://github.com/rtCamp/rt
 Product page (PDP).
 
 * Variation Swatches block (Interactivity API) with classic variations form integration and a `[profchoice_swatches]` shortcode.
-* "Color / image" and "Button" attribute types on any theme, term picker for "Button" attributes, and a Swatches tab with per-product display and term overrides.
+* "Color / image" and "Button" attribute types on any theme, term picker for "Button" attributes, swatches or the dropdown decided by the attribute type.
 * Product badges (Sale, New, Pro Pick) as product tags kept in sync.
-* "Product page" tab with the "As ridden by" card.
+* "As ridden by" tab with the rider card.
 * Heart, Arrow Long Right, Check Circle, Info Circle, Alert Circle and Close icons.
 
 = 0.1.0 =

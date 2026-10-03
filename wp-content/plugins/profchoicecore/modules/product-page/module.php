@@ -1,7 +1,7 @@
 <?php
 /**
  * Module Name: Product Page
- * Description: Product badges (Sale, New, Pro Pick) as product tags kept in sync, and the "As ridden by" card in the product's Product page tab.
+ * Description: Product badges (Sale, New, Pro Pick) as product tags kept in sync, and the "As ridden by" card in the product's As ridden by tab.
  * Requires Plugins: woocommerce
  *
  * @package ProfChoiceCore

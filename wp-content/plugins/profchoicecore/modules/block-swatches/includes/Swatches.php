@@ -19,12 +19,6 @@ namespace ProfChoiceCore;
 final class Swatches {
 
 	/**
-	 * Post meta with the per-product swatch settings, keyed by taxonomy:
-	 * `{ "pa_color": { "style": "auto|swatch|dropdown", "terms": { "<slug>": { "color": "#hex", "image": 12 } } } }`.
-	 */
-	const META = '_profchoice_swatches';
-
-	/**
 	 * Register hooks.
 	 *
 	 * @return void
@@ -68,54 +62,28 @@ final class Swatches {
 	}
 
 	/**
-	 * Whether the attribute renders as swatches for this product.
+	 * Whether the attribute renders as swatches: its type, set in Products >
+	 * Attributes ("Select" keeps WooCommerce's dropdown).
 	 *
 	 * @param string $taxonomy Attribute taxonomy.
-	 * @param int    $product_id Product ID.
 	 * @return bool
 	 */
-	public static function is_swatch_attribute( $taxonomy, $product_id ) {
-		if ( ! in_array( self::attribute_type( $taxonomy ), array( 'wc-visual', 'button' ), true ) ) {
-			return false;
-		}
-		$settings = self::product_settings( $product_id, $taxonomy );
-		return 'dropdown' !== $settings['style'];
-	}
-
-	/**
-	 * Per-product settings of one attribute.
-	 *
-	 * @param int    $product_id Product ID.
-	 * @param string $taxonomy   Attribute taxonomy.
-	 * @return array{style: string, terms: array}
-	 */
-	public static function product_settings( $product_id, $taxonomy ) {
-		$all      = get_post_meta( $product_id, self::META, true );
-		$settings = is_array( $all ) && isset( $all[ $taxonomy ] ) && is_array( $all[ $taxonomy ] ) ? $all[ $taxonomy ] : array();
-		return array(
-			'style' => isset( $settings['style'] ) ? (string) $settings['style'] : 'auto',
-			'terms' => isset( $settings['terms'] ) && is_array( $settings['terms'] ) ? $settings['terms'] : array(),
-		);
+	public static function is_swatch_attribute( $taxonomy ) {
+		return in_array( self::attribute_type( $taxonomy ), array( 'wc-visual', 'button' ), true );
 	}
 
 	/**
 	 * A term's visual: WooCommerce's `image` (attachment ID) or `color` (hex)
-	 * meta, or the keys swatch plugins use. A product override wins.
+	 * meta, or the keys swatch plugins use.
 	 *
-	 * @param \WP_Term $term     Attribute term.
-	 * @param array    $override Optional `{ color, image }` for this product.
+	 * @param \WP_Term $term Attribute term.
 	 * @return array{type: string, value: string}
 	 */
-	public static function term_visual( $term, array $override = array() ) {
-		$image = ! empty( $override['image'] ) ? absint( $override['image'] ) : 0;
-		$color = ! empty( $override['color'] ) ? sanitize_hex_color( $override['color'] ) : '';
-
-		if ( ! $image && ! $color ) {
-			$image = absint( get_term_meta( $term->term_id, 'image', true ) );
-			$image = $image ? $image : absint( get_term_meta( $term->term_id, 'product_attribute_image', true ) );
-			$color = sanitize_hex_color( (string) get_term_meta( $term->term_id, 'color', true ) );
-			$color = $color ? $color : sanitize_hex_color( (string) get_term_meta( $term->term_id, 'product_attribute_color', true ) );
-		}
+	public static function term_visual( $term ) {
+		$image = absint( get_term_meta( $term->term_id, 'image', true ) );
+		$image = $image ? $image : absint( get_term_meta( $term->term_id, 'product_attribute_image', true ) );
+		$color = sanitize_hex_color( (string) get_term_meta( $term->term_id, 'color', true ) );
+		$color = $color ? $color : sanitize_hex_color( (string) get_term_meta( $term->term_id, 'product_attribute_color', true ) );
 
 		if ( $image ) {
 			$url = wp_get_attachment_image_url( $image, 'thumbnail' );
@@ -150,10 +118,9 @@ final class Swatches {
 		if ( ! isset( $attributes[ $taxonomy ] ) ) {
 			return array();
 		}
-		$options   = array_map( 'strval', (array) $attributes[ $taxonomy ] );
-		$overrides = self::product_settings( $product->get_id(), $taxonomy )['terms'];
-		$in_stock  = self::in_stock_values( $product, $taxonomy );
-		$items     = array();
+		$options  = array_map( 'strval', (array) $attributes[ $taxonomy ] );
+		$in_stock = self::in_stock_values( $product, $taxonomy );
+		$items    = array();
 
 		foreach ( wc_get_product_terms( $product->get_id(), $taxonomy, array( 'fields' => 'all' ) ) as $term ) {
 			if ( ! in_array( $term->slug, $options, true ) ) {
@@ -163,7 +130,7 @@ final class Swatches {
 				'value'     => $term->slug,
 				/** This filter is documented in woocommerce/includes/wc-template-functions.php */
 				'label'     => apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $taxonomy, $product ),
-				'visual'    => self::term_visual( $term, isset( $overrides[ $term->slug ] ) ? (array) $overrides[ $term->slug ] : array() ),
+				'visual'    => self::term_visual( $term ),
 				'available' => null === $in_stock || in_array( $term->slug, $in_stock, true ),
 			);
 		}
@@ -210,7 +177,7 @@ final class Swatches {
 		$product  = isset( $args['product'] ) ? $args['product'] : null;
 		$taxonomy = isset( $args['attribute'] ) ? (string) $args['attribute'] : '';
 
-		if ( ! $product instanceof \WC_Product || ! self::is_swatch_attribute( $taxonomy, $product->get_id() ) ) {
+		if ( ! $product instanceof \WC_Product || ! self::is_swatch_attribute( $taxonomy ) ) {
 			return $html;
 		}
 
