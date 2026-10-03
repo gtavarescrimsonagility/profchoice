@@ -78,8 +78,9 @@
 			letter-spacing: 0.1rem;
 		}
 
+		// Rows 24px+ apart: touch targets on wrapped lines must not overlap.
 		.pdp-breadcrumb__list {
-			gap: 0.25rem;
+			gap: 0.625rem 0.25rem;
 		}
 
 		.pdp-breadcrumb__item {
