@@ -254,7 +254,12 @@ const { state, actions } = store( 'profchoice/reviews', {
 				}
 			};
 			document.addEventListener( 'click', onClick );
-			if ( /^#(reviews|comment-\d+)$/.test( window.location.hash ) ) {
+			// Collapsed and the URL points at the reviews: open and scroll. Open
+			// already (e.g. after posting a review), the browser has scrolled.
+			if (
+				! context.expanded &&
+				/^#(reviews|comment-\d+)$/.test( window.location.hash )
+			) {
 				reveal();
 			}
 			return () => {

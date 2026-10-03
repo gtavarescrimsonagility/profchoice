@@ -29,9 +29,10 @@ $pc_per_page = max( 1, absint( isset( $attributes['perPage'] ) ? $attributes['pe
 $pc_total    = (int) $pc_product->get_review_count();
 $pc_average  = (float) $pc_product->get_average_rating();
 $pc_items    = $pc_total ? Reviews::latest( $pc_product->get_id(), $pc_per_page ) : array();
-// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only flag set by wp-comments-post.php's redirect.
-$pc_submitted = isset( $_GET['unapproved'] );
-$pc_expanded  = empty( $attributes['collapsed'] ) || $pc_submitted;
+// Result of a review just posted (see Reviews::after_review()); read-only.
+$pc_submitted = isset( $_GET['pc-review'] ) ? sanitize_key( wp_unslash( $_GET['pc-review'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+$pc_submitted = in_array( $pc_submitted, array( 'published', 'pending' ), true ) ? $pc_submitted : '';
+$pc_expanded  = empty( $attributes['collapsed'] ) || '' !== $pc_submitted;
 $pc_can_write = $pc_product->get_reviews_allowed() && ( ! get_option( 'comment_registration' ) || is_user_logged_in() );
 $pc_uid       = wp_unique_id( 'pc-reviews-' );
 
@@ -135,7 +136,7 @@ $pc_summary = sprintf(
 		<?php if ( $pc_submitted ) : ?>
 			<div class="woocommerce-message pc-alert pc-alert--success pc-reviews__notice" role="status">
 				<?php echo $pc_icon( 'check-circle', 'pc-alert__icon' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-				<div class="pc-alert__body"><?php esc_html_e( 'Thank you for your review. It will appear once it is approved.', 'profchoicecore' ); ?></div>
+				<div class="pc-alert__body"><?php echo 'published' === $pc_submitted ? esc_html__( 'Thank you for your review.', 'profchoicecore' ) : esc_html__( 'Thank you for your review. It will appear once it is approved.', 'profchoicecore' ); ?></div>
 			</div>
 		<?php endif; ?>
 

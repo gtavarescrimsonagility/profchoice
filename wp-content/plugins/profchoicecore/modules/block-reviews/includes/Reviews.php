@@ -26,6 +26,25 @@ final class Reviews {
 		add_shortcode( 'profchoice_reviews', array( __CLASS__, 'shortcode' ) );
 		add_action( 'profchoicecore_reviews', array( __CLASS__, 'action' ), 10, 2 );
 		add_filter( 'rest_post_dispatch', array( __CLASS__, 'store_api_names' ), 10, 3 );
+		add_filter( 'comment_post_redirect', array( __CLASS__, 'after_review' ), 10, 2 );
+	}
+
+	/**
+	 * After a review is posted, back to the product's reviews (not to a
+	 * #comment-N anchor the block doesn't have) with its result, so the
+	 * block opens and shows a confirmation.
+	 *
+	 * @param string      $location Redirect URL.
+	 * @param \WP_Comment $comment  The new comment.
+	 * @return string
+	 */
+	public static function after_review( $location, $comment ) {
+		if ( ! $comment instanceof \WP_Comment || 'review' !== $comment->comment_type || 'product' !== get_post_type( $comment->comment_post_ID ) ) {
+			return $location;
+		}
+		$status   = '1' === (string) $comment->comment_approved ? 'published' : 'pending';
+		$location = strtok( $location, '#' );
+		return add_query_arg( 'pc-review', $status, $location ) . '#reviews';
 	}
 
 	/**
