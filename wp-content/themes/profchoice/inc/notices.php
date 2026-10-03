@@ -43,13 +43,14 @@ add_action(
 /**
  * Alert pieces shared by the notice templates.
  *
- * @param string $part 'icon-success', 'icon-info', 'icon-danger' or 'close'.
+ * @param string $part 'icon-success', 'icon-info', 'icon-warning', 'icon-danger' or 'close'.
  * @return string HTML.
  */
 function profchoice_alert_part( $part ) {
 	$icons = array(
 		'icon-success' => 'check-circle',
 		'icon-info'    => 'info-circle',
+		'icon-warning' => 'alert-triangle',
 		'icon-danger'  => 'alert-circle',
 	);
 	if ( isset( $icons[ $part ] ) ) {
@@ -87,5 +88,40 @@ add_filter(
 			)
 		);
 		return $tags;
+	}
+);
+
+/*
+ * Preview every notice type: ?pc-notices=preview on a WooCommerce page, for
+ * store managers only. Adds sample notices like the real ones (add to cart,
+ * a form with errors, an info message) for design reviews.
+ */
+add_action(
+	'template_redirect',
+	function () {
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only preview for store managers.
+		$mode = isset( $_GET['pc-notices'] ) ? sanitize_key( wp_unslash( $_GET['pc-notices'] ) ) : '';
+		if ( ! in_array( $mode, array( 'preview', 'preview-single' ), true ) || ! function_exists( 'wc_add_notice' ) || ! current_user_can( 'manage_woocommerce' ) ) {
+			return;
+		}
+		if ( 'preview-single' === $mode ) {
+			wc_add_notice( __( 'Please enter a valid postcode to calculate shipping.', 'profchoice' ), 'error' );
+			return;
+		}
+		$cart = wc_get_cart_url();
+		wc_add_notice(
+			sprintf(
+				'<a href="%s" class="button wc-forward">%s</a> %s',
+				esc_url( $cart ),
+				esc_html__( 'View cart', 'woocommerce' ),
+				esc_html__( '“Satin Dressage Pad with VenTECH™ Lining” has been added to your cart.', 'profchoice' )
+			),
+			'success'
+		);
+		wc_add_notice( __( 'Please choose product options by visiting the product page.', 'profchoice' ), 'notice' );
+		wc_add_notice( __( 'Only 2 left in stock for this size. Order soon to get yours.', 'profchoice' ), 'notice', array( 'pc_variant' => 'warning' ) );
+		wc_add_notice( __( 'Sorry, this product is unavailable. Please choose a different combination.', 'profchoice' ), 'error' );
+		wc_add_notice( __( '<strong>Billing First name</strong> is a required field.', 'profchoice' ), 'error' );
+		wc_add_notice( __( '<strong>Billing Email address</strong> is not a valid email address.', 'profchoice' ), 'error' );
 	}
 );

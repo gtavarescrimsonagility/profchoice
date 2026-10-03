@@ -61,10 +61,16 @@
 	--alert-border: #cfdbe8;
 }
 
+.pc-alert.pc-alert--warning {
+	--alert-color: #6b4a06;
+	--alert-bg: #fdf6e6;
+	--alert-border: #efdcaa;
+}
+
 .pc-alert.pc-alert--danger {
-	--alert-color: #8e1b1a;
-	--alert-bg: #fbeceb;
-	--alert-border: #f0c8c6;
+	--alert-color: #8a1d1c;
+	--alert-bg: #fdf3f2;
+	--alert-border: #efcdca;
 }
 
 .pc-alert__icon {
@@ -111,6 +117,22 @@
 .pc-alert ul.pc-alert__body {
 	flex-direction: column;
 	gap: 0.25rem;
+}
+
+// Several errors (a form): a bulleted list, each error on its own row.
+.pc-alert ul.pc-alert__body:has(> li + li) {
+	gap: 0.375rem;
+	padding-left: 1.125rem;
+	list-style: disc;
+
+	// WooCommerce removes the marker with `!important` (.woocommerce-error li).
+	li {
+		list-style: disc outside !important;
+	}
+
+	li::marker {
+		font-size: 0.75em;
+	}
 }
 
 // WooCommerce's action buttons ("View cart") as the site's text link. Doubled
