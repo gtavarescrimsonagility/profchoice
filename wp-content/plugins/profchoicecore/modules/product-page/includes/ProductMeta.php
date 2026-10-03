@@ -1,7 +1,7 @@
 <?php
 /**
- * Product page extras: a badge ("Pro Pick", "New", "Sale") and an
- * "As ridden by" card, edited in a "Product page" tab of the product data.
+ * Product page extras: an "As ridden by" card, edited in a "Product page"
+ * tab of the product data.
  *
  * @package ProfChoiceCore
  */
@@ -9,11 +9,10 @@
 namespace ProfChoiceCore;
 
 /**
- * Badge and rider post meta.
+ * Rider post meta.
  */
 final class ProductMeta {
 
-	const BADGE = '_profchoice_badge';
 	const RIDER = '_profchoice_rider';
 
 	/**
@@ -53,19 +52,6 @@ final class ProductMeta {
 	public static function register_meta() {
 		register_post_meta(
 			'product',
-			self::BADGE,
-			array(
-				'type'              => 'string',
-				'single'            => true,
-				'show_in_rest'      => true,
-				'sanitize_callback' => 'sanitize_text_field',
-				'auth_callback'     => static function () {
-					return current_user_can( 'edit_products' );
-				},
-			)
-		);
-		register_post_meta(
-			'product',
 			self::RIDER,
 			array(
 				'type'              => 'object',
@@ -90,16 +76,6 @@ final class ProductMeta {
 				},
 			)
 		);
-	}
-
-	/**
-	 * The product's badge text.
-	 *
-	 * @param int $product_id Product ID.
-	 * @return string
-	 */
-	public static function badge( $product_id ) {
-		return (string) get_post_meta( $product_id, self::BADGE, true );
 	}
 
 	/**
@@ -152,7 +128,7 @@ final class ProductMeta {
 	}
 
 	/**
-	 * Badge and rider fields.
+	 * Rider fields.
 	 *
 	 * @return void
 	 */
@@ -162,19 +138,6 @@ final class ProductMeta {
 		$rider = self::sanitize_rider( get_post_meta( $id, self::RIDER, true ) );
 		?>
 		<div id="profchoice_page_data" class="panel woocommerce_options_panel hidden">
-			<div class="options_group">
-				<?php
-				woocommerce_wp_text_input(
-					array(
-						'id'          => 'profchoice_badge',
-						'label'       => __( 'Badge', 'profchoicecore' ),
-						'value'       => self::badge( $id ),
-						'description' => __( 'E.g. Pro Pick, New or Sale. Shown on the product photo and on product cards.', 'profchoicecore' ),
-						'desc_tip'    => true,
-					)
-				);
-				?>
-			</div>
 			<div class="options_group">
 				<p class="form-field"><strong><?php esc_html_e( '"As ridden by" card', 'profchoicecore' ); ?></strong></p>
 				<?php
@@ -206,15 +169,9 @@ final class ProductMeta {
 		if ( ! isset( $_POST['profchoice_page_nonce'] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_POST['profchoice_page_nonce'] ) ), 'profchoice_page' ) ) {
 			return;
 		}
-		$badge = isset( $_POST['profchoice_badge'] ) ? sanitize_text_field( wp_unslash( $_POST['profchoice_badge'] ) ) : '';
 		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- sanitize_rider().
 		$rider = self::sanitize_rider( isset( $_POST['profchoice_rider'] ) ? wp_unslash( $_POST['profchoice_rider'] ) : array() );
 
-		if ( '' !== $badge ) {
-			$product->update_meta_data( self::BADGE, $badge );
-		} else {
-			$product->delete_meta_data( self::BADGE );
-		}
 		if ( '' !== $rider['name'] ) {
 			$product->update_meta_data( self::RIDER, $rider );
 		} else {

@@ -1,7 +1,7 @@
 <?php
 /**
  * Module Name: Product Page
- * Description: Product badge and "As ridden by" card, edited in the product's Product page tab.
+ * Description: Product badges (Sale, New, Pro Pick) as product tags kept in sync, and the "As ridden by" card in the product's Product page tab.
  * Requires Plugins: woocommerce
  *
  * @package ProfChoiceCore
@@ -14,5 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require_once __DIR__ . '/includes/ProductMeta.php';
+require_once __DIR__ . '/includes/Badges.php';
 
 ProductMeta::register_hooks();
+Badges::register_hooks();

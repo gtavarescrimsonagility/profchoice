@@ -230,15 +230,15 @@ class ProfChoice_Bundle_Command {
 
 	/**
 	 * `wp export` leaves out term meta; add the product categories' (image,
-	 * order, display type) and the attribute terms' (order, swatch color or
-	 * image) as <wp:termmeta>, which the WordPress Importer reads. Attachment
+	 * order, display type), the product tags' (order, badge colors) and the
+	 * attribute terms' (order, swatch color or image) as <wp:termmeta>, which the WordPress Importer reads. Attachment
 	 * IDs stay valid when the import keeps the original IDs (the blueprint
 	 * resets the tables first).
 	 */
 	private function add_term_meta( $wxr ) {
 		$taxonomies = array_filter(
 			array_merge(
-				array( 'product_cat' ),
+				array( 'product_cat', 'product_tag' ),
 				function_exists( 'wc_get_attribute_taxonomy_names' ) ? wc_get_attribute_taxonomy_names() : array()
 			),
 			'taxonomy_exists'
