@@ -104,9 +104,10 @@ final class InlineIcon {
 	}
 
 	/**
-	 * Replaces saved inline icons (`<img class="pc-inline-icon" data-icon>`)
-	 * with the icon's `<svg class="pc-inline-icon">`, so it follows the text
-	 * color (currentColor).
+	 * Replaces saved inline icons (`<img class="pc-inline-icon" data-icon>`,
+	 * with or without the transparent placeholder src) with the icon's
+	 * `<svg class="pc-inline-icon">`, so it follows the text color
+	 * (currentColor).
 	 *
 	 * @param string $content Rendered block.
 	 * @return string

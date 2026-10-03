@@ -7,6 +7,7 @@ import {
 import { PanelBody, ToggleControl } from '@wordpress/components';
 import type { BlockEditProps } from '@wordpress/blocks';
 import type { TemplateArray } from '../../template';
+import { PLACEHOLDER_SRC } from '../../../../icons/src/inline-icon/placeholder';
 import StatePanels from '../StatePanels';
 import { stateStyleProps } from '../state-style';
 import type { CarouselControlAttributes, Direction } from './types';
@@ -43,7 +44,7 @@ const ICONS: Record< Direction, string > = {
  * @return Button text HTML.
  */
 const buttonText = ( direction: Direction ): string => {
-	const icon = `<img data-icon="${ ICONS[ direction ] }" alt="" class="pc-inline-icon">`;
+	const icon = `<img data-icon="${ ICONS[ direction ] }" alt="" src="${ PLACEHOLDER_SRC }" class="pc-inline-icon">`;
 	const label = `<span class="pc-visually-hidden">${ LABELS[ direction ] }</span>`;
 	return direction === 'prev' ? icon + label : label + icon;
 };

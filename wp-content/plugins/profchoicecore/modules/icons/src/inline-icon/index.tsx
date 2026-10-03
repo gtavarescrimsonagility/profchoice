@@ -3,7 +3,8 @@
  * registered icon (Icons API) into text (buttons, paragraphs, headings…).
  * Rich text objects are void elements, so it is saved like core's inline
  * image, as a short placeholder: `<img class="pc-inline-icon"
- * data-icon="collection/name" alt="">`. includes/InlineIcon.php renders it as
+ * data-icon="collection/name" alt="" src="…">`, whose src is a transparent
+ * pixel (see placeholder.ts) so the editor shows no broken image. includes/InlineIcon.php renders it as
  * the icon's <svg> in the text color on the front end; in the editor a
  * generated mask stylesheet draws it the same way.
  */
@@ -12,6 +13,7 @@ import { registerFormatType, insertObject } from '@wordpress/rich-text';
 import { RichTextToolbarButton } from '@wordpress/block-editor';
 import { useState } from '@wordpress/element';
 import IconPicker from './icon-picker';
+import { PLACEHOLDER_SRC } from './placeholder';
 import './style.scss';
 
 export const NAME = 'profchoice/inline-icon';
@@ -47,7 +49,11 @@ function Edit( { value, onChange, isObjectActive }: EditProps ) {
 						onChange(
 							insertObject( value, {
 								type: NAME,
-								attributes: { icon, alt: '' },
+								attributes: {
+									icon,
+									alt: '',
+									url: PLACEHOLDER_SRC,
+								},
 							} )
 						);
 						setIsOpen( false );
@@ -63,6 +69,6 @@ registerFormatType( NAME, {
 	tagName: 'img',
 	className: 'pc-inline-icon',
 	object: true,
-	attributes: { icon: 'data-icon', alt: 'alt' },
+	attributes: { icon: 'data-icon', alt: 'alt', url: 'src' },
 	edit: Edit,
 } as unknown as Parameters< typeof registerFormatType >[ 1 ] );
