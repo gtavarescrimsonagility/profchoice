@@ -28,8 +28,10 @@ $pc_user = wp_get_current_user();
 			</div>
 		</fieldset>
 	<?php endif; ?>
-	<label class="pc-review-form__label" for="<?php echo esc_attr( $pc_uid . '-text' ); ?>"><?php esc_html_e( 'Your review', 'profchoicecore' ); ?></label>
-	<textarea class="pc-review-form__input" id="<?php echo esc_attr( $pc_uid . '-text' ); ?>" name="comment" rows="5" required></textarea>
+	<div class="pc-review-form__field">
+		<label class="pc-review-form__label" for="<?php echo esc_attr( $pc_uid . '-text' ); ?>"><?php esc_html_e( 'Your review', 'profchoicecore' ); ?></label>
+		<textarea class="pc-review-form__input" id="<?php echo esc_attr( $pc_uid . '-text' ); ?>" name="comment" rows="5" required></textarea>
+	</div>
 	<?php if ( ! $pc_user->exists() ) : ?>
 		<div class="pc-review-form__row">
 			<div class="pc-review-form__field">

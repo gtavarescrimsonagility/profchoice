@@ -249,10 +249,12 @@
 
 	/* Write a Review form: a panel under the head, shown and hidden by the
 		Write a Review button. */
+	// Write a Review form: groups spaced by the form's gap (no margins);
+	// each label sits on its field (.pc-review-form__field).
 	.pc-review-form {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 1rem;
 		margin-top: 1.75rem;
 		padding: 1.5rem;
 		border: 1px solid #e5e2dc;
@@ -268,16 +270,25 @@
 
 	// The parent styles `.woocommerce form fieldset` and its legend (padding,
 	// margins); the rating is a plain group here.
-	.pc-review-form__rating {
+	.pc-review-form__rating,
+	.pc-review-form__field {
+		display: flex;
+		flex-direction: column;
+		gap: 0.375rem;
 		min-width: 0;
-		margin: 0 0 0.75rem;
+		margin: 0;
 		padding: 0;
 		border: 0;
 	}
 
+	// A floated legend is a plain flex item, so the group's gap applies to it.
+	.pc-review-form__rating > legend {
+		float: left;
+	}
+
 	.pc-review-form__label {
 		display: block;
-		margin: 0 0 0.375rem;
+		margin: 0;
 		padding: 0;
 		color: #6e727a;
 		font-size: 0.6875rem;
@@ -330,7 +341,7 @@
 	.pc-review-form__input {
 		width: 100%;
 		min-height: 2.75rem;
-		margin-bottom: 0.75rem;
+		margin: 0;
 		padding: 0.625rem 0.75rem;
 		border: 1px solid #c8c4bc;
 		border-radius: 0;
@@ -350,20 +361,19 @@
 		gap: 1rem;
 	}
 
-	.pc-review-form__field {
+	.pc-review-form__row .pc-review-form__field {
 		flex: 1;
-		min-width: 0;
 	}
 
 	.pc-review-form__note {
-		margin-top: -0.25rem;
+		margin: 0;
 		color: #6e727a;
 		font-size: 0.75rem;
 	}
 
 	.pc-review-form__submit {
 		align-self: flex-start;
-		margin-top: 1rem;
+		margin: 0;
 		padding: 0.875rem 1.75rem;
 		background: #b71c1c;
 		color: #ffffff;
@@ -527,7 +537,6 @@
 
 		.pc-review-form__row {
 			flex-direction: column;
-			gap: 0;
 		}
 
 		.pc-review-form__submit {
