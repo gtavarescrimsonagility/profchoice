@@ -14,6 +14,40 @@ require_once __DIR__ . '/inc/notices.php';
 require_once __DIR__ . '/inc/wishlist.php';
 
 /*
+ * Keep WooCommerce's front-end CSS/JS off non-Woo pages (home, landing pages,
+ * blog, etc.). Shop, product, cart, checkout and account pages still load
+ * everything they need. This trims weight and requests on marketing pages.
+ */
+add_action(
+	'wp_enqueue_scripts',
+	function () {
+		if ( function_exists( 'is_woocommerce' ) && ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) ) {
+			return;
+		}
+
+		// Styles only needed for shop/store pages.
+		foreach ( array( 'woocommerce-general', 'woocommerce-layout', 'woocommerce-smallscreen' ) as $handle ) {
+			wp_dequeue_style( $handle );
+			wp_deregister_style( $handle );
+		}
+
+		// Front-end scripts only needed for shop/cart/checkout interactions.
+		foreach ( array(
+			'wc-cart-fragments',
+			'woocommerce',
+			'wc-add-to-cart',
+			'jquery-blockui',
+			'js-cookie',
+			'sourcebuster-js',
+			'wc-order-attribution',
+		) as $handle ) {
+			wp_dequeue_script( $handle );
+		}
+	},
+	100
+);
+
+/*
  * Brand palette (from the Figma design) as the parent's palette defaults. The parent
  * turns each entry into a Customizer control, a --cbv-{slug} variable and an
  * editor palette color (settings.color.palette), so defaults live in code and
